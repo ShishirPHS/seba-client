@@ -1,0 +1,12 @@
+.banner input{
+    border: none;
+}
+
+.banner input:focus{
+    outline: none !important;
+}
+ 
+.banner select:focus{
+    outline: none !important;
+    border: 0;
+} 
