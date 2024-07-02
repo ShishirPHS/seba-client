@@ -1,17 +1,17 @@
-import fever from "../../../assets/icons/symptoms/thermometer.svg";
-import heartAttack from "../../../assets/icons/symptoms/anatomical-heart.svg";
-import pregnancy from "../../../assets/icons/symptoms/child-head.svg";
-import highBloodPressure from "../../../assets/icons/symptoms/blood.svg";
-import breathlessness from "../../../assets/icons/symptoms/lungs 1.svg";
-import diarrhea from "../../../assets/icons/symptoms/viruses 1.svg";
+import dengue from "../../../assets/icons/diseases/mosquito.svg";
+import typhoid from "../../../assets/icons/diseases/fever.svg";
+import piles from "../../../assets/icons/diseases/piles.svg";
+import gastritis from "../../../assets/icons/diseases/gastritis.svg";
+import hernia from "../../../assets/icons/diseases/lungs.svg";
+import migraine from "../../../assets/icons/diseases/migraine.svg";
 
-const Symptoms = () => {
+const Diseases = () => {
   return (
     <div className="w-[1589px] mx-auto mt-[118px] mb-[140px]">
       {/* top */}
       <div className="flex justify-between mb-[49px]">
         <p className="text-black font-poppins text-4xl font-medium leading-[123%]">
-          Symptoms
+          Diseases
         </p>
         <p className="text-black font-poppins text-4xl font-medium leading-[123%] cursor-pointer">
           View All
@@ -24,11 +24,11 @@ const Symptoms = () => {
           <img
             style={{ boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)" }}
             className="border border-[#086060] rounded-[22px] px-[45px] py-[40px] mb-[22px]"
-            src={fever}
+            src={dengue}
             alt="an icon of thermometer"
           />
           <p className="text-black font-poppins text-2xl font-medium leading-[123%]">
-            Fever
+            Dengue fever
           </p>
         </div>
         {/* symptom 2 */}
@@ -36,11 +36,11 @@ const Symptoms = () => {
           <img
             style={{ boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)" }}
             className="border border-[#086060] rounded-[22px] px-[45px] py-[40px] mb-[22px]"
-            src={heartAttack}
+            src={typhoid}
             alt="an icon of thermometer"
           />
           <p className="text-black font-poppins text-2xl font-medium leading-[123%]">
-            Heart attack
+            Typhoid Fever
           </p>
         </div>
         {/* symptom 3 */}
@@ -48,11 +48,11 @@ const Symptoms = () => {
           <img
             style={{ boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)" }}
             className="border border-[#086060] rounded-[22px] px-[45px] py-[40px] mb-[22px]"
-            src={pregnancy}
+            src={piles}
             alt="an icon of thermometer"
           />
           <p className="text-black font-poppins text-2xl font-medium leading-[123%]">
-            Pregnancy
+            Piles
           </p>
         </div>
         {/* symptom 4 */}
@@ -60,11 +60,11 @@ const Symptoms = () => {
           <img
             style={{ boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)" }}
             className="border border-[#086060] rounded-[22px] px-[45px] py-[40px] mb-[22px]"
-            src={highBloodPressure}
+            src={gastritis}
             alt="an icon of thermometer"
           />
           <p className="text-black font-poppins text-2xl font-medium leading-[123%]">
-            High blood pressure
+            Gastritis
           </p>
         </div>
         {/* symptom 5 */}
@@ -72,11 +72,11 @@ const Symptoms = () => {
           <img
             style={{ boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)" }}
             className="border border-[#086060] rounded-[22px] px-[45px] py-[40px] mb-[22px]"
-            src={breathlessness}
+            src={hernia}
             alt="an icon of thermometer"
           />
           <p className="text-black font-poppins text-2xl font-medium leading-[123%]">
-            Breathlessness
+            Hernia
           </p>
         </div>
         {/* symptom 6 */}
@@ -84,11 +84,11 @@ const Symptoms = () => {
           <img
             style={{ boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)" }}
             className="border border-[#086060] rounded-[22px] px-[45px] py-[40px] mb-[22px]"
-            src={diarrhea}
+            src={migraine}
             alt="an icon of thermometer"
           />
           <p className="text-black font-poppins text-2xl font-medium leading-[123%]">
-            Diarrhea
+            Migraine
           </p>
         </div>
       </div>
@@ -96,4 +96,4 @@ const Symptoms = () => {
   );
 };
 
-export default Symptoms;
+export default Diseases;
