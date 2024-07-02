@@ -48,8 +48,9 @@ const Banner = () => {
                 <select
                   ref={selectRef1}
                   className="select w-full text-2xl text-[#808080]"
+                  defaultValue={"Symptoms"}
                 >
-                  <option disabled selected>
+                  <option disabled>
                     Symptoms
                   </option>
                   <option>Svelte</option>
@@ -67,8 +68,9 @@ const Banner = () => {
                 <select
                   ref={selectRef2}
                   className="select w-full text-2xl text-[#808080]"
+                  defaultValue={"Diseases"}
                 >
-                  <option disabled selected>
+                  <option disabled>
                     Diseases
                   </option>
                   <option>Svelte</option>
