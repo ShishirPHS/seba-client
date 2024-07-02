@@ -11,15 +11,9 @@ const Banner = () => {
   const handleImageClick = (ref) => {
     if (ref.current) {
       ref.current.focus();
-      const event = new MouseEvent('mousedown', {
-        view: window,
-        bubbles: true,
-        cancelable: true
-      });
-      ref.current.dispatchEvent(event);
+      ref.current.click();
     }
   };
-
 
   return (
     <div className="bg-[#086060] banner relative">
@@ -50,9 +44,7 @@ const Banner = () => {
                   className="select w-full text-2xl text-[#808080]"
                   defaultValue={"Symptoms"}
                 >
-                  <option disabled>
-                    Symptoms
-                  </option>
+                  <option disabled>Symptoms</option>
                   <option>Svelte</option>
                   <option>Vue</option>
                   <option>React</option>
@@ -70,9 +62,7 @@ const Banner = () => {
                   className="select w-full text-2xl text-[#808080]"
                   defaultValue={"Diseases"}
                 >
-                  <option disabled>
-                    Diseases
-                  </option>
+                  <option disabled>Diseases</option>
                   <option>Svelte</option>
                   <option>Vue</option>
                   <option>React</option>
