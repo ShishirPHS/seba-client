@@ -57,13 +57,16 @@ const BestSkinDoctor = () => {
                   </p>
                 </div>
                 {/* rating */}
-                <div>
+                <div className="flex items-center">
                   <Rating
                     initialRating={5}
                     readonly
                     emptySymbol={<img src={emptyStar} className="icon" />}
                     fullSymbol={<img src={fullStar} className="icon" />}
                   />
+                  <p className="text-black font-poppins text-sm font-semibold ml-[12px]">
+                    5 (278)
+                  </p>
                 </div>
               </div>
             </div>
@@ -90,13 +93,16 @@ const BestSkinDoctor = () => {
                   </p>
                 </div>
                 {/* rating */}
-                <div>
+                <div className="flex items-center">
                   <Rating
                     initialRating={5}
                     readonly
                     emptySymbol={<img src={emptyStar} className="icon" />}
                     fullSymbol={<img src={fullStar} className="icon" />}
                   />
+                  <p className="text-black font-poppins text-sm font-semibold ml-[12px]">
+                    5 (193)
+                  </p>
                 </div>
               </div>
             </div>
@@ -123,13 +129,16 @@ const BestSkinDoctor = () => {
                   </p>
                 </div>
                 {/* rating */}
-                <div>
+                <div className="flex items-center">
                   <Rating
                     initialRating={5}
                     readonly
                     emptySymbol={<img src={emptyStar} className="icon" />}
                     fullSymbol={<img src={fullStar} className="icon" />}
                   />
+                  <p className="text-black font-poppins text-sm font-semibold ml-[12px]">
+                    5 (504)
+                  </p>
                 </div>
               </div>
             </div>
@@ -156,13 +165,16 @@ const BestSkinDoctor = () => {
                   </p>
                 </div>
                 {/* rating */}
-                <div>
+                <div className="flex items-center">
                   <Rating
                     initialRating={5}
                     readonly
                     emptySymbol={<img src={emptyStar} className="icon" />}
                     fullSymbol={<img src={fullStar} className="icon" />}
                   />
+                  <p className="text-black font-poppins text-sm font-semibold ml-[12px]">
+                    5 (278)
+                  </p>
                 </div>
               </div>
             </div>
