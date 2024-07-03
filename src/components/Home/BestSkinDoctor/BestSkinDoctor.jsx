@@ -30,8 +30,7 @@ const BestSkinDoctor = () => {
           }}
           pagination={{
             clickable: true,
-          }}
-          navigation={true}
+          }} 
           modules={[Autoplay]}
           className="mySwiper"
         >

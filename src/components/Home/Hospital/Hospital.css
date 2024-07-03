@@ -1,0 +1,18 @@
+#hospital .swiper-wrapper {
+  z-index: 10;
+  position: relative;
+}
+
+#hospital .swiper-button-prev {
+  background-color: red;
+  height: 72px;
+  width: 72px;
+  border-radius: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#hospital .swiper-button-prev::after {
+  content: "s";
+  font-size: 24px;
+}
