@@ -7,6 +7,7 @@ export default {
       nunito: ["Nunito", "sans-serif"],
       poppins: ["Poppins", "sans-serif"],
       dmSans: ["DM Sans", "sans-serif"],
+      inter: ["Inter", "sans-serif"],
     },
   },
   plugins: [require("daisyui")],
