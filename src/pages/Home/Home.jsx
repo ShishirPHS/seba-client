@@ -1,4 +1,5 @@
 import Banner from "../../components/Home/Banner/Banner";
+import BestGynecologistDoctor from "../../components/Home/BestGynecologistDoctor/BestGynecologistDoctor";
 import BestSkinDoctor from "../../components/Home/BestSkinDoctor/BestSkinDoctor";
 import Diseases from "../../components/Home/Diseases/Diseases";
 import DonateYourBlood from "../../components/Home/DonateYourBlood/DonateYourBlood";
@@ -16,6 +17,7 @@ const Home = () => {
       <Diseases></Diseases>
       <DonateYourBlood></DonateYourBlood>
       <BestSkinDoctor></BestSkinDoctor>
+      <BestGynecologistDoctor></BestGynecologistDoctor>
     </div>
   );
 };
