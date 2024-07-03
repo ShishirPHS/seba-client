@@ -4,22 +4,17 @@ import img3 from "../../../assets/reviews/img3.svg";
 import img4 from "../../../assets/reviews/img4.svg";
 import img5 from "../../../assets/reviews/img5.svg";
 import img6 from "../../../assets/reviews/img6.svg";
+import SectionHeader from "../../SectionHeader/SectionHeader";
 
 const Reviews = () => {
   return (
     <div className="w-[1589px] mx-auto">
       {/* texts */}
-      <div className="mb-[107px]">
-        <button className="py-[12px] mb-[22px] px-[47px] bg-[#FF0068] text-white font-poppins text-xl font-medium leading-[123%] mx-auto block rounded-[100px]">
-          Reviews
-        </button>
-        <h3 className="text-black text-center font-poppins text-5xl font-semibold leading-[123%] mb-[17px]">
-          Public Cheers for Us!
-        </h3>
-        <p className="text-center text-black font-poppins text-xl font-light leading-[123%]">
-          Find out how our users are spreading the world
-        </p>
-      </div>
+      <SectionHeader
+        sectionName={"Reviews"}
+        sectionHeader={"Public Cheers for Us!"}
+        sectionSubHeader={"Find out how our users are spreading the world"}
+      ></SectionHeader>
       {/* reviews */}
       <div className="relative">
         <div className="grid grid-cols-3 gap-[31px]">
