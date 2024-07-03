@@ -15,7 +15,7 @@ import fullStar from "../../../assets/icons/star/full.svg";
 
 const BestGynecologistDoctor = () => {
   return (
-    <div className="w-[1589px] mx-auto mt-[128px] mb-[100px]">
+    <div className="w-[1589px] mx-auto mt-[128px] mb-[176px]">
       <h3 className="text-black font-poppins text-4xl font-medium leading-[123%] capitalize mb-[46px]">
         best gynocologist doctor of the month
       </h3>

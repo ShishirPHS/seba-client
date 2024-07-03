@@ -4,6 +4,7 @@ import BestSkinDoctor from "../../components/Home/BestSkinDoctor/BestSkinDoctor"
 import Diseases from "../../components/Home/Diseases/Diseases";
 import DonateYourBlood from "../../components/Home/DonateYourBlood/DonateYourBlood";
 import FreeMedicalAdvice from "../../components/Home/FreeMedicalAdvice/FreeMedicalAdvice";
+import Reviews from "../../components/Home/Reviews/Reviews";
 import Symptoms from "../../components/Home/Symptoms/Symptoms";
 import VideoConsultation from "../../components/Home/VideoConsultation/VideoConsultation";
 
@@ -18,6 +19,7 @@ const Home = () => {
       <DonateYourBlood></DonateYourBlood>
       <BestSkinDoctor></BestSkinDoctor>
       <BestGynecologistDoctor></BestGynecologistDoctor>
+      <Reviews></Reviews>
     </div>
   );
 };
