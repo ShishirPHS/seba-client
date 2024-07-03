@@ -2,11 +2,16 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
 import "swiper/css/autoplay";
 
-import { Pagination, Navigation, Autoplay } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
+
+import img1 from "../../../assets/best-skin-doctor/img1.png";
+import img2 from "../../../assets/best-skin-doctor/img2.png";
+import img3 from "../../../assets/best-skin-doctor/img3.png";
+import Rating from "react-rating";
+import emptyStar from "../../../assets/icons/star/empty.svg";
+import fullStar from "../../../assets/icons/star/full.svg";
 
 const BestSkinDoctor = () => {
   return (
@@ -27,20 +32,140 @@ const BestSkinDoctor = () => {
             clickable: true,
           }}
           navigation={true}
-          modules={[Pagination, Navigation, Autoplay]}
+          modules={[Autoplay]}
           className="mySwiper"
         >
           <SwiperSlide>
-            <div className="h-[100px] bg-red-600">hello world!</div>
+            <div
+              style={{ boxShadow: " 4px 4px 19.3px 0px rgba(0, 0, 0, 0.07)" }}
+              className="flex items-center gap-[34px] rounded-[40px] bg-white p-[14px]"
+            >
+              <div>
+                <img className="rounded-[40px]" src={img1} alt="" />
+              </div>
+              <div>
+                {/* text */}
+                <div className="mb-5">
+                  <h5 className="text-black font-poppins text-xl font-semibold">
+                    Dr. Shafwanur Rahman
+                  </h5>
+                  <h6 className="text-black font-poppins text-xl font-light">
+                    MBBS
+                  </h6>
+                  <p className="text-[#7F7F7F] font-poppins text-xl">
+                    5 Year of Experience
+                  </p>
+                </div>
+                {/* rating */}
+                <div>
+                  <Rating
+                    initialRating={5}
+                    readonly
+                    emptySymbol={<img src={emptyStar} className="icon" />}
+                    fullSymbol={<img src={fullStar} className="icon" />}
+                  />
+                </div>
+              </div>
+            </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="h-[100px] bg-red-600">hello world!</div>
+            <div
+              style={{ boxShadow: " 4px 4px 19.3px 0px rgba(0, 0, 0, 0.07)" }}
+              className="flex items-center gap-[34px] rounded-[40px] bg-white p-[14px]"
+            >
+              <div>
+                <img className="rounded-[40px]" src={img2} alt="" />
+              </div>
+              <div>
+                {/* text */}
+                <div className="mb-5">
+                  <h5 className="text-black font-poppins text-xl font-semibold">
+                    Dr. Mehedi Hasan
+                  </h5>
+                  <h6 className="text-black font-poppins text-xl font-light">
+                    MBBS
+                  </h6>
+                  <p className="text-[#7F7F7F] font-poppins text-xl">
+                    4 Year of Experience
+                  </p>
+                </div>
+                {/* rating */}
+                <div>
+                  <Rating
+                    initialRating={5}
+                    readonly
+                    emptySymbol={<img src={emptyStar} className="icon" />}
+                    fullSymbol={<img src={fullStar} className="icon" />}
+                  />
+                </div>
+              </div>
+            </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="h-[100px] bg-red-600">hello world!</div>
+            <div
+              style={{ boxShadow: " 4px 4px 19.3px 0px rgba(0, 0, 0, 0.07)" }}
+              className="flex items-center gap-[34px] rounded-[40px] bg-white p-[14px]"
+            >
+              <div>
+                <img className="rounded-[40px]" src={img3} alt="" />
+              </div>
+              <div>
+                {/* text */}
+                <div className="mb-5">
+                  <h5 className="text-black font-poppins text-xl font-semibold">
+                    Dr. Arafat Hossain
+                  </h5>
+                  <h6 className="text-black font-poppins text-xl font-light">
+                    MBBS
+                  </h6>
+                  <p className="text-[#7F7F7F] font-poppins text-xl">
+                    8 Year of Experience
+                  </p>
+                </div>
+                {/* rating */}
+                <div>
+                  <Rating
+                    initialRating={5}
+                    readonly
+                    emptySymbol={<img src={emptyStar} className="icon" />}
+                    fullSymbol={<img src={fullStar} className="icon" />}
+                  />
+                </div>
+              </div>
+            </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="h-[100px] bg-red-600">hello world!</div>
+            <div
+              style={{ boxShadow: " 4px 4px 19.3px 0px rgba(0, 0, 0, 0.07)" }}
+              className="flex items-center gap-[34px] rounded-[40px] bg-white p-[14px]"
+            >
+              <div>
+                <img className="rounded-[40px]" src={img1} alt="" />
+              </div>
+              <div>
+                {/* text */}
+                <div className="mb-5">
+                  <h5 className="text-black font-poppins text-xl font-semibold">
+                    Dr. Shafwanur Rahman
+                  </h5>
+                  <h6 className="text-black font-poppins text-xl font-light">
+                    MBBS
+                  </h6>
+                  <p className="text-[#7F7F7F] font-poppins text-xl">
+                    5 Year of Experience
+                  </p>
+                </div>
+                {/* rating */}
+                <div>
+                  <Rating
+                    initialRating={5}
+                    readonly
+                    emptySymbol={<img src={emptyStar} className="icon" />}
+                    fullSymbol={<img src={fullStar} className="icon" />}
+                  />
+                </div>
+              </div>
+            </div>
           </SwiperSlide>
         </Swiper>
       </div>
