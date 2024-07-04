@@ -64,6 +64,18 @@ const Blogs = () => {
             </p>
           </div>
         </div>
+        {/* button div */}
+        <div className="relative">
+          <div
+            style={{
+              filter: "blur(50px)",
+            }}
+            className="h-[288px] w-full bg-gradient-to-b from-[#013131] to-[#013131b3] -mt-[124px] z-20 relative"
+          ></div>
+          <button className="text-white font-poppins text-[32px] font-semibold leading-[123%] bg-[#d9d9d900] rounded-[40px] px-[69px] py-[36px] border-white border-[2px] absolute bottom-0 left-[50%] transform -translate-x-[50%] z-30">
+            See more
+          </button>
+        </div>
       </div>
     </div>
   );
