@@ -1,4 +1,9 @@
 import "./Footer.css";
+import footerLogo from "../../../assets/footer/footerLogo.svg";
+import moment from "moment";
+import { FaFacebookF } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -117,7 +122,28 @@ const Footer = () => {
           </div>
         </div>
         {/* footer bottom */}
-        <div></div>
+        <div>
+          <div className="w-full h-[2px] bg-[#1A4646] mb-[33px]"></div>
+          <div className="flex items-center justify-between">
+            <img src={footerLogo} alt="" />
+            {/* copyright */}
+            <p className="text-white font-poppins text-sm leading-[100%]">
+              &#169; {moment().format("YYYY")} Seba. All Rights Reserved.
+            </p>
+            {/* social icons */}
+            <div className="flex items-center gap-[17px] text-white">
+              <div className="border-[1px] border-[#406565] p-[16px] rounded-[18px]">
+                <FaFacebookF className="text-base"></FaFacebookF>
+              </div>
+              <div className="border-[1px] border-[#406565] p-[16px] rounded-[18px]">
+                <FaLinkedinIn className="text-base"></FaLinkedinIn>
+              </div>
+              <div className="border-[1px] border-[#406565] p-[16px] rounded-[18px]">
+                <FaTwitter className="text-base"></FaTwitter>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
