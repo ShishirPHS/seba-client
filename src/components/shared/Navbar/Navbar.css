@@ -1,4 +1,4 @@
-ul li{
+/* ul li{
     margin-right: 59px;
 }
 
@@ -41,4 +41,17 @@ ul li a {
     padding: 18px 40px;
     margin-left: 18px;
     cursor: pointer;
+} */
+
+nav a {
+  color: #505050 !important;
+  font-weight: 700; 
+  font-size: 20px;
+  transition: all .4s ease-in-out;
+}
+nav a:hover {
+  color: #3BA4A7 !important; 
+}
+nav a.active {
+  color: #3BA4A7 !important; 
 }
