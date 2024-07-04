@@ -1,0 +1,11 @@
+#footerMiddle ul li {
+  color: white;
+}
+
+#footerMiddle ul li a {
+  font-family: "sfPro";
+  background: transparent !important;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 200%;
+}

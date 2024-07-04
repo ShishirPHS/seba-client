@@ -8,6 +8,7 @@ export default {
       poppins: ["Poppins", "sans-serif"],
       dmSans: ["DM Sans", "sans-serif"],
       inter: ["Inter", "sans-serif"],
+      sfPro: ["sfPro", "sans-serif"],
     },
   },
   plugins: [require("daisyui")],
