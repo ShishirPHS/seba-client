@@ -9,6 +9,7 @@ import Hospital from "../../components/Home/Hospital/Hospital";
 import Reviews from "../../components/Home/Reviews/Reviews";
 import Symptoms from "../../components/Home/Symptoms/Symptoms";
 import VideoConsultation from "../../components/Home/VideoConsultation/VideoConsultation";
+import WhyChoose from "../../components/Home/WhyChoose/WhyChoose";
 
 const Home = () => {
   return (
@@ -24,6 +25,7 @@ const Home = () => {
       <Reviews></Reviews>
       <Hospital></Hospital>
       <Blogs></Blogs>
+      <WhyChoose></WhyChoose>
     </div>
   );
 };
