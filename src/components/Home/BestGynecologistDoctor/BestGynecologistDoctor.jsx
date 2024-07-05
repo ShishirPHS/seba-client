@@ -16,7 +16,10 @@ import "./BestGynecologistDoctor.css";
 
 const BestGynecologistDoctor = () => {
   return (
-    <div className="w-[1589px] mx-auto mt-[128px] mb-[176px]" id="bestGynecologistDoctor">
+    <div
+      className="w-[1589px] mx-auto mt-[128px] mb-[176px]"
+      id="bestGynecologistDoctor"
+    >
       <h3 className="text-black font-poppins text-4xl font-medium leading-[123%] capitalize mb-[26px]">
         best gynocologist doctor of the month
       </h3>
@@ -26,7 +29,7 @@ const BestGynecologistDoctor = () => {
           spaceBetween={30}
           loop={true}
           autoplay={{
-            delay: 2000,
+            delay: 1500,
             disableOnInteraction: false,
           }}
           pagination={{
