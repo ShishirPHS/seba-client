@@ -12,11 +12,12 @@ import img3 from "../../../assets/best-gynecologist-doctor/img3.png";
 import Rating from "react-rating";
 import emptyStar from "../../../assets/icons/star/empty.svg";
 import fullStar from "../../../assets/icons/star/full.svg";
+import "./BestGynecologistDoctor.css";
 
 const BestGynecologistDoctor = () => {
   return (
-    <div className="w-[1589px] mx-auto mt-[128px] mb-[176px]">
-      <h3 className="text-black font-poppins text-4xl font-medium leading-[123%] capitalize mb-[46px]">
+    <div className="w-[1589px] mx-auto mt-[128px] mb-[176px]" id="bestGynecologistDoctor">
+      <h3 className="text-black font-poppins text-4xl font-medium leading-[123%] capitalize mb-[26px]">
         best gynocologist doctor of the month
       </h3>
       <div>
@@ -37,7 +38,7 @@ const BestGynecologistDoctor = () => {
           <SwiperSlide>
             <div
               style={{ boxShadow: " 4px 4px 19.3px 0px rgba(0, 0, 0, 0.07)" }}
-              className="flex items-center gap-[34px] rounded-[40px] bg-white p-[14px]"
+              className="flex items-center gap-[34px] rounded-[40px] bg-white p-[14px] mt-[20px] mb-[40px]"
             >
               <div>
                 <img className="rounded-[40px]" src={img1} alt="" />
@@ -73,7 +74,7 @@ const BestGynecologistDoctor = () => {
           <SwiperSlide>
             <div
               style={{ boxShadow: " 4px 4px 19.3px 0px rgba(0, 0, 0, 0.07)" }}
-              className="flex items-center gap-[34px] rounded-[40px] bg-white p-[14px]"
+              className="flex items-center gap-[34px] rounded-[40px] bg-white p-[14px] mt-[20px] mb-[40px]"
             >
               <div>
                 <img className="rounded-[40px]" src={img2} alt="" />
@@ -109,7 +110,7 @@ const BestGynecologistDoctor = () => {
           <SwiperSlide>
             <div
               style={{ boxShadow: " 4px 4px 19.3px 0px rgba(0, 0, 0, 0.07)" }}
-              className="flex items-center gap-[34px] rounded-[40px] bg-white p-[14px]"
+              className="flex items-center gap-[34px] rounded-[40px] bg-white p-[14px] mt-[20px] mb-[40px]"
             >
               <div>
                 <img className="rounded-[40px]" src={img3} alt="" />
@@ -145,7 +146,7 @@ const BestGynecologistDoctor = () => {
           <SwiperSlide>
             <div
               style={{ boxShadow: " 4px 4px 19.3px 0px rgba(0, 0, 0, 0.07)" }}
-              className="flex items-center gap-[34px] rounded-[40px] bg-white p-[14px]"
+              className="flex items-center gap-[34px] rounded-[40px] bg-white p-[14px] mt-[20px] mb-[40px]"
             >
               <div>
                 <img className="rounded-[40px]" src={img1} alt="" />
