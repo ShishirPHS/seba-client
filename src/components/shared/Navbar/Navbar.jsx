@@ -89,6 +89,11 @@ const Navbar = () => {
             {/* End Logo */}
           </div>
 
+          {/* user default icon */}
+          <div>
+            <img className="md:hidden" src={userDefault} alt="" />
+          </div>
+
           {/* Collapse */}
           <div
             id="navbar-collapse-with-animation"
@@ -172,11 +177,6 @@ const Navbar = () => {
             >
               SignUp
             </button>
-          </div>
-
-          {/* user default icon */}
-          <div>
-            <img className="md:hidden" src={userDefault} alt="" />
           </div>
         </nav>
       </header>
