@@ -12,7 +12,7 @@ const Navbar = () => {
       {/* HEADER */}
       <header className="container mx-auto flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full py-7">
         <nav
-          className="relative w-full flex justify-between flex-wrap md:grid md:grid-cols-12 basis-full items-center px-4 md:px-6 mx-auto"
+          className="relative w-full flex justify-between flex-wrap basis-full items-center px-4 md:px-6 mx-auto"
           aria-label="Global"
         >
           <div className="md:hidden">
@@ -77,8 +77,8 @@ const Navbar = () => {
             </button>
           </div>
 
-          <div className="md:col-span-3">
-            {/* Logo */}
+          {/* Logo */}
+          <div className="">
             <Link
               className="flex-none inline-block font-semibold focus:outline-none focus:opacity-80 w-[84px] lg:w-[148px]"
               to="/"
@@ -92,10 +92,10 @@ const Navbar = () => {
           {/* Collapse */}
           <div
             id="navbar-collapse-with-animation"
-            className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:flex md:w-auto md:basis-auto md:order-2 md:col-span-6"
+            className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:flex justify-center md:w-auto md:basis-auto md:order-2 "
           >
             {/* Button Group (login and signUp button)*/}
-            <div className="flex items-center gap-x-2 ms-auto py-1 md:ps-6 md:order-3 md:col-span-3">
+            <div className="flex items-center gap-x-2 ms-auto py-1 md:ps-6 md:order-3 md:hidden">
               <button
                 type="button"
                 className="inline-flex items-center gap-x-2 border border-gray-200 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:border-neutral-700 dark:hover:bg-white/10 dark:text-white dark:hover:text-white text-white font-nunito text-xl font-bold bg-[#086060] rounded-[21px]  py-[18px] px-[40px]"
@@ -157,6 +157,22 @@ const Navbar = () => {
             </div>
           </div>
           {/* End Collapse */}
+
+          {/* Button Group for large screens (login and signUp button)*/}
+          <div className="hidden md:flex items-center gap-x-2 ms-auto py-1 md:order-3">
+            <button
+              type="button"
+              className="inline-flex items-center gap-x-2 border border-gray-200 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:border-neutral-700 dark:hover:bg-white/10 dark:text-white dark:hover:text-white text-white font-nunito text-xl font-bold bg-[#086060] rounded-[21px]  py-[18px] px-[40px]"
+            >
+              Login
+            </button>
+            <button
+              type="button"
+              className="inline-flex items-center gap-x-2 border border-transparent hover:bg-lime-500 transition disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:bg-lime-500 text-white font-nunito text-xl font-bold px-[40px] py-[18px] bg-[#3BA4A7] rounded-[21px]"
+            >
+              SignUp
+            </button>
+          </div>
 
           {/* user default icon */}
           <div>
