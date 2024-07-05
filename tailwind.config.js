@@ -6,7 +6,15 @@ export default {
     "node_modules/preline/dist/*.js",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        sm: "640px",
+        md: "1024px",
+        lg: "1300px",
+        xl: "1589px",
+        "2xl": "1728px",
+      },
+    },
     fontFamily: {
       nunito: ["Nunito", "sans-serif"],
       poppins: ["Poppins", "sans-serif"],
