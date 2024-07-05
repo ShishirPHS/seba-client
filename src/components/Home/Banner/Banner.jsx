@@ -26,9 +26,9 @@ const Banner = () => {
           <form className="border border-[#808080] rounded-[40px]">
             <div className="border-b border-[#808080] flex pt-[48px] px-[32px] pb-[20px]">
               <input
-                type="email"
+                type="text"
                 placeholder="Enter Your City or Location"
-                className="input placeholder:text-2xl flex-grow placeholder:text-[#808080]"
+                className="input placeholder:text-2xl text-2xl flex-grow placeholder:text-[#808080]"
                 required
               />
               <img
