@@ -20,28 +20,28 @@ const Banner = () => {
       <div className="container mx-auto flex">
         {/* banner left */}
         <div className="mb-[70px] md:mb-[156px] bg-white rounded-[40px] pt-[23px] md:pt-[49px] pb-[23px] md:pb-[40px] px-7 md:px-16 mt-[64px] md:mt-[177px] w-full md:w-[50%]">
-          <h3 className="mb-[25px] md:mb-[62px] font-poppins text-xl md:text-5xl text-center md:text-left font-bold max-w-[226px] md:max-w-[490px] leading-[123%]">
+          <h3 className="mb-[25px] md:mb-[62px] font-poppins text-xl md:text-5xl text-center md:text-left font-bold max-w-[226px] md:max-w-[490px] leading-[123%] block md:inline-block mx-auto">
             Find the Best Doctor Near You
           </h3>
           <form className="border border-[#808080] rounded-[25px] md:rounded-[40px] overflow-hidden">
-            <div className="border-b border-[#808080] flex pt-[28px] md:pt-[48px] px-[24px] md:px-[32px] pb-[14px] md:pb-[20px]">
+            <div className="border-b border-[#808080] relative pt-[10px] md:pt-[48px] px-[8px] md:px-[32px] pb-[2px] md:pb-[20px]">
               <input
                 type="text"
                 placeholder="Enter Your City or Location"
-                className="input placeholder:text-2xl text-2xl flex-grow placeholder:text-[#808080]"
+                className="input placeholder:text-sm md:placeholder:text-2xl text-sm md:text-2xl flex-grow placeholder:text-[#808080] w-full"
                 required
               />
               <img
-                className="w-[31px] h-[33px]"
+                className="w-[19px] md:w-[31px] h-[19px] md:h-[33px] absolute right-[25px] md:right-[55px] top-[50%] "
                 src={locationIcon}
                 alt="a icon of location"
               />
             </div>
-            <div className="border-b border-[#808080] flex justify-between pt-[48px] px-[32px] pb-[30px] gap-[100px]">
+            <div className="border-b border-[#808080] flex justify-between pt-[8px] md:pt-[48px] px-[8px] md:px-[32px] pb-[2px] md:pb-[30px] gap-[5px] md:gap-[100px]">
               <div className="w-full relative">
                 <select
                   ref={selectRef1}
-                  className="select w-full text-2xl text-[#808080]"
+                  className="select w-full text-sm md:text-2xl text-[#808080]"
                   defaultValue={"Symptoms"}
                 >
                   <option disabled>Symptoms</option>
@@ -50,7 +50,7 @@ const Banner = () => {
                   <option>React</option>
                 </select>
                 <img
-                  className="absolute right-0 top-[50%] transform translate-y-[-50%] bg-white cursor-pointer z-20"
+                  className="absolute right-[10px] md:right-0 top-[50%] transform translate-y-[-50%] bg-white cursor-pointer z-20 w-[19px] md:w-auto h-[27px] md:h-auto"
                   src={angelDown}
                   alt="angel down"
                   onClick={() => handleImageClick(selectRef1)}
@@ -59,7 +59,7 @@ const Banner = () => {
               <div className="w-full relative">
                 <select
                   ref={selectRef2}
-                  className="select w-full text-2xl text-[#808080]"
+                  className="select w-full text-sm md:text-2xl text-[#808080]"
                   defaultValue={"Diseases"}
                 >
                   <option disabled>Diseases</option>
@@ -68,15 +68,15 @@ const Banner = () => {
                   <option>React</option>
                 </select>
                 <img
-                  className="absolute right-0 top-[50%] transform translate-y-[-50%] bg-white cursor-pointer z-20"
+                  className="absolute right-[10px] md:right-0 top-[50%] transform translate-y-[-50%] bg-white cursor-pointer z-20 w-[19px] md:w-auto h-[27px] md:h-auto"
                   src={angelDown}
                   alt="angel down"
                   onClick={() => handleImageClick(selectRef2)}
                 />
               </div>
             </div>
-            <div className="py-[20px] px-[40px] pb-[30px]">
-              <button className="text-white font-bold text-xl bg-[#FF0068] rounded-[20px] w-full py-[14px] font-poppins">
+            <div className="pt-[12px] md:pt-[20px] px-4 md:px-[40px] pb-[13px] md:pb-[30px]">
+              <button className="text-white font-bold text-[10px] md:text-xl bg-[#FF0068] rounded-[12px] md:rounded-[20px] w-full py-2 md:py-[14px] font-poppins">
                 Search
               </button>
             </div>
