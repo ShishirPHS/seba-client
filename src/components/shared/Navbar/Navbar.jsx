@@ -25,7 +25,6 @@ const Navbar = () => {
             </Link>
             {/* End Logo */}
           </div>
-
           <div className="md:hidden">
             <button
               type="button"
@@ -34,8 +33,8 @@ const Navbar = () => {
               aria-controls="navbar-collapse-with-animation"
               aria-label="Toggle navigation"
             >
-              <svg
-                className="hs-collapse-open:hidden flex-shrink-0 size-4"
+              {/* <svg
+                className="hs-collapse-open:hidden flex-shrink-0 size-4 threeLine"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -49,9 +48,29 @@ const Navbar = () => {
                 <line x1="3" x2="21" y1="6" y2="6" />
                 <line x1="3" x2="21" y1="12" y2="12" />
                 <line x1="3" x2="21" y1="18" y2="18" />
+              </svg> */}
+              <svg
+                className="hs-collapse-open:hidden flex-shrink-0 size-4 threeLine"
+                width="26"
+                height="26"
+                viewBox="0 0 26 26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clipPath="url(#clip0_141_150)">
+                  <path
+                    d="M26 3.25002C26 3.84585 25.5125 4.33335 24.9167 4.33335H1.08333C0.4875 4.33335 0 3.84585 0 3.25002C0 2.65419 0.4875 2.16669 1.08333 2.16669H24.9167C25.5125 2.16669 26 2.65419 26 3.25002ZM7.58333 21.6667H1.08333C0.4875 21.6667 0 22.1542 0 22.75C0 23.3459 0.4875 23.8334 1.08333 23.8334H7.58333C8.17917 23.8334 8.66667 23.3459 8.66667 22.75C8.66667 22.1542 8.17917 21.6667 7.58333 21.6667ZM16.25 11.9167H1.08333C0.4875 11.9167 0 12.4042 0 13C0 13.5959 0.4875 14.0834 1.08333 14.0834H16.25C16.8458 14.0834 17.3333 13.5959 17.3333 13C17.3333 12.4042 16.8458 11.9167 16.25 11.9167Z"
+                    fill="#086060"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_141_150">
+                    <rect width="26" height="26" fill="white" />
+                  </clipPath>
+                </defs>
               </svg>
               <svg
-                className="hs-collapse-open:block hidden flex-shrink-0 size-4"
+                className="hs-collapse-open:block hidden flex-shrink-0 size-4 text-[#086060]"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
