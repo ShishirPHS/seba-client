@@ -10,8 +10,8 @@ const VideoConsultation = () => {
   return (
     <div className="bg-[#3BA4A7] py-1 md:pt-[17px] md:pb-[20px] mb-[14px] md:mb-[123px]">
       <div className="container mx-auto">
-        <div className="flex justify-between gap-[34px] relative">
-          <div className="bg-[#086060] pt-[5px] md:pt-[17px] pb-[7px] md:pb-[20px] px-[20px] md:px-[40px] rounded-[5px] md:rounded-[20px]">
+        <div className="flex justify-between relative">
+          <div className="bg-[#086060] pt-[5px] md:pt-[17px] pb-[7px] md:pb-[20px] px-[8px] md:px-[40px] rounded-[5px] md:rounded-[20px]">
             <img
               className="w-[12px] md:w-auto h-[12px] md:h-auto mx-auto"
               src={labs}
@@ -21,7 +21,7 @@ const VideoConsultation = () => {
               Labs
             </p>
           </div>
-          <div className="bg-[#086060] pt-[5px] md:pt-[17px] pb-[7px] md:pb-[20px] px-[20px] md:px-[40px] rounded-[5px] md:rounded-[20px]">
+          <div className="bg-[#086060] pt-[5px] md:pt-[17px] pb-[7px] md:pb-[20px] px-[8px] md:px-[40px] rounded-[5px] md:rounded-[20px]">
             <img
               className="w-[12px] md:w-auto h-[12px] md:h-auto mx-auto"
               src={hospitals}
@@ -31,7 +31,7 @@ const VideoConsultation = () => {
               Hospitals
             </p>
           </div>
-          <div className="bg-[#086060] pt-[5px] md:pt-[17px] pb-[7px] md:pb-[20px] px-[20px] md:px-[40px] rounded-[5px] md:rounded-[20px] mr-[115px] md:mr-[460px]">
+          <div className="bg-[#086060] pt-[5px] md:pt-[17px] pb-[7px] md:pb-[20px] px-[8px] md:px-[40px] rounded-[5px] md:rounded-[20px] mr-[115px] md:mr-[460px]">
             <img
               className="w-[12px] md:w-auto h-[12px] md:h-auto mx-auto"
               src={surgeries}
@@ -41,7 +41,7 @@ const VideoConsultation = () => {
               Surgeries
             </p>
           </div>
-          <div className="bg-[#086060] pt-[5px] md:pt-[17px] pb-[7px] md:pb-[20px] px-[20px] md:px-[40px] rounded-[5px] md:rounded-[20px]">
+          <div className="bg-[#086060] pt-[5px] md:pt-[17px] pb-[7px] md:pb-[20px] px-[8px] md:px-[40px] rounded-[5px] md:rounded-[20px]">
             <img
               className="w-[12px] md:w-auto h-[12px] md:h-auto mx-auto"
               src={helpLine}
@@ -51,7 +51,7 @@ const VideoConsultation = () => {
               Help Line
             </p>
           </div>
-          <div className="bg-[#086060] pt-[5px] md:pt-[17px] pb-[7px] md:pb-[20px] px-[20px] md:px-[40px] rounded-[5px] md:rounded-[20px]">
+          <div className="bg-[#086060] pt-[5px] md:pt-[17px] pb-[7px] md:pb-[20px] px-[8px] md:px-[40px] rounded-[5px] md:rounded-[20px]">
             <img
               className="w-[12px] md:w-auto h-[12px] md:h-auto mx-auto"
               src={blogs}
@@ -61,7 +61,7 @@ const VideoConsultation = () => {
               Blogs
             </p>
           </div>
-          <div className="bg-[#086060] pt-[5px] md:pt-[17px] pb-[7px] md:pb-[20px] px-[20px] md:px-[40px] rounded-[5px] md:rounded-[20px]">
+          <div className="bg-[#086060] pt-[5px] md:pt-[17px] pb-[7px] md:pb-[20px] px-[8px] md:px-[40px] rounded-[5px] md:rounded-[20px]">
             <img
               className="w-[12px] md:w-auto h-[12px] md:h-auto mx-auto"
               src={doctors}
