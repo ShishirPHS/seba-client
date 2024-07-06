@@ -4,7 +4,7 @@ import img3 from "../../../assets/video-consultation/consultation-3.png";
 
 const FreeMedicalAdvice = () => {
   return (
-    <div className="w-[1589px] mx-auto">
+    <div className="container mx-auto">
       <div className="flex gap-[78px]">
         {/* left */}
         <div className="flex flex-col justify-center items-center pt-[72px] px-[118px] bg-[#FF0068] rounded-[40px] flex-shrink-0">
@@ -39,7 +39,14 @@ const FreeMedicalAdvice = () => {
             <h3 className="max-w-[259px] text-white font-poppins text-2xl font-bold leading-[123%]">
               Get 10% OFF ON YOUR FIRST CALL
             </h3>
-            <button style={{boxShadow: "0px 4px 50px 0px rgba(255, 255, 255, 0.21)"}} className="py-[19px] px-[47px] rounded-[22px] bg-white mt-[30px] font-poppins text-[15px] font-medium leading-[123%] text-black">Find Doctor</button>
+            <button
+              style={{
+                boxShadow: "0px 4px 50px 0px rgba(255, 255, 255, 0.21)",
+              }}
+              className="py-[19px] px-[47px] rounded-[22px] bg-white mt-[30px] font-poppins text-[15px] font-medium leading-[123%] text-black"
+            >
+              Find Doctor
+            </button>
             <img className="absolute bottom-0 right-[46px]" src={img3} alt="" />
           </div>
         </div>
