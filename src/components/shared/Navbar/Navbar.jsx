@@ -4,27 +4,17 @@ import {
 } from "react-router-dom";
 import navLogo from "../../../assets/navbar/nav-logo.svg";
 import "./Navbar.css";
+import userDefault from "../../../assets/navbar/user-default.svg";
 
 const Navbar = () => {
   return (
     <>
       {/* HEADER */}
-      <header className="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full py-7">
+      <header className="container mx-auto flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full py-7">
         <nav
-          className="relative max-w-7xl w-full flex flex-wrap md:grid md:grid-cols-12 basis-full items-center px-4 md:px-6 mx-auto"
+          className="relative w-full flex justify-between flex-wrap md:grid md:grid-cols-12 basis-full items-center px-4 md:px-6 mx-auto"
           aria-label="Global"
         >
-          <div className="md:col-span-3">
-            {/* Logo */}
-            <Link
-              className="flex-none inline-block font-semibold focus:outline-none focus:opacity-80 w-[84px] lg:w-[148px]"
-              to="/"
-              aria-label="Preline"
-            >
-              <img src={navLogo} alt="logo of navbar" />
-            </Link>
-            {/* End Logo */}
-          </div>
           <div className="md:hidden">
             <button
               type="button"
@@ -87,12 +77,24 @@ const Navbar = () => {
             </button>
           </div>
 
+          <div className="md:col-span-3">
+            {/* Logo */}
+            <Link
+              className="flex-none inline-block font-semibold focus:outline-none focus:opacity-80 w-[84px] lg:w-[148px]"
+              to="/"
+              aria-label="Preline"
+            >
+              <img src={navLogo} alt="logo of navbar" />
+            </Link>
+            {/* End Logo */}
+          </div>
+
           {/* Collapse */}
           <div
             id="navbar-collapse-with-animation"
-            className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block md:w-auto md:basis-auto md:order-2 md:col-span-6"
+            className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:flex md:w-auto md:basis-auto md:order-2 md:col-span-6"
           >
-            {/* Button Group */}
+            {/* Button Group (login and signUp button)*/}
             <div className="flex items-center gap-x-2 ms-auto py-1 md:ps-6 md:order-3 md:col-span-3">
               <button
                 type="button"
@@ -108,6 +110,8 @@ const Navbar = () => {
               </button>
             </div>
             {/* End Button Group */}
+
+            {/* menu items */}
             <div className="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:justify-center md:items-center md:gap-y-0 md:gap-x-7 md:mt-0">
               <div>
                 <a
@@ -153,6 +157,11 @@ const Navbar = () => {
             </div>
           </div>
           {/* End Collapse */}
+
+          {/* user default icon */}
+          <div>
+            <img className="md:hidden" src={userDefault} alt="" />
+          </div>
         </nav>
       </header>
     </>
