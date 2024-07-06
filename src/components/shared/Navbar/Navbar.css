@@ -1,18 +1,7 @@
 #navbar .hs-collapse-toggle {
   border: none;
-} 
+}  
 
-#navbar nav  a { 
-  color: #505050 !important;
-  font-weight: 700;
-  font-size: 20px;
-  transition: all 0.4s ease-in-out; 
-}
-
-#navbar nav  a:hover {
-  color: #3ba4a7 !important;
-}
-
-#navbar nav a.active {
+#navbar a.active {
   color: #3ba4a7 !important;
 }
