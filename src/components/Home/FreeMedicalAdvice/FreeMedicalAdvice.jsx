@@ -1,4 +1,4 @@
-import img1 from "../../../assets/video-consultation/consultation-1.png";
+import img1 from "../../../assets/video-consultation/img1.png";
 import img2 from "../../../assets/video-consultation/consultation-2.png";
 import img3 from "../../../assets/video-consultation/consultation-3.png";
 
@@ -7,18 +7,16 @@ const FreeMedicalAdvice = () => {
     <div className="container mx-auto px-5">
       <div className="flex flex-col md:flex-row gap-[28px] md:gap-[78px]">
         {/* left */}
-        <div className="flex flex-col justify-center items-center pt-[47px] md:pt-[72px] px-[80px] md:px-[118px] bg-[#FF0068] rounded-[24px] md:rounded-[40px] flex-shrink-0">
-          <h3 className="text-[19px] md:text-4xl font-bold text-white font-poppins leading-[123%]">
+        <div className="flex flex-col pt-[47px] md:pt-[72px] px-[80px] md:px-[118px] bg-[#FF0068] rounded-[24px] md:rounded-[40px] flex-shrink-0 relative overflow-hidden">
+          <h3 className="text-[19px] md:text-4xl font-bold text-white font-poppins leading-[123%] inline-block mx-auto">
             Video Consultation
           </h3>
-          <p className="font-poppins text-[16px] md:text-2xl font-normal leading-[123%] text-white">
+          <p className="font-poppins text-[16px] md:text-2xl font-normal leading-[123%] text-white inline-block mx-auto">
             Verified Doctors
           </p>
-          <img
-            className="w-[210px] md:w-auto h-[245px] md:h-auto mt-[21px] md:mt-[33px]"
-            src={img1}
-            alt=""
-          />
+          <div className="w-[210px] md:w-[341px] h-[245px] md:h-[372px] mt-[21px] md:mt-[33px] absolute left-[50%] transform -translate-x-[50%] bottom-0">
+            <img className="scale-[145%]" src={img1} alt="" />
+          </div>
         </div>
         {/* right */}
         <div className="flex flex-col gap-[23px] md:gap-[51px] w-full">
@@ -43,12 +41,7 @@ const FreeMedicalAdvice = () => {
             <h3 className="max-w-[259px] text-white font-poppins text-[9px] md:text-2xl font-bold leading-[123%]">
               Get 10% OFF ON YOUR FIRST CALL
             </h3>
-            <button
-              style={{
-                boxShadow: "0px 4px 50px 0px rgba(255, 255, 255, 0.21)",
-              }}
-              className="py-[19px] px-[47px] rounded-[22px] bg-white mt-[10px] md:mt-[30px] font-poppins text-[15px] font-medium leading-[123%] text-black"
-            >
+            <button className="py-[19px] px-[47px] rounded-[22px] bg-white mt-[10px] md:mt-[30px] font-poppins text-[15px] font-medium leading-[123%] text-black shadow-custom-white-for-small md:shadow-custom-white-for-large">
               Find Doctor
             </button>
             <img className="absolute bottom-0 right-[46px]" src={img3} alt="" />

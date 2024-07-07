@@ -13,7 +13,11 @@ export default {
         lg: "1024px",
         xl: "1280px",
         "2xl": "1536px",
-        "3xl": "1920px", 
+        "3xl": "1920px",
+      },
+      boxShadow: {
+        "custom-white-for-large": "0px 4px 146.2px 1px rgba(0, 0, 0, 0.20)",
+        "custom-white-for-small": "0px 4px 146.2px 35px rgba(0, 0, 0, 0.20)",
       },
     },
     fontFamily: {
