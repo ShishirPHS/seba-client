@@ -7,7 +7,7 @@ import migraine from "../../../assets/icons/diseases/migraine.svg";
 
 const Diseases = () => {
   return (
-    <div className="w-[1589px] mx-auto mt-[118px] mb-[140px]">
+    <div className="container mx-auto mt-[118px] mb-[140px] px-5">
       {/* top */}
       <div className="flex justify-between mb-[49px]">
         <p className="text-black font-poppins text-4xl font-medium leading-[123%]">

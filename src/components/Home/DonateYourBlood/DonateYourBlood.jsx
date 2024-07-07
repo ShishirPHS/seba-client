@@ -2,7 +2,7 @@ import img1 from "../../../assets/donate-your-blood/img1.png";
 
 const DonateYourBlood = () => {
   return (
-    <div className="w-[1589px] mx-auto flex justify-between items-center">
+    <div className="container mx-auto flex justify-between items-center">
       {/* left */}
       <div>
         <h2 className="text-[#303030] font-poppins text-[64px] font-semibold max-w-[600px] mb-[30px]">
