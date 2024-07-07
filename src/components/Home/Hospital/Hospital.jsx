@@ -21,7 +21,7 @@ import icon3 from "../../../assets/icons/hospital/gps-navigation.svg";
 
 const Hospital = () => {
   return (
-    <div className="w-[1589px] mx-auto mt-[205px] mb-[146px]" id="hospital">
+    <div className="container mx-auto mt-[205px] mb-[146px] px-5" id="hospital">
       <SectionHeader
         sectionName={"Hospital"}
         sectionHeader={"Hospitals near you"}
@@ -33,14 +33,14 @@ const Hospital = () => {
           slidesPerView={4}
           spaceBetween={30}
           loop={true}
-          autoplay={{
-            delay: 2000,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 2000,
+          //   disableOnInteraction: false,
+          // }}
           pagination={{
             clickable: true,
           }}
-          navigation={false}
+          navigation={true}
           modules={[Navigation, Autoplay]}
           className="mySwiper"
         >

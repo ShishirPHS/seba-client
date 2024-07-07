@@ -1,12 +1,13 @@
-#hospital .swiper-wrapper {
+#hospital .swiper .swiper-wrapper {
   z-index: 10;
   position: relative;
 }
-#hospital .swiper-slide {
-    margin-right: 17px !important;
+
+#hospital .swiper .swiper-wrapper .swiper-slide {
+  margin-right: 17px !important;
 }
 
-#hospital .swiper-button-prev {
+#hospital .swiper .swiper-button-prev {
   background-color: red;
   height: 72px;
   width: 72px;
@@ -15,7 +16,8 @@
   background-repeat: no-repeat;
 }
 
-#hospital .swiper-button-prev::after {
-  content: "s";
-  font-size: 24px;
+#hospital .swiper .swiper-button-prev::after {
+  content: "<";
+  font-size: 24px !important;
+  font-weight: bold;
 }
