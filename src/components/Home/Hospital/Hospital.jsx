@@ -396,10 +396,10 @@ const Hospital = () => {
           </SwiperSlide>
         </Swiper>
         {/* Custom Navigation */}
-        <div className="custom-swiper-button-prev flex justify-center items-center w-9 md:w-[72px]  h-9 md:h-[72px]">
+        <div className="custom-swiper-button-prev flex justify-center items-center w-9 md:w-[72px]  h-9 md:h-[72px] shadow-slider-navigation-btn-shadow">
           <img className="w-6 md:w-auto h-6 md:h-auto " src={prevIcon} alt="" />
         </div>
-        <div className="custom-swiper-button-next flex justify-center items-center w-9 md:w-[72px]  h-9 md:h-[72px]">
+        <div className="custom-swiper-button-next flex justify-center items-center w-9 md:w-[72px]  h-9 md:h-[72px] shadow-slider-navigation-btn-shadow">
           <img
             className="w-6 md:w-auto h-6 md:h-auto rotate-[180deg]"
             src={prevIcon}
