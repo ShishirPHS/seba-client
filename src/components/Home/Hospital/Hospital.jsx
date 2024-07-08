@@ -32,7 +32,27 @@ const Hospital = () => {
       {/* slider */}
       <div className="mb-[60px] sliderDiv">
         <Swiper
-          slidesPerView={4}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+            1280: {
+              slidesPerView: 4,
+            },
+            1589: {
+              slidesPerView: 4,
+            },
+            1920: {
+              slidesPerView: 4,
+            },
+          }}
+          slidesPerView={1}
           spaceBetween={30}
           loop={true}
           // autoplay={{
@@ -376,13 +396,15 @@ const Hospital = () => {
           </SwiperSlide>
         </Swiper>
         {/* Custom Navigation */}
-        <div 
-          className="custom-swiper-button-prev flex justify-center items-center"
-        >
-          <img className="" src={prevIcon} alt="" />
+        <div className="custom-swiper-button-prev flex justify-center items-center w-9 md:w-[72px]  h-9 md:h-[72px]">
+          <img className="w-6 md:w-auto h-6 md:h-auto " src={prevIcon} alt="" />
         </div>
-        <div className="custom-swiper-button-next flex justify-center items-center">
-          <img className="rotate-[180deg]" src={prevIcon} alt="" />
+        <div className="custom-swiper-button-next flex justify-center items-center w-9 md:w-[72px]  h-9 md:h-[72px]">
+          <img
+            className="w-6 md:w-auto h-6 md:h-auto rotate-[180deg]"
+            src={prevIcon}
+            alt=""
+          />
         </div>
       </div>
 
