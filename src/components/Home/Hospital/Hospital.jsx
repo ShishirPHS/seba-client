@@ -19,6 +19,8 @@ import icon1 from "../../../assets/icons/hospital/stethoscope.svg";
 import icon2 from "../../../assets/icons/hospital/location.svg";
 import icon3 from "../../../assets/icons/hospital/gps-navigation.svg";
 
+import prevIcon from "../../../assets/icons/hospital/prevArrow.svg";
+
 const Hospital = () => {
   return (
     <div className="container mx-auto mt-[205px] mb-[146px] px-5" id="hospital">
@@ -28,7 +30,7 @@ const Hospital = () => {
         sectionSubHeader={"Find out how our users are spreading the world"}
       ></SectionHeader>
       {/* slider */}
-      <div className="mb-[60px]">
+      <div className="mb-[60px] sliderDiv">
         <Swiper
           slidesPerView={4}
           spaceBetween={30}
@@ -40,7 +42,10 @@ const Hospital = () => {
           pagination={{
             clickable: true,
           }}
-          navigation={true}
+          navigation={{
+            prevEl: ".custom-swiper-button-prev",
+            nextEl: ".custom-swiper-button-next",
+          }}
           modules={[Navigation, Autoplay]}
           className="mySwiper"
         >
@@ -370,7 +375,17 @@ const Hospital = () => {
             </div>
           </SwiperSlide>
         </Swiper>
+        {/* Custom Navigation */}
+        <div 
+          className="custom-swiper-button-prev flex justify-center items-center"
+        >
+          <img className="" src={prevIcon} alt="" />
+        </div>
+        <div className="custom-swiper-button-next flex justify-center items-center">
+          <img className="rotate-[180deg]" src={prevIcon} alt="" />
+        </div>
       </div>
+
       {/* view all btn */}
       <button className="text-white font-poppins text-2xl leading-[123%] px-[69px] py-[27px] bg-[#086060] rounded-[23px] block mx-auto">
         View All
