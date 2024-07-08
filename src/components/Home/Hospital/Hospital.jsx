@@ -41,7 +41,7 @@ const Hospital = () => {
                   slidesPerView: 3,
                 },
                 1280: {
-                  slidesPerView: 4,
+                  slidesPerView: 3,
                 },
                 1589: {
                   slidesPerView: 4,
