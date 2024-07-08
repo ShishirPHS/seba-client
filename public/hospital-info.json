@@ -38,5 +38,13 @@
     "specialities": "Cardiology, Obstetric and Gynecology, ENT, Orthodontics",
     "area": "Dhaka",
     "address": "Plot: 85, Block: I, Bashundhara R/A, Dhaka 1229, Bangladesh"
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co/5cqgZF4/img1.png",
+    "hospitalName": "United Hospital Dhaka",
+    "specialities": "Cardiology, Obstetric and Gynecology, ENT, Orthodontics",
+    "area": "Dhaka",
+    "address": "Plot: 85, Block: I, Bashundhara R/A, Dhaka 1229, Bangladesh"
   }
 ]

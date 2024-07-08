@@ -1,14 +1,11 @@
-import img1 from "../../../../assets/hospital/img1.png";
-
 import icon1 from "../../../../assets/icons/hospital/stethoscope.svg";
 import icon2 from "../../../../assets/icons/hospital/location.svg";
 import icon3 from "../../../../assets/icons/hospital/gps-navigation.svg";
-import useHospitalInfo from "../../../../hooks/useHospitalInfo";
 
-const SingleSlide = () => {
-  const [hospitalInfo] = useHospitalInfo();
+import PropTypes from "prop-types";
 
-  console.log(hospitalInfo);
+const SingleSlide = ({ hospital }) => {
+  const { image, hospitalName, specialities, area, address } = hospital;
 
   return (
     <div
@@ -19,12 +16,12 @@ const SingleSlide = () => {
     >
       {/* img div */}
       <div className="rounded-[22px] mb-6 pr-[40px] md:pr-[22px]">
-        <img className="w-full rounded-[22px]" src={img1} alt="" />
+        <img className="w-full rounded-[22px]" src={image} alt="" />
       </div>
       {/* text div */}
       <div>
         <h5 className="mb-[8px] text-[#121212] font-poppins text-[13px] md:text-xl font-semibold">
-          Evercare Hospital Dhaka
+          {hospitalName}
         </h5>
         <div className="text-[11px] md:text-[15px]">
           {/* specialties */}
@@ -36,8 +33,7 @@ const SingleSlide = () => {
               <span className="text-[#121212] font-medium text-[15px] font-inter">
                 Specialities :
               </span>
-              Plot: Cardiology, Obstetric and Gynecology, ENT, Orthodontics
-              (+21)
+              {specialities}
             </p>
           </div>
           {/* area */}
@@ -49,7 +45,7 @@ const SingleSlide = () => {
               <span className="text-[#121212] font-medium text-[15px] font-inter">
                 Area :
               </span>
-              Dhaka
+              {area}
             </p>
           </div>
           {/* address */}
@@ -61,7 +57,7 @@ const SingleSlide = () => {
               <span className="text-[#121212] font-medium text-[15px] font-inter">
                 Address :
               </span>
-              Plot: 81, Block: E, Bashundhara R/A, Dhaka 1229, Bangladesh.
+              {address}
             </p>
           </div>
         </div>
@@ -74,6 +70,10 @@ const SingleSlide = () => {
       </div>
     </div>
   );
+};
+
+SingleSlide.propTypes = {
+  hospital: PropTypes.object.isRequired,
 };
 
 export default SingleSlide;
