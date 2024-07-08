@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "image": "img1.png",
+    "hospitalName": "Evercare Hospital Dhaka",
+    "specialities": "Cardiology, Obstetric and Gynecology, ENT, Orthodontics",
+    "area": "Dhaka",
+    "address": "Plot: 81, Block: E, Bashundhara R/A, Dhaka 1229, Bangladesh"
+  },
+  {
+    "id": 2,
+    "image": "img2.png",
+    "hospitalName": "City Hospital",
+    "specialities": "Cardiology, Obstetric and Gynecology, ENT, Orthodontics",
+    "area": "Dhaka",
+    "address": "Plot: 82, Block: F, Bashundhara R/A, Dhaka 1229, Bangladesh"
+  },
+  {
+    "id": 3,
+    "image": "img3.png",
+    "hospitalName": "Green Life Hospital",
+    "specialities": "Cardiology, Obstetric and Gynecology, ENT, Orthodontics",
+    "area": "Dhaka",
+    "address": "Plot: 83, Block: G, Bashundhara R/A, Dhaka 1229, Bangladesh"
+  },
+  {
+    "id": 4,
+    "image": "img4.png",
+    "hospitalName": "Apollo Hospitals Dhaka",
+    "specialities": "Cardiology, Obstetric and Gynecology, ENT, Orthodontics",
+    "area": "Dhaka",
+    "address": "Plot: 84, Block: H, Bashundhara R/A, Dhaka 1229, Bangladesh"
+  },
+  {
+    "id": 5,
+    "image": "img5.png",
+    "hospitalName": "United Hospital Dhaka",
+    "specialities": "Cardiology, Obstetric and Gynecology, ENT, Orthodontics",
+    "area": "Dhaka",
+    "address": "Plot: 85, Block: I, Bashundhara R/A, Dhaka 1229, Bangladesh"
+  }
+]
