@@ -3,8 +3,13 @@ import img1 from "../../../../assets/hospital/img1.png";
 import icon1 from "../../../../assets/icons/hospital/stethoscope.svg";
 import icon2 from "../../../../assets/icons/hospital/location.svg";
 import icon3 from "../../../../assets/icons/hospital/gps-navigation.svg";
+import useHospitalInfo from "../../../../hooks/useHospitalInfo";
 
 const SingleSlide = () => {
+  const [hospitalInfo] = useHospitalInfo();
+
+  console.log(hospitalInfo);
+
   return (
     <div
       style={{

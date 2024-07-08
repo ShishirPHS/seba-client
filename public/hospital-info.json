@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "img1.png",
+    "image": "https://i.ibb.co/5cqgZF4/img1.png",
     "hospitalName": "Evercare Hospital Dhaka",
     "specialities": "Cardiology, Obstetric and Gynecology, ENT, Orthodontics",
     "area": "Dhaka",
@@ -9,7 +9,7 @@
   },
   {
     "id": 2,
-    "image": "img2.png",
+    "image": "https://i.ibb.co/5cqgZF4/img1.png",
     "hospitalName": "City Hospital",
     "specialities": "Cardiology, Obstetric and Gynecology, ENT, Orthodontics",
     "area": "Dhaka",
@@ -17,7 +17,7 @@
   },
   {
     "id": 3,
-    "image": "img3.png",
+    "image": "https://i.ibb.co/5cqgZF4/img1.png",
     "hospitalName": "Green Life Hospital",
     "specialities": "Cardiology, Obstetric and Gynecology, ENT, Orthodontics",
     "area": "Dhaka",
@@ -25,7 +25,7 @@
   },
   {
     "id": 4,
-    "image": "img4.png",
+    "image": "https://i.ibb.co/5cqgZF4/img1.png",
     "hospitalName": "Apollo Hospitals Dhaka",
     "specialities": "Cardiology, Obstetric and Gynecology, ENT, Orthodontics",
     "area": "Dhaka",
@@ -33,7 +33,7 @@
   },
   {
     "id": 5,
-    "image": "img5.png",
+    "image": "https://i.ibb.co/5cqgZF4/img1.png",
     "hospitalName": "United Hospital Dhaka",
     "specialities": "Cardiology, Obstetric and Gynecology, ENT, Orthodontics",
     "area": "Dhaka",
