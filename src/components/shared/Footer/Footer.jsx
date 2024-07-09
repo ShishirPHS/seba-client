@@ -15,11 +15,11 @@ const Footer = () => {
             Find the Best Doctor Near You
           </p>
           {/* buttons div */}
-          <div className="mt-[26px] md:mt-[60px] flex items-center justify-center gap-6">
-            <button className="text-white font-poppins text-[6px] md:text-sm font-semibold leading-[107%] uppercase py-[8px] md:py-[20px] px-[10px] md:px-[74px] border-white border-[2px] rounded-[5px] md:rounded-[5px]">
+          <div className="mt-[26px] md:mt-[60px] flex items-center justify-center gap-[6px] md:gap-6">
+            <button className="text-white font-poppins text-[6px] md:text-sm font-semibold leading-[107%] uppercase py-[8px] md:py-[20px] px-[20px] md:px-[74px] border-white border-[2px] rounded-[5px] md:rounded-[5px]">
               sign up
             </button>
-            <button className="text-[#023A3A] bg-white font-poppins font-semibold text-[6px] md:text-sm leading-[107%] rounded-[5px] md:rounded-[5px] uppercase py-[8px] md:py-[20px] px-[10px] md:px-[74px]">
+            <button className="text-[#023A3A] bg-white font-poppins font-semibold text-[6px] md:text-sm leading-[107%] rounded-[5px] md:rounded-[5px] uppercase py-[10px] md:py-[20px] px-[20px] md:px-[74px]">
               sign in
             </button>
           </div>
