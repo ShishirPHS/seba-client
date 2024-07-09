@@ -50,20 +50,20 @@ const WhyChoose = () => {
       {/* bottom div */}
       <div className="flex flex-col md:flex-row justify-between items-center gap-6">
         {/* bottom left */}
-        <div>
-          <p className="font-poppins text-2xl font-medium leading-[123%] text-white rounded-[17px] px-[30px] py-[18px] bg-[#086060]">
+        <div className="rounded-[17px] px-[43px] md:px-[30px] py-[20px] md:py-[18px] bg-[#086060] w-full md:w-auto">
+          <p className="font-poppins text-base md:text-2xl font-medium leading-[123%] text-white text-center md:text-left max-w-[300px] md:max-w-none mx-auto">
             Country First Doctor Patients Relation Management System
           </p>
         </div>
         {/* bottom middle */}
-        <div>
-          <p className="font-poppins text-2xl font-medium leading-[123%] text-black rounded-[17px] px-[72px] py-[18px] bg-[#F4F4F4]">
+        <div className="rounded-[17px] px-[72px] py-[20px] md:py-[18px] bg-[#F4F4F4] w-full md:w-auto">
+          <p className="font-poppins text-base md:text-2xl font-medium leading-[123%] text-black text-center md:text-left max-w-[243px] md:max-w-none mx-auto">
             Online booking facility to save time during physical visit
           </p>
         </div>
         {/* bottom right */}
-        <div>
-          <p className="font-poppins text-2xl font-medium leading-[123%] text-white rounded-[17px] px-[60px] py-[18px] bg-[#FF0068]">
+        <div className="rounded-[17px] px-[80px] md:px-[60px] py-[18px] md:py-[18px] bg-[#FF0068] w-full md:w-auto">
+          <p className="font-poppins text-base md:text-2xl font-medium leading-[123%] text-white text-center md:text-left max-w-[220px] md:max-w-none mx-auto">
             Timely medicine taking reminder using mobile app
           </p>
         </div>
