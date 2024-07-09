@@ -1,33 +1,36 @@
-import mobileImg from "../../../assets/why-choose/image 1.png";
+import mobileImg from "../../../assets/why-choose/mobileImage.png";
 
 const WhyChoose = () => {
   return (
-    <div className="flex gap-[22px] mb-[262px]">
-      {/* left side div */}
-      <div className="bg-[#FF0068] rounded-br-[40px] pt-[107px] pr-[190px] w-[50%] relative">
-        <p className="text-white text-right font-poppins text-5xl font-semibold leading-[123%]">
-          Why Choose Seba?
-        </p>
-        <img
-          className="absolute top-[220px] right-[244px]"
-          src={mobileImg}
-          alt=""
-        />
+    <div className="container mx-auto mb-[142px]">
+      {/* title */}
+      <h3 className="text-[#232222] text-5xl font-semibold font-poppins leading-[123%] mt-[60px] mx-auto text-center">
+        Why Choose Seba?
+      </h3>
+      {/* img div */}
+      <div className="mb-[83px] mt-[60px] relative flex justify-center items-center">
+        <img src={mobileImg} alt="" />
       </div>
-      {/* right side div */}
-      <div className="w-[50%] bg-[#086060] rounded-bl-[40px] pt-[65px] pl-[67px] pb-[100px]">
-        <p className="max-w-[674px] text-white font-poppins text-[32px] leading-[123%] mb-[87px]">
-          Contrary to popular belief, Lorem Ipsum is not simply random text. It
-          has roots in a piece of classical Latin literature from 45 BC, making
-          it over 2000 years old. Richard McClintock, a Latin professor alt
-          <br /> <br />
-          Hampden-Sydney College in Virginia, looked up one of the more obscure
-          Latin words, consectetur, from a Lorem Ipsum passage, and going
-          through the cites of the word in classical literature, discovered the.
-        </p>
-        <button className="text-[#086060] font-poppins text-2xl leading-[123%] bg-white py-[27px] px-[102px] rounded-[23px]">
-          Read More
-        </button>
+      {/* bottom div */}
+      <div className="flex justify-between items-center gap-6">
+        {/* bottom left */}
+        <div>
+          <p className="font-poppins text-2xl font-medium leading-[123%] text-white rounded-[17px] px-[30px] py-[18px] bg-[#086060]">
+            Country First Doctor Patients Relation Management System
+          </p>
+        </div>
+        {/* bottom middle */}
+        <div>
+          <p className="font-poppins text-2xl font-medium leading-[123%] text-black rounded-[17px] px-[72px] py-[18px] bg-[#F4F4F4]">
+            Online booking facility to save time during physical visit
+          </p>
+        </div>
+        {/* bottom right */}
+        <div>
+          <p className="font-poppins text-2xl font-medium leading-[123%] text-white rounded-[17px] px-[60px] py-[18px] bg-[#FF0068]">
+            Timely medicine taking reminder using mobile app
+          </p>
+        </div>
       </div>
     </div>
   );

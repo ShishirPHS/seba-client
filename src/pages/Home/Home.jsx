@@ -11,7 +11,7 @@ import OurPartners from "../../components/Home/OurPartners/OurPartners";
 // import Reviews from "../../components/Home/Reviews/Reviews";
 import Symptoms from "../../components/Home/Symptoms/Symptoms";
 import VideoConsultation from "../../components/Home/VideoConsultation/VideoConsultation";
-// import WhyChoose from "../../components/Home/WhyChoose/WhyChoose";
+import WhyChoose from "../../components/Home/WhyChoose/WhyChoose";
 
 const Home = () => {
   return (
@@ -27,7 +27,7 @@ const Home = () => {
       <Reviews></Reviews> */}
       <Hospital></Hospital>
       <Blogs></Blogs>
-      {/* <WhyChoose></WhyChoose>*/}
+      <WhyChoose></WhyChoose>
       <OurPartners></OurPartners>
       <AreYourADoctor></AreYourADoctor>
     </div>
