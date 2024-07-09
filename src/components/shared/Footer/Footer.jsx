@@ -8,32 +8,32 @@ import { FaTwitter } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="bg-[#013131]">
-      <div className="w-[1589px] mx-auto pt-[120px] pb-[110px]">
+      <div className="container mx-auto pt-[33px] md:pt-[120px] pb-[10px] md:pb-[110px] px-5">
         {/* footer top */}
-        <div className="mb-[117px]">
-          <p className="text-white font-poppins text-4xl font-bold leading-[142%] max-w-[400px] text-center mx-auto">
+        <div className="mb-[50px] md:mb-[117px]">
+          <p className="text-white font-poppins text-sm md:text-4xl font-bold leading-[142%] max-w-[150px] md:max-w-[400px] text-center mx-auto">
             Find the Best Doctor Near You
           </p>
           {/* buttons div */}
-          <div className="mt-[60px] flex items-center justify-center gap-6">
-            <button className="text-white font-poppins text-sm font-semibold leading-[107%] uppercase py-[20px] px-[74px] border-white border-[2px] rounded-[5px]">
+          <div className="mt-[26px] md:mt-[60px] flex items-center justify-center gap-6">
+            <button className="text-white font-poppins text-[6px] md:text-sm font-semibold leading-[107%] uppercase py-[8px] md:py-[20px] px-[10px] md:px-[74px] border-white border-[2px] rounded-[5px] md:rounded-[5px]">
               sign up
             </button>
-            <button className="text-[#023A3A] bg-white font-poppins font-semibold text-sm leading-[107%] rounded-[5px] uppercase py-[20px] px-[74px]">
+            <button className="text-[#023A3A] bg-white font-poppins font-semibold text-[6px] md:text-sm leading-[107%] rounded-[5px] md:rounded-[5px] uppercase py-[8px] md:py-[20px] px-[10px] md:px-[74px]">
               sign in
             </button>
           </div>
         </div>
         {/* footer middle */}
         <div
-          className="flex items-start justify-between mb-[113px]"
+          className="flex items-start flex-wrap justify-between gap-[30px] mb-[10px] md:mb-[113px]"
           id="footerMiddle"
         >
           <div>
-            <p className="uppercase text-[15px] font-bold font-sfPro text-white mb-5">
+            <p className="uppercase text-[15px] font-bold font-sfPro text-white mb-[15px] md:mb-5">
               navigation
             </p>
-            <ul>
+            <ul className="text-[15px]">
               <li>
                 <a href="">Home</a>
               </li>
@@ -53,10 +53,10 @@ const Footer = () => {
           </div>
           {/* what we do */}
           <div>
-            <p className="uppercase text-[15px] font-bold font-sfPro text-white mb-5">
+            <p className="uppercase text-[15px] font-bold font-sfPro text-white mb-[15px] md:mb-5">
               What We Do
             </p>
-            <ul>
+            <ul className="text-[15px]">
               <li>
                 <a href="">Encouraging Testing</a>
               </li>
@@ -79,10 +79,10 @@ const Footer = () => {
           </div>
           {/* legal */}
           <div>
-            <p className="uppercase text-[15px] font-bold font-sfPro text-white mb-5">
+            <p className="uppercase text-[15px] font-bold font-sfPro text-white mb-[15px] md:mb-5">
               LEGAL
             </p>
-            <ul>
+            <ul className="text-[15px]">
               <li>
                 <a href="">General Info</a>
               </li>
@@ -96,10 +96,10 @@ const Footer = () => {
           </div>
           {/* talk to us */}
           <div>
-            <p className="uppercase text-[15px] font-bold font-sfPro text-white mb-5">
+            <p className="uppercase text-[15px] font-bold font-sfPro text-white mb-[15px] md:mb-5">
               TALK TO US
             </p>
-            <ul>
+            <ul className="text-[15px]">
               <li>
                 <a href="">support@ercom.com</a>
               </li>
@@ -125,21 +125,21 @@ const Footer = () => {
         <div>
           <div className="w-full h-[2px] bg-[#1A4646] mb-[33px]"></div>
           <div className="flex items-center justify-between">
-            <img src={footerLogo} alt="" />
+            <img className="w-[61px] md:w-auto" src={footerLogo} alt="" />
             {/* copyright */}
-            <p className="text-white font-poppins text-sm leading-[100%]">
+            <p className="text-white font-poppins text-[7px] md:text-sm leading-[100%]">
               &#169; {moment().format("YYYY")} Seba. All Rights Reserved.
             </p>
             {/* social icons */}
             <div className="flex items-center gap-[17px] text-white">
-              <div className="border-[1px] border-[#406565] p-[16px] rounded-[18px]">
-                <FaFacebookF className="text-base"></FaFacebookF>
+              <div className="border-[1px] border-[#406565] p-1 md:p-[16px] rounded-[18px]">
+                <FaFacebookF className="text-[8px] md:text-base"></FaFacebookF>
               </div>
-              <div className="border-[1px] border-[#406565] p-[16px] rounded-[18px]">
-                <FaLinkedinIn className="text-base"></FaLinkedinIn>
+              <div className="border-[1px] border-[#406565] p-1 md:p-[16px] rounded-[18px]">
+                <FaLinkedinIn className="text-[8px] md:text-base"></FaLinkedinIn>
               </div>
-              <div className="border-[1px] border-[#406565] p-[16px] rounded-[18px]">
-                <FaTwitter className="text-base"></FaTwitter>
+              <div className="border-[1px] border-[#406565] p-1 md:p-[16px] rounded-[18px]">
+                <FaTwitter className="text-[8px] md:text-base"></FaTwitter>
               </div>
             </div>
           </div>
