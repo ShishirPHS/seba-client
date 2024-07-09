@@ -2,7 +2,7 @@ import mobileImg from "../../../assets/why-choose/mobileImage.png";
 
 const WhyChoose = () => {
   return (
-    <div className="container mx-auto mb-[142px] mt-[56px] md:mt-[114px] px-5">
+    <div className="container mx-auto mb-[46px] md:mb-[142px] mt-[56px] md:mt-[114px] px-5">
       {/* title */}
       <h3 className="text-[#232222] text-[16px] md:text-5xl font-semibold font-poppins leading-[123%] mx-auto text-center">
         Why Choose Seba?
