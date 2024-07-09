@@ -1,13 +1,9 @@
-#hospital .sliderDiv {
-  position: relative;
-}
-
 #hospital .custom-swiper-button-prev,
 #hospital .custom-swiper-button-next {
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 100%;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 #hospital .custom-swiper-button-prev {

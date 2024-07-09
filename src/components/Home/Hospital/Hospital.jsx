@@ -19,7 +19,10 @@ const Hospital = () => {
   const [hospitalInfo] = useHospitalInfo();
 
   return (
-    <div className="container mx-auto mt-[205px] mb-[146px] px-5" id="hospital">
+    <div
+      className="container mx-auto mt-[205px] mb-[146px] px-5 overflow-hidden"
+      id="hospital"
+    >
       <SectionHeader
         sectionName={"Hospital"}
         sectionHeader={"Hospitals near you"}
@@ -28,7 +31,7 @@ const Hospital = () => {
       {/* slider */}
       {hospitalInfo.length && (
         <>
-          <div className="mb-[47px] md:mb-[60px] sliderDiv">
+          <div className="mb-[47px] md:mb-[60px] sliderDiv relative">
             <Swiper
               breakpoints={{
                 640: {
