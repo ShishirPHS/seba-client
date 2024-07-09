@@ -20,8 +20,8 @@ const Home = () => {
       <VideoConsultation></VideoConsultation>
       <FreeMedicalAdvice></FreeMedicalAdvice>
       <Symptoms></Symptoms>
-      {/* <Diseases></Diseases>
-      <DonateYourBlood></DonateYourBlood> */}
+      {/* <Diseases></Diseases> */}
+      {/* <DonateYourBlood></DonateYourBlood> */}
       {/* <BestSkinDoctor></BestSkinDoctor>
       <BestGynecologistDoctor></BestGynecologistDoctor>
       <Reviews></Reviews> */}
