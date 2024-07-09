@@ -4,7 +4,7 @@ import Banner from "../../components/Home/Banner/Banner";
 // import BestSkinDoctor from "../../components/Home/BestSkinDoctor/BestSkinDoctor";
 import Blogs from "../../components/Home/Blogs/Blogs";
 import Diseases from "../../components/Home/Diseases/Diseases";
-// import DonateYourBlood from "../../components/Home/DonateYourBlood/DonateYourBlood";
+import DonateYourBlood from "../../components/Home/DonateYourBlood/DonateYourBlood";
 import FreeMedicalAdvice from "../../components/Home/FreeMedicalAdvice/FreeMedicalAdvice";
 import Hospital from "../../components/Home/Hospital/Hospital";
 import OurPartners from "../../components/Home/OurPartners/OurPartners";
@@ -21,7 +21,7 @@ const Home = () => {
       <FreeMedicalAdvice></FreeMedicalAdvice>
       <Symptoms></Symptoms>
       <Diseases></Diseases>
-      {/* <DonateYourBlood></DonateYourBlood> */}
+      <DonateYourBlood></DonateYourBlood>
       {/* <BestSkinDoctor></BestSkinDoctor>
       <BestGynecologistDoctor></BestGynecologistDoctor>
       <Reviews></Reviews> */}
