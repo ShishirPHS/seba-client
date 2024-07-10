@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Mahnaz Sultana",
+    "image": "../src/assets/best-gynecologist-doctor/img1.png",
+    "degree": "MBBS",
+    "yearsOfExperience": 5,
+    "averageRating": 5,
+    "fiveStarRatingCount": 120
+  },
+  {
+    "id": 2,
+    "name": "Dr. Muhaimen Salit",
+    "image": "../src/assets/best-gynecologist-doctor/img2.png",
+    "degree": "MBBS",
+    "yearsOfExperience": 4,
+    "averageRating": 4,
+    "fiveStarRatingCount": 98
+  },
+  {
+    "id": 3,
+    "name": "Dr. Mahnaz Sultana",
+    "image": "../src/assets/best-gynecologist-doctor/img3.png",
+    "degree": "MBBS",
+    "yearsOfExperience": 8,
+    "averageRating": 3,
+    "fiveStarRatingCount": 76
+  },
+  {
+    "id": 4,
+    "name": "Dr. Mahnaz Sultana",
+    "image": "../src/assets/best-gynecologist-doctor/img1.png",
+    "degree": "MBBS",
+    "yearsOfExperience": 5,
+    "averageRating": 4,
+    "fiveStarRatingCount": 110
+  },
+  {
+    "id": 5,
+    "name": "Dr. Muhaimen Salit",
+    "image": "../src/assets/best-gynecologist-doctor/img2.png",
+    "degree": "MBBS",
+    "yearsOfExperience": 4,
+    "averageRating": 5,
+    "fiveStarRatingCount": 135
+  }
+]

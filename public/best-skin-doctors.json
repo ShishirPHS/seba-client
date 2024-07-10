@@ -1,47 +1,56 @@
 [
   {
     "id": 1,
-    "name": "Alice Johnson",
+    "name": "Dr. Shafwanur Rahman",
     "image": "../src/assets/best-skin-doctor/img1.png",
     "degree": "MBBS",
-    "yearsOfExperience": 10,
+    "yearsOfExperience": 5,
     "averageRating": 5,
     "fiveStarRatingCount": 120
   },
   {
     "id": 2,
-    "name": "Bob Smith",
+    "name": "Dr. Mehedi Hasan",
     "image": "../src/assets/best-skin-doctor/img2.png",
     "degree": "MBBS",
-    "yearsOfExperience": 7,
+    "yearsOfExperience": 4,
     "averageRating": 4,
     "fiveStarRatingCount": 98
   },
   {
     "id": 3,
-    "name": "Charlie Davis",
+    "name": "Dr. Arafat Hossain",
     "image": "../src/assets/best-skin-doctor/img3.png",
     "degree": "MBBS",
-    "yearsOfExperience": 5,
+    "yearsOfExperience": 8,
     "averageRating": 3,
     "fiveStarRatingCount": 76
   },
   {
     "id": 4,
-    "name": "Diana Lee",
+    "name": "Dr. Shafwanur Rahman",
     "image": "../src/assets/best-skin-doctor/img1.png",
     "degree": "MBBS",
-    "yearsOfExperience": 8,
+    "yearsOfExperience": 5,
     "averageRating": 4,
     "fiveStarRatingCount": 110
   },
   {
     "id": 5,
-    "name": "Ethan Brown",
+    "name": "Dr. Mehedi Hasan",
     "image": "../src/assets/best-skin-doctor/img2.png",
     "degree": "MBBS",
-    "yearsOfExperience": 12,
+    "yearsOfExperience": 4,
     "averageRating": 5,
     "fiveStarRatingCount": 135
+  },
+  {
+    "id": 6,
+    "name": "Dr. Arafat Hossain",
+    "image": "../src/assets/best-skin-doctor/img1.png",
+    "degree": "MBBS",
+    "yearsOfExperience": 8,
+    "averageRating": 5,
+    "fiveStarRatingCount": 120
   }
 ]
