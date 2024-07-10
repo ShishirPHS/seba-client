@@ -1,6 +1,6 @@
 import AreYourADoctor from "../../components/Home/AreYourADoctor/AreYourADoctor";
 import Banner from "../../components/Home/Banner/Banner";
-import BestGynecologistDoctor from "../../components/Home/BestGynecologistDoctor/BestGynecologistDoctor";
+// import BestGynecologistDoctor from "../../components/Home/BestGynecologistDoctor/BestGynecologistDoctor";
 import BestSkinDoctor from "../../components/Home/BestSkinDoctor/BestSkinDoctor";
 import Blogs from "../../components/Home/Blogs/Blogs";
 import Diseases from "../../components/Home/Diseases/Diseases";
@@ -23,7 +23,7 @@ const Home = () => {
       <Diseases></Diseases>
       <DonateYourBlood></DonateYourBlood>
       <BestSkinDoctor></BestSkinDoctor>
-      <BestGynecologistDoctor></BestGynecologistDoctor>
+      {/* <BestGynecologistDoctor></BestGynecologistDoctor> */}
       {/* <Reviews></Reviews> */}
       <Hospital></Hospital>
       <Blogs></Blogs>

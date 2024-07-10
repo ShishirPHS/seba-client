@@ -26,13 +26,13 @@ const SingleRatingCard = ({ doctor }) => {
       <div>
         {/* text */}
         <div className="mb-5">
-          <h5 className="text-black font-poppins text-xl font-semibold">
+          <h5 className="text-black font-poppins text-base md:text-xl font-semibold">
             {name}
           </h5>
-          <h6 className="text-black font-poppins text-xl font-light">
+          <h6 className="text-black font-poppins text-[17px] md:text-xl font-light">
             {degree}
           </h6>
-          <p className="text-[#7F7F7F] font-poppins text-xl">
+          <p className="text-[#7F7F7F] font-poppins text-[15px] md:text-xl">
             {`${yearsOfExperience} Years of Experience`}
           </p>
         </div>
