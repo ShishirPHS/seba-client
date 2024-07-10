@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Johnson",
+    "image": "../src/assets/best-skin-doctor/img1.png",
+    "degree": "MBBS",
+    "yearsOfExperience": 10,
+    "averageRating": 5,
+    "fiveStarRatingCount": 120
+  },
+  {
+    "id": 2,
+    "name": "Bob Smith",
+    "image": "../src/assets/best-skin-doctor/img2.png",
+    "degree": "MBBS",
+    "yearsOfExperience": 7,
+    "averageRating": 4,
+    "fiveStarRatingCount": 98
+  },
+  {
+    "id": 3,
+    "name": "Charlie Davis",
+    "image": "../src/assets/best-skin-doctor/img3.png",
+    "degree": "MBBS",
+    "yearsOfExperience": 5,
+    "averageRating": 3,
+    "fiveStarRatingCount": 76
+  },
+  {
+    "id": 4,
+    "name": "Diana Lee",
+    "image": "../src/assets/best-skin-doctor/img1.png",
+    "degree": "MBBS",
+    "yearsOfExperience": 8,
+    "averageRating": 4,
+    "fiveStarRatingCount": 110
+  },
+  {
+    "id": 5,
+    "name": "Ethan Brown",
+    "image": "../src/assets/best-skin-doctor/img2.png",
+    "degree": "MBBS",
+    "yearsOfExperience": 12,
+    "averageRating": 5,
+    "fiveStarRatingCount": 135
+  }
+]
