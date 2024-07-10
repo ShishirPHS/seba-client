@@ -126,13 +126,13 @@ const Navbar = () => {
             <div className="flex items-center gap-x-2 ms-auto py-1 md:ps-6 md:order-3 md:hidden mt-[20px]">
               <button
                 type="button"
-                className="inline-flex items-center gap-x-2 border border-gray-200 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:border-neutral-700 dark:hover:bg-white/10 dark:text-white dark:hover:text-white text-white font-nunito text-xl font-bold bg-[#086060] rounded-[21px]  py-[18px] px-[40px]"
+                className="inline-flex items-center gap-x-2 border border-gray-200 disabled:opacity-50 disabled:pointer-events-none text-white font-nunito text-xl font-bold bg-[#086060] rounded-[21px]  py-[18px] px-[40px]"
               >
                 Login
               </button>
               <button
                 type="button"
-                className="inline-flex items-center gap-x-2 border border-transparent hover:bg-lime-500 transition disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:bg-lime-500 text-white font-nunito text-xl font-bold px-[40px] py-[18px] bg-[#3BA4A7] rounded-[21px]"
+                className="inline-flex items-center gap-x-2 border border-transparent transition disabled:opacity-50 disabled:pointer-events-none focus:outline-none text-white font-nunito text-xl font-bold px-[40px] py-[18px] bg-[#3BA4A7] rounded-[21px]"
               >
                 SignUp
               </button>
@@ -145,13 +145,13 @@ const Navbar = () => {
           <div className="hidden md:flex items-center gap-x-2 ms-auto py-1 md:order-3">
             <button
               type="button"
-              className="inline-flex items-center gap-x-2 border border-gray-200 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:border-neutral-700 dark:hover:bg-white/10 dark:text-white dark:hover:text-white text-white font-nunito text-xl font-bold bg-[#086060] rounded-[21px]  py-[18px] px-[40px]"
+              className="inline-flex items-center gap-x-2 border border-gray-200 disabled:opacity-50 disabled:pointer-events-none text-white font-nunito text-xl font-bold bg-[#086060] rounded-[21px]  py-[18px] px-[40px]"
             >
               Login
             </button>
             <button
               type="button"
-              className="inline-flex items-center gap-x-2 border border-transparent hover:bg-lime-500 transition disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:bg-lime-500 text-white font-nunito text-xl font-bold px-[40px] py-[18px] bg-[#3BA4A7] rounded-[21px]"
+              className="inline-flex items-center gap-x-2 border border-transparent transition disabled:opacity-50 disabled:pointer-events-none focus:outline-none text-white font-nunito text-xl font-bold px-[40px] py-[18px] bg-[#3BA4A7] rounded-[21px]"
             >
               SignUp
             </button>
