@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "img": "../src/assets/reviews/img1.svg",
+    "name": "Rifat Hasan Rafi",
+    "userName": "@username_here",
+    "comment": "We've moved all of our meetings to this new platform and it's made them all better and efficient. We've moved all of our meetings to this new platform and it's made them all better and efficient.",
+    "rating": "5/5",
+    "bgColor": "#EAECFF"
+  },
+  {
+    "id": 2,
+    "img": "../src/assets/reviews/img2.svg",
+    "name": "Amir Hasan",
+    "userName": "@username_here",
+    "comment": "We've moved all of our meetings to this new platform and it's made them all better and efficient. We've moved all of our meetings to this new platform and it's made them all better and efficient.",
+    "rating": "5/5",
+    "bgColor": "#E3FFE5"
+  },
+  {
+    "id": 3,
+    "img": "../src/assets/reviews/img3.svg",
+    "name": "Alice Johnson",
+    "userName": "@username_here",
+    "comment": "We've moved all of our meetings to this new platform and it's made them all better and efficient. We've moved all of our meetings to this new platform and it's made them all better and efficient.",
+    "rating": "5/5",
+    "bgColor": "#FFF5E4"
+  },
+  {
+    "id": 4,
+    "img": "../src/assets/reviews/img4.svg",
+    "name": "Bob Brown",
+    "userName": "@username_here",
+    "comment": "We've moved all of our meetings to this new platform and it's made them all better and efficient. We've moved all of our meetings to this new platform and it's made them all better and efficient.",
+    "rating": "5/5",
+    "bgColor": "#F2F9FF"
+  },
+  {
+    "id": 5,
+    "img": "../src/assets/reviews/img5.svg",
+    "name": "Charlie White",
+    "userName": "@username_here",
+    "comment": "We've moved all of our meetings to this new platform and it's made them all better and efficient. We've moved all of our meetings to this new platform and it's made them all better and efficient.",
+    "rating": "5/5",
+    "bgColor": "#FFF1F2"
+  },
+  {
+    "id": 6,
+    "img": "../src/assets/reviews/img6.svg",
+    "name": "Diana King",
+    "userName": "@username_here",
+    "comment": "We've moved all of our meetings to this new platform and it's made them all better and efficient. We've moved all of our meetings to this new platform and it's made them all better and efficient.",
+    "rating": "5/5",
+    "bgColor": "#F6F6F6"
+  },
+  {
+    "id": 7,
+    "img": "../src/assets/reviews/img1.svg",
+    "name": "Rifat Hasan Rafi",
+    "userName": "@username_here",
+    "comment": "We've moved all of our meetings to this new platform and it's made them all better and efficient. We've moved all of our meetings to this new platform and it's made them all better and efficient.",
+    "rating": "5/5",
+    "bgColor": "#EAECFF"
+  },
+  {
+    "id": 8,
+    "img": "../src/assets/reviews/img2.svg",
+    "name": "Amir Hasan",
+    "userName": "@username_here",
+    "comment": "We've moved all of our meetings to this new platform and it's made them all better and efficient. We've moved all of our meetings to this new platform and it's made them all better and efficient.",
+    "rating": "5/5",
+    "bgColor": "#E3FFE5"
+  },
+  {
+    "id": 9,
+    "img": "../src/assets/reviews/img3.svg",
+    "name": "Alice Johnson",
+    "userName": "@username_here",
+    "comment": "We've moved all of our meetings to this new platform and it's made them all better and efficient. We've moved all of our meetings to this new platform and it's made them all better and efficient.",
+    "rating": "5/5",
+    "bgColor": "#FFF5E4"
+  },
+  {
+    "id": 10,
+    "img": "../src/assets/reviews/img4.svg",
+    "name": "Bob Brown",
+    "userName": "@username_here",
+    "comment": "We've moved all of our meetings to this new platform and it's made them all better and efficient. We've moved all of our meetings to this new platform and it's made them all better and efficient.",
+    "rating": "5/5",
+    "bgColor": "#F2F9FF"
+  },
+  {
+    "id": 11,
+    "img": "../src/assets/reviews/img5.svg",
+    "name": "Charlie White",
+    "userName": "@username_here",
+    "comment": "We've moved all of our meetings to this new platform and it's made them all better and efficient. We've moved all of our meetings to this new platform and it's made them all better and efficient.",
+    "rating": "5/5",
+    "bgColor": "#FFF1F2"
+  },
+  {
+    "id": 12,
+    "img": "../src/assets/reviews/img6.svg",
+    "name": "Diana King",
+    "userName": "@username_here",
+    "comment": "We've moved all of our meetings to this new platform and it's made them all better and efficient. We've moved all of our meetings to this new platform and it's made them all better and efficient.",
+    "rating": "5/5",
+    "bgColor": "#F6F6F6"
+  }
+]
