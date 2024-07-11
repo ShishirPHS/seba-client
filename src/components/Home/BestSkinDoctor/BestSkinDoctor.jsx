@@ -15,11 +15,11 @@ const BestSkinDoctor = () => {
 
   return (
     <div
-      className="container mx-auto mt-[68px] md:mt-[128px] mb-[68px] md:mb-[60px]"
+      className="container mx-auto mt-[68px] md:mt-[128px] mb-[26px] md:mb-[60px]"
       id="bestSkinDoctor"
     >
       <div className="mx-5">
-        <h3 className="text-black font-poppins text-[18px] md:text-4xl font-medium leading-[123%] capitalize mb-[20px] md:mb-[26px] max-w-[160px] md:max-w-none text-center md:text-left mx-auto">
+        <h3 className="text-black font-poppins text-[18px] md:text-4xl font-medium leading-[123%] capitalize mb-0 md:mb-[26px] max-w-[160px] md:max-w-none text-center md:text-left mx-auto">
           best skin doctor{" "}
           <span className="text-[14px] md:text-4xl">of the month</span>
         </h3>

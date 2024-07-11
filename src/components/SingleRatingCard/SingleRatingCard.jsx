@@ -18,14 +18,18 @@ const SingleRatingCard = ({ doctor }) => {
   return (
     <div
       style={{ boxShadow: " 4px 4px 19.3px 0px rgba(0, 0, 0, 0.07)" }}
-      className="flex items-center gap-[34px] rounded-[40px] bg-white p-[14px] mt-[20px] mb-[40px] mx-[2px]"
+      className="flex items-center gap-[26px] md:gap-[34px] rounded-[40px] bg-white p-[11px] md:p-[14px] mt-[20px] mb-[40px] mx-[2px]"
     >
       <div>
-        <img className="rounded-[40px]" src={image} alt="" />
+        <img
+          className="rounded-[40px] md:rounded-[20px] w-[111px] md:w-auto"
+          src={image}
+          alt=""
+        />
       </div>
       <div>
         {/* text */}
-        <div className="mb-5">
+        <div className="mb-[14px] md:">
           <h5 className="text-black font-poppins text-base md:text-xl font-semibold">
             {name}
           </h5>
@@ -37,12 +41,16 @@ const SingleRatingCard = ({ doctor }) => {
           </p>
         </div>
         {/* rating */}
-        <div className="flex items-center">
+        <div className="flex items-center ratingDiv">
           <Rating
             initialRating={averageRating}
             readonly
-            emptySymbol={<img src={emptyStar} className="icon" />}
-            fullSymbol={<img src={fullStar} className="icon" />}
+            emptySymbol={
+              <img src={emptyStar} className="icon w-[15px] md:w-auto" />
+            }
+            fullSymbol={
+              <img src={fullStar} className="icon w-[15px] md:w-auto" />
+            }
           />
           <p className="text-black font-poppins text-sm font-semibold ml-[12px]">
             5 ({fiveStarRatingCount})
