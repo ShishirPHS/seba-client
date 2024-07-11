@@ -14,17 +14,38 @@ const BestGynecologistDoctor = () => {
 
   return (
     <div
-      className="container mx-auto mt-[128px] mb-[176px]"
+      className="container mx-auto mt-0 md:mt-[68px] mb-[40px] md:mb-[136px]"
       id="bestGynecologistDoctor"
     >
       <div className="mx-5">
-        <h3 className="text-black font-poppins text-4xl font-medium leading-[123%] capitalize mb-[26px]">
-          best gynecologist doctor of the month
+        <h3 className="text-black font-poppins text-[18px] md:text-4xl font-medium leading-[123%] capitalize mb-0 md:mb-[26px] max-w-[230px] md:max-w-none text-center md:text-left mx-auto">
+          best gynecologist doctor{" "}
+          <span className="text-[14px] md:text-4xl">of the month</span>
         </h3>
         {bestGynecologistDoctors.length && (
           <div>
             <Swiper
-              slidesPerView={3}
+              breakpoints={{
+                640: {
+                  slidesPerView: 1,
+                },
+                768: {
+                  slidesPerView: 2,
+                },
+                1024: {
+                  slidesPerView: 3,
+                },
+                1280: {
+                  slidesPerView: 3,
+                },
+                1589: {
+                  slidesPerView: 3,
+                },
+                1920: {
+                  slidesPerView: 3,
+                },
+              }}
+              slidesPerView={1}
               spaceBetween={30}
               loop={true}
               autoplay={{

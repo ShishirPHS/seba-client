@@ -1,5 +1,5 @@
 #bestSkinDoctor .swiper-slide {
   /* margin-right: 5px !important;
   margin-left: 13px !important; */
-  @apply !mr-[2px] md:!mr-[5px] ml-[2px] md:ml-[13px];
+  /* @apply !mr-[2px] md:!mr-[5px] ml-[2px] md:ml-[13px]; */
 }
