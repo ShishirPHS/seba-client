@@ -188,7 +188,7 @@ const Reviews = () => {
             }}
             className="w-full h-[193px] flex items-end bg-gradient-to-b from-[#ffffff6b] to-[#fff] -mt-[143px] z-20 relative"
           ></div>
-          <button className="text-white font-poppins text-2xl leading-[123%] py-[26px] px-[69px] bg-[#086060] rounded-[23px] block mx-auto absolute left-[50%] transform -translate-x-[50%] bottom-0 z-30">
+          <button className="text-white font-poppins text-[10px] md:text-2xl leading-[123%] py-[12px] md:py-[26px] px-[30px] md:px-[69px] bg-[#086060] rounded-[10px] md:rounded-[23px] block mx-auto absolute left-[50%] transform -translate-x-[50%] bottom-0 z-30">
             Tap to see more
           </button>
         </div>
