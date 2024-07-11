@@ -10,11 +10,13 @@ const Reviews = () => {
   return (
     <div className="w-[1589px] mx-auto">
       {/* texts */}
-      <SectionHeader
-        sectionName={"Reviews"}
-        sectionHeader={"Public Cheers for Us!"}
-        sectionSubHeader={"Find out how our users are spreading the world"}
-      ></SectionHeader>
+      <div className="mb-[55px] md:mb-[107px]">
+        <SectionHeader
+          sectionName={"Reviews"}
+          sectionHeader={"Public Cheers for Us!"}
+          sectionSubHeader={"Find out how our users are spreading the world"}
+        ></SectionHeader>
+      </div>
       {/* reviews */}
       <div className="relative">
         <div className="grid grid-cols-3 gap-[31px]">

@@ -20,14 +20,18 @@ const Hospital = () => {
 
   return (
     <div
-      className="container mx-auto mt-[205px] mb-[146px] px-5 overflow-hidden"
+      className="container mx-auto mt-[58px] md:mt-[205px] mb-[146px] px-5 overflow-hidden"
       id="hospital"
     >
-      <SectionHeader
-        sectionName={"Hospital"}
-        sectionHeader={"Hospitals near you"}
-        sectionSubHeader={"Find out how our users are spreading the world"}
-      ></SectionHeader>
+      <div className="mb-[16px] md:mb-[107px]">
+        <SectionHeader
+          cla
+          sectionName={"Hospital"}
+          sectionHeader={"Hospitals near you"}
+          sectionSubHeader={"Find out how our users are spreading the world"}
+        ></SectionHeader>
+      </div>
+
       {/* slider */}
       {hospitalInfo.length && (
         <>
