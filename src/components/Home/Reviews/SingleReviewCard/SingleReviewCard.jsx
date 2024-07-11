@@ -9,13 +9,13 @@ const SingleReviewCard = ({ review }) => {
       className="bg-[#E3FFE5] pt-[31px] pb-[90px] pl-[27px] pr-[48px] rounded-[40px] relative"
     >
       {/* profile */}
-      <div className="flex items-center gap-[12px]">
-        <img className="rounded-full" src={img} alt="" />
+      <div className="flex items-center gap-[6px] md:gap-[12px]">
+        <img className="rounded-full w-10 md:w-auto" src={img} alt="" />
         <div>
-          <h6 className="text-black font-poppins text-xl font-semibold leading-[123%]">
+          <h6 className="text-black font-poppins text-[8px] md:text-xl font-semibold leading-[123%]">
             {name}
           </h6>
-          <p className="text-black font-poppins text-sm font-light leading-[123%]">
+          <p className="text-black font-poppins text-[5px] md:text-sm font-light leading-[123%]">
             {userName}
           </p>
         </div>
