@@ -79,7 +79,7 @@ const Navbar = () => {
           {/* Collapse */}
           <div
             id="navbar-collapse-with-animation"
-            className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:flex justify-center md:w-auto md:basis-auto md:order-2 "
+            className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:flex justify-center md:w-auto md:basis-auto md:order-2"
           >
             {/* menu items */}
             <div className="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:justify-center md:items-center md:gap-y-0 md:gap-x-[60px] md:mt-0 font-nunito font-bold">
@@ -142,16 +142,16 @@ const Navbar = () => {
           {/* End Collapse */}
 
           {/* Button Group for large screens (login and signUp button)*/}
-          <div className="hidden md:flex items-center gap-x-2 ms-auto py-1 md:order-3">
+          <div className="hidden md:flex items-center gap-x-[17px] ms-auto py-1 md:order-3">
             <button
               type="button"
-              className="inline-flex items-center gap-x-2 border border-gray-200 disabled:opacity-50 disabled:pointer-events-none text-white font-nunito text-xl font-bold bg-[#086060] rounded-[21px]  py-[18px] px-[40px]"
+              className="inline-flex items-center border border-gray-200 disabled:opacity-50 disabled:pointer-events-none text-white font-nunito text-xl font-bold bg-[#086060] rounded-[21px]  py-[18px] px-[40px]"
             >
               Login
             </button>
             <button
               type="button"
-              className="inline-flex items-center gap-x-2 border border-transparent transition disabled:opacity-50 disabled:pointer-events-none focus:outline-none text-white font-nunito text-xl font-bold px-[40px] py-[18px] bg-[#3BA4A7] rounded-[21px]"
+              className="inline-flex items-center border border-transparent transition disabled:opacity-50 disabled:pointer-events-none focus:outline-none text-white font-nunito text-xl font-bold px-[40px] py-[18px] bg-[#3BA4A7] rounded-[21px]"
             >
               SignUp
             </button>
