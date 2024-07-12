@@ -3,6 +3,12 @@ import PropTypes from "prop-types";
 const SingleReviewCard = ({ review }) => {
   const { name, img, userName, comment, rating, bgColor } = review;
 
+  const sentences = comment
+    .split(".")
+    .filter((sentence) => sentence.trim() !== "");
+
+  const oneSentence = sentences[0] + ".";
+
   return (
     <div
       style={{ backgroundColor: `${bgColor}` }}
@@ -22,7 +28,10 @@ const SingleReviewCard = ({ review }) => {
       </div>
       {/* comment */}
       <div className="mt-[8px] md:mt-[18px]">
-        <p className="text-[#514F6E] text-[8px] md:text-lg font-dmSans leading-[166%] max-w-[158px] md:max-w-[432px]">
+        <p className="block md:hidden text-[#514F6E] text-[8px] md:text-lg font-dmSans leading-[166%] max-w-[158px] md:max-w-[432px]">
+          {oneSentence}
+        </p>
+        <p className="hidden md:block text-[#514F6E] text-[8px] md:text-lg font-dmSans leading-[166%] max-w-[158px] md:max-w-[432px]">
           {comment}
         </p>
       </div>
