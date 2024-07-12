@@ -1,13 +1,14 @@
+import useBlogsInfo from "../../../hooks/useBlogsInfo";
 import SectionHeader from "../../SectionHeader/SectionHeader";
 import "./Blogs.css";
-import img1 from "../../../assets/blogs/img1.png";
-// import img2 from "../../../assets/blogs/img2.png";
-// import img3 from "../../../assets/blogs/img3.png";
-// import img4 from "../../../assets/blogs/img4.png";
-// import img5 from "../../../assets/blogs/img5.png";
-// import img6 from "../../../assets/blogs/img6.png";
+import SingleBlogCard from "./SingleBlogCard/SingleBlogCard";
 
 const Blogs = () => {
+  const [blogsInfo] = useBlogsInfo();
+
+  const smallDeviceBlogs = blogsInfo.slice(0, 4);
+  const largeDeviceBlogs = blogsInfo.slice(0, 6);
+
   return (
     <div className="bg-[#013131]">
       <div
@@ -19,75 +20,22 @@ const Blogs = () => {
           sectionHeader={"Health Blogs"}
           sectionSubHeader={"Find out how our users are spreading the world"}
         ></SectionHeader>
-        {/* cards */}
-        <div className="mt-[64px] md:mt-[120px] grid grid-cols-2 lg:grid-cols-3 gap-[25px] md:gap-[39px]">
-          {/* single card 1 */}
-          <div className="bg-[#747474a1] rounded-[20px] md:rounded-[40px] p-[10px] md:p-5 pr-[70px] flex space-x-[16px] md:space-x-[58px] items-center">
-            <img
-              className="rounded-[20px] md:rounded-[40px] w-[62px] md:w-auto h-[54px] md:h-auto"
-              src={img1}
-              alt=""
-            />
-            <p className="font-poppins text-white text-[12px] md:text-[32px] font-semibold leading-[123%] max-w-[140px]">
-              Healthy Lifestyle
-            </p>
+        <div>
+          {/* for small devices */}
+          <div className="md:hidden mt-[64px] md:mt-[120px] grid grid-cols-2 lg:grid-cols-3 gap-[25px] md:gap-[39px]">
+            {smallDeviceBlogs.map((blog) => (
+              <SingleBlogCard key={blog.id} blog={blog}></SingleBlogCard>
+            ))}
           </div>
-          {/* single card 2 */}
-          <div className="bg-[#747474a1] rounded-[20px] md:rounded-[40px] p-[10px] md:p-5 pr-[70px] flex space-x-[16px] md:space-x-[58px] items-center">
-            <img
-              className="rounded-[20px] md:rounded-[40px] w-[62px] md:w-auto h-[54px] md:h-auto"
-              src={img1}
-              alt=""
-            />
-            <p className="font-poppins text-white text-[12px] md:text-[32px] font-semibold leading-[123%] max-w-[140px]">
-              Healthy Lifestyle
-            </p>
-          </div>
-          {/* single card 3 */}
-          <div className="bg-[#747474a1] rounded-[20px] md:rounded-[40px] p-[10px] md:p-5 pr-[70px] flex space-x-[16px] md:space-x-[58px] items-center">
-            <img
-              className="rounded-[20px] md:rounded-[40px] w-[62px] md:w-auto h-[54px] md:h-auto"
-              src={img1}
-              alt=""
-            />
-            <p className="font-poppins text-white text-[12px] md:text-[32px] font-semibold leading-[123%] max-w-[140px]">
-              Healthy Lifestyle
-            </p>
-          </div>
-          {/* single card 4 */}
-          <div className="bg-[#747474a1] rounded-[20px] md:rounded-[40px] p-[10px] md:p-5 pr-[70px] flex space-x-[16px] md:space-x-[58px] items-center">
-            <img
-              className="rounded-[20px] md:rounded-[40px] w-[62px] md:w-auto h-[54px] md:h-auto"
-              src={img1}
-              alt=""
-            />
-            <p className="font-poppins text-white text-[12px] md:text-[32px] font-semibold leading-[123%] max-w-[140px]">
-              Healthy Lifestyle
-            </p>
-          </div>
-          {/* single card 5 */}
-          <div className="bg-[#747474a1] rounded-[20px] md:rounded-[40px] p-[10px] md:p-5 pr-[70px] flex space-x-[16px] md:space-x-[58px] items-center">
-            <img
-              className="rounded-[20px] md:rounded-[40px] w-[62px] md:w-auto h-[54px] md:h-auto"
-              src={img1}
-              alt=""
-            />
-            <p className="font-poppins text-white text-[12px] md:text-[32px] font-semibold leading-[123%] max-w-[140px]">
-              Healthy Lifestyle
-            </p>
-          </div>
-          {/* single card 6 */}
-          <div className="bg-[#747474a1] rounded-[20px] md:rounded-[40px] p-[10px] md:p-5 pr-[70px] flex space-x-[16px] md:space-x-[58px] items-center">
-            <img
-              className="rounded-[20px] md:rounded-[40px] w-[62px] md:w-auto h-[54px] md:h-auto"
-              src={img1}
-              alt=""
-            />
-            <p className="font-poppins text-white text-[12px] md:text-[32px] font-semibold leading-[123%] max-w-[140px]">
-              Healthy Lifestyle
-            </p>
+
+          {/* for large devices */}
+          <div className="hidden mt-[64px] md:mt-[120px] md:grid grid-cols-2 lg:grid-cols-3 gap-[25px] md:gap-[39px]">
+            {largeDeviceBlogs.map((blog) => (
+              <SingleBlogCard key={blog.id} blog={blog}></SingleBlogCard>
+            ))}
           </div>
         </div>
+
         {/* button div */}
         <div className="relative">
           <div
