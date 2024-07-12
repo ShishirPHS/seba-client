@@ -20,7 +20,7 @@ const Hospital = () => {
 
   return (
     <div
-      className="container mx-auto mt-[58px] md:mt-[205px] mb-[146px] px-5 overflow-hidden"
+      className="container mx-auto mt-[58px] md:mt-[205px] md:mb-[146px] px-5 overflow-hidden"
       id="hospital"
     >
       <div className="mb-[16px] md:mb-[107px]">
