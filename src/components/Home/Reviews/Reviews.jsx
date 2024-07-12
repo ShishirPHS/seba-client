@@ -18,7 +18,7 @@ const Reviews = () => {
         </div>
         {/* reviews */}
         <div className="relative">
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-[11px] md:gap-6">
             {userReview.map((review) => (
               <SingleReviewCard
                 key={review.id}
