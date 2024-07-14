@@ -16,8 +16,8 @@ const Banner = () => {
   };
 
   return (
-    <div className="bg-[#086060] banner relative px-[24px] md:px-0">
-      <div className="container mx-auto">
+    <div className="bg-[#086060] banner px-[24px] md:px-0">
+      <div className="container mx-auto relative">
         <div className="flex md:mx-5">
           {/* banner left */}
           <div className="mb-[70px] md:mb-[156px] bg-white rounded-[40px] pt-[23px] md:pt-[49px] pb-[23px] md:pb-[40px] px-7 md:px-16 mt-[64px] md:mt-[177px] w-full md:w-[50%]">
@@ -86,7 +86,7 @@ const Banner = () => {
           {/* banner right */}
           <div>
             <img
-              className="hidden md:block absolute bottom-0"
+              className="hidden md:block absolute bottom-0 right-0"
               src={bannerImg}
               alt="banner image"
             />
