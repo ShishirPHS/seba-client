@@ -20,8 +20,8 @@ const Banner = () => {
       <div className="container mx-auto relative overflow-hidden">
         <div className="flex md:mx-5">
           {/* banner left */}
-          <div className="mb-[70px] lg:mb-[70px] 2xl:mb-[156px] bg-white rounded-[40px] pt-[23px] lg:pt-[30px] 2xl:pt-[49px] pb-[23px] lg:pb-[25px] 2xl:pb-[40px] px-7 lg:px-[25px] 2xl:px-16 mt-[64px] lg:mt-[80px] 2xl:mt-[177px] w-full md:w-[50%]">
-            <h3 className="mb-[25px] md:mb-[62px] font-poppins text-xl lg:30px 2xl:text-5xl text-center md:text-left font-bold max-w-[226px]  2xl:max-w-[490px] leading-[123%] block md:inline-block mx-auto">
+          <div className="mb-[70px] lg:mb-[70px] 2xl:mb-[156px] bg-white rounded-[40px] lg:rounded-[30px] 2xl:rounded-[40px] pt-[23px] lg:pt-[30px] 2xl:pt-[49px] pb-[23px] lg:pb-[25px] 2xl:pb-[40px] px-7 lg:px-[25px] 2xl:px-16 mt-[64px] lg:mt-[80px] 2xl:mt-[177px] w-full md:w-[50%]">
+            <h3 className="mb-[25px] lg:mb-[30px] 2xl:mb-[62px] font-poppins text-xl lg:30px 2xl:text-5xl text-center md:text-left font-bold max-w-[226px] 2xl:max-w-[490px] leading-[123%] block md:inline-block mx-auto">
               Find the Best Doctor Near You
             </h3>
             <form className="border border-[#808080] rounded-[25px] md:rounded-[40px] overflow-hidden">
@@ -86,7 +86,7 @@ const Banner = () => {
           {/* banner right */}
           <div>
             <img
-              className="hidden md:block absolute bottom-0 -right-[18px] 2xl:right-0 w-[640px] 2xl:w-auto"
+              className="hidden md:block absolute bottom-0 right-0 w-[640px] 2xl:w-auto"
               src={bannerImg}
               alt="banner image"
             />
