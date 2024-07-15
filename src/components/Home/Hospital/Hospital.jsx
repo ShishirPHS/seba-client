@@ -20,10 +20,10 @@ const Hospital = () => {
 
   return (
     <div
-      className="container mx-auto mt-[58px] md:mt-[205px] md:mb-[146px] px-5 overflow-hidden"
+      className="container mx-auto mt-[58px] lg:mt-[90px] xl:mt-[205px] lg:mb-[90px] xl:mb-[146px] px-5 overflow-hidden"
       id="hospital"
     >
-      <div className="mb-[16px] md:mb-[107px]">
+      <div className="mb-[16px] lg:mb-[55px] xl:mb-[107px]">
         <SectionHeader
           cla
           sectionName={"Hospital"}
@@ -35,7 +35,7 @@ const Hospital = () => {
       {/* slider */}
       {hospitalInfo.length && (
         <>
-          <div className="mb-[47px] md:mb-[60px] sliderDiv relative">
+          <div className="mb-[47px] lg:mb-[45px] xl:mb-[60px] sliderDiv relative">
             <Swiper
               breakpoints={{
                 640: {
@@ -60,10 +60,10 @@ const Hospital = () => {
               slidesPerView={1}
               spaceBetween={30}
               loop={true}
-              autoplay={{
-                delay: 2000,
-                disableOnInteraction: false,
-              }}
+              // autoplay={{
+              //   delay: 2000,
+              //   disableOnInteraction: false,
+              // }}
               navigation={{
                 prevEl: ".custom-swiper-button-prev",
                 nextEl: ".custom-swiper-button-next",
@@ -97,7 +97,7 @@ const Hospital = () => {
       )}
 
       {/* view all btn */}
-      <button className="text-white font-poppins text-2xl leading-[123%] px-[69px] py-[27px] bg-[#086060] rounded-[23px] hidden md:block mx-auto">
+      <button className="text-white font-poppins text-2xl lg:text-xl xl:text-2xl leading-[123%] px-[69px] lg:px-[58px] xl:px-[69px] py-[27px] lg:py-[18px] xl:py-[27px] bg-[#086060] rounded-[23px] hidden md:block mx-auto">
         View All
       </button>
     </div>

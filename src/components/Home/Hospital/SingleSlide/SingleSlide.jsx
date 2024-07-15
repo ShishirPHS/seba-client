@@ -19,17 +19,17 @@ const SingleSlide = ({ hospital }) => {
         <img className="w-full rounded-[22px]" src={image} alt="" />
       </div>
       {/* text div */}
-      <div>
-        <h5 className="mb-[8px] text-[#121212] font-poppins text-[13px] md:text-xl font-semibold">
+      <div className="pr-[20px]">
+        <h5 className="mb-[8px] text-[#121212] font-poppins text-[13px] lg:text-lg xl:text-xl font-semibold">
           {hospitalName}
         </h5>
-        <div className="text-[11px] md:text-[15px]">
+        <div>
           {/* specialties */}
           <div className="flex items-start space-x-2">
             {/* icon */}
             <img className="mt-[8px]" src={icon1} alt="" />
             {/* text */}
-            <p className="text-[#121212] text-[15px] font-inter">
+            <p className="text-[#121212] text-[11px] lg:text-sm xl:text-[15px] font-inter">
               <span className="text-[#121212] font-medium text-[15px] font-inter">
                 Specialities :
               </span>
@@ -41,7 +41,7 @@ const SingleSlide = ({ hospital }) => {
             {/* icon */}
             <img src={icon2} alt="" />
             {/* text */}
-            <p className="text-[#121212] text-[15px] font-inter">
+            <p className="text-[#121212] text-[11px] lg:text-sm xl:text-[15px] font-inter">
               <span className="text-[#121212] font-medium text-[15px] font-inter">
                 Area :
               </span>
@@ -53,7 +53,7 @@ const SingleSlide = ({ hospital }) => {
             {/* icon */}
             <img src={icon3} alt="" />
             {/* text */}
-            <p className="text-[#121212] text-[15px] font-inter">
+            <p className="text-[#121212] text-[11px] lg:text-sm xl:text-[15px] font-inter">
               <span className="text-[#121212] font-medium text-[15px] font-inter">
                 Address :
               </span>
@@ -63,7 +63,7 @@ const SingleSlide = ({ hospital }) => {
         </div>
       </div>
       {/* button div */}
-      <div className="mt-[28px] md:mt-[14px] pr-[22px]">
+      <div className="mt-[28px] md:mt-[14px] pr-[40px] lg:pr-[22px]">
         <button className="text-white font-poppins text-[13px] font-semibold py-[15px] bg-[#086060] rounded-[22px] w-full">
           View Clinic
         </button>
