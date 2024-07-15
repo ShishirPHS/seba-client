@@ -15,8 +15,8 @@ const DonateYourBlood = () => {
           Donate Now
         </button>
         <p className="text-[#7C7373] font-poppins text-[15px] lg:text-sm xl:text-2xl leading-[123%] mt-[15px] md:mt-0 mb-[36px] md:mb-0">
-          <span className="underline">Login</span> and View who is available for
-          Donate Blood
+          <span className="underline cursor-pointer">Login</span> and View who
+          is available for Donate Blood
         </p>
       </div>
       {/* right */}

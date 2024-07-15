@@ -22,21 +22,21 @@ const SingleRatingCard = ({ doctor }) => {
     >
       <div>
         <img
-          className="rounded-[40px] md:rounded-[20px] w-[111px] md:w-auto"
+          className="rounded-[40px] md:rounded-[20px] w-[111px] lg:w-[130px] xl:w-auto"
           src={image}
           alt=""
         />
       </div>
       <div>
         {/* text */}
-        <div className="mb-[14px] md:">
-          <h5 className="text-black font-poppins text-base md:text-xl font-semibold">
+        <div className="mb-[14px]">
+          <h5 className="text-black font-poppins text-base lg:text-base xl:text-xl font-semibold">
             {name}
           </h5>
-          <h6 className="text-black font-poppins text-[17px] md:text-xl font-light">
+          <h6 className="text-black font-poppins text-[17px] lg:text-base xl:text-xl font-light">
             {degree}
           </h6>
-          <p className="text-[#7F7F7F] font-poppins text-[15px] md:text-xl">
+          <p className="text-[#7F7F7F] font-poppins text-[15px] lg:text-base xl:text-xl">
             {`${yearsOfExperience} Years of Experience`}
           </p>
         </div>
