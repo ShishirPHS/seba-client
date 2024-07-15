@@ -20,29 +20,31 @@ const Symptoms = () => {
         </p>
       </div>
       {/* bottom */}
-      <div className="flex lg:hidden flex-wrap gap-6 justify-between">
-        {smallDeviceSymptoms.map((singleSymptoms) => (
-          <SingleSymptomsCard
-            key={singleSymptoms.id}
-            symptom={singleSymptoms}
-          ></SingleSymptomsCard>
-        ))}
-      </div>
-      <div className="hidden lg:flex xl:hidden flex-wrap gap-6 justify-between">
-        {lgDeviceSymptoms.map((singleSymptoms) => (
-          <SingleSymptomsCard
-            key={singleSymptoms.id}
-            symptom={singleSymptoms}
-          ></SingleSymptomsCard>
-        ))}
-      </div>
-      <div className="hidden xl:flex flex-wrap gap-6 justify-between">
-        {xlDeviceSymptoms.map((singleSymptoms) => (
-          <SingleSymptomsCard
-            key={singleSymptoms.id}
-            symptom={singleSymptoms}
-          ></SingleSymptomsCard>
-        ))}
+      <div>
+        <div className="flex lg:hidden flex-wrap gap-6 justify-between">
+          {smallDeviceSymptoms.map((singleSymptoms) => (
+            <SingleSymptomsCard
+              key={singleSymptoms.id}
+              symptom={singleSymptoms}
+            ></SingleSymptomsCard>
+          ))}
+        </div>
+        <div className="hidden lg:flex xl:hidden flex-wrap gap-6 justify-between">
+          {lgDeviceSymptoms.map((singleSymptoms) => (
+            <SingleSymptomsCard
+              key={singleSymptoms.id}
+              symptom={singleSymptoms}
+            ></SingleSymptomsCard>
+          ))}
+        </div>
+        <div className="hidden xl:flex flex-wrap gap-6 justify-between">
+          {xlDeviceSymptoms.map((singleSymptoms) => (
+            <SingleSymptomsCard
+              key={singleSymptoms.id}
+              symptom={singleSymptoms}
+            ></SingleSymptomsCard>
+          ))}
+        </div>
       </div>
     </div>
   );
