@@ -6,47 +6,47 @@
   },
   {
     "id": 2,
-    "image": "../src/assets/icons/symptoms/thermometer.svg",
-    "symptomsName": "Cough"
+    "image": "../src/assets/icons/symptoms/anatomical-heart.svg",
+    "symptomsName": "Heart attack"
   },
   {
     "id": 3,
-    "image": "../src/assets/icons/symptoms/thermometer.svg",
-    "symptomsName": "Headache"
+    "image": "../src/assets/icons/symptoms/child-head.svg",
+    "symptomsName": "Pregnancy"
   },
   {
     "id": 4,
-    "image": "../src/assets/icons/symptoms/thermometer.svg",
-    "symptomsName": "Sore Throat"
+    "image": "../src/assets/icons/symptoms/blood.svg",
+    "symptomsName": "High blood pressure"
   },
   {
     "id": 5,
-    "image": "../src/assets/icons/symptoms/thermometer.svg",
-    "symptomsName": "Fatigue"
+    "image": "../src/assets/icons/symptoms/lungs.svg",
+    "symptomsName": "Breathlessness"
   },
   {
     "id": 6,
-    "image": "../src/assets/icons/symptoms/thermometer.svg",
-    "symptomsName": "Nausea"
+    "image": "../src/assets/icons/symptoms/viruses.svg",
+    "symptomsName": "Diarrhea"
   },
   {
     "id": 7,
-    "image": "../src/assets/icons/symptoms/thermometer.svg",
-    "symptomsName": "Nausea"
+    "image": "../src/assets/icons/symptoms/anatomical-heart.svg",
+    "symptomsName": "Heart attack"
   },
   {
     "id": 8,
-    "image": "../src/assets/icons/symptoms/thermometer.svg",
-    "symptomsName": "Nausea"
+    "image": "../src/assets/icons/symptoms/child-head.svg",
+    "symptomsName": "Pregnancy"
   },
   {
     "id": 9,
-    "image": "../src/assets/icons/symptoms/thermometer.svg",
-    "symptomsName": "Nausea"
+    "image": "../src/assets/icons/symptoms/blood.svg",
+    "symptomsName": "High blood pressure"
   },
   {
     "id": 10,
-    "image": "../src/assets/icons/symptoms/thermometer.svg",
-    "symptomsName": "Nausea"
+    "image": "../src/assets/icons/symptoms/lungs.svg",
+    "symptomsName": "Breathlessness"
   }
 ]

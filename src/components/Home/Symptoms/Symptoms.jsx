@@ -5,21 +5,22 @@ const Symptoms = () => {
   const [symptomsInfo] = useSymptoms();
 
   const smallDeviceSymptoms = symptomsInfo.slice(0, 3);
-  const largeDeviceSymptoms = symptomsInfo.slice(0, 6);
+  const lgDeviceSymptoms = symptomsInfo.slice(0, 4);
+  const xlDeviceSymptoms = symptomsInfo.slice(0, 6);
 
   return (
-    <div className="container mx-auto mt-[38px] md:mt-[118px] mb-[60px] md:mb-[140px] px-5">
+    <div className="container mx-auto mt-[38px] lg:mt-[95px] xl:mt-[118px] mb-[60px] lg:mb-[100px] xl:mb-[140px] px-5">
       {/* top */}
-      <div className="flex justify-between mb-[35px] md:mb-[49px]">
-        <p className="text-black font-poppins text-lg md:text-4xl font-medium leading-[123%]">
+      <div className="flex justify-between mb-[35px] lg:mb-10 xl:mb-[49px]">
+        <p className="text-black font-poppins text-lg lg:text-2xl xl:text-4xl font-medium leading-[123%]">
           Symptoms
         </p>
-        <p className="text-black font-poppins text-lg md:text-4xl font-medium leading-[123%] cursor-pointer">
+        <p className="text-black font-poppins text-lg lg:text-2xl xl:text-4xl font-medium leading-[123%] cursor-pointer">
           View All
         </p>
       </div>
       {/* bottom */}
-      <div className="flex md:hidden flex-wrap gap-6 justify-between">
+      <div className="flex lg:hidden flex-wrap gap-6 justify-between">
         {smallDeviceSymptoms.map((singleSymptoms) => (
           <SingleSymptomsCard
             key={singleSymptoms.id}
@@ -27,8 +28,16 @@ const Symptoms = () => {
           ></SingleSymptomsCard>
         ))}
       </div>
-      <div className="hidden md:flex flex-wrap gap-6 justify-between">
-        {largeDeviceSymptoms.map((singleSymptoms) => (
+      <div className="hidden lg:flex xl:hidden flex-wrap gap-6 justify-between">
+        {lgDeviceSymptoms.map((singleSymptoms) => (
+          <SingleSymptomsCard
+            key={singleSymptoms.id}
+            symptom={singleSymptoms}
+          ></SingleSymptomsCard>
+        ))}
+      </div>
+      <div className="hidden xl:flex flex-wrap gap-6 justify-between">
+        {xlDeviceSymptoms.map((singleSymptoms) => (
           <SingleSymptomsCard
             key={singleSymptoms.id}
             symptom={singleSymptoms}
