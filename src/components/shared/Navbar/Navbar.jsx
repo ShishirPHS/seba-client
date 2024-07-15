@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <>
       {/* HEADER */}
-      <header className="relative container mx-auto flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full py-[10px] lg:py-[20px] 2xl:py-7">
+      <header className="relative container mx-auto flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full py-[10px] lg:py-[20px] xl:py-7">
         <nav
           id="navbar"
           className="relative w-full flex justify-between flex-wrap basis-full items-center px-4 md:px-6 mx-auto"
@@ -61,7 +61,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="">
             <Link
-              className="flex-none inline-block font-semibold focus:outline-none focus:opacity-80 w-[84px] lg:w-[100px] 2xl:w-[148px]"
+              className="flex-none inline-block font-semibold focus:outline-none focus:opacity-80 w-[84px] lg:w-[100px] xl:w-[148px]"
               to="/"
               aria-label="Preline"
             >
@@ -81,40 +81,40 @@ const Navbar = () => {
             className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:flex justify-center md:w-auto md:basis-auto md:order-2"
           >
             {/* menu items */}
-            <div className="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:justify-center md:items-center md:gap-y-0 md:gap-x-[32px] 2xl:gap-x-[60px] md:mt-0 font-nunito font-bold">
+            <div className="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:justify-center md:items-center md:gap-y-0 md:gap-x-[32px] xl:gap-x-[60px] md:mt-0 font-nunito font-bold">
               <NavLink
-                className="relative inline-block text-[#505050] text-xl md:text-sm 2xl:text-xl hover:text-[#3ba4a7]"
+                className="relative inline-block text-[#505050] text-xl md:text-sm xl:text-xl hover:text-[#3ba4a7]"
                 to="/doctors"
                 aria-current="page"
               >
                 Doctors
               </NavLink>
               <NavLink
-                className="inline-block text-[#505050] text-xl md:text-sm 2xl:text-xl hover:text-[#3ba4a7]"
+                className="inline-block text-[#505050] text-xl md:text-sm xl:text-xl hover:text-[#3ba4a7]"
                 to="/consultOnline"
               >
                 Consult Online
               </NavLink>
               <NavLink
-                className="inline-block text-[#505050] text-xl md:text-sm 2xl:text-xl hover:text-[#3ba4a7]"
+                className="inline-block text-[#505050] text-xl md:text-sm xl:text-xl hover:text-[#3ba4a7]"
                 to="/hospitals"
               >
                 Hospitals
               </NavLink>
               <NavLink
-                className="inline-block text-[#505050] text-xl md:text-sm 2xl:text-xl hover:text-[#3ba4a7]"
+                className="inline-block text-[#505050] text-xl md:text-sm xl:text-xl hover:text-[#3ba4a7]"
                 to="/labTests"
               >
                 Lab Tests
               </NavLink>
               <NavLink
-                className="inline-block text-[#505050] text-xl md:text-sm 2xl:text-xl hover:text-[#3ba4a7]"
+                className="inline-block text-[#505050] text-xl md:text-sm xl:text-xl hover:text-[#3ba4a7]"
                 to="/surgeries"
               >
                 Surgeries
               </NavLink>
               <NavLink
-                className="inline-block text-[#505050] text-xl md:text-sm 2xl:text-xl hover:text-[#3ba4a7]"
+                className="inline-block text-[#505050] text-xl md:text-sm xl:text-xl hover:text-[#3ba4a7]"
                 to="/healthBlogs"
               >
                 Health Blogs
@@ -141,16 +141,16 @@ const Navbar = () => {
           {/* End Collapse */}
 
           {/* Button Group for large screens (login and signUp button)*/}
-          <div className="hidden md:flex items-center gap-x-[17px] lg:gap-x-[8px] 2xl:gap-x-[17px] ms-auto py-1 md:order-3">
+          <div className="hidden md:flex items-center gap-x-[17px] lg:gap-x-[8px] xl:gap-x-[17px] ms-auto py-1 md:order-3">
             <button
               type="button"
-              className="inline-flex items-center border border-gray-200 disabled:opacity-50 disabled:pointer-events-none text-white font-nunito text-xl lg:text-sm 2xl:text-xl font-bold bg-[#086060] rounded-[21px] lg:rounded-[12px] 2xl:rounded-[21px] py-[18px] lg:py-[10px] 2xl:py-[18px] px-[40px] lg:px-[28px] 2xl:px-[40px]"
+              className="inline-flex items-center border border-gray-200 disabled:opacity-50 disabled:pointer-events-none text-white font-nunito text-xl lg:text-sm xl:text-xl font-bold bg-[#086060] rounded-[21px] lg:rounded-[12px] xl:rounded-[21px] py-[18px] lg:py-[10px] xl:py-[18px] px-[40px] lg:px-[28px] xl:px-[40px]"
             >
               Login
             </button>
             <button
               type="button"
-              className="inline-flex items-center border border-transparent transition disabled:opacity-50 disabled:pointer-events-none focus:outline-none text-white font-nunito text-xl lg:text-sm 2xl:text-xl font-bold px-[40px] lg:px-[28px] 2xl:px-[40px] py-[18px] lg:py-[10px] 2xl:py-[18px] bg-[#3BA4A7] rounded-[21px] lg:rounded-[12px] 2xl:rounded-[21px]"
+              className="inline-flex items-center border border-transparent transition disabled:opacity-50 disabled:pointer-events-none focus:outline-none text-white font-nunito text-xl lg:text-sm xl:text-xl font-bold px-[40px] lg:px-[28px] xl:px-[40px] py-[18px] lg:py-[10px] xl:py-[18px] bg-[#3BA4A7] rounded-[21px] lg:rounded-[12px] xl:rounded-[21px]"
             >
               SignUp
             </button>
