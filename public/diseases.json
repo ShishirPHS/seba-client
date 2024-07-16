@@ -1,52 +1,52 @@
 [
   {
     "id": 1,
-    "image": "../src/assets/icons/symptoms/thermometer.svg",
-    "symptomsName": "Fever"
+    "image": "../src/assets/icons/diseases/mosquito.svg",
+    "symptomsName": "Dengue fever"
   },
   {
     "id": 2,
-    "image": "../src/assets/icons/symptoms/thermometer.svg",
-    "symptomsName": "Cough"
+    "image": "../src/assets/icons/diseases/fever.svg",
+    "symptomsName": "Typhoid Fever"
   },
   {
     "id": 3,
-    "image": "../src/assets/icons/symptoms/thermometer.svg",
-    "symptomsName": "Headache"
+    "image": "../src/assets/icons/diseases/piles.svg",
+    "symptomsName": "Piles"
   },
   {
     "id": 4,
-    "image": "../src/assets/icons/symptoms/thermometer.svg",
-    "symptomsName": "Sore Throat"
+    "image": "../src/assets/icons/diseases/gastritis.svg",
+    "symptomsName": "Gastritis"
   },
   {
     "id": 5,
-    "image": "../src/assets/icons/symptoms/thermometer.svg",
-    "symptomsName": "Fatigue"
+    "image": "../src/assets/icons/diseases/lungs.svg",
+    "symptomsName": "Hernia"
   },
   {
     "id": 6,
-    "image": "../src/assets/icons/symptoms/thermometer.svg",
-    "symptomsName": "Nausea"
+    "image": "../src/assets/icons/diseases/migraine.svg",
+    "symptomsName": "Migraine"
   },
   {
     "id": 7,
-    "image": "../src/assets/icons/symptoms/thermometer.svg",
-    "symptomsName": "Nausea"
+    "image": "../src/assets/icons/diseases/mosquito.svg",
+    "symptomsName": "Dengue fever"
   },
   {
     "id": 8,
-    "image": "../src/assets/icons/symptoms/thermometer.svg",
-    "symptomsName": "Nausea"
+    "image": "../src/assets/icons/diseases/fever.svg",
+    "symptomsName": "Typhoid Fever"
   },
   {
     "id": 9,
-    "image": "../src/assets/icons/symptoms/thermometer.svg",
-    "symptomsName": "Nausea"
+    "image": "../src/assets/icons/diseases/piles.svg",
+    "symptomsName": "Piles"
   },
   {
     "id": 10,
-    "image": "../src/assets/icons/symptoms/thermometer.svg",
-    "symptomsName": "Nausea"
+    "image": "../src/assets/icons/diseases/gastritis.svg",
+    "symptomsName": "Gastritis"
   }
 ]
