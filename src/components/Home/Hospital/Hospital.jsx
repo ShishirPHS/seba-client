@@ -59,10 +59,10 @@ const Hospital = () => {
               slidesPerView={1}
               spaceBetween={17}
               loop={true}
-              // autoplay={{
-              //   delay: 2000,
-              //   disableOnInteraction: false,
-              // }}
+              autoplay={{
+                delay: 2000,
+                disableOnInteraction: false,
+              }}
               navigation={{
                 prevEl: ".custom-swiper-button-prev",
                 nextEl: ".custom-swiper-button-next",
