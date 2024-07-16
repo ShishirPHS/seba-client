@@ -25,7 +25,6 @@ const Hospital = () => {
     >
       <div className="mb-[16px] lg:mb-[55px] xl:mb-[107px]">
         <SectionHeader
-          cla
           sectionName={"Hospital"}
           sectionHeader={"Hospitals near you"}
           sectionSubHeader={"Find out how our users are spreading the world"}
@@ -35,7 +34,7 @@ const Hospital = () => {
       {/* slider */}
       {hospitalInfo.length && (
         <>
-          <div className="mb-[47px] lg:mb-[45px] xl:mb-[60px] sliderDiv relative">
+          <div className="mb-[47px] lg:mb-[45px] xl:mb-[60px] lg:mx-[15px] 3xl:mx-[40px] sliderDiv relative">
             <Swiper
               breakpoints={{
                 640: {
@@ -58,7 +57,7 @@ const Hospital = () => {
                 },
               }}
               slidesPerView={1}
-              spaceBetween={30}
+              spaceBetween={17}
               loop={true}
               // autoplay={{
               //   delay: 2000,
@@ -77,21 +76,22 @@ const Hospital = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
-            {/* Custom Navigation */}
-            <div className="custom-swiper-button-prev flex justify-center items-center w-9 md:w-[72px]  h-9 md:h-[72px] shadow-slider-navigation-btn-shadow">
+            {/* Custom Navigation buttons start */}
+            <div className="custom-swiper-button-prev flex justify-center items-center w-9 lg:w-[50px] 3xl:w-[72px] h-9 lg:h-[50px] 3xl:h-[72px] shadow-slider-navigation-btn-shadow-normal 3xl:shadow-slider-navigation-btn-shadow-for-3xl">
               <img
-                className="w-6 md:w-auto h-6 md:h-auto "
+                className="w-6 lg:w-[30px] 3xl:w-auto h-6 md:h-auto"
                 src={prevIcon}
                 alt=""
               />
             </div>
-            <div className="custom-swiper-button-next flex justify-center items-center w-9 md:w-[72px]  h-9 md:h-[72px] shadow-slider-navigation-btn-shadow">
+            <div className="custom-swiper-button-next flex justify-center items-center w-9 lg:w-[50px] 3xl:w-[72px] h-9 lg:h-[50px] 3xl:h-[72px] shadow-slider-navigation-btn-shadow-normal 3xl:shadow-slider-navigation-btn-shadow-for-3xl">
               <img
-                className="w-6 md:w-auto h-6 md:h-auto rotate-[180deg]"
+                className="w-6 lg:w-[30px] 3xl:w-auto h-6 md:h-auto rotate-[180deg]"
                 src={prevIcon}
                 alt=""
               />
             </div>
+            {/* Custom Navigation buttons end */}
           </div>
         </>
       )}

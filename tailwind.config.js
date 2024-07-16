@@ -18,7 +18,8 @@ export default {
       boxShadow: {
         "custom-white-for-large": "0px 4px 50px 0px rgba(255, 255, 255, 0.21)",
         "custom-white-for-small": "0px 4px 50px 0px rgba(255, 255, 255, 0.21)",
-        "slider-navigation-btn-shadow": "0px 4px 80px rgba(0, 0, 0, 0.25)",
+        "slider-navigation-btn-shadow-normal": "0px 4px 20px rgba(0, 0, 0, 0.25)",
+        "slider-navigation-btn-shadow-for-3xl": "0px 4px 80px rgba(0, 0, 0, 0.25)",
       },
     },
     fontFamily: {

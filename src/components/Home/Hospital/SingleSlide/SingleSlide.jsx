@@ -19,7 +19,7 @@ const SingleSlide = ({ hospital }) => {
         <img className="w-full rounded-[22px]" src={image} alt="" />
       </div>
       {/* text div */}
-      <div className="pr-[20px]">
+      <div className="pr-[90px] lg:pr-[20px] xl:pr-0">
         <h5 className="mb-[8px] text-[#121212] font-poppins text-[13px] lg:text-lg xl:text-xl font-semibold">
           {hospitalName}
         </h5>
@@ -30,7 +30,7 @@ const SingleSlide = ({ hospital }) => {
             <img className="mt-[8px]" src={icon1} alt="" />
             {/* text */}
             <p className="text-[#121212] text-[11px] lg:text-sm xl:text-[15px] font-inter">
-              <span className="text-[#121212] font-medium text-[15px] font-inter">
+              <span className="text-[#121212] font-medium font-inter">
                 Specialities :
               </span>
               {specialities}
@@ -42,7 +42,7 @@ const SingleSlide = ({ hospital }) => {
             <img src={icon2} alt="" />
             {/* text */}
             <p className="text-[#121212] text-[11px] lg:text-sm xl:text-[15px] font-inter">
-              <span className="text-[#121212] font-medium text-[15px] font-inter">
+              <span className="text-[#121212] font-medium font-inter">
                 Area :
               </span>
               {area}
@@ -54,7 +54,7 @@ const SingleSlide = ({ hospital }) => {
             <img src={icon3} alt="" />
             {/* text */}
             <p className="text-[#121212] text-[11px] lg:text-sm xl:text-[15px] font-inter">
-              <span className="text-[#121212] font-medium text-[15px] font-inter">
+              <span className="text-[#121212] font-medium font-inter">
                 Address :
               </span>
               {address}
