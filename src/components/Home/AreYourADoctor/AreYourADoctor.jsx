@@ -3,7 +3,7 @@ import doctors from "../../../assets/are-you-a-doctor/doctors.png";
 const AreYourADoctor = () => {
   return (
     <div className="px-5">
-      <div className="bg-[#E3FFE5] container mx-auto rounded-[40px] lg:rounded-[24px] xl:rounded-[40px] pt-[21px] lg:pt-10 xl:pt-[79px] pb-0 lg:pb-10 xl:pb-[88px] pr-0 lg:pr-[60px] xl:pr-[186px] flex flex-col md:flex-row items-center md:justify-end relative mb-[66px] md:mb-[160px]">
+      <div className="bg-[#E3FFE5] container mx-auto rounded-[40px] lg:rounded-[24px] xl:rounded-[40px] pt-[21px] lg:pt-10 xl:pt-[79px] pb-0 lg:pb-10 xl:pb-[88px] pr-0 lg:pr-[60px] xl:pr-[186px] flex flex-col md:flex-row items-center md:justify-end relative mb-[66px] lg:mb-[110px] xl:mb-[160px]">
         <div>
           <h4 className="font-poppins text-[20px] lg:text-[28px] xl:text-4xl text-center md:text-left font-bold text-[#086060] mb-0 xl:mb-[10px]">
             Are You A Doctor?
