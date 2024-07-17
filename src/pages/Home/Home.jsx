@@ -1,4 +1,4 @@
-// import AreYourADoctor from "../../components/Home/AreYourADoctor/AreYourADoctor";
+import AreYourADoctor from "../../components/Home/AreYourADoctor/AreYourADoctor";
 import Banner from "../../components/Home/Banner/Banner";
 import BestGynecologistDoctor from "../../components/Home/BestGynecologistDoctor/BestGynecologistDoctor";
 import BestSkinDoctor from "../../components/Home/BestSkinDoctor/BestSkinDoctor";
@@ -29,7 +29,7 @@ const Home = () => {
       <Blogs></Blogs>
       <WhyChoose></WhyChoose>
       <OurPartners></OurPartners>
-      {/* <AreYourADoctor></AreYourADoctor> */}
+      <AreYourADoctor></AreYourADoctor>
     </div>
   );
 };
