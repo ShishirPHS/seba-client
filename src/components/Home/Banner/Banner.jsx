@@ -20,7 +20,7 @@ const Banner = () => {
       <div className="container mx-auto relative overflow-hidden">
         <div className="flex md:mx-5">
           {/* banner left */}
-          <div className="mb-[70px] lg:mb-[70px] xl:mb-[130px] 2xl:mb-[156px] bg-white rounded-[40px] lg:rounded-[30px] xl:rounded-[40px] pt-[23px] lg:pt-[30px] xl:pt-[39px] 2xl:pt-[49px] pb-[23px] lg:pb-[25px] xl:pb-[40px] px-7 lg:px-[25px] xl:px-[44px] 2xl:px-16 mt-[64px] lg:mt-[80px] xl:mt-[150px] 2xl:mt-[177px] w-full md:w-[50%]">
+          <div className="mb-[70px] lg:mb-[70px] xl:mb-[130px] 2xl:mb-[156px] bg-white rounded-[40px] lg:rounded-[30px] xl:rounded-[40px] pt-[23px] lg:pt-[30px] xl:pt-[39px] 2xl:pt-[49px] pb-[23px] lg:pb-[25px] xl:pb-[40px] px-7 lg:px-[25px] xl:px-[44px] 2xl:px-16 mt-[64px] lg:mt-[80px] xl:mt-[150px] 2xl:mt-[177px] w-full md:w-[50%] relative z-20">
             <h3 className="mb-[25px] lg:mb-[30px] xl:mb-[50px] 2xl:mb-[62px] font-poppins text-xl lg:text-[30px] xl:text-[38px] 2xl:text-5xl text-center md:text-left font-bold max-w-[226px] lg:max-w-[320px] xl:max-w-[412px] 2xl:max-w-[490px] leading-[123%] block md:inline-block mx-auto">
               Find the Best Doctor Near You
             </h3>
@@ -33,7 +33,7 @@ const Banner = () => {
                   required
                 />
                 <img
-                  className="w-[19px] lg:w-[24px] h-[19px] md:h-[33px] absolute right-[25px] lg:right-[28px] xl:right-[40px] 2xl:right-[55px] top-[40%] lg:top-[50%] xl:top-[52%] 2xl:top-[60%] lg:transform lg:-translate-y-[42%]"
+                  className="w-[19px] lg:w-[24px] h-[19px] md:h-[33px] absolute right-[25px] lg:right-[28px] xl:right-[40px] 2xl:right-[55px] top-[40%] lg:top-[50%] xl:top-[52%] 2xl:top-[60%] lg:transform lg:-translate-y-[42%] cursor-pointer"
                   src={locationIcon}
                   alt="a icon of location"
                 />
