@@ -25,7 +25,7 @@ const Banner = () => {
               Find the Best Doctor Near You
             </h3>
             <form className="border border-[#808080] rounded-[25px] lg:rounded-[30px] xl:rounded-[40px] overflow-hidden">
-              <div className="border-b border-[#808080] relative pt-[10px] lg:pt-[10px] xl:pt-[48px] px-[8px] lg:px-[12px] pb-[2px] lg:pb-[6px] xl:pb-[20px]">
+              <div className="border-b border-[#808080] relative pt-[10px] lg:pt-[10px] xl:pt-[48px] px-[8px] lg:px-[12px] xl:px-[32px] pb-[2px] lg:pb-[6px] xl:pb-[20px]">
                 <input
                   type="text"
                   placeholder="Enter Your City or Location"
