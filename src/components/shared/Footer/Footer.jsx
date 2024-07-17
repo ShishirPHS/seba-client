@@ -8,10 +8,10 @@ import { FaTwitter } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="bg-[#013131]">
-      <div className="container mx-auto pt-[33px] md:pt-[120px] pb-[10px] md:pb-[110px] px-5">
+      <div className="container mx-auto pt-[33px] lg:pt-[90px] xl:pt-[120px] pb-[10px] lg:pb-[50px] xl:pb-[110px] px-5">
         {/* footer top */}
-        <div className="mb-[50px] md:mb-[117px]">
-          <p className="text-white font-poppins text-sm md:text-4xl font-bold leading-[142%] max-w-[150px] md:max-w-[400px] text-center mx-auto">
+        <div className="mb-[50px] lg:mb-[100px] xl:mb-[117px]">
+          <p className="text-white font-poppins text-sm lg:text-[34px] xl:text-4xl font-bold leading-[142%] max-w-[150px] md:max-w-[400px] text-center mx-auto">
             Find the Best Doctor Near You
           </p>
           {/* buttons div */}
@@ -123,9 +123,13 @@ const Footer = () => {
         </div>
         {/* footer bottom */}
         <div>
-          <div className="w-full h-[2px] bg-[#1A4646] mb-[33px]"></div>
+          <div className="w-full h-[1px] lg:h-[2px] bg-[#1A4646] mb-[10px] lg:mb-[20px] xl:mb-[33px]"></div>
           <div className="flex items-center justify-between">
-            <img className="w-[61px] md:w-auto" src={footerLogo} alt="" />
+            <img
+              className="w-[61px] lg:w-[147px] xl:w-auto"
+              src={footerLogo}
+              alt=""
+            />
             {/* copyright */}
             <p className="text-white font-poppins text-[7px] md:text-sm leading-[100%]">
               &#169; {moment().format("YYYY")} Seba. All Rights Reserved.

@@ -72,10 +72,7 @@ const VideoConsultation = () => {
             </p>
           </div>
           {/* card middle */}
-          <div
-            style={{ boxShadow: "0px 4px 146.2px 1px rgba(0, 0, 0, 0.20)" }}
-            className="bg-white pt-[9px] lg:pt-[14px] xl:pt-[34px] pb-[12px] lg:pb-[16px] xl:pb-[48px] px-[11px] lg:px-[55px] xl:px-[67px] rounded-[15px] md:rounded-[20px] absolute left-[50%] transform -translate-x-[50%] top-[50%] -translate-y-[50%]"
-          >
+          <div className="bg-white pt-[9px] lg:pt-[14px] xl:pt-[34px] pb-[12px] lg:pb-[16px] xl:pb-[48px] px-[11px] lg:px-[55px] xl:px-[67px] rounded-[15px] lg:rounded-[20px] xl:rounded-[50px] absolute left-[50%] transform -translate-x-[50%] top-[50%] -translate-y-[50%] shadow-videoConsultation-normal lg:shadow-videoConsultation-large">
             <img
               className="mx-auto w-5 lg:w-[65px] xl:w-auto h-[21px] md:h-auto"
               src={videoConsultation}

@@ -16,6 +16,8 @@ export default {
         "3xl": "1920px",
       },
       boxShadow: {
+        "videoConsultation-normal": "0px 4px 27px 1px rgba(0, 0, 0, 0.20)",
+        "videoConsultation-large": "0px 4px 146.2px 1px rgba(0, 0, 0, 0.20)",
         "custom-white-for-large": "0px 4px 50px 0px rgba(255, 255, 255, 0.21)",
         "custom-white-for-small": "0px 4px 50px 0px rgba(255, 255, 255, 0.21)",
         "slider-navigation-btn-shadow-normal":
