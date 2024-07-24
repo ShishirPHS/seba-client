@@ -17,7 +17,7 @@ const SingleRatingCard = ({ doctor }) => {
 
   return (
     <div
-      style={{ boxShadow: " 4px 4px 19.3px 0px rgba(0, 0, 0, 0.07)" }}
+      style={{ boxShadow: " 4px 4px 10px 0px rgba(0, 0, 0, 0.07)" }}
       className="flex items-center gap-[26px] xl:gap-[16px] 2xl:gap-[34px] rounded-[40px] bg-white p-[11px] md:p-[14px] mt-[20px] mb-[40px] mx-[2px]"
     >
       <div>
