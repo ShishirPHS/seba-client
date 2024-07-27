@@ -12,7 +12,7 @@ const SingleReviewCard = ({ review }) => {
   return (
     <div
       style={{ backgroundColor: `${bgColor}` }}
-      className="bg-[#E3FFE5] pt-[12px] lg:pt-[20px] xl:pt-[31px] pb-[30px] lg:pb-[45px] xl:pb-[90px] pl-[12px] lg:pl-[20px] xl:pl-[27px] pr-[16px] xl:pr-[34px] rounded-[16px] lg:rounded-[25px] xl:rounded-[40px] relative"
+      className="bg-[#E3FFE5] pt-[12px] lg:pt-[20px] xl:pt-[26px] 2xl:pt-[31px] pb-[30px] lg:pb-[45px] xl:pb-[60px] 2xl:pb-[90px] pl-[12px] lg:pl-[20px] xl:pl-[24px] 2xl:pl-[27px] pr-[16px] xl:pr-[28px] 2xl:pr-[34px] rounded-[16px] lg:rounded-[25px] xl:rounded-[36px] 2xl:rounded-[40px] relative"
     >
       {/* profile */}
       <div className="flex items-center gap-[6px] md:gap-[12px]">
@@ -33,7 +33,7 @@ const SingleReviewCard = ({ review }) => {
           {oneSentence}
         </p>
         {/* comment (greater than sm devices) */}
-        <p className="hidden md:block text-[#514F6E] text-[8px] lg:text-[15px] xl:text-lg font-dmSans leading-[166%] max-w-[158px] md:max-w-[432px]">
+        <p className="hidden md:block text-[#514F6E] text-[8px] lg:text-[15px] xl:text-base 2xl:text-lg font-dmSans leading-[166%] max-w-[158px] md:max-w-[432px]">
           {comment}
         </p>
       </div>
