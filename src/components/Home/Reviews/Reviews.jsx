@@ -47,7 +47,7 @@ const Reviews = () => {
               }}
               className="w-full h-[73px] md:h-[193px] flex items-end bg-gradient-to-b from-[#ffffff6b] to-[#fff] -mt-[56px] md:-mt-[143px] z-20 relative"
             ></div>
-            <button className="text-white font-poppins text-[10px] lg:text-xl xl:text-2xl leading-[123%] py-[12px] lg:py-5 xl:py-[23px] 2xl:py-[26px] px-[30px] lg:px-[58px] xl:px-[62px] 2xl:px-[69px] bg-[#086060] rounded-[10px] lg:rounded-[16px] xl:rounded-[20px] 2xl:rounded-[23px] block mx-auto absolute left-[50%] transform -translate-x-[50%] bottom-0 z-30">
+            <button className="text-white font-poppins text-[10px] lg:text-xl xl:text-[22px] 2xl:text-2xl leading-[123%] py-[12px] lg:py-5 xl:py-[23px] 2xl:py-[26px] px-[30px] lg:px-[58px] xl:px-[62px] 2xl:px-[69px] bg-[#086060] rounded-[10px] lg:rounded-[16px] xl:rounded-[20px] 2xl:rounded-[23px] block mx-auto absolute left-[50%] transform -translate-x-[50%] bottom-0 z-30">
               Tap to see more
             </button>
           </div>

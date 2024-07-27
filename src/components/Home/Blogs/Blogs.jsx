@@ -51,7 +51,7 @@ const Blogs = () => {
             }}
             className="h-[91px] lg:h-[198px] xl:h-[288px] w-full bg-gradient-to-b from-[#013131] to-[#013131b3] -mt-[33px] lg:-mt-[67px] xl:-mt-[124px] z-20 relative"
           ></div>
-          <button className="text-white font-poppins text-[10px] lg:text-xl xl:text-[32px] font-semibold leading-[123%] bg-[#d9d9d900] rounded-[12px] lg:rounded-[20px] xl:rounded-[40px] px-[25px] lg:px-[50px] xl:px-[69px] py-[12px] lg:py-5 xl:py-[36px] border-white border-[2px] absolute bottom-0 left-[50%] transform -translate-x-[50%] z-30">
+          <button className="text-white font-poppins text-[10px] lg:text-xl xl:text-[28px] 2xl:text-[32px] font-semibold leading-[123%] bg-[#d9d9d900] rounded-[12px] lg:rounded-[20px] xl:rounded-[36px] 2xl:rounded-[40px] px-[25px] lg:px-[50px] xl:px-[60px] 2xl:px-[69px] py-[12px] lg:py-5 xl:py-[28px] 2xl:py-[36px] border-white border-[2px] absolute bottom-0 left-[50%] transform -translate-x-[50%] z-30">
             See more
           </button>
         </div>
