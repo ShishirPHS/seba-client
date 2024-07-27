@@ -6,7 +6,7 @@ import BestSkinDoctor from "../../components/Home/BestSkinDoctor/BestSkinDoctor"
 import Diseases from "../../components/Home/Diseases/Diseases";
 import DonateYourBlood from "../../components/Home/DonateYourBlood/DonateYourBlood";
 import FreeMedicalAdvice from "../../components/Home/FreeMedicalAdvice/FreeMedicalAdvice";
-// import Hospital from "../../components/Home/Hospital/Hospital";
+import Hospital from "../../components/Home/Hospital/Hospital";
 // import OurPartners from "../../components/Home/OurPartners/OurPartners";
 import Reviews from "../../components/Home/Reviews/Reviews";
 import Symptoms from "../../components/Home/Symptoms/Symptoms";
@@ -25,8 +25,8 @@ const Home = () => {
       <BestSkinDoctor></BestSkinDoctor>
       <BestGynecologistDoctor></BestGynecologistDoctor>
       <Reviews></Reviews>
-      {/* <Hospital></Hospital>
-      <Blogs></Blogs>
+      <Hospital></Hospital>
+      {/* <Blogs></Blogs>
       <WhyChoose></WhyChoose>
       <OurPartners></OurPartners>
       <AreYourADoctor></AreYourADoctor> */}
