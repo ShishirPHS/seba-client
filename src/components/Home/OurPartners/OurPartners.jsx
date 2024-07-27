@@ -2,7 +2,7 @@ import img1 from "../../../assets/our-partners/img1.png";
 
 const OurPartners = () => {
   return (
-    <div className="container mx-auto mb-[30px] lg:mb-[120px] xl:mb-[147px] px-5">
+    <div className="container mx-auto mb-[30px] lg:mb-[120px] xl:mb-[115px] 2xl:mb-[147px] px-5">
       <h4 className="text-black font-poppins text-[13px] lg:text-[34px] xl:text-4xl font-semibold mb-2 lg:mb-[30px] xl:mb-[34px] 2xl:mb-[52px]">
         Our Partners
       </h4>
