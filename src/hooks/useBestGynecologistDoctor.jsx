@@ -1,13 +1,14 @@
 import { useQuery } from "@tanstack/react-query";
-import useAxiosPublic from "./useAxiosPublic";
+import axios from "axios";
+// import useAxiosPublic from "./useAxiosPublic";
 
 const useBestGynecologistDoctor = () => {
-  const axiosPublic = useAxiosPublic();
+  // const axiosPublic = useAxiosPublic();
 
   const { data: bestGynecologistDoctors = [] } = useQuery({
     queryKey: ["bestGynecologistDoctors"],
     queryFn: async () => {
-      const res = await axiosPublic.get("best-gynecologist-doctors.json");
+      const res = await axios.get("best-gynecologist-doctors.json");
 
       return res.data;
     },
