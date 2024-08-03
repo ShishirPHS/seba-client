@@ -1,52 +1,52 @@
 [
   {
     "id": 1,
-    "image": "../src/assets/icons/diseases/mosquito.svg",
+    "image": "https://i.ibb.co/kxwvtk4/Vector.png",
     "symptomsName": "Dengue fever"
   },
   {
     "id": 2,
-    "image": "../src/assets/icons/diseases/fever.svg",
+    "image": "https://i.ibb.co/kxwvtk4/Vector.png",
     "symptomsName": "Typhoid Fever"
   },
   {
     "id": 3,
-    "image": "../src/assets/icons/diseases/piles.svg",
+    "image": "https://i.ibb.co/kxwvtk4/Vector.png",
     "symptomsName": "Piles"
   },
   {
     "id": 4,
-    "image": "../src/assets/icons/diseases/gastritis.svg",
+    "image": "https://i.ibb.co/kxwvtk4/Vector.png",
     "symptomsName": "Gastritis"
   },
   {
     "id": 5,
-    "image": "../src/assets/icons/diseases/lungs.svg",
+    "image": "https://i.ibb.co/kxwvtk4/Vector.png",
     "symptomsName": "Hernia"
   },
   {
     "id": 6,
-    "image": "../src/assets/icons/diseases/migraine.svg",
+    "image": "https://i.ibb.co/kxwvtk4/Vector.png",
     "symptomsName": "Migraine"
   },
   {
     "id": 7,
-    "image": "../src/assets/icons/diseases/mosquito.svg",
+    "image": "https://i.ibb.co/kxwvtk4/Vector.png",
     "symptomsName": "Dengue fever"
   },
   {
     "id": 8,
-    "image": "../src/assets/icons/diseases/fever.svg",
+    "image": "https://i.ibb.co/kxwvtk4/Vector.png",
     "symptomsName": "Typhoid Fever"
   },
   {
     "id": 9,
-    "image": "../src/assets/icons/diseases/piles.svg",
+    "image": "https://i.ibb.co/kxwvtk4/Vector.png",
     "symptomsName": "Piles"
   },
   {
     "id": 10,
-    "image": "../src/assets/icons/diseases/gastritis.svg",
+    "image": "https://i.ibb.co/kxwvtk4/Vector.png",
     "symptomsName": "Gastritis"
   }
 ]

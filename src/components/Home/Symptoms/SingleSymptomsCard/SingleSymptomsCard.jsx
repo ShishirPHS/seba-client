@@ -13,7 +13,7 @@ const SingleSymptomsCard = ({ symptom }) => {
           style={{ boxSizing: "content-box" }}
           className="p-4 rounded-[18px] md:rounded-[22px] px-[24px] lg:px-[35px] xl:px-[45px] py-[22px] lg:py-[30px] xl:py-[40px] w-10 lg:w-[50px] xl:w-auto h-10 md:h-auto"
           src={image}
-          alt="an icon of thermometer"
+          alt={`An icon representing ${symptomsName}`}
         />
       </div>
       <p className="text-black font-poppins text-xs lg:text-lg xl:text-2xl font-medium leading-[123%]">
