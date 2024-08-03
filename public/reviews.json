@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "img": "../src/assets/reviews/img1.svg",
+    "img": "https://i.ibb.co/7kQwwb8/1710182589409-1-1.png",
     "name": "Rifat Hasan Rafi",
     "userName": "@username_here",
     "comment": "We've moved all of our meetings to this new platform and it's made them all better and efficient. We've moved all of our meetings to this new platform and it's made them all better and efficient.",
@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "img": "../src/assets/reviews/img2.svg",
+    "img": "https://i.ibb.co/7kQwwb8/1710182589409-1-1.png",
     "name": "Amir Hasan",
     "userName": "@username_here",
     "comment": "We've moved all of our meetings to this new platform and it's made them all better and efficient. We've moved all of our meetings to this new platform and it's made them all better and efficient.",
@@ -19,7 +19,7 @@
   },
   {
     "id": 3,
-    "img": "../src/assets/reviews/img3.svg",
+    "img": "https://i.ibb.co/7kQwwb8/1710182589409-1-1.png",
     "name": "Alice Johnson",
     "userName": "@username_here",
     "comment": "We've moved all of our meetings to this new platform and it's made them all better and efficient. We've moved all of our meetings to this new platform and it's made them all better and efficient.",
@@ -28,7 +28,7 @@
   },
   {
     "id": 4,
-    "img": "../src/assets/reviews/img4.svg",
+    "img": "https://i.ibb.co/7kQwwb8/1710182589409-1-1.png",
     "name": "Bob Brown",
     "userName": "@username_here",
     "comment": "We've moved all of our meetings to this new platform and it's made them all better and efficient. We've moved all of our meetings to this new platform and it's made them all better and efficient.",
@@ -37,7 +37,7 @@
   },
   {
     "id": 5,
-    "img": "../src/assets/reviews/img5.svg",
+    "img": "https://i.ibb.co/7kQwwb8/1710182589409-1-1.png",
     "name": "Charlie White",
     "userName": "@username_here",
     "comment": "We've moved all of our meetings to this new platform and it's made them all better and efficient. We've moved all of our meetings to this new platform and it's made them all better and efficient.",
@@ -46,7 +46,7 @@
   },
   {
     "id": 6,
-    "img": "../src/assets/reviews/img6.svg",
+    "img": "https://i.ibb.co/7kQwwb8/1710182589409-1-1.png",
     "name": "Diana King",
     "userName": "@username_here",
     "comment": "We've moved all of our meetings to this new platform and it's made them all better and efficient. We've moved all of our meetings to this new platform and it's made them all better and efficient.",
@@ -55,7 +55,7 @@
   },
   {
     "id": 7,
-    "img": "../src/assets/reviews/img1.svg",
+    "img": "https://i.ibb.co/7kQwwb8/1710182589409-1-1.png",
     "name": "Rifat Hasan Rafi",
     "userName": "@username_here",
     "comment": "We've moved all of our meetings to this new platform and it's made them all better and efficient. We've moved all of our meetings to this new platform and it's made them all better and efficient.",
@@ -64,7 +64,7 @@
   },
   {
     "id": 8,
-    "img": "../src/assets/reviews/img2.svg",
+    "img": "https://i.ibb.co/7kQwwb8/1710182589409-1-1.png",
     "name": "Amir Hasan",
     "userName": "@username_here",
     "comment": "We've moved all of our meetings to this new platform and it's made them all better and efficient. We've moved all of our meetings to this new platform and it's made them all better and efficient.",
@@ -73,7 +73,7 @@
   },
   {
     "id": 9,
-    "img": "../src/assets/reviews/img3.svg",
+    "img": "https://i.ibb.co/7kQwwb8/1710182589409-1-1.png",
     "name": "Alice Johnson",
     "userName": "@username_here",
     "comment": "We've moved all of our meetings to this new platform and it's made them all better and efficient. We've moved all of our meetings to this new platform and it's made them all better and efficient.",
@@ -82,7 +82,7 @@
   },
   {
     "id": 10,
-    "img": "../src/assets/reviews/img4.svg",
+    "img": "https://i.ibb.co/7kQwwb8/1710182589409-1-1.png",
     "name": "Bob Brown",
     "userName": "@username_here",
     "comment": "We've moved all of our meetings to this new platform and it's made them all better and efficient. We've moved all of our meetings to this new platform and it's made them all better and efficient.",
@@ -91,7 +91,7 @@
   },
   {
     "id": 11,
-    "img": "../src/assets/reviews/img5.svg",
+    "img": "https://i.ibb.co/7kQwwb8/1710182589409-1-1.png",
     "name": "Charlie White",
     "userName": "@username_here",
     "comment": "We've moved all of our meetings to this new platform and it's made them all better and efficient. We've moved all of our meetings to this new platform and it's made them all better and efficient.",
@@ -100,7 +100,7 @@
   },
   {
     "id": 12,
-    "img": "../src/assets/reviews/img6.svg",
+    "img": "https://i.ibb.co/7kQwwb8/1710182589409-1-1.png",
     "name": "Diana King",
     "userName": "@username_here",
     "comment": "We've moved all of our meetings to this new platform and it's made them all better and efficient. We've moved all of our meetings to this new platform and it's made them all better and efficient.",

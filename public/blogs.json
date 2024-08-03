@@ -1,47 +1,47 @@
 [
   {
     "id": 1,
-    "image": "../src/assets/blogs/img1.png",
+    "image": "https://i.ibb.co/p21rjGx/Rectangle-4310.png",
     "blogName": "Healthy Lifestyle"
   },
   {
     "id": 2,
-    "image": "../src/assets/blogs/img2.png",
+    "image": "https://i.ibb.co/p21rjGx/Rectangle-4310.png",
     "blogName": "Women Health"
   },
   {
     "id": 3,
-    "image": "../src/assets/blogs/img3.png",
+    "image": "https://i.ibb.co/p21rjGx/Rectangle-4310.png",
     "blogName": "Skin Care"
   },
   {
     "id": 4,
-    "image": "../src/assets/blogs/img4.png",
+    "image": "https://i.ibb.co/p21rjGx/Rectangle-4310.png",
     "blogName": "Fitness Exercise"
   },
   {
     "id": 5,
-    "image": "../src/assets/blogs/img5.png",
+    "image": "https://i.ibb.co/p21rjGx/Rectangle-4310.png",
     "blogName": "Health News"
   },
   {
     "id": 6,
-    "image": "../src/assets/blogs/img6.png",
+    "image": "https://i.ibb.co/p21rjGx/Rectangle-4310.png",
     "blogName": "Dental Health"
   },
   {
     "id": 7,
-    "image": "../src/assets/blogs/img1.png",
+    "image": "https://i.ibb.co/p21rjGx/Rectangle-4310.png",
     "blogName": "Healthy Lifestyle"
   },
   {
     "id": 8,
-    "image": "../src/assets/blogs/img2.png",
+    "image": "https://i.ibb.co/p21rjGx/Rectangle-4310.png",
     "blogName": "Women Health"
   },
   {
     "id": 9,
-    "image": "../src/assets/blogs/img3.png",
+    "image": "https://i.ibb.co/p21rjGx/Rectangle-4310.png",
     "blogName": "Skin Care"
   }
 ]
