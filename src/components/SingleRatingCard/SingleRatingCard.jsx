@@ -22,7 +22,7 @@ const SingleRatingCard = ({ doctor }) => {
     >
       <div>
         <img
-          className="rounded-[40px] md:rounded-[20px] w-[111px] lg:w-[130px] xl:w-[120px] 2xl:w-auto"
+          className="rounded-[40px] w-[111px] lg:w-[130px] xl:w-[120px] 2xl:w-auto"
           src={image}
           alt=""
         />

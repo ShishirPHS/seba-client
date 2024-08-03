@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Dr. Shafwanur Rahman",
-    "image": "../src/assets/best-skin-doctor/img1.png",
+    "image": "https://i.ibb.co/ZcBvhSt/Rectangle-4329.png",
     "degree": "MBBS",
     "yearsOfExperience": 5,
     "averageRating": 5,
@@ -11,7 +11,7 @@
   {
     "id": 2,
     "name": "Dr. Mehedi Hasan",
-    "image": "../src/assets/best-skin-doctor/img2.png",
+    "image": "https://i.ibb.co/ZcBvhSt/Rectangle-4329.png",
     "degree": "MBBS",
     "yearsOfExperience": 4,
     "averageRating": 4,
@@ -20,7 +20,7 @@
   {
     "id": 3,
     "name": "Dr. Arafat Hossain",
-    "image": "../src/assets/best-skin-doctor/img3.png",
+    "image": "https://i.ibb.co/ZcBvhSt/Rectangle-4329.png",
     "degree": "MBBS",
     "yearsOfExperience": 8,
     "averageRating": 3,
@@ -29,7 +29,7 @@
   {
     "id": 4,
     "name": "Dr. Shafwanur Rahman",
-    "image": "../src/assets/best-skin-doctor/img1.png",
+    "image": "https://i.ibb.co/ZcBvhSt/Rectangle-4329.png",
     "degree": "MBBS",
     "yearsOfExperience": 5,
     "averageRating": 4,
@@ -38,7 +38,7 @@
   {
     "id": 5,
     "name": "Dr. Mehedi Hasan",
-    "image": "../src/assets/best-skin-doctor/img2.png",
+    "image": "https://i.ibb.co/ZcBvhSt/Rectangle-4329.png",
     "degree": "MBBS",
     "yearsOfExperience": 4,
     "averageRating": 5,
@@ -47,7 +47,7 @@
   {
     "id": 6,
     "name": "Dr. Arafat Hossain",
-    "image": "../src/assets/best-skin-doctor/img1.png",
+    "image": "https://i.ibb.co/ZcBvhSt/Rectangle-4329.png",
     "degree": "MBBS",
     "yearsOfExperience": 8,
     "averageRating": 5,
