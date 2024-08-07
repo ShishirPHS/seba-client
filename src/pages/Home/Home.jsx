@@ -10,15 +10,15 @@ import Banner from "../../components/Home/Banner/Banner";
 // import OurPartners from "../../components/Home/OurPartners/OurPartners";
 // import Reviews from "../../components/Home/Reviews/Reviews";
 // import Symptoms from "../../components/Home/Symptoms/Symptoms";
-// import VideoConsultation from "../../components/Home/VideoConsultation/VideoConsultation";
+import VideoConsultation from "../../components/Home/VideoConsultation/VideoConsultation";
 // import WhyChoose from "../../components/Home/WhyChoose/WhyChoose";
 
 const Home = () => {
   return (
     <div>
       <Banner></Banner>
-      {/* <VideoConsultation></VideoConsultation>
-      <FreeMedicalAdvice></FreeMedicalAdvice>
+      <VideoConsultation></VideoConsultation>
+      {/* <FreeMedicalAdvice></FreeMedicalAdvice>
       <Symptoms></Symptoms>
       <Diseases></Diseases>
       <DonateYourBlood></DonateYourBlood>
