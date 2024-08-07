@@ -81,40 +81,40 @@ const Navbar = () => {
             className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:flex justify-center md:w-auto md:basis-auto md:order-2"
           >
             {/* menu items */}
-            <div className="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:justify-center md:items-center md:gap-y-0 md:gap-x-[32px] xl:gap-x-[35px] 2xl:gap-x-[60px] md:mt-0 font-nunito font-bold">
+            <div className="flex flex-col mt-5 md:flex-row md:justify-center md:items-center gap-y-[10px] md:gap-y-0 gap-x-0 md:gap-x-[32px] xl:gap-x-[35px] 2xl:gap-x-[60px] md:mt-0 font-nunito font-bold">
               <NavLink
-                className="relative inline-block text-[#505050] text-xl md:text-sm xl:text-lg 2xl:text-xl hover:text-[#3ba4a7]"
+                className="relative inline-block text-[#505050] text-lg md:text-sm xl:text-lg 2xl:text-xl hover:text-[#3ba4a7]"
                 to="/doctors"
                 aria-current="page"
               >
                 Doctors
               </NavLink>
               <NavLink
-                className="inline-block text-[#505050] text-xl md:text-sm xl:text-lg 2xl:text-xl hover:text-[#3ba4a7]"
+                className="inline-block text-[#505050] text-lg md:text-sm xl:text-lg 2xl:text-xl hover:text-[#3ba4a7]"
                 to="/consultOnline"
               >
                 Consult Online
               </NavLink>
               <NavLink
-                className="inline-block text-[#505050] text-xl md:text-sm xl:text-lg 2xl:text-xl hover:text-[#3ba4a7]"
+                className="inline-block text-[#505050] text-lg md:text-sm xl:text-lg 2xl:text-xl hover:text-[#3ba4a7]"
                 to="/hospitals"
               >
                 Hospitals
               </NavLink>
               <NavLink
-                className="inline-block text-[#505050] text-xl md:text-sm xl:text-lg 2xl:text-xl hover:text-[#3ba4a7]"
+                className="inline-block text-[#505050] text-lg md:text-sm xl:text-lg 2xl:text-xl hover:text-[#3ba4a7]"
                 to="/labTests"
               >
                 Lab Tests
               </NavLink>
               <NavLink
-                className="inline-block text-[#505050] text-xl md:text-sm xl:text-lg 2xl:text-xl hover:text-[#3ba4a7]"
+                className="inline-block text-[#505050] text-lg md:text-sm xl:text-lg 2xl:text-xl hover:text-[#3ba4a7]"
                 to="/surgeries"
               >
                 Surgeries
               </NavLink>
               <NavLink
-                className="inline-block text-[#505050] text-xl md:text-sm xl:text-lg 2xl:text-xl hover:text-[#3ba4a7]"
+                className="inline-block text-[#505050] text-lg md:text-sm xl:text-lg 2xl:text-xl hover:text-[#3ba4a7]"
                 to="/healthBlogs"
               >
                 Health Blogs
@@ -122,16 +122,16 @@ const Navbar = () => {
             </div>
 
             {/* Button Group for small screens (login and signUp button)*/}
-            <div className="flex items-center gap-x-2 ms-auto py-1 md:ps-6 md:order-3 md:hidden mt-[20px]">
+            <div className="flex items-center gap-x-2 ms-auto md:ps-6 md:order-3 md:hidden mt-[20px]">
               <button
                 type="button"
-                className="inline-flex items-center gap-x-2 border border-gray-200 disabled:opacity-50 disabled:pointer-events-none text-white font-nunito text-xl font-bold bg-[#086060] rounded-[21px]  py-[18px] px-[40px]"
+                className="inline-flex items-center gap-x-2 border border-gray-200 disabled:opacity-50 disabled:pointer-events-none text-white font-nunito text-base font-bold bg-[#086060] rounded-[14px]  py-[8px] px-[35px]"
               >
                 Login
               </button>
               <button
                 type="button"
-                className="inline-flex items-center gap-x-2 border border-transparent transition disabled:opacity-50 disabled:pointer-events-none focus:outline-none text-white font-nunito text-xl font-bold px-[40px] py-[18px] bg-[#3BA4A7] rounded-[21px]"
+                className="inline-flex items-center gap-x-2 border border-transparent transition disabled:opacity-50 disabled:pointer-events-none focus:outline-none text-white font-nunito text-base font-bold px-[35px] py-[8px] bg-[#3BA4A7] rounded-[14px]"
               >
                 SignUp
               </button>
