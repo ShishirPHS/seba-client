@@ -13,7 +13,7 @@ const Navbar = () => {
           className="relative w-full flex justify-between flex-wrap basis-full items-center px-4 md:px-6 mx-auto"
           aria-label="Global"
         >
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button
               type="button"
               className="hs-collapse-toggle size-[38px] flex justify-center items-center text-sm font-semibold rounded-xl border border-gray-200 text-black hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:border-neutral-700 dark:hover:bg-neutral-700"
@@ -72,49 +72,49 @@ const Navbar = () => {
 
           {/* user default icon */}
           <div>
-            <img className="md:hidden" src={userDefault} alt="" />
+            <img className="lg:hidden" src={userDefault} alt="" />
           </div>
 
           {/* Collapse */}
           <div
             id="navbar-collapse-with-animation"
-            className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:flex justify-center md:w-auto md:basis-auto md:order-2"
+            className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow lg:flex justify-center lg:w-auto lg:basis-auto lg:order-2"
           >
             {/* menu items */}
-            <div className="flex flex-col mt-5 md:flex-row md:justify-center md:items-center gap-y-[10px] md:gap-y-0 gap-x-0 md:gap-x-[32px] xl:gap-x-[35px] 2xl:gap-x-[60px] md:mt-0 font-nunito font-bold">
+            <div className="flex flex-col lg:flex-row lg:justify-center lg:items-center gap-y-[10px] md:gap-y-0 gap-x-0 lg:gap-x-[32px] xl:gap-x-[35px] 2xl:gap-x-[60px] mt-5 lg:mt-0 font-nunito font-bold">
               <NavLink
-                className="relative inline-block text-[#505050] text-lg md:text-sm xl:text-lg 2xl:text-xl hover:text-[#3ba4a7]"
+                className="relative inline-block text-[#505050] text-lg lg:text-sm xl:text-lg 2xl:text-xl hover:text-[#3ba4a7]"
                 to="/doctors"
                 aria-current="page"
               >
                 Doctors
               </NavLink>
               <NavLink
-                className="inline-block text-[#505050] text-lg md:text-sm xl:text-lg 2xl:text-xl hover:text-[#3ba4a7]"
+                className="inline-block text-[#505050] text-lg lg:text-sm xl:text-lg 2xl:text-xl hover:text-[#3ba4a7]"
                 to="/consultOnline"
               >
                 Consult Online
               </NavLink>
               <NavLink
-                className="inline-block text-[#505050] text-lg md:text-sm xl:text-lg 2xl:text-xl hover:text-[#3ba4a7]"
+                className="inline-block text-[#505050] text-lg lg:text-sm xl:text-lg 2xl:text-xl hover:text-[#3ba4a7]"
                 to="/hospitals"
               >
                 Hospitals
               </NavLink>
               <NavLink
-                className="inline-block text-[#505050] text-lg md:text-sm xl:text-lg 2xl:text-xl hover:text-[#3ba4a7]"
+                className="inline-block text-[#505050] text-lg lg:text-sm xl:text-lg 2xl:text-xl hover:text-[#3ba4a7]"
                 to="/labTests"
               >
                 Lab Tests
               </NavLink>
               <NavLink
-                className="inline-block text-[#505050] text-lg md:text-sm xl:text-lg 2xl:text-xl hover:text-[#3ba4a7]"
+                className="inline-block text-[#505050] text-lg lg:text-sm xl:text-lg 2xl:text-xl hover:text-[#3ba4a7]"
                 to="/surgeries"
               >
                 Surgeries
               </NavLink>
               <NavLink
-                className="inline-block text-[#505050] text-lg md:text-sm xl:text-lg 2xl:text-xl hover:text-[#3ba4a7]"
+                className="inline-block text-[#505050] text-lg lg:text-sm xl:text-lg 2xl:text-xl hover:text-[#3ba4a7]"
                 to="/healthBlogs"
               >
                 Health Blogs
@@ -122,10 +122,10 @@ const Navbar = () => {
             </div>
 
             {/* Button Group for small screens (login and signUp button)*/}
-            <div className="flex items-center gap-x-2 ms-auto md:ps-6 md:order-3 md:hidden mt-[20px]">
+            <div className="flex items-center gap-x-2 ms-auto lg:hidden mt-[20px]">
               <button
                 type="button"
-                className="inline-flex items-center gap-x-2 border border-gray-200 disabled:opacity-50 disabled:pointer-events-none text-white font-nunito text-base font-bold bg-[#086060] rounded-[14px]  py-[8px] px-[35px]"
+                className="inline-flex items-center gap-x-2 border border-gray-200 disabled:opacity-50 disabled:pointer-events-none text-white font-nunito text-base font-bold bg-[#086060] rounded-[14px] py-[8px] px-[35px]"
               >
                 Login
               </button>
@@ -141,7 +141,7 @@ const Navbar = () => {
           {/* End Collapse */}
 
           {/* Button Group for large screens (login and signUp button) */}
-          <div className="hidden md:flex items-center gap-x-[17px] lg:gap-x-[8px] xl:gap-x-[10px] 2xl:gap-x-[17px] ms-auto py-1 md:order-3">
+          <div className="hidden lg:flex items-center gap-x-[17px] lg:gap-x-[8px] xl:gap-x-[10px] 2xl:gap-x-[17px] ms-auto py-1 md:order-3">
             <button
               type="button"
               className="inline-flex items-center border border-gray-200 disabled:opacity-50 disabled:pointer-events-none text-white font-nunito text-xl lg:text-sm xl:text-xl font-bold bg-[#086060] rounded-[21px] lg:rounded-[12px] xl:rounded-[18px] 2xl:rounded-[21px] py-[18px] lg:py-[10px] xl:py-[15px] 2xl:py-[18px] px-[40px] lg:px-[28px] xl:px-[40px]"
