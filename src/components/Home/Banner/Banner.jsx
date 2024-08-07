@@ -86,7 +86,7 @@ const Banner = () => {
           {/* banner right */}
           <div>
             <img
-              className="hidden md:block absolute bottom-0 right-0 w-[510px] xl:w-[780px] 2xl:w-auto"
+              className="hidden md:block absolute bottom-0 right-0 w-[456px] lg:w-[510px] xl:w-[780px] 2xl:w-auto"
               src={bannerImg}
               alt="banner image"
             />

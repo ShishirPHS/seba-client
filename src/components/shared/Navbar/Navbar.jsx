@@ -81,7 +81,7 @@ const Navbar = () => {
             className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow lg:flex justify-center lg:w-auto lg:basis-auto lg:order-2"
           >
             {/* menu items */}
-            <div className="flex flex-col lg:flex-row lg:justify-center lg:items-center gap-y-[10px] md:gap-y-0 gap-x-0 lg:gap-x-[32px] xl:gap-x-[35px] 2xl:gap-x-[60px] mt-5 lg:mt-0 font-nunito font-bold">
+            <div className="flex flex-col lg:flex-row lg:justify-center lg:items-center gap-y-[10px] lg:gap-y-0 gap-x-0 lg:gap-x-[32px] xl:gap-x-[35px] 2xl:gap-x-[60px] mt-5 lg:mt-0 font-nunito font-bold">
               <NavLink
                 className="relative inline-block text-[#505050] text-lg lg:text-sm xl:text-lg 2xl:text-xl hover:text-[#3ba4a7]"
                 to="/doctors"
