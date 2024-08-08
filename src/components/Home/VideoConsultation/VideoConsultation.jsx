@@ -31,7 +31,7 @@ const VideoConsultation = () => {
               Hospitals
             </p>
           </div>
-          <div className="bg-[#086060] pt-[3px] sm:pt-[9px] lg:pt-[10px] xl:pt-[12px] 2xl:pt-[17px] pb-[5px] sm:pb-[11px] lg:pb-3 xl:pb-[12px] 2xl:pb-[20px] px-[6px] sm:px-[12px] lg:px-5 xl:px-[34px] 2xl:px-[40px] rounded-[5px] sm:rounded-[10px] lg:rounded-[12px] xl:rounded-[16px] 2xl:rounded-[20px] mr-[70px] sm:mr-[148px] lg:mr-[270px] xl:mr-[341px] 2xl:mr-[460px]">
+          <div className="bg-[#086060] pt-[3px] sm:pt-[9px] lg:pt-[10px] xl:pt-[12px] 2xl:pt-[17px] pb-[5px] sm:pb-[11px] lg:pb-3 xl:pb-[12px] 2xl:pb-[20px] px-[6px] sm:px-[12px] lg:px-5 xl:px-[34px] 2xl:px-[40px] rounded-[5px] sm:rounded-[10px] lg:rounded-[12px] xl:rounded-[16px] 2xl:rounded-[20px] mr-[70px] sm:mr-[148px] md:mr-[210px] lg:mr-[270px] xl:mr-[341px] 2xl:mr-[460px]">
             <img
               className="w-[12px] sm:w-[24px] lg:w-[28px] xl:w-[30px] 2xl:w-auto h-[12px] sm:h-auto mx-auto"
               src={surgeries}
@@ -72,7 +72,7 @@ const VideoConsultation = () => {
             </p>
           </div>
           {/* card middle */}
-          <div className="bg-white pt-[6px] sm:pt-[8px] lg:pt-[14px] xl:pt-[12px] 2xl:pt-[34px] pb-[9px] sm:pb-[14px] lg:pb-[20px] xl:pb-[20px] 2xl:pb-[48px] px-[8px] sm:px-[14px] lg:px-[34px] xl:px-[50px] 2xl:px-[67px] rounded-[15px] sm:rounded-[24px] lg:rounded-[30px] xl:rounded-[34px] 2xl:rounded-[50px] absolute left-[50%] transform -translate-x-[50%] top-[50%] -translate-y-[50%] shadow-videoConsultation-normal lg:shadow-videoConsultation-large">
+          <div className="bg-white pt-[6px] sm:pt-[8px] md:pt-[12px] lg:pt-[14px] xl:pt-[12px] 2xl:pt-[34px] pb-[9px] sm:pb-[14px] md:pb-[16px] lg:pb-[20px] xl:pb-[20px] 2xl:pb-[48px] px-[8px] sm:px-[14px] md:px-[24px] lg:px-[34px] xl:px-[50px] 2xl:px-[67px] rounded-[15px] sm:rounded-[24px] lg:rounded-[30px] xl:rounded-[34px] 2xl:rounded-[50px] absolute left-[50%] transform -translate-x-[50%] top-[50%] -translate-y-[50%] shadow-videoConsultation-normal lg:shadow-videoConsultation-large">
             <img
               className="mx-auto w-5 sm:w-11 lg:w-[65px] xl:w-[80px] 2xl:w-auto h-[21px] sm:h-auto"
               src={videoConsultation}
