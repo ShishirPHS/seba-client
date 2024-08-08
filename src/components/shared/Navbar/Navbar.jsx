@@ -122,7 +122,7 @@ const Navbar = () => {
             </div>
 
             {/* Button Group for small screens (login and signUp button)*/}
-            <div className="flex items-center gap-x-2 ms-auto lg:hidden mt-[20px]">
+            <div className="flex items-center gap-x-6 ms-auto lg:hidden mt-[20px]">
               <button
                 type="button"
                 className="inline-flex items-center gap-x-2 border border-gray-200 disabled:opacity-50 disabled:pointer-events-none text-white font-nunito text-base font-bold bg-[#086060] rounded-[14px] py-[8px] px-[35px]"
