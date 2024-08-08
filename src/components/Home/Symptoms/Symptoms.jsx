@@ -13,10 +13,10 @@ const Symptoms = () => {
     <div className="container mx-auto mt-[38px] lg:mt-[95px] xl:mt-[105px] 2xl:mt-[118px] mb-[60px] lg:mb-[100px] xl:mb-[115px] 2xl:mb-[140px] px-5">
       {/* top */}
       <div className="flex justify-between mb-[35px] lg:mb-10 xl:mb-[49px]">
-        <p className="text-black font-poppins text-lg sm:text-[22px] md:text-2xl lg:text-2xl xl:text-[34px] 2xl:text-4xl font-medium leading-[123%]">
+        <p className="text-black font-poppins text-lg sm:text-[22px] md:text-2xl xl:text-[34px] 2xl:text-4xl font-medium leading-[123%]">
           Symptoms
         </p>
-        <p className="text-black font-poppins text-lg sm:text-[22px] md:text-2xl lg:text-2xl xl:text-[34px] 2xl:text-4xl font-medium leading-[123%] cursor-pointer">
+        <p className="text-black font-poppins text-lg sm:text-[22px] md:text-2xl xl:text-[34px] 2xl:text-4xl font-medium leading-[123%] cursor-pointer">
           View All
         </p>
       </div>
