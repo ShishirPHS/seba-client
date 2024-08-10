@@ -18,7 +18,7 @@ const WhyChoose = () => {
           style={{
             boxShadow: "0px 22px 60px 0px rgba(0, 0, 0, 0.10)",
           }}
-          className="absolute right-[62%] lg:right-[62.5%] xl:right-[61%] 2xl:right-[57%] top-[22px] lg:top-[67px] xl:top-[57px] rounded-[10px] lg:rounded-[12px] xl:rounded-[17px] py-[10px] lg:py-[12px] xl:py-[25px] pl-[23px] lg:pl-[20px] xl:pl-[25px] pr-[24px] lg:pr-[40px] xl:pr-[54px] text-black text-[7px] lg:text-base xl:text-2xl font-medium font-poppins leading-[123%] bg-[#EAECFF]"
+          className="absolute right-[54%] lg:right-[62.5%] xl:right-[61%] 2xl:right-[57%] top-[22px] lg:top-[67px] xl:top-[57px] rounded-[10px] lg:rounded-[12px] xl:rounded-[17px] py-[10px] lg:py-[12px] xl:py-[25px] pl-[23px] lg:pl-[20px] xl:pl-[25px] pr-[24px] lg:pr-[40px] xl:pr-[54px] text-black text-[7px] lg:text-base xl:text-2xl font-medium font-poppins leading-[123%] bg-[#EAECFF]"
         >
           BMDC verified doctor
         </p>
@@ -26,7 +26,7 @@ const WhyChoose = () => {
           style={{
             boxShadow: "0px 22px 60px 0px rgba(0, 0, 0, 0.10)",
           }}
-          className="absolute right-[61%] lg:right-[62.5%] xl:right-[61%] 2xl:right-[56.5%] top-[117px] lg:top-[301px] xl:top-[297px] rounded-[10px] lg:rounded-[12px] xl:rounded-[17px] py-[10px] lg:py-[12px] xl:py-[25px] pl-[23px] lg:pl-[20px] xl:pl-[25px] pr-[24px] lg:pr-[40px] xl:pr-[54px] text-black text-[7px] lg:text-base xl:text-2xl font-medium font-poppins leading-[123%] bg-[#FFF1F2]"
+          className="absolute right-[50%] lg:right-[62.5%] xl:right-[61%] 2xl:right-[56.5%] top-[117px] lg:top-[301px] xl:top-[297px] rounded-[10px] lg:rounded-[12px] xl:rounded-[17px] py-[10px] lg:py-[12px] xl:py-[25px] pl-[23px] lg:pl-[20px] xl:pl-[25px] pr-[24px] lg:pr-[40px] xl:pr-[54px] text-black text-[7px] lg:text-base xl:text-2xl font-medium font-poppins leading-[123%] bg-[#FFF1F2]"
         >
           No more Prescription lost
         </p>
@@ -34,7 +34,7 @@ const WhyChoose = () => {
           style={{
             boxShadow: "0px 22px 60px 0px rgba(0, 0, 0, 0.10)",
           }}
-          className="absolute left-[59%] lg:left-[58.5%] xl:left-[57%] 2xl:left-[54.5%] top-[44px] lg:top-[105px] xl:top-[113px] rounded-[10px] lg:rounded-[12px] xl:rounded-[17px] py-[10px] lg:py-[12px] xl:py-[25px] pl-[23px] lg:pl-[20px] xl:pl-[25px] pr-[24px] lg:pr-[40px] xl:pr-[54px] text-black text-[7px] lg:text-base xl:text-2xl font-medium font-poppins leading-[123%] bg-[#FFF5E4]"
+          className="absolute left-[56%] lg:left-[58.5%] xl:left-[57%] 2xl:left-[54.5%] top-[44px] lg:top-[105px] xl:top-[113px] rounded-[10px] lg:rounded-[12px] xl:rounded-[17px] py-[10px] lg:py-[12px] xl:py-[25px] pl-[23px] lg:pl-[20px] xl:pl-[25px] pr-[24px] lg:pr-[40px] xl:pr-[54px] text-black text-[7px] lg:text-base xl:text-2xl font-medium font-poppins leading-[123%] bg-[#FFF5E4]"
         >
           Blood donor finding
         </p>
@@ -42,7 +42,7 @@ const WhyChoose = () => {
           style={{
             boxShadow: "0px 22px 60px 0px rgba(0, 0, 0, 0.10)",
           }}
-          className="absolute left-[62.5%] lg:left-[62.5%] xl:left-[61%] 2xl:left-[57%] top-[193px] lg:top-[457px] xl:top-[487px] rounded-[10px] lg:rounded-[12px] xl:rounded-[17px] py-[10px] lg:py-[12px] xl:py-[25px] pl-[23px] lg:pl-[20px] xl:pl-[25px] pr-[24px] lg:pr-[40px] xl:pr-[54px] text-black text-[7px] lg:text-base xl:text-2xl font-medium font-poppins leading-[123%] bg-[#E3FFE5]"
+          className="absolute left-[54%] lg:left-[62.5%] xl:left-[61%] 2xl:left-[57%] top-[193px] lg:top-[457px] xl:top-[487px] rounded-[10px] lg:rounded-[12px] xl:rounded-[17px] py-[10px] lg:py-[12px] xl:py-[25px] pl-[23px] lg:pl-[20px] xl:pl-[25px] pr-[24px] lg:pr-[40px] xl:pr-[54px] text-black text-[7px] lg:text-base xl:text-2xl font-medium font-poppins leading-[123%] bg-[#E3FFE5]"
         >
           24/7 online doctor
         </p>
