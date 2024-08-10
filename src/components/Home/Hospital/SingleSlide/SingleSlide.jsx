@@ -12,15 +12,15 @@ const SingleSlide = ({ hospital }) => {
       style={{
         boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
       }}
-      className="bg-white rounded-[22px] pl-[44px] md:pl-[26px] pr-1 md:pr-1 py-[22px] mb-2 mt-2 mx-[2px]"
+      className="bg-white rounded-[22px] pl-[26px] sm:pl-[40px] md:pl-[26px] pr-1 md:pr-1 py-[22px] mb-2 mt-2 mx-[2px]"
     >
       {/* img div */}
-      <div className="rounded-[22px] mb-6 pr-[40px] md:pr-[22px]">
+      <div className="rounded-[22px] mb-6 pr-[22px] sm:pr-[36px] md:pr-[22px]">
         <img className="w-full rounded-[22px]" src={image} alt="" />
       </div>
       {/* text div */}
-      <div className="pr-[90px] lg:pr-[20px] xl:pr-0">
-        <h5 className="mb-[8px] text-[#121212] font-poppins text-[13px] lg:text-lg xl:text-xl font-semibold">
+      <div className="pr-[20px] lg:pr-[20px] xl:pr-0 max-w-[360px] sm:max-w-[412px]">
+        <h5 className="mb-[8px] text-[#121212] font-poppins text-[13px] sm:text-base lg:text-lg xl:text-xl font-semibold">
           {hospitalName}
         </h5>
         <div>
@@ -29,9 +29,9 @@ const SingleSlide = ({ hospital }) => {
             {/* icon */}
             <img className="mt-[8px]" src={icon1} alt="" />
             {/* text */}
-            <p className="text-[#121212] text-[11px] lg:text-sm xl:text-[15px] font-inter">
+            <p className="text-[#121212] text-[11px] sm:text-[13px] lg:text-sm xl:text-[15px] font-inter">
               <span className="text-[#121212] font-medium font-inter">
-                Specialities :
+                Specialities:{" "}
               </span>
               {specialities}
             </p>
@@ -41,9 +41,9 @@ const SingleSlide = ({ hospital }) => {
             {/* icon */}
             <img src={icon2} alt="" />
             {/* text */}
-            <p className="text-[#121212] text-[11px] lg:text-sm xl:text-[15px] font-inter">
+            <p className="text-[#121212] text-[11px] sm:text-[13px] lg:text-sm xl:text-[15px] font-inter">
               <span className="text-[#121212] font-medium font-inter">
-                Area :
+                Area:{" "}
               </span>
               {area}
             </p>
@@ -53,9 +53,9 @@ const SingleSlide = ({ hospital }) => {
             {/* icon */}
             <img src={icon3} alt="" />
             {/* text */}
-            <p className="text-[#121212] text-[11px] lg:text-sm xl:text-[15px] font-inter">
+            <p className="text-[#121212] text-[11px] sm:text-[13px] lg:text-sm xl:text-[15px] font-inter">
               <span className="text-[#121212] font-medium font-inter">
-                Address :
+                Address:{" "}
               </span>
               {address}
             </p>
@@ -63,7 +63,7 @@ const SingleSlide = ({ hospital }) => {
         </div>
       </div>
       {/* button div */}
-      <div className="mt-[28px] md:mt-[14px] pr-[40px] lg:pr-[22px]">
+      <div className="mt-[28px] md:mt-[14px] pr-[22px] sm:pr-[36px] md:pr-[22px]">
         <button className="text-white font-poppins text-[13px] font-semibold py-[15px] bg-[#086060] rounded-[22px] w-full">
           View Clinic
         </button>

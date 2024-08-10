@@ -97,7 +97,7 @@ const Hospital = () => {
       )}
 
       {/* view all btn */}
-      <button className="text-white font-poppins text-2xl lg:text-xl xl:text-[22px] 2xl:text-2xl leading-[123%] px-[69px] lg:px-[58px] xl:px-[62px] 2xl:px-[69px] py-[27px] lg:py-[18px] xl:py-[24px] 2xl:py-[27px] bg-[#086060] rounded-[23px] hidden md:block mx-auto">
+      <button className="text-white font-poppins text-2xl md:text-lg lg:text-xl xl:text-[22px] 2xl:text-2xl leading-[123%] px-[69px] lg:px-[58px] xl:px-[62px] 2xl:px-[69px] py-[22px] lg:py-[18px] xl:py-[24px] 2xl:py-[27px] bg-[#086060] rounded-[23px] hidden md:block mx-auto">
         View All
       </button>
     </div>
