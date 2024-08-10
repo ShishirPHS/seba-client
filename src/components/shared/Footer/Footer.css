@@ -5,7 +5,7 @@
 #footerMiddle ul li a {
   font-family: "sfPro";
   background: transparent !important;
-  font-weight: 400;
-  font-size: 15px;
+  font-weight: 400; 
   line-height: 200%;
+  @apply text-[10px] md:text-[13px]
 }

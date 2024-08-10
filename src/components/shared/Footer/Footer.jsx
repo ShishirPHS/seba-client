@@ -8,10 +8,10 @@ import { FaTwitter } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="bg-[#013131]">
-      <div className="container mx-auto pt-[33px] lg:pt-[90px] xl:pt-[120px] pb-[10px] lg:pb-[50px] xl:pb-[110px] px-5">
+      <div className="container mx-auto pt-[33px] lg:pt-[90px] xl:pt-[120px] pb-[10px] lg:pb-[50px] xl:pb-[60px] 2xl:pb-[90px] px-5">
         {/* footer top */}
         <div className="mb-[50px] lg:mb-[100px] xl:mb-[117px]">
-          <p className="text-white font-poppins text-sm lg:text-[34px] xl:text-4xl font-bold leading-[142%] max-w-[150px] md:max-w-[400px] text-center mx-auto">
+          <p className="text-white font-poppins text-sm md:text-2xl lg:text-[34px] xl:text-4xl font-bold leading-[142%] max-w-[150px] md:max-w-[270px] lg:max-w-[400px] text-center mx-auto">
             Find the Best Doctor Near You
           </p>
           {/* buttons div */}
@@ -26,14 +26,14 @@ const Footer = () => {
         </div>
         {/* footer middle */}
         <div
-          className="flex items-start flex-wrap justify-between gap-[30px] mb-[10px] md:mb-[113px]"
+          className="grid grid-cols-2 sm:flex sm:items-start sm:justify-between gap-x-[24px] gap-y-[30px] mb-[10px] md:mb-[60px] 2xl:mb-[113px]"
           id="footerMiddle"
         >
           <div>
-            <p className="uppercase text-[15px] font-bold font-sfPro text-white mb-[15px] md:mb-5">
+            <p className="uppercase text-[13px] md:text-[15px] font-bold font-sfPro text-white mb-[8px] md:mb-5">
               navigation
             </p>
-            <ul className="text-[15px]">
+            <ul>
               <li>
                 <a href="">Home</a>
               </li>
@@ -53,10 +53,10 @@ const Footer = () => {
           </div>
           {/* what we do */}
           <div>
-            <p className="uppercase text-[15px] font-bold font-sfPro text-white mb-[15px] md:mb-5">
+            <p className="uppercase text-[13x] md:text-[15px] text-right sm:text-left font-bold font-sfPro text-white mb-[8px] md:mb-5">
               What We Do
             </p>
-            <ul className="text-[15px]">
+            <ul className="flex flex-col items-end sm:items-start">
               <li>
                 <a href="">Encouraging Testing</a>
               </li>
@@ -79,10 +79,10 @@ const Footer = () => {
           </div>
           {/* legal */}
           <div>
-            <p className="uppercase text-[15px] font-bold font-sfPro text-white mb-[15px] md:mb-5">
+            <p className="uppercase text-[13px] md:text-[15px] font-bold font-sfPro text-white mb-[8px] md:mb-5">
               LEGAL
             </p>
-            <ul className="text-[15px]">
+            <ul>
               <li>
                 <a href="">General Info</a>
               </li>
@@ -96,10 +96,10 @@ const Footer = () => {
           </div>
           {/* talk to us */}
           <div>
-            <p className="uppercase text-[15px] font-bold font-sfPro text-white mb-[15px] md:mb-5">
+            <p className="uppercase text-[13px] md:text-[15px] text-right sm:text-left font-bold font-sfPro text-white mb-[8px] md:mb-5">
               TALK TO US
             </p>
-            <ul className="text-[15px]">
+            <ul className="flex flex-col items-end sm:items-start">
               <li>
                 <a href="">support@ercom.com</a>
               </li>
@@ -123,10 +123,10 @@ const Footer = () => {
         </div>
         {/* footer bottom */}
         <div>
-          <div className="w-full h-[1px] lg:h-[2px] bg-[#1A4646] mb-[10px] lg:mb-[20px] xl:mb-[33px]"></div>
+          <div className="w-full h-[1px] lg:h-[2px] bg-[#1A4646] mb-[10px] md:mb-[20px] xl:mb-[33px]"></div>
           <div className="flex items-center justify-between">
             <img
-              className="w-[61px] lg:w-[147px] xl:w-auto"
+              className="w-[61px] lg:w-[147px] xl:w-[175px] 2xl:w-auto"
               src={footerLogo}
               alt=""
             />
@@ -136,13 +136,13 @@ const Footer = () => {
             </p>
             {/* social icons */}
             <div className="flex items-center gap-[17px] text-white">
-              <div className="border-[1px] border-[#406565] p-1 md:p-[16px] rounded-[18px]">
+              <div className="border-[1px] border-[#406565] p-1 md:p-[10px] lg:p-4 rounded-[6px] md:rounded-xl">
                 <FaFacebookF className="text-[8px] md:text-base"></FaFacebookF>
               </div>
-              <div className="border-[1px] border-[#406565] p-1 md:p-[16px] rounded-[18px]">
+              <div className="border-[1px] border-[#406565] p-1 md:p-[10px] lg:p-4 rounded-[6px] md:rounded-xl">
                 <FaLinkedinIn className="text-[8px] md:text-base"></FaLinkedinIn>
               </div>
-              <div className="border-[1px] border-[#406565] p-1 md:p-[16px] rounded-[18px]">
+              <div className="border-[1px] border-[#406565] p-1 md:p-[10px] lg:p-4 rounded-[6px] md:rounded-xl">
                 <FaTwitter className="text-[8px] md:text-base"></FaTwitter>
               </div>
             </div>
