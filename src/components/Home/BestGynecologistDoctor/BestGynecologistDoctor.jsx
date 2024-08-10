@@ -18,9 +18,9 @@ const BestGynecologistDoctor = () => {
       id="bestGynecologistDoctor"
     >
       <div className="">
-        <h3 className="text-black font-poppins text-[18px] lg:text-2xl xl:text-[34px] 2xl:text-4xl font-medium leading-[123%] capitalize mb-0 lg:mb-[16px] xl:mb-[26px] max-w-[275px] md:max-w-none text-center md:text-left mx-auto px-5">
+        <h3 className="text-black font-poppins text-[18px] sm:text-xl lg:text-2xl xl:text-[34px] 2xl:text-4xl font-medium leading-[123%] capitalize mb-0 lg:mb-[16px] xl:mb-[26px] max-w-[275px] sm:max-w-[305px] md:max-w-none text-center md:text-left mx-auto px-5">
           best gynecologist doctor{" "}
-          <span className="text-[14px] lg:text-2xl xl:text-[34px] 2xl:text-4xl">
+          <span className="text-[14px] sm:text-base lg:text-2xl xl:text-[34px] 2xl:text-4xl">
             of the month
           </span>
         </h3>
@@ -29,7 +29,7 @@ const BestGynecologistDoctor = () => {
             <Swiper
               breakpoints={{
                 640: {
-                  slidesPerView: 1,
+                  slidesPerView: 2,
                 },
                 768: {
                   slidesPerView: 2,
