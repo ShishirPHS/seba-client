@@ -37,7 +37,7 @@ const SingleReviewCard = ({ review }) => {
           {comment}
         </p>
       </div>
-      <p className="font-dmSans text-black text-[5px] sm:text-[9px] lg:text-base xl:text-lg font-bold leading-[166%] absolute left-[14px] md:left-auto md:right-[33px] md:top-[21px] bottom-[10px] md:bottom-auto">
+      <p className="font-dmSans text-black text-[5px] sm:text-[9px] lg:text-base xl:text-lg font-bold leading-[166%] absolute left-[14px] lg:left-auto lg:right-[33px] lg:top-[21px] bottom-[10px] lg:bottom-auto">
         {rating}
       </p>
     </div>
