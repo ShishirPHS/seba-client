@@ -28,8 +28,8 @@ const Blogs = () => {
             ))}
           </div>
 
-          {/* for lg devices */}
-          <div className="hidden lg:grid xl:hidden grid-cols-2 gap-[25px] md:gap-[39px]">
+          {/* for md and lg devices */}
+          <div className="hidden md:grid xl:hidden grid-cols-2 gap-[25px] md:gap-[39px]">
             {smallDeviceBlogs.map((blog) => (
               <SingleBlogCard key={blog.id} blog={blog}></SingleBlogCard>
             ))}
