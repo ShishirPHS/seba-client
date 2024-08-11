@@ -8,18 +8,18 @@ import { FaTwitter } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="bg-[#013131]">
-      <div className="container mx-auto pt-[33px] lg:pt-[90px] xl:pt-[120px] pb-[10px] lg:pb-[50px] xl:pb-[60px] 2xl:pb-[90px] px-5">
+      <div className="container mx-auto pt-[33px] lg:pt-[90px] xl:pt-[120px] pb-[10px] sm:pb-[30px] lg:pb-[50px] xl:pb-[60px] 2xl:pb-[90px] px-5">
         {/* footer top */}
         <div className="mb-[50px] lg:mb-[100px] xl:mb-[117px]">
-          <p className="text-white font-poppins text-sm md:text-2xl lg:text-[34px] xl:text-4xl font-bold leading-[142%] max-w-[150px] md:max-w-[270px] lg:max-w-[400px] text-center mx-auto">
+          <p className="text-white font-poppins text-sm sm:text-base md:text-2xl lg:text-[34px] xl:text-4xl font-bold leading-[142%] max-w-[150px] sm:max-w-[170px] md:max-w-[270px] lg:max-w-[400px] text-center mx-auto">
             Find the Best Doctor Near You
           </p>
           {/* buttons div */}
           <div className="mt-[26px] md:mt-[60px] flex items-center justify-center gap-[6px] md:gap-6">
-            <button className="text-white font-poppins text-[6px] md:text-sm font-semibold leading-[107%] uppercase py-[8px] md:py-[20px] px-[20px] md:px-[74px] border-white border-[2px] rounded-[5px] md:rounded-[5px]">
+            <button className="text-white font-poppins text-[6px] md:text-sm font-semibold leading-[107%] uppercase py-[8px] md:py-[12px] lg:py-[20px] px-[20px] md:px-[44px] lg:px-[74px] border-white border-[2px] rounded-[5px] md:rounded-[5px]">
               sign up
             </button>
-            <button className="text-[#023A3A] bg-white font-poppins font-semibold text-[6px] md:text-sm leading-[107%] rounded-[5px] md:rounded-[5px] uppercase py-[10px] md:py-[20px] px-[20px] md:px-[74px]">
+            <button className="text-[#023A3A] bg-white font-poppins font-semibold text-[6px] md:text-sm leading-[107%] rounded-[5px] md:rounded-[5px] uppercase py-[10px] md:py-[12px] lg:py-[20px] px-[20px] md:px-[44px] lg:px-[74px]">
               sign in
             </button>
           </div>

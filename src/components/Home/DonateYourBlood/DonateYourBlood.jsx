@@ -30,7 +30,7 @@ const DonateYourBlood = () => {
           See who is available for Donate Blood
         </p>
         {/* button div for small devices */}
-        <div className="flex justify-center md:hidden gap-[6px] absolute bottom-5 left-[50%] transform -translate-x-[50%]">
+        <div className="flex justify-center md:hidden gap-[6px] sm:gap-[20px] absolute bottom-5 left-[50%] transform -translate-x-[50%]">
           <button
             style={{ boxShadow: "0px 4px 50px 0px rgba(255, 255, 255, 0.21)" }}
             className="font-poppins text-[10px] sm:text-[17px] font-medium leading-[123%] text-white bg-[#1C1C1C] rounded-[14px] sm:rounded-[18px] py-[12px] sm:py-[18px] px-[34px] sm:px-[40px] flex-shrink-0"
