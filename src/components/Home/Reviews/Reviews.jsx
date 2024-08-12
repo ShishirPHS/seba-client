@@ -1,6 +1,7 @@
 import useReview from "../../../hooks/useReview";
 import SectionHeader from "../../SectionHeader/SectionHeader";
 import SingleReviewCard from "./SingleReviewCard/SingleReviewCard";
+import "./Reviews.css";
 
 const Reviews = () => {
   const [userReview] = useReview();
@@ -31,7 +32,10 @@ const Reviews = () => {
             ))}
           </div>
           {/* for large devices */}
-          <div className="hidden md:grid grid-cols-2 md:grid-cols-3 gap-[11px] lg:gap-4 xl:gap-6">
+          <div
+            className="hidden md:grid grid-cols-2 md:grid-cols-3 items-start gap-[11px] lg:gap-4 xl:gap-6"
+            id="review-container"
+          >
             {largeDeviceReviews.map((review) => (
               <SingleReviewCard
                 key={review.id}

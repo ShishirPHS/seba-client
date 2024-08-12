@@ -1,0 +1,18 @@
+/* #review-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px
+}
+
+#review-container>div{
+    box-sizing: border-box;
+}
+
+#review-container>div:nth-child(even){
+    padding-bottom: 30px;
+    margin-bottom: -20px;
+} 
+
+#review-container>div:nth-child(even) + div{
+    margin-top: 20px;
+} */
