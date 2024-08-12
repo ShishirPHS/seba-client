@@ -36,10 +36,11 @@ const Reviews = () => {
             className="hidden md:grid grid-cols-2 md:grid-cols-3 items-start gap-[11px] lg:gap-4 xl:gap-6"
             id="review-container"
           >
-            {largeDeviceReviews.map((review) => (
+            {largeDeviceReviews.map((review, index) => (
               <SingleReviewCard
                 key={review.id}
                 review={review}
+                index={index}
               ></SingleReviewCard>
             ))}
           </div>
