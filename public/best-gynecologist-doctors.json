@@ -1,12 +1,12 @@
 [
   {
     "id": 1,
-    "name": "Dr. Mahnaz Sultana",
+    "name": "Dr. Rifat Ara Nova",
     "image": "https://i.ibb.co/ZcBvhSt/Rectangle-4329.png",
     "degree": "MBBS",
-    "yearsOfExperience": 5,
+    "yearsOfExperience": 3,
     "averageRating": 5,
-    "fiveStarRatingCount": 120
+    "fiveStarRatingCount": 278
   },
   {
     "id": 2,
@@ -15,25 +15,25 @@
     "degree": "MBBS",
     "yearsOfExperience": 4,
     "averageRating": 4,
-    "fiveStarRatingCount": 98
+    "fiveStarRatingCount": 193
   },
   {
     "id": 3,
     "name": "Dr. Mahnaz Sultana",
     "image": "https://i.ibb.co/ZcBvhSt/Rectangle-4329.png",
     "degree": "MBBS",
-    "yearsOfExperience": 8,
-    "averageRating": 3,
-    "fiveStarRatingCount": 76
+    "yearsOfExperience": 5,
+    "averageRating": 5,
+    "fiveStarRatingCount": 504
   },
   {
     "id": 4,
-    "name": "Dr. Mahnaz Sultana",
+    "name": "Dr. Rifat Ara Nova",
     "image": "https://i.ibb.co/ZcBvhSt/Rectangle-4329.png",
     "degree": "MBBS",
-    "yearsOfExperience": 5,
-    "averageRating": 4,
-    "fiveStarRatingCount": 110
+    "yearsOfExperience": 3,
+    "averageRating": 5,
+    "fiveStarRatingCount": 278
   },
   {
     "id": 5,
@@ -41,7 +41,16 @@
     "image": "https://i.ibb.co/ZcBvhSt/Rectangle-4329.png",
     "degree": "MBBS",
     "yearsOfExperience": 4,
+    "averageRating": 4,
+    "fiveStarRatingCount": 193
+  },
+  {
+    "id": 6,
+    "name": "Dr. Mahnaz Sultana",
+    "image": "https://i.ibb.co/ZcBvhSt/Rectangle-4329.png",
+    "degree": "MBBS",
+    "yearsOfExperience": 5,
     "averageRating": 5,
-    "fiveStarRatingCount": 135
+    "fiveStarRatingCount": 504
   }
 ]
