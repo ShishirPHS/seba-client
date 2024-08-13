@@ -22,7 +22,7 @@ const Blogs = () => {
         ></SectionHeader>
         <div className="mt-[64px] lg:mt-20 2xl:mt-[120px]">
           {/* for small devices */}
-          <div className="md:hidden grid grid-cols-2 lg:grid-cols-3 gap-[25px] md:gap-[39px]">
+          <div className="md:hidden grid grid-cols-2 lg:grid-cols-3 gap-[25px] sm:gap-[30px] md:gap-[39px]">
             {smallDeviceBlogs.map((blog) => (
               <SingleBlogCard key={blog.id} blog={blog}></SingleBlogCard>
             ))}
