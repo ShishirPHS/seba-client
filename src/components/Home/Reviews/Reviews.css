@@ -1,18 +1,12 @@
-/* #review-container {
+#review-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px
+    grid-template-columns: repeat(3, 1fr); 
 }
 
 #review-container>div{
     box-sizing: border-box;
 }
 
-#review-container>div:nth-child(even){
-    padding-bottom: 30px;
-    margin-bottom: -20px;
-} 
-
-#review-container>div:nth-child(even) + div{
-    margin-top: 20px;
-} */
+#review-container>div:nth-child(3n+2){
+    @apply lg:pb-[45px] xl:pb-[60px] 2xl:pb-[90px]
+}
