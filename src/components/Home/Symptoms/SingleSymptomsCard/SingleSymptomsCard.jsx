@@ -16,7 +16,7 @@ const SingleSymptomsCard = ({ symptom }) => {
           alt={`An icon representing ${symptomsName}`}
         />
       </div>
-      <p className="text-black font-poppins text-xs sm:text-sm md:text-base lg:text-lg xl:text-2xl font-medium leading-[123%]">
+      <p className="text-black text-center font-poppins text-xs sm:text-sm md:text-base lg:text-lg xl:text-2xl font-medium leading-[123%]">
         {symptomsName}
       </p>
     </div>
