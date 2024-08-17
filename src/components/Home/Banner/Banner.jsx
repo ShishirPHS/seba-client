@@ -8,6 +8,22 @@ const Banner = () => {
   const selectRef1 = useRef(null);
   const selectRef2 = useRef(null);
 
+  const symptoms = [
+    {
+      label: "Symptoms",
+      value: "",
+    },
+    { label: "Fever", value: "fever" },
+    {
+      label: "Heart Attack",
+      value: "heartAttack",
+    },
+    {
+      label: "High Blood Pressure",
+      value: "highBloodPressure",
+    },
+  ];
+
   const handleImageClick = (ref) => {
     if (ref.current) {
       ref.current.focus();
@@ -42,16 +58,17 @@ const Banner = () => {
                 <div className="w-full relative">
                   <select
                     ref={selectRef1}
-                    className="select w-full text-sm font-poppins lg:text-lg xl:text-2xl text-[#808080]"
+                    className="w-full text-sm font-poppins lg:text-lg xl:text-2xl text-[#808080] bg-white"
                     defaultValue={"Symptoms"}
                   >
-                    <option disabled>Symptoms</option>
-                    <option>Svelte</option>
-                    <option>Vue</option>
-                    <option>React</option>
+                    {symptoms.map((option, index) => (
+                      <option value={option.value} key={index}>
+                        {option.label}
+                      </option>
+                    ))}
                   </select>
                   <img
-                    className="absolute right-[15px] lg:right-[12px] xl:right-0 top-[50%] transform translate-y-[-50%] bg-white cursor-pointer z-20 w-[19px] lg:w-[26px] xl:w-auto h-[27px] md:h-auto"
+                    className="hidden right-[15px] lg:right-[12px] xl:right-0 top-[50%] transform translate-y-[-50%] bg-white cursor-pointer z-20 w-[19px] lg:w-[26px] xl:w-auto h-[27px] md:h-auto"
                     src={angelDown}
                     alt="angel down"
                     onClick={() => handleImageClick(selectRef1)}
@@ -60,7 +77,7 @@ const Banner = () => {
                 <div className="w-full relative">
                   <select
                     ref={selectRef2}
-                    className="select w-full text-sm font-poppins lg:text-lg xl:text-2xl text-[#808080]"
+                    className="w-full text-sm font-poppins lg:text-lg xl:text-2xl text-[#808080] bg-white"
                     defaultValue={"Diseases"}
                   >
                     <option disabled>Diseases</option>
@@ -69,7 +86,7 @@ const Banner = () => {
                     <option>React</option>
                   </select>
                   <img
-                    className="absolute right-[15px] lg:right-[12px] xl:right-0 top-[50%] transform translate-y-[-50%] bg-white cursor-pointer z-20 w-[19px] lg:w-[26px] xl:w-auto h-[27px] md:h-auto"
+                    className="hidden right-[15px] lg:right-[12px] xl:right-0 top-[50%] transform translate-y-[-50%] bg-white cursor-pointer z-20 w-[19px] lg:w-[26px] xl:w-auto h-[27px] md:h-auto"
                     src={angelDown}
                     alt="angel down"
                     onClick={() => handleImageClick(selectRef2)}
