@@ -3,24 +3,57 @@ import "./Banner.css";
 import locationIcon from "../../../assets/icons/location-icon.svg";
 import angelDown from "../../../assets/icons/angel-down.svg";
 import { useRef } from "react";
+import Select from "react-select";
 
 const Banner = () => {
   const selectRef1 = useRef(null);
   const selectRef2 = useRef(null);
 
   const symptoms = [
-    {
-      label: "Symptoms",
-      value: "",
-    },
     { label: "Fever", value: "fever" },
     {
       label: "Heart Attack",
       value: "heartAttack",
     },
     {
+      label: "Pregnancy",
+      value: "pregnancy",
+    },
+    {
       label: "High Blood Pressure",
       value: "highBloodPressure",
+    },
+    {
+      label: "Breathlessness",
+      value: "breathlessness",
+    },
+    {
+      label: "Diarrhea",
+      value: "diarrhea",
+    },
+  ];
+
+  const diseases = [
+    { label: "Fever", value: "fever" },
+    {
+      label: "Heart Attack",
+      value: "heartAttack",
+    },
+    {
+      label: "Pregnancy",
+      value: "pregnancy",
+    },
+    {
+      label: "High Blood Pressure",
+      value: "highBloodPressure",
+    },
+    {
+      label: "Breathlessness",
+      value: "breathlessness",
+    },
+    {
+      label: "Diarrhea",
+      value: "diarrhea",
     },
   ];
 
@@ -56,17 +89,12 @@ const Banner = () => {
               </div>
               <div className="border-b border-[#808080] flex justify-between pt-[8px] lg:pt-[10px] xl:pt-[20px] 2xl:pt-[48px] px-[8px] lg:px-[12px] xl:px-[32px] pb-[2px] lg:pb-[6px] xl:pb-[20px] 2xl:pb-[30px] gap-[5px] lg:gap-[10px] xl:gap-[24px] 2xl:gap-[100px]">
                 <div className="w-full relative">
-                  <select
+                  <Select
                     ref={selectRef1}
                     className="w-full text-sm font-poppins lg:text-lg xl:text-2xl text-[#808080] bg-white"
-                    defaultValue={"Symptoms"}
-                  >
-                    {symptoms.map((option, index) => (
-                      <option value={option.value} key={index}>
-                        {option.label}
-                      </option>
-                    ))}
-                  </select>
+                    options={symptoms}
+                    placeholder="Symptoms"
+                  />
                   <img
                     className="hidden right-[15px] lg:right-[12px] xl:right-0 top-[50%] transform translate-y-[-50%] bg-white cursor-pointer z-20 w-[19px] lg:w-[26px] xl:w-auto h-[27px] md:h-auto"
                     src={angelDown}
@@ -75,16 +103,12 @@ const Banner = () => {
                   />
                 </div>
                 <div className="w-full relative">
-                  <select
+                  <Select
                     ref={selectRef2}
                     className="w-full text-sm font-poppins lg:text-lg xl:text-2xl text-[#808080] bg-white"
-                    defaultValue={"Diseases"}
-                  >
-                    <option disabled>Diseases</option>
-                    <option>Svelte</option>
-                    <option>Vue</option>
-                    <option>React</option>
-                  </select>
+                    options={diseases}
+                    placeholder="Diseases"
+                  />
                   <img
                     className="hidden right-[15px] lg:right-[12px] xl:right-0 top-[50%] transform translate-y-[-50%] bg-white cursor-pointer z-20 w-[19px] lg:w-[26px] xl:w-auto h-[27px] md:h-auto"
                     src={angelDown}
