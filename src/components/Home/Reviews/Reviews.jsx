@@ -42,7 +42,7 @@ const Reviews = () => {
           </div>
           {/* for medium and large devices */}
           <div
-            className="hidden md:grid grid-cols-2 md:grid-cols-3 items-start gap-[11px] lg:gap-4 xl:gap-6"
+            className="hidden md:block columns-3 items-start gap-[11px] lg:gap-4 xl:gap-6"
             id="review-container"
           >
             {isSeeMore

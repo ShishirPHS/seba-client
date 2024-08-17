@@ -3,9 +3,9 @@
     grid-template-columns: repeat(3, 1fr); 
 }  */
 
-#review-container>div:nth-child(3n+2){
+/* #review-container>div:nth-child(3n+2){
     @apply lg:pb-[45px] xl:pb-[60px] 2xl:pb-[90px]
-}
+} */
 
 /* #review-container>div:nth-child(3n+4), #review-container>div:nth-child(3n+6){
     @apply lg:-mt-[21px] xl:-mt-[30px] 2xl:-mt-[55px]
