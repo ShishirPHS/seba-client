@@ -31,9 +31,69 @@ const Banner = () => {
       label: "Diarrhea",
       value: "diarrhea",
     },
-  ];
-
-  const diseases = [
+    { label: "Fever", value: "fever" },
+    {
+      label: "Heart Attack",
+      value: "heartAttack",
+    },
+    {
+      label: "Pregnancy",
+      value: "pregnancy",
+    },
+    {
+      label: "High Blood Pressure",
+      value: "highBloodPressure",
+    },
+    {
+      label: "Breathlessness",
+      value: "breathlessness",
+    },
+    {
+      label: "Diarrhea",
+      value: "diarrhea",
+    },
+    { label: "Fever", value: "fever" },
+    {
+      label: "Heart Attack",
+      value: "heartAttack",
+    },
+    {
+      label: "Pregnancy",
+      value: "pregnancy",
+    },
+    {
+      label: "High Blood Pressure",
+      value: "highBloodPressure",
+    },
+    {
+      label: "Breathlessness",
+      value: "breathlessness",
+    },
+    {
+      label: "Diarrhea",
+      value: "diarrhea",
+    },
+    { label: "Fever", value: "fever" },
+    {
+      label: "Heart Attack",
+      value: "heartAttack",
+    },
+    {
+      label: "Pregnancy",
+      value: "pregnancy",
+    },
+    {
+      label: "High Blood Pressure",
+      value: "highBloodPressure",
+    },
+    {
+      label: "Breathlessness",
+      value: "breathlessness",
+    },
+    {
+      label: "Diarrhea",
+      value: "diarrhea",
+    },
     { label: "Fever", value: "fever" },
     {
       label: "Heart Attack",
@@ -56,6 +116,14 @@ const Banner = () => {
       value: "diarrhea",
     },
   ];
+
+  const style = {
+    control: (base) => ({
+      ...base,
+      border: 0,
+      boxShadow: "none",
+    }),
+  };
 
   const handleImageClick = (ref) => {
     if (ref.current) {
@@ -94,6 +162,8 @@ const Banner = () => {
                     className="w-full text-sm font-poppins lg:text-lg xl:text-2xl text-[#808080] bg-white"
                     options={symptoms}
                     placeholder="Symptoms"
+                    noOptionsMessage={() => "No symptom found"}
+                    styles={style}
                   />
                   <img
                     className="hidden right-[15px] lg:right-[12px] xl:right-0 top-[50%] transform translate-y-[-50%] bg-white cursor-pointer z-20 w-[19px] lg:w-[26px] xl:w-auto h-[27px] md:h-auto"
@@ -106,8 +176,10 @@ const Banner = () => {
                   <Select
                     ref={selectRef2}
                     className="w-full text-sm font-poppins lg:text-lg xl:text-2xl text-[#808080] bg-white"
-                    options={diseases}
+                    options={symptoms}
                     placeholder="Diseases"
+                    noOptionsMessage={() => "No disease found"}
+                    styles={style}
                   />
                   <img
                     className="hidden right-[15px] lg:right-[12px] xl:right-0 top-[50%] transform translate-y-[-50%] bg-white cursor-pointer z-20 w-[19px] lg:w-[26px] xl:w-auto h-[27px] md:h-auto"

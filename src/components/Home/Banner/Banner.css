@@ -1,12 +1,40 @@
-.banner input{
-    border: none;
+.banner input {
+  border: none;
 }
 
-.banner input:focus{
-    outline: none !important;
+.banner input:focus {
+  outline: none !important;
 }
- 
-.banner select:focus{
-    outline: none !important;
-    border: 0;
-} 
+
+.banner .css-1u9des2-indicatorSeparator {
+  width: 0;
+}
+
+.banner .css-1gxfbx6-control {
+  cursor: pointer;
+}
+
+.banner .css-hlgwow {
+  padding: 2px 0 2px 16px;
+}
+
+.banner .css-1jqq78o-placeholder {
+  margin: 0;
+}
+
+.banner .css-19bb58m {
+  margin: 0;
+  padding: 0;
+}
+
+.banner .css-1xc3v61-indicatorContainer {
+  mask: url("../../../assets/icons/angel-down.svg") no-repeat center;
+  background: #000000;
+  cursor: pointer;
+}
+
+.banner .css-15lsz6c-indicatorContainer {
+  mask: url("../../../assets/icons/angel-down.svg") no-repeat center;
+  background: #000000;
+  cursor: pointer;
+}
