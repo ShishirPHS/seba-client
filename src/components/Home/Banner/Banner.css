@@ -26,6 +26,9 @@
   margin: 0;
   padding: 0;
 }
+.banner .dropdown-icon {
+  @apply w-[20px] md:w-[22px] lg:w-[30px] 2xl:w-[30px] 3xl:w-[40px];
+}
 
 /* .banner .css-1xc3v61-indicatorContainer {
   mask: url("../../../assets/icons/angel-down.svg") no-repeat center;

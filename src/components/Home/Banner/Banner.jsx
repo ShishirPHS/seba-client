@@ -2,7 +2,7 @@ import bannerImg from "../../../assets/banner/banner-image.png";
 import "./Banner.css";
 import locationIcon from "../../../assets/icons/location-icon.svg";
 import { useEffect, useState } from "react";
-import Select from "react-select";
+import Select, { components } from "react-select";
 
 const Banner = () => {
   const [menuListHeight, setMenuListHeight] = useState("120px");
@@ -125,6 +125,26 @@ const Banner = () => {
     return "120px"; // default height for smaller screens
   };
 
+  const DropdownIndicator = (props) => {
+    return (
+      <components.DropdownIndicator {...props}>
+        <svg
+          className="dropdown-icon"
+          width="43"
+          height="47"
+          viewBox="0 0 43 47"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M21.6488 29.375C20.0393 29.375 18.5282 28.6778 17.3896 27.4088L9.62679 19.319C9.27361 18.9508 9.25429 18.33 9.58638 17.9344C9.91671 17.5408 10.4737 17.5193 10.8286 17.8894L18.6125 26.0028C20.266 27.8416 23.0527 27.8201 24.6657 26.0263L32.469 17.8913C32.8239 17.5232 33.3809 17.5428 33.7112 17.9364C34.0415 18.332 34.024 18.9528 33.6708 19.3209L25.8869 27.4343C24.7694 28.6798 23.2583 29.377 21.6488 29.377V29.375Z"
+            fill="black"
+          />
+        </svg>
+      </components.DropdownIndicator>
+    );
+  };
+
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
@@ -150,6 +170,7 @@ const Banner = () => {
       ...base,
       maxHeight: menuListHeight,
     }),
+    dropdownIndicator: (base) => ({ ...base, padding: 0 }),
   };
 
   return (
@@ -158,7 +179,7 @@ const Banner = () => {
         <div className="sm:mx-5">
           {/* banner left */}
           <div className="mb-[70px] lg:mb-[70px] xl:mb-[130px] 2xl:mb-[156px] bg-white rounded-[40px] lg:rounded-[30px] xl:rounded-[40px] pt-[23px] lg:pt-[30px] xl:pt-[39px] 2xl:pt-[49px] pb-[23px] lg:pb-[25px] xl:pb-[40px] px-7 lg:px-[25px] xl:px-[44px] 2xl:px-16 mt-[64px] lg:mt-[80px] xl:mt-[150px] 2xl:mt-[177px] w-full md:w-[50%] relative z-20">
-            <h3 className="mb-[25px] lg:mb-[30px] xl:mb-[50px] 2xl:mb-[62px] font-poppins text-xl sm:text-2xl lg:text-[30px] xl:text-[38px] 2xl:text-5xl text-center md:text-left font-bold max-w-[226px] sm:max-w-[270px] lg:max-w-[320px] xl:max-w-[412px] 2xl:max-w-[490px] leading-[123%] block md:inline-block mx-auto">
+            <h3 className="mb-[25px] lg:mb-[30px] xl:mb-[50px] 2xl:mb-[62px] font-poppins text-[20px] sm:text-[24px] lg:text-[30px] xl:text-[38px] 2xl:text-[48px] text-center md:text-left font-bold max-w-[226px] sm:max-w-[270px] lg:max-w-[320px] xl:max-w-[412px] 2xl:max-w-[490px] leading-[123%] block md:inline-block mx-auto">
               Find the Best Doctor Near You
             </h3>
             <form className="border border-[#808080] rounded-[25px] lg:rounded-[30px] xl:rounded-[40px]">
@@ -182,6 +203,7 @@ const Banner = () => {
                     options={symptoms}
                     placeholder="Symptoms"
                     noOptionsMessage={() => "No symptom found"}
+                    components={{ DropdownIndicator }}
                     styles={style}
                   />
                 </div>
@@ -191,6 +213,7 @@ const Banner = () => {
                     options={symptoms}
                     placeholder="Diseases"
                     noOptionsMessage={() => "No disease found"}
+                    components={{ DropdownIndicator }}
                     styles={style}
                   />
                 </div>
