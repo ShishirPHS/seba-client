@@ -148,7 +148,7 @@ const Banner = () => {
     }),
     menuList: (base) => ({
       ...base,
-      height: menuListHeight,
+      maxHeight: menuListHeight,
     }),
   };
 
