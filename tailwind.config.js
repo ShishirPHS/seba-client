@@ -25,13 +25,16 @@ export default {
         "slider-navigation-btn-shadow-for-3xl":
           "0px 4px 24px rgba(0, 0, 0, 0.25)",
       },
-    },
-    fontFamily: {
-      nunito: ["Nunito", "sans-serif"],
-      poppins: ["Poppins", "sans-serif"],
-      dmSans: ["DM Sans", "sans-serif"],
-      inter: ["Inter", "sans-serif"],
-      sfPro: ["sfPro", "sans-serif"],
+      fontFamily: {
+        nunito: ["Nunito", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
+        dmSans: ["DM Sans", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
+        sfPro: ["sfPro", "sans-serif"],
+      },
+      colors: {
+        primary: "var(--color-primary)",
+      },
     },
   },
   plugins: [require("preline/plugin"), require("daisyui")],

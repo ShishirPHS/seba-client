@@ -125,7 +125,7 @@ const Navbar = () => {
             <div className="flex items-center gap-x-6 ms-auto lg:hidden mt-[20px]">
               <button
                 type="button"
-                className="inline-flex items-center gap-x-2 border border-gray-200 disabled:opacity-50 disabled:pointer-events-none text-white font-nunito text-base font-bold bg-[#086060] rounded-[14px] py-[8px] px-[35px]"
+                className="inline-flex items-center gap-x-2 border border-gray-200 disabled:opacity-50 disabled:pointer-events-none text-white font-nunito text-base font-bold bg-primary rounded-[14px] py-[8px] px-[35px]"
               >
                 Login
               </button>

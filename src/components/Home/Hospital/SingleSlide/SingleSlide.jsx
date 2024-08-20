@@ -64,7 +64,7 @@ const SingleSlide = ({ hospital }) => {
       </div>
       {/* button div */}
       <div className="mt-[28px] md:mt-[14px] pr-[22px] sm:pr-[36px] md:pr-[22px]">
-        <button className="text-white font-poppins text-[13px] font-semibold py-[15px] bg-[#086060] rounded-[22px] w-full">
+        <button className="text-white font-poppins text-[13px] font-semibold py-[15px] bg-primary rounded-[22px] w-full">
           View Clinic
         </button>
       </div>

@@ -7,7 +7,7 @@ const SingleSymptomsCard = ({ symptom }) => {
     <div className="flex flex-col items-center">
       <div
         style={{ boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)" }}
-        className="mb-[12px] lg:mb-[18px] xl:mb-[22px] border border-[#086060] rounded-[18px] md:rounded-[22px]"
+        className="mb-[12px] lg:mb-[18px] xl:mb-[22px] border border-primary rounded-[18px] md:rounded-[22px]"
       >
         <img
           style={{ boxSizing: "content-box" }}

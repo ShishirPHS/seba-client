@@ -34,7 +34,7 @@ const FreeMedicalAdvice = () => {
               <button className="px-[15px] sm:px-[22px] lg:px-[30px] xl:px-[30px] 2xl:px-[34px] py-[8px] sm:py-3 lg:py-[14px] xl:py-[15px] 2xl:py-[19px] font-poppins text-[6px] sm:text-[10px] lg:text-[12px] xl:text-[12px] 2xl:text-[15px] font-medium leading-[123%] bg-white rounded-[7px] sm:rounded-xl lg:rounded-[12px] xl:rounded-[14px] 2xl:rounded-[22px]">
                 View All Questions
               </button>
-              <button className="rounded-[7px] sm:rounded-xl lg:rounded-[12px] xl:rounded-[14px] 2xl:rounded-[22px] bg-[#086060] text-[6px] sm:text-[10px] lg:text-[12px] xl:text-[12px] 2xl:text-[15px] text-white px-[13px] sm:px-[20px] lg:px-[30px] xl:px-[30px] 2xl:px-[30px] py-[8px] sm:py-3 lg:py-[14px] xl:py-[15px] 2xl:py-[19px] font-poppins font-medium leading-[123%]">
+              <button className="rounded-[7px] sm:rounded-xl lg:rounded-[12px] xl:rounded-[14px] 2xl:rounded-[22px] bg-primary text-[6px] sm:text-[10px] lg:text-[12px] xl:text-[12px] 2xl:text-[15px] text-white px-[13px] sm:px-[20px] lg:px-[30px] xl:px-[30px] 2xl:px-[30px] py-[8px] sm:py-3 lg:py-[14px] xl:py-[15px] 2xl:py-[19px] font-poppins font-medium leading-[123%]">
                 Ask a Question
               </button>
             </div>

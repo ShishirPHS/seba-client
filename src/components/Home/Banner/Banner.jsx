@@ -174,7 +174,7 @@ const Banner = () => {
   };
 
   return (
-    <div className="bg-[#086060] banner px-[24px] sm:px-0">
+    <div className="bg-primary banner px-[24px] sm:px-0">
       <div className="container mx-auto relative overflow-hidden">
         <div className="sm:mx-5">
           {/* banner left */}

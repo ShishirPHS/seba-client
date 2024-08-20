@@ -50,7 +50,7 @@ const WhyChoose = () => {
       {/* bottom div */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-3 xl:gap-6">
         {/* bottom left */}
-        <div className="col-span-1 rounded-[17px] px-[10px] lg:px-5 xl:px-[30px] 3xl:pl-[66px] py-[20px] lg:py-4 xl:py-[18px] bg-[#086060] w-full md:w-auto">
+        <div className="col-span-1 rounded-[17px] px-[10px] lg:px-5 xl:px-[30px] 3xl:pl-[66px] py-[20px] lg:py-4 xl:py-[18px] bg-primary w-full md:w-auto">
           <p className="font-poppins text-[13px] md:text-[11px] lg:text-[13px] xl:text-lg 2xl:text-2xl font-medium leading-[123%] text-white text-center md:text-left max-w-[300px] md:max-w-none mx-auto">
             Country First Doctor Patients Relation Management System
           </p>
