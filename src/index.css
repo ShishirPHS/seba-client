@@ -1,7 +1,3 @@
-:root {
-  --color-primary: #086060;
-}
-
 /* link for nunito font */
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
@@ -24,3 +20,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --color-primary: #086060;
+  --color-secondary: #3ba4a7;
+}

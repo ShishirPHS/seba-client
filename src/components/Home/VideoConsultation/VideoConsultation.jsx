@@ -8,7 +8,7 @@ import videoConsultation from "../../../assets/icons/video-consultation/video-co
 
 const VideoConsultation = () => {
   return (
-    <div className="bg-[#3BA4A7] py-1 sm:py-[10px] lg:pt-[12px] xl:pt-[17px] lg:pb-[15px] xl:pb-[20px] mb-[18px] sm:mb-[40px] lg:mb-[100px] xl:mb-[112px] 2xl:mb-[123px]">
+    <div className="bg-secondary py-1 sm:py-[10px] lg:pt-[12px] xl:pt-[17px] lg:pb-[15px] xl:pb-[20px] mb-[18px] sm:mb-[40px] lg:mb-[100px] xl:mb-[112px] 2xl:mb-[123px]">
       <div className="container mx-auto">
         <div className="flex justify-between relative mx-5">
           <div className="bg-primary pt-[3px] sm:pt-[9px] lg:pt-[10px] xl:pt-[12px] 2xl:pt-[17px] pb-[5px] sm:pb-[11px] lg:pb-3 xl:pb-[12px] 2xl:pb-[20px] px-[6px] sm:px-[12px] lg:px-5 xl:px-[34px] 2xl:px-[40px] rounded-[5px] sm:rounded-[10px] lg:rounded-[12px] xl:rounded-[16px] 2xl:rounded-[20px]">

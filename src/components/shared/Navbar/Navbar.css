@@ -1,7 +1,7 @@
 #navbar .hs-collapse-toggle {
   border: none;
-}  
+}
 
 #navbar a.active {
-  color: #3ba4a7 !important;
+  color: var(--color-secondary) !important;
 }
