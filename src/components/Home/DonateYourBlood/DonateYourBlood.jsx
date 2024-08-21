@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import img1 from "../../../assets/donate-your-blood/img1.png";
 
 const DonateYourBlood = () => {
@@ -15,8 +16,10 @@ const DonateYourBlood = () => {
           Donate Now
         </button>
         <p className="text-[#7C7373] font-poppins text-center text-[15px] md:text-xs lg:text-sm xl:text-2xl leading-[123%] mt-[15px] md:mt-0 mb-[36px] md:mb-0">
-          <span className="underline cursor-pointer">Login</span> and View who
-          is available for Donate Blood
+          <Link to="/login">
+            <span className="underline">Login</span>
+          </Link>{" "}
+          and View who is available for Donate Blood
         </p>
       </div>
       {/* right */}
