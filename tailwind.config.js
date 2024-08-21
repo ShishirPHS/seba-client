@@ -35,6 +35,7 @@ export default {
       colors: {
         primary: "var(--color-primary)",
         secondary: "var(--color-secondary)",
+        primaryBg: "var(--color-primary-bg)",
       },
     },
   },

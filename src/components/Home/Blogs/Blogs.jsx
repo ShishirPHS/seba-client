@@ -12,7 +12,7 @@ const Blogs = () => {
   const largeDeviceBlogs = blogsInfo.slice(0, 6);
 
   return (
-    <div className="bg-[#013131]">
+    <div className="bg-primaryBg">
       <div
         className="container mx-auto pt-[105px] pb-[62px] px-5"
         id="blogsWrapper"
@@ -61,7 +61,7 @@ const Blogs = () => {
             style={{
               filter: "blur(50px)",
             }}
-            className="h-[91px] lg:h-[198px] xl:h-[288px] w-full bg-gradient-to-b from-[#013131] to-[#013131b3] -mt-[33px] lg:-mt-[67px] xl:-mt-[124px] z-20 relative"
+            className="h-[91px] lg:h-[198px] xl:h-[288px] w-full bg-gradient-to-b from-primaryBg to-[#013131b3] -mt-[33px] lg:-mt-[67px] xl:-mt-[124px] z-20 relative"
           ></div>
           <button
             onClick={() => setIsSeeMore(!isSeeMore)}

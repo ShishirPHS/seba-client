@@ -7,7 +7,7 @@ import { FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="bg-[#013131]">
+    <div className="bg-primaryBg">
       <div className="container mx-auto pt-[33px] lg:pt-[90px] xl:pt-[120px] pb-[10px] sm:pb-[30px] lg:pb-[50px] xl:pb-[60px] 2xl:pb-[90px] px-5">
         {/* footer top */}
         <div className="mb-[50px] lg:mb-[100px] xl:mb-[117px]">
