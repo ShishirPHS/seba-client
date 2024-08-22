@@ -25,7 +25,7 @@ const Reviews = () => {
         {/* reviews */}
         <div className="relative">
           {/* for small devices */}
-          <div className="grid md:hidden grid-cols-2 md:grid-cols-3 gap-[11px] sm:gap-4 lg:gap-5 xl:gap-6">
+          <div className="grid md:hidden grid-cols-2 items-start gap-[11px] sm:gap-4">
             {isSeeMore
               ? userReview.map((review) => (
                   <SingleReviewCard
@@ -42,7 +42,7 @@ const Reviews = () => {
           </div>
           {/* for medium and large devices */}
           <div
-            className="hidden md:block columns-3 items-start gap-[11px] lg:gap-4 xl:gap-6"
+            className="hidden md:grid grid-cols-3 items-start gap-[11px] lg:gap-4 xl:gap-6"
             id="review-container"
           >
             {isSeeMore
