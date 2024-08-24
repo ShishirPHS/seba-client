@@ -9,8 +9,8 @@ const Reviews = () => {
   const [isSeeMore, setIsSeeMore] = useState(false);
   const [userReview] = useReview();
 
-  // const smallDeviceReviews = userReview.slice(0, 4);
-  // const largeDeviceReviews = userReview.slice(0, 6);
+  const smallDeviceReviews = userReview.slice(0, 4);
+  const largeDeviceReviews = userReview.slice(0, 6);
 
   return (
     <div className="container mx-auto">
@@ -24,50 +24,48 @@ const Reviews = () => {
           ></SectionHeader>
         </div>
         {/* reviews */}
-        <MasonryLayout>
-          {userReview.map((review, index) => (
-            <SingleReviewCard
-              key={review.id}
-              review={review}
-              index={index}
-            ></SingleReviewCard>
-          ))}
-        </MasonryLayout>
+
         <div className="">
           {/* for small devices */}
-          {/* <div className="gridContainer md:hidden grid-cols-2 items-start gap-[11px] sm:gap-4">
-            {isSeeMore
-              ? userReview.map((review) => (
-                  <SingleReviewCard
-                    key={review.id}
-                    review={review}
-                  ></SingleReviewCard>
-                ))
-              : smallDeviceReviews.map((review) => (
-                  <SingleReviewCard
-                    key={review.id}
-                    review={review}
-                  ></SingleReviewCard>
-                ))}
-          </div> */}
+          <div className="grid md:hidden">
+            <MasonryLayout>
+              {isSeeMore
+                ? userReview.map((review, index) => (
+                    <SingleReviewCard
+                      key={review.id}
+                      review={review}
+                      index={index}
+                    ></SingleReviewCard>
+                  ))
+                : smallDeviceReviews.map((review, index) => (
+                    <SingleReviewCard
+                      key={review.id}
+                      review={review}
+                      index={index}
+                    ></SingleReviewCard>
+                  ))}
+            </MasonryLayout>
+          </div>
           {/* for medium and large devices */}
-          {/* <div className="gridContainer hidden md:grid grid-cols-3 items-start gap-[11px] lg:gap-4 xl:gap-6">
-            {isSeeMore
-              ? userReview.map((review, index) => (
-                  <SingleReviewCard
-                    key={review.id}
-                    review={review}
-                    index={index}
-                  ></SingleReviewCard>
-                ))
-              : largeDeviceReviews.map((review, index) => (
-                  <SingleReviewCard
-                    key={review.id}
-                    review={review}
-                    index={index}
-                  ></SingleReviewCard>
-                ))}
-          </div> */}
+          <div className="hidden md:grid">
+            <MasonryLayout>
+              {isSeeMore
+                ? userReview.map((review, index) => (
+                    <SingleReviewCard
+                      key={review.id}
+                      review={review}
+                      index={index}
+                    ></SingleReviewCard>
+                  ))
+                : largeDeviceReviews.map((review, index) => (
+                    <SingleReviewCard
+                      key={review.id}
+                      review={review}
+                      index={index}
+                    ></SingleReviewCard>
+                  ))}
+            </MasonryLayout>
+          </div>
           {/* button */}
           <div className="relative">
             <div
