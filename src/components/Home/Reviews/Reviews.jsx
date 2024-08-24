@@ -3,13 +3,14 @@ import SectionHeader from "../../SectionHeader/SectionHeader";
 import SingleReviewCard from "./SingleReviewCard/SingleReviewCard";
 import "./Reviews.css";
 import { useState } from "react";
+import MasonryLayout from "./MasonryLayout/MasonryLayout";
 
 const Reviews = () => {
   const [isSeeMore, setIsSeeMore] = useState(false);
   const [userReview] = useReview();
 
-  const smallDeviceReviews = userReview.slice(0, 4);
-  const largeDeviceReviews = userReview.slice(0, 6);
+  // const smallDeviceReviews = userReview.slice(0, 4);
+  // const largeDeviceReviews = userReview.slice(0, 6);
 
   return (
     <div className="container mx-auto">
@@ -23,9 +24,18 @@ const Reviews = () => {
           ></SectionHeader>
         </div>
         {/* reviews */}
-        <div className="relative">
+        <MasonryLayout>
+          {userReview.map((review, index) => (
+            <SingleReviewCard
+              key={review.id}
+              review={review}
+              index={index}
+            ></SingleReviewCard>
+          ))}
+        </MasonryLayout>
+        <div className="">
           {/* for small devices */}
-          <div className="grid md:hidden grid-cols-2 items-start gap-[11px] sm:gap-4">
+          {/* <div className="gridContainer md:hidden grid-cols-2 items-start gap-[11px] sm:gap-4">
             {isSeeMore
               ? userReview.map((review) => (
                   <SingleReviewCard
@@ -39,12 +49,9 @@ const Reviews = () => {
                     review={review}
                   ></SingleReviewCard>
                 ))}
-          </div>
+          </div> */}
           {/* for medium and large devices */}
-          <div
-            className="hidden md:grid grid-cols-3 items-start gap-[11px] lg:gap-4 xl:gap-6"
-            id="review-container"
-          >
+          {/* <div className="gridContainer hidden md:grid grid-cols-3 items-start gap-[11px] lg:gap-4 xl:gap-6">
             {isSeeMore
               ? userReview.map((review, index) => (
                   <SingleReviewCard
@@ -60,7 +67,7 @@ const Reviews = () => {
                     index={index}
                   ></SingleReviewCard>
                 ))}
-          </div>
+          </div> */}
           {/* button */}
           <div className="relative">
             <div
