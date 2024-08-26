@@ -10,7 +10,7 @@
 
 @media (min-width: 640px) and (max-width: 767.98px) {
   .blogItem {
-    width: 48.5%;
+    width: 288px;
   }
 }
 
@@ -20,7 +20,7 @@
   }
 
   .blogItem {
-    width: 31.7%;
+    width: 230px;
   }
 }
 
@@ -30,7 +30,7 @@
   }
 
   .blogItem {
-    width: 32.2%;
+    width: 315px;
   }
 }
 
@@ -40,7 +40,7 @@
   }
 
   .blogItem {
-    width: 32.2%;
+    width: 398px;
   }
 }
 
@@ -50,7 +50,7 @@
   }
 
   .blogItem {
-    width: 31.8%;
+    width: 493px;
   }
 }
 
@@ -60,6 +60,6 @@
   }
 
   .blogItem {
-    width: 32.2%;
+    width: 603px;
   }
 }

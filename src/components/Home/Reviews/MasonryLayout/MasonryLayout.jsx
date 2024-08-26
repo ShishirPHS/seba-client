@@ -4,31 +4,42 @@ import PropTypes from "prop-types";
 import imagesLoaded from "imagesloaded";
 import "./MasonryLayout.css";
 
+const screenSizes = [
+  { breakpoint: 1920, gutter: 31, fitWidth: true }, // 3xl
+  { breakpoint: 1589, gutter: 31, fitWidth: true }, // 2xl
+  { breakpoint: 1280, gutter: 20, fitWidth: true }, // xl
+  { breakpoint: 1024, gutter: 16, fitWidth: true }, // lg
+  { breakpoint: 768, gutter: 16, fitWidth: true }, // md
+  { breakpoint: 640, gutter: 16, fitWidth: true }, // sm
+];
+
 const MasonryLayout = ({ children }) => {
   const [gutter, setGutter] = useState(10);
+  const [fitWidth, setFitWidth] = useState(false);
   const masonryRef = useRef(null);
 
-  const getGutterByScreenSize = (width) => {
-    if (width >= 1920) return 31; // 3xl
-    if (width >= 1589) return 31; // 2xl
-    if (width >= 1280) return 20; // xl
-    if (width >= 1024) return 16; // lg
-    if (width >= 768) return 16; // md
-    if (width >= 640) return 16; // sm
-    return 10; // default gutter for smaller screens
-  };
-
   useEffect(() => {
-    const handleGutter = () => {
-      const width = window.innerWidth;
-      setGutter(getGutterByScreenSize(width));
+    const getGutterByScreenSize = (width) => {
+      const size = screenSizes.find((s) => width >= s.breakpoint);
+      return size ? size.gutter : 10; // default gutter for smaller screens
     };
 
-    handleGutter(); // Set initial gutter
-    window.addEventListener("resize", handleGutter);
+    const getFitWidthValueByScreenSize = (width) => {
+      const size = screenSizes.find((s) => width >= s.breakpoint);
+      return size ? size.fitWidth : false; // default value for smaller screens
+    };
+
+    const handleResize = () => {
+      const width = window.innerWidth;
+      setGutter(getGutterByScreenSize(width));
+      setFitWidth(getFitWidthValueByScreenSize(width));
+    };
+
+    handleResize(); // Set initial gutter
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener("resize", handleGutter);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -37,6 +48,7 @@ const MasonryLayout = ({ children }) => {
       itemSelector: ".blogItem",
       percentPosition: true,
       gutter: gutter,
+      fitWidth: fitWidth,
     });
 
     imagesLoaded(masonryRef.current, () => {
@@ -46,7 +58,7 @@ const MasonryLayout = ({ children }) => {
     return () => {
       masonryInstance.destroy();
     };
-  }, [children, gutter]);
+  }, [children, gutter, fitWidth]);
 
   return (
     <div ref={masonryRef} className="masonry-grid">
