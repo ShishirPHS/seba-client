@@ -13,7 +13,7 @@ const Diseases = () => {
   return (
     <>
       <Container>
-        <div className="mb-[80px] lg:mb-[100px] xl:mb-[120px] 2xl:mb-[140px] px-5">
+        <div className="mb-[80px] lg:mb-[100px] xl:mb-[120px] 2xl:mb-[140px] px-5 3xl:px-[140px]">
           {/* top */}
           <div className="flex justify-between mb-[35px] lg:mb-10 xl:mb-[49px]">
             <p className="text-black font-poppins text-lg sm:text-[22px] md:text-2xl xl:text-[34px] 2xl:text-4xl font-medium leading-[123%]">

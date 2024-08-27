@@ -6,7 +6,7 @@ const DonateYourBlood = () => {
   return (
     <>
       <Container>
-        <div className="flex flex-col md:flex-row justify-between items-center px-5">
+        <div className="flex flex-col md:flex-row justify-between items-center px-5 3xl:px-[140px]">
           {/* left */}
           <div>
             <h2 className="text-[#303030] font-poppins text-[27px] md:text-[24px] lg:text-[36px] xl:text-[48px] 2xl:text-[64px] text-center md:text-left font-semibold max-w-[298px] md:max-w-[240px] lg:max-w-[350px] xl:max-w-[490px] 2xl:max-w-[600px] mb-[15px] lg:mb-[20px] xl:mb-[24px] 2xl:mb-[30px] mx-auto md:mx-0">

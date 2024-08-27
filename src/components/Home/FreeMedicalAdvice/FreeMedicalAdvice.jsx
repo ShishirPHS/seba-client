@@ -6,7 +6,7 @@ import Container from "../../shared/Container/Container";
 const FreeMedicalAdvice = () => {
   return (
     <Container>
-      <div className="flex flex-col md:flex-row gap-[28px] md:gap-[24px] lg:gap-[24px] xl:gap-[60px] 2xl:gap-[78px] mx-5">
+      <div className="flex flex-col md:flex-row gap-[28px] md:gap-[24px] lg:gap-[24px] xl:gap-[60px] 2xl:gap-[78px] mx-5 3xl:mx-[140px]">
         {/* left */}
         <div className="flex flex-col pt-[47px] md:pt-[29px] lg:pt-[36px] xl:pt-[40px] 2xl:pt-[72px] md:px-[50px] lg:px-[75px] xl:px-[95px] 2xl:px-[118px] bg-[#FF0068] rounded-[24px] xl:rounded-[34px] 2xl:rounded-[40px] flex-shrink-0 relative overflow-hidden">
           <h3 className="text-[19px] sm:text-[23px] md:text-[19px] lg:text-[20px] xl:text-[30px] 2xl:text-4xl font-bold text-white font-poppins leading-[123%] inline-block mx-auto relative z-50">

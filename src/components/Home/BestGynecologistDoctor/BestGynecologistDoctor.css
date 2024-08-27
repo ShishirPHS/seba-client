@@ -4,5 +4,5 @@
 }
 
 #bestGynecologistDoctor .gyDoctorSlider {
-  padding: 0 20px 0 10px;
+  @apply mr-5 3xl:mr-[140px] ml-[10px] 3xl:ml-[140px];
 }

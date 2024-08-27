@@ -5,7 +5,7 @@ const OurPartners = () => {
   return (
     <>
       <Container>
-        <div className="mb-[30px] md:mb-[50px] lg:mb-[120px] xl:mb-[115px] 2xl:mb-[147px] px-5">
+        <div className="mb-[30px] md:mb-[50px] lg:mb-[120px] xl:mb-[115px] 2xl:mb-[147px] px-5 3xl:px-[140px]">
           <h4 className="text-black font-poppins text-[13px] sm:text-base md:text-xl lg:text-[34px] xl:text-4xl font-semibold mb-2 lg:mb-[30px] xl:mb-[34px] 2xl:mb-[52px]">
             Our Partners
           </h4>

@@ -21,7 +21,7 @@ const BestGynecologistDoctor = () => {
           id="bestGynecologistDoctor"
         >
           <div className="">
-            <h3 className="text-black font-poppins text-[18px] sm:text-xl lg:text-2xl xl:text-[34px] 2xl:text-4xl font-medium leading-[123%] capitalize mb-0 lg:mb-[16px] xl:mb-[26px] max-w-[275px] sm:max-w-[305px] md:max-w-none text-center md:text-left mx-auto px-5">
+            <h3 className="text-black font-poppins text-[18px] sm:text-xl lg:text-2xl xl:text-[34px] 2xl:text-4xl font-medium leading-[123%] capitalize mb-0 lg:mb-[16px] xl:mb-[26px] max-w-[275px] sm:max-w-[305px] md:max-w-none text-center md:text-left mx-auto px-5 3xl:px-[140px]">
               best gynecologist doctor{" "}
               <span className="text-[14px] sm:text-base md:text-xl lg:text-2xl xl:text-[34px] 2xl:text-4xl">
                 of the month

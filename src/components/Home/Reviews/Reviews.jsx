@@ -16,7 +16,7 @@ const Reviews = () => {
   return (
     <>
       <Container>
-        <div className="mx-5">
+        <div className="mx-5 3xl:mx-[140px]">
           {/* texts */}
           <div className="mb-[55px] lg:mb-[80px] xl:mb-[90px] 2xl:mb-[107px]">
             <SectionHeader

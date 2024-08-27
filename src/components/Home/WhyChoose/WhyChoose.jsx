@@ -5,7 +5,7 @@ const WhyChoose = () => {
   return (
     <>
       <Container>
-        <div className="mb-[46px] lg:mb-[90px] xl:mb-[115px] 2xl:mb-[142px] mt-[56px] lg:mt-[90px] xl:mt-[100px] 2xl:mt-[114px] px-5">
+        <div className="mb-[46px] lg:mb-[90px] xl:mb-[115px] 2xl:mb-[142px] mt-[56px] lg:mt-[90px] xl:mt-[100px] 2xl:mt-[114px] px-5 3xl:px-[140px]">
           {/* title */}
           <h3 className="text-[#232222] text-[16px] sm:text-xl md:text-2xl lg:text-[34px] xl:text-[44px] 2xl:text-5xl font-semibold font-poppins leading-[123%] mx-auto text-center">
             Why Choose Seba?
