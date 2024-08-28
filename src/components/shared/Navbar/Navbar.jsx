@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <>
       <div className="bg-white">
-        <header className="relative container mx-auto flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full py-[10px] lg:py-[20px] xl:py-6 2xl:py-7">
+        <header className="relative container mx-auto flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full py-[10px] lg:py-[20px] xl:py-[14px] 2xl:py-7">
           <nav
             id="navbar"
             className="relative w-full flex justify-between flex-wrap basis-full items-center px-4 md:px-6 3xl:px-[140px] mx-auto"
