@@ -10,7 +10,6 @@ const AddDoctor = () => {
     formState: { errors },
     watch,
     trigger,
-    reset,
   } = useForm();
 
   const emailValue = watch("doctorsEmail");
@@ -23,15 +22,12 @@ const AddDoctor = () => {
 
   const onFormSubmit = (data) => {
     console.log(data);
-
     Swal.fire({
       icon: "success",
       title: "Doctor Added Successfully!",
       showConfirmButton: false,
       timer: 1500,
     });
-
-    reset();
   };
 
   const registerOptions = {
@@ -57,6 +53,9 @@ const AddDoctor = () => {
     },
     mobileNumber: {
       required: "Mobile Number is required",
+    },
+    photo: {
+      required: "Photo is required",
     },
   };
 
@@ -208,6 +207,22 @@ const AddDoctor = () => {
               />
               <p className="ml-0 text-red-500 mt-2">
                 {errors?.mobileNumber && errors.mobileNumber.message}
+              </p>
+            </div>
+
+            {/* file input */}
+            <div className="mb-5 flex flex-col items-start">
+              <label
+                htmlFor="photo"
+                className="mb-4"
+              >{`Upload Your Photo`}</label>
+              <input
+                type="file"
+                className="file-input file-input-bordered file-input-md w-full"
+                {...register("photo", registerOptions.photo)}
+              />
+              <p className="ml-0 text-red-500 mt-2">
+                {errors?.photo && errors.photo.message}
               </p>
             </div>
 
