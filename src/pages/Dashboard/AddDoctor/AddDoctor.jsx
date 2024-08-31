@@ -1,15 +1,12 @@
 import Swal from "sweetalert2";
 import Container from "../../../components/shared/Container/Container";
 import { useForm } from "react-hook-form";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import axios from "axios";
+import useAxiosPublic from "../../../hooks/useAxiosPublic";
 
 const AddDoctor = () => {
-  const [imageUrl, setImageUrl] = useState("");
-
-  if (imageUrl) {
-    console.log(imageUrl);
-  }
+  const axiosPublic = useAxiosPublic();
 
   const {
     register,
@@ -44,7 +41,7 @@ const AddDoctor = () => {
     const file = imageSelected[0]; // File object from the input
     const formData = new FormData();
     formData.append("file", file);
-    formData.append("upload_preset", "myCloud");
+    formData.append("upload_preset", `${import.meta.env.VITE_UPLOAD_PRESET}`);
 
     try {
       const res = await axios.post(
@@ -52,8 +49,8 @@ const AddDoctor = () => {
         formData
       );
 
-      setImageUrl(res.data.secure_url);
       console.log("Image uploaded successfully:", res.data.secure_url);
+      return res.data.secure_url;
     } catch (error) {
       if (error.response) {
         // Server responded with a status other than 200 range
@@ -69,16 +66,64 @@ const AddDoctor = () => {
   };
 
   const onFormSubmit = async (data) => {
-    console.log(data); 
+    console.log(data);
+
+    const {
+      doctorsName,
+      doctorsEmail,
+      qualifications,
+      specialty,
+      workplace,
+      designationAndDepartment,
+      chamberName,
+      visitingHour,
+      mobileNumber,
+    } = data;
+
+    const doctor = {
+      doctorsName,
+      doctorsEmail,
+      qualifications,
+      specialty,
+      workplace,
+      designationAndDepartment,
+      chamberName,
+      visitingHour,
+      mobileNumber,
+    };
 
     if (imageSelected) {
-      await uploadImage();
-      Swal.fire({
-        icon: "success",
-        title: "Doctor Added Successfully!",
-        showConfirmButton: false,
-        timer: 1500,
-      });
+      const uploadedImageUrl = await uploadImage();
+
+      if (uploadedImageUrl) {
+        try {
+          const res = await axiosPublic.post("/addDoctor", {
+            ...doctor,
+            photo: uploadedImageUrl,
+          });
+
+          if (res.data.insertedId) {
+            Swal.fire({
+              icon: "success",
+              title: "Doctor Added Successfully!",
+              showConfirmButton: false,
+              timer: 1500,
+            });
+          }
+        } catch (error) {
+          Swal.fire({
+            icon: "error",
+            title: "Failed to add doctor",
+            text: error.message,
+          });
+        }
+      } else {
+        Swal.fire({
+          icon: "error",
+          title: "Image Upload Failed",
+          text: "Please try again later",
+        });
+      }
     } else {
       Swal.fire({
         icon: "error",
@@ -284,7 +329,7 @@ const AddDoctor = () => {
             </div>
 
             <button type="submit" className="btn">
-              Submit
+              Add Doctor
             </button>
           </form>
         </div>
