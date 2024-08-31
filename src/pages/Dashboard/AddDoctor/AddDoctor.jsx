@@ -1,9 +1,16 @@
 import Swal from "sweetalert2";
 import Container from "../../../components/shared/Container/Container";
 import { useForm } from "react-hook-form";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 const AddDoctor = () => {
+  const [imageUrl, setImageUrl] = useState("");
+
+  if (imageUrl) {
+    console.log(imageUrl);
+  }
+
   const {
     register,
     handleSubmit,
@@ -14,22 +21,72 @@ const AddDoctor = () => {
 
   const emailValue = watch("doctorsEmail");
 
+  const imageSelected = watch("photo");
+
   useEffect(() => {
     if (emailValue) {
       trigger("doctorsEmail");
     }
   }, [emailValue, trigger]);
 
-  const onFormSubmit = (data) => {
-    console.log(data);
-    Swal.fire({
-      icon: "success",
-      title: "Doctor Added Successfully!",
-      showConfirmButton: false,
-      timer: 1500,
-    });
+  useEffect(() => {
+    if (imageSelected) {
+      trigger("photo");
+    }
+  }, [imageSelected, trigger]);
+
+  const uploadImage = async () => {
+    if (!imageSelected || imageSelected.length === 0) {
+      console.error("No image selected for upload.");
+      return;
+    }
+
+    const file = imageSelected[0]; // File object from the input
+    const formData = new FormData();
+    formData.append("file", file);
+    formData.append("upload_preset", "myCloud");
+
+    try {
+      const res = await axios.post(
+        `${import.meta.env.VITE_CLOUDINARY_URL}`,
+        formData
+      );
+
+      setImageUrl(res.data.secure_url);
+      console.log("Image uploaded successfully:", res.data.secure_url);
+    } catch (error) {
+      if (error.response) {
+        // Server responded with a status other than 200 range
+        console.error("Error uploading image:", error.response.data);
+      } else if (error.request) {
+        // Request was made but no response was received
+        console.error("No response from server:", error.request);
+      } else {
+        // Something else happened while setting up the request
+        console.error("Error:", error.message);
+      }
+    }
   };
 
+  const onFormSubmit = async (data) => {
+    console.log(data); 
+
+    if (imageSelected) {
+      await uploadImage();
+      Swal.fire({
+        icon: "success",
+        title: "Doctor Added Successfully!",
+        showConfirmButton: false,
+        timer: 1500,
+      });
+    } else {
+      Swal.fire({
+        icon: "error",
+        title: "No image selected",
+        text: "Please select an image before submitting the form.",
+      });
+    }
+  };
   const registerOptions = {
     doctorsName: { required: "Doctor's Name is required" },
     doctorsEmail: {
