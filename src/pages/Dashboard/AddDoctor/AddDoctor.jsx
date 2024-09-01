@@ -363,7 +363,10 @@ const AddDoctor = () => {
                 </p>
               </div>
 
-              <button type="submit" className="btn">
+              <button
+                type="submit"
+                className="bg-primary text-white hover:bg-secondary py-3 px-8 rounded-2xl mt-[10px] transition-all"
+              >
                 Add Doctor
               </button>
             </form>
