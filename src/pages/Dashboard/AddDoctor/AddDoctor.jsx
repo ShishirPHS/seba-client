@@ -76,6 +76,7 @@ const AddDoctor = () => {
       workplace,
       designationAndDepartment,
       chamberName,
+      chamberAddress,
       visitingHour,
       mobileNumber,
     } = data;
@@ -88,6 +89,7 @@ const AddDoctor = () => {
       workplace,
       designationAndDepartment,
       chamberName,
+      chamberAddress,
       visitingHour,
       mobileNumber,
     };
