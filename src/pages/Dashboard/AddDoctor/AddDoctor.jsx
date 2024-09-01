@@ -180,6 +180,7 @@ const AddDoctor = () => {
                   <span className="text-red-600 font-normal ml-1">*</span>
                 </label>
                 <input
+                  id="doctorsName"
                   type="text"
                   placeholder="Enter doctor's name"
                   className="border py-3 px-5 rounded-lg mr-4 w-full"
@@ -196,6 +197,7 @@ const AddDoctor = () => {
                   <span className="text-red-600 font-normal ml-1">*</span>
                 </label>
                 <input
+                  id="doctorsEmail"
                   type="text"
                   placeholder="Enter doctor's valid email"
                   className="border py-3 px-5 rounded-lg mr-4 w-full"
@@ -212,6 +214,7 @@ const AddDoctor = () => {
                   <span className="text-red-600 font-normal ml-1">*</span>
                 </label>
                 <input
+                  id="qualifications"
                   type="text"
                   placeholder="Enter your degrees and qualifications"
                   className="border py-3 px-5 rounded-lg mr-4 w-full"
@@ -231,6 +234,7 @@ const AddDoctor = () => {
                   <span className="text-red-600 font-normal ml-1">*</span>
                 </label>
                 <input
+                  id="specialty"
                   type="text"
                   placeholder="Example: Medicine Specialist"
                   className="border py-3 px-5 rounded-lg mr-4 w-full"
@@ -247,6 +251,7 @@ const AddDoctor = () => {
                   <span className="text-red-600 font-normal ml-1">*</span>
                 </label>
                 <input
+                  id="workplace"
                   type="text"
                   placeholder="Example: Dhaka Medical College Hospital"
                   className="border py-3 px-5 rounded-lg mr-4 w-full"
@@ -266,6 +271,7 @@ const AddDoctor = () => {
                   <span className="text-red-600 font-normal ml-1">*</span>
                 </label>
                 <input
+                  id="designationAndDepartment"
                   type="text"
                   placeholder="Example: Assistant Professor (Medicine)"
                   className="border py-3 px-5 rounded-lg mr-4 w-full"
@@ -286,6 +292,7 @@ const AddDoctor = () => {
                   <span className="text-red-600 font-normal ml-1">*</span>
                 </label>
                 <input
+                  id="chamberName"
                   type="text"
                   placeholder="Example: Popular Diagnostic Centre, Dhanmondi"
                   className="border py-3 px-5 rounded-lg mr-4 w-full"
@@ -302,6 +309,7 @@ const AddDoctor = () => {
                   <span className="text-red-600 font-normal ml-1">*</span>
                 </label>
                 <input
+                  id="chamberAddress"
                   type="text"
                   placeholder="House #16 Road No. 2, Dhaka 1205"
                   className="border py-3 px-5 rounded-lg mr-4 w-full"
@@ -321,6 +329,7 @@ const AddDoctor = () => {
                   <span className="text-red-600 font-normal ml-1">*</span>
                 </label>
                 <input
+                  id="visitingHour"
                   type="text"
                   placeholder="Example: 6pm to 9pm (Closed: Friday)"
                   className="border py-3 px-5 rounded-lg mr-4 w-full"
@@ -337,6 +346,7 @@ const AddDoctor = () => {
                   <span className="text-red-600 font-normal ml-1">*</span>
                 </label>
                 <input
+                  id="mobileNumber"
                   type="text"
                   placeholder="017********"
                   className="border py-3 px-5 rounded-lg mr-4 w-full"
@@ -354,6 +364,7 @@ const AddDoctor = () => {
                   <span className="text-red-600 font-normal ml-1">*</span>
                 </label>
                 <input
+                  id="photo"
                   type="file"
                   className="block w-full text-sm text-gray-500 file:me-4 file:py-3 file:px-5 file:rounded-tl-lg file:rounded-bl-lg file:border-0 file:text-sm file:font-semibold file:bg-primary file:text-white hover:file:bg-secondary border rounded-lg transition-all"
                   {...register("photo", registerOptions.photo)}
