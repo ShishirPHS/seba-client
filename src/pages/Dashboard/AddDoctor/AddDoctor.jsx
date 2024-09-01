@@ -358,7 +358,6 @@ const AddDoctor = () => {
                   {errors?.mobileNumber && errors.mobileNumber.message}
                 </p>
               </div>
-
               {/* file input */}
               <div className="mb-3 flex flex-col items-start">
                 <label htmlFor="photo" className="mb-2 font-medium">
@@ -368,7 +367,7 @@ const AddDoctor = () => {
                 <input
                   id="photo"
                   type="file"
-                  className="block w-full text-sm text-gray-500 file:me-4 file:py-3 file:px-5 file:rounded-tl-lg file:rounded-bl-lg file:border-0 file:text-sm file:font-semibold file:bg-primary file:text-white hover:file:bg-secondary border rounded-lg transition-all"
+                  className="block w-full text-sm text-gray-500 file:me-4 file:py-3 file:px-5 file:rounded-tl-lg file:rounded-bl-lg file:border-0 file:text-sm file:font-poppins file:font-semibold file:bg-primary file:text-white hover:file:bg-secondary border rounded-lg transition-all"
                   {...register("photo", registerOptions.photo)}
                 />
                 <p className="ml-0 text-red-500 mt-2">
