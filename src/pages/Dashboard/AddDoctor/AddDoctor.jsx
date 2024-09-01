@@ -355,14 +355,13 @@ const AddDoctor = () => {
                 </label>
                 <input
                   type="file"
-                  className="file-input file-input-bordered file-input-md w-full"
+                  className="block w-full text-sm text-gray-500 file:me-4 file:py-3 file:px-5 file:rounded-tl-lg file:rounded-bl-lg file:border-0 file:text-sm file:font-semibold file:bg-primary file:text-white hover:file:bg-secondary border rounded-lg transition-all"
                   {...register("photo", registerOptions.photo)}
                 />
                 <p className="ml-0 text-red-500 mt-2">
                   {errors?.photo && errors.photo.message}
                 </p>
               </div>
-
               <button
                 type="submit"
                 className="bg-primary text-white hover:bg-secondary py-3 px-8 rounded-2xl mt-[10px] transition-all"
