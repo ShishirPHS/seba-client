@@ -18,7 +18,6 @@ const AddDoctor = () => {
   } = useForm();
 
   const emailValue = watch("doctorsEmail");
-
   const imageSelected = watch("photo");
 
   useEffect(() => {
@@ -33,6 +32,7 @@ const AddDoctor = () => {
     }
   }, [imageSelected, trigger]);
 
+  // image upload function
   const uploadImage = async () => {
     if (!imageSelected || imageSelected.length === 0) {
       console.error("No image selected for upload.");
@@ -369,7 +369,7 @@ const AddDoctor = () => {
                 <input
                   id="photo"
                   type="file"
-                  className="block w-full text-sm text-gray-500 file:me-4 file:py-3 file:px-5 file:rounded-tl-lg file:rounded-bl-lg file:border-0 file:text-sm file:font-poppins file:font-semibold file:bg-primary file:text-white hover:file:bg-secondary border rounded-lg transition-all"
+                  className="block w-full text-sm text-gray-500 file:me-4 file:py-3 file:px-5 file:rounded-tl-lg file:rounded-bl-lg file:border-0 file:text-sm file:font-poppins file:font-semibold file:bg-primary file:text-white hover:file:bg-secondary border rounded-lg file:transition-all cursor-pointer file:cursor-pointer"
                   {...register("photo", registerOptions.photo)}
                 />
                 <p className="ml-0 text-red-500 mt-2">
