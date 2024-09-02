@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 const DoctorCard = ({ doctor }) => {
-  const { doctorsName, qualifications, designationAndDepartment, photo } =
+  const { _id, doctorsName, qualifications, designationAndDepartment, photo } =
     doctor;
 
   return (
@@ -19,7 +19,7 @@ const DoctorCard = ({ doctor }) => {
         <p className="text-xl font-bold font-poppins">{doctorsName}</p>
         <p className="text-lg font-semibold font-dmSans">{qualifications}</p>
         <p className="text-lg font-medium">{designationAndDepartment}</p>
-        <Link to="/doctor-details">
+        <Link to={`/doctor-details/${_id}`}>
           <p className="text-xl text-primary hover:text-secondary font-medium font-inter underline transition-all mt-1">
             See Details
           </p>

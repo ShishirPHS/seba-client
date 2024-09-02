@@ -4,6 +4,7 @@ import Home from "../pages/Home/Home";
 import Doctors from "../pages/Doctors/Doctors";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import AddDoctor from "../pages/Dashboard/AddDoctor/AddDoctor";
+import DoctorDetails from "../pages/DoctorDetails/DoctorDetails";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "/addDoctor",
         element: <AddDoctor></AddDoctor>,
+      },
+      {
+        path: "/doctor-details/:id",
+        element: <DoctorDetails></DoctorDetails>,
       },
     ],
   },

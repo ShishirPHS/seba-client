@@ -14,6 +14,7 @@ const AddDoctor = () => {
     formState: { errors },
     watch,
     trigger,
+    reset,
   } = useForm();
 
   const emailValue = watch("doctorsEmail");
@@ -111,6 +112,7 @@ const AddDoctor = () => {
               showConfirmButton: false,
               timer: 1500,
             });
+            reset();
           }
         } catch (error) {
           Swal.fire({
