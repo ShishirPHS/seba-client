@@ -93,7 +93,7 @@ const AddDoctor = () => {
       doctorsEmail,
       qualifications,
       specialty,
-      workplace,
+      yearsOfExperience,
       designationAndDepartment,
       chamberInfos,
     } = data;
@@ -103,7 +103,7 @@ const AddDoctor = () => {
       doctorsEmail,
       qualifications,
       specialty,
-      workplace,
+      yearsOfExperience,
       designationAndDepartment,
       chamberInfos,
     };
@@ -162,7 +162,7 @@ const AddDoctor = () => {
       required: "Please enter your degrees and qualifications",
     },
     specialty: { required: "Please enter specialty" },
-    workplace: { required: "Please enter workplace" },
+    yearsOfExperience: { required: "Please enter years of experience" },
     designationAndDepartment: {
       required: "Please enter designation & department",
     },
@@ -173,7 +173,7 @@ const AddDoctor = () => {
       required: "Please enter chamber location",
     },
     visitingPrice: {
-      required: "Please enter visiting price",
+      required: "Please enter a valid number",
     },
     visitingHour: {
       required: "Please enter visiting hour",
@@ -264,21 +264,25 @@ const AddDoctor = () => {
                   {errors?.specialty && errors.specialty.message}
                 </p>
               </div>
-              {/* workplace   */}
+              {/* years of experience   */}
               <div className="mb-3 flex flex-col items-start">
-                <label htmlFor="workplace" className="mb-2 font-medium">
-                  Workplace
+                <label htmlFor="yearsOfExperience" className="mb-2 font-medium">
+                  Years Of Experience
                   <span className="text-red-600 font-normal ml-1">*</span>
                 </label>
                 <input
-                  id="workplace"
+                  id="yearsOfExperience"
                   type="text"
-                  placeholder="Example: Dhaka Medical College Hospital"
+                  placeholder="Enter your experience"
                   className="border py-3 px-5 rounded-lg mr-4 w-full"
-                  {...register("workplace", registerOptions.workplace)}
+                  {...register(
+                    "yearsOfExperience",
+                    registerOptions.yearsOfExperience
+                  )}
                 />
                 <p className="ml-0 text-red-500 mt-2">
-                  {errors?.workplace && errors.workplace.message}
+                  {errors?.yearsOfExperience &&
+                    errors.yearsOfExperience.message}
                 </p>
               </div>
               {/* designation & department   */}
@@ -365,7 +369,7 @@ const AddDoctor = () => {
                     </label>
                     <input
                       id={`chamberInfos.${index}.visitingPrice`}
-                      type="text"
+                      type="number"
                       placeholder="Enter your visiting price"
                       className="border py-3 px-5 rounded-lg mr-4 w-full"
                       {...register(

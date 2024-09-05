@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { MdOutlinePhoneAndroid } from "react-icons/md";
 
 const DoctorCard = ({ doctor }) => {
-  const { doctorsName, specialty, photo } = doctor;
+  const { doctorsName, yearsOfExperience, specialty, photo } = doctor;
 
   return (
     <div
@@ -18,10 +18,10 @@ const DoctorCard = ({ doctor }) => {
           alt={`Image of ${doctorsName}`}
         />
         {/* top right */}
-        <div>
+        <div className="ml-4">
           <p>{doctorsName}</p>
           <p>{specialty}</p>
-          <p>yearsOfExperience</p>
+          <p>{yearsOfExperience}</p>
           <MdOutlinePhoneAndroid className="absolute right-0 top-0"></MdOutlinePhoneAndroid>
         </div>
       </div>
