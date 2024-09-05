@@ -423,28 +423,35 @@ const AddDoctor = () => {
                       {errors?.chamberInfos?.[index]?.mobileNumber?.message}
                     </p>
                   </div>
-                  {index > 0 && (
-                    <button type="button" onClick={() => remove(index)}>
-                      Remove
+                  <div>
+                    {index > 0 && (
+                      <button
+                        className="mr-5 bg-primary text-white hover:bg-secondary py-2 px-5 rounded-lg transition-all text-sm"
+                        type="button"
+                        onClick={() => remove(index)}
+                      >
+                        Remove
+                      </button>
+                    )}
+                    <button
+                      className="mb-3 bg-primary text-white hover:bg-secondary py-2 px-5 rounded-lg transition-all text-sm"
+                      type="button"
+                      onClick={() =>
+                        append({
+                          chamberCount: fields.length + 1,
+                          chamberName: "",
+                          location: "",
+                          visitingPrice: "",
+                          visitingHour: "",
+                          mobileNumber: "",
+                        })
+                      }
+                    >
+                      Click here to add more chamber
                     </button>
-                  )}
+                  </div>
                 </div>
               ))}
-              <button
-                type="button"
-                onClick={() =>
-                  append({
-                    chamberCount: fields.length + 1,
-                    chamberName: "",
-                    location: "",
-                    visitingPrice: "",
-                    visitingHour: "",
-                    mobileNumber: "",
-                  })
-                }
-              >
-                Click here to add more chamber
-              </button>
               {/* ------------------------------------ chamber infos end ------------------------------------ */}
 
               {/* file input */}
