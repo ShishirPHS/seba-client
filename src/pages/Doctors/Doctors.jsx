@@ -17,8 +17,8 @@ const Doctors = () => {
               </button>
             </Link>
           </div>
-          <div className="">
-            <div className="grid grid-cols-4 gap-6">
+          <div>
+            <div className="grid grid-cols-3 gap-6">
               {allDoctors?.map((doctor) => (
                 <DoctorCard key={doctor._id} doctor={doctor}></DoctorCard>
               ))}
