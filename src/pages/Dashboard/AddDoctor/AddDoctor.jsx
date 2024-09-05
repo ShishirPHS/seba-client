@@ -156,8 +156,11 @@ const AddDoctor = () => {
     chamberName: {
       required: "Please enter chamber name",
     },
-    chamberAddress: {
+    location: {
       required: "Please enter chamber address",
+    },
+    visitingPrice: {
+      required: "Please enter visiting price",
     },
     visitingHour: {
       required: "Please enter visiting hour",
@@ -289,6 +292,7 @@ const AddDoctor = () => {
                     errors.designationAndDepartment.message}
                 </p>
               </div>
+              {/* ------------------------------------ chamber infos start ------------------------------------ */}
               {/* chamber name   */}
               <div className="mb-3 flex flex-col items-start">
                 <label htmlFor="chamberName" className="mb-2 font-medium">
@@ -308,22 +312,36 @@ const AddDoctor = () => {
               </div>
               {/* chamber address   */}
               <div className="mb-3 flex flex-col items-start">
-                <label htmlFor="chamberAddress" className="mb-2 font-medium">
+                <label htmlFor="location" className="mb-2 font-medium">
                   Chamber Address
                   <span className="text-red-600 font-normal ml-1">*</span>
                 </label>
                 <input
-                  id="chamberAddress"
+                  id="location"
                   type="text"
                   placeholder="House #16 Road No. 2, Dhaka 1205"
                   className="border py-3 px-5 rounded-lg mr-4 w-full"
-                  {...register(
-                    "chamberAddress",
-                    registerOptions.chamberAddress
-                  )}
+                  {...register("location", registerOptions.location)}
                 />
                 <p className="ml-0 text-red-500 mt-2">
-                  {errors?.chamberAddress && errors.chamberAddress.message}
+                  {errors?.location && errors.location.message}
+                </p>
+              </div>
+              {/* visiting price   */}
+              <div className="mb-3 flex flex-col items-start">
+                <label htmlFor="visitingPrice" className="mb-2 font-medium">
+                  Visiting Price
+                  <span className="text-red-600 font-normal ml-1">*</span>
+                </label>
+                <input
+                  id="visitingPrice"
+                  type="number"
+                  placeholder="Enter your visiting price"
+                  className="border py-3 px-5 rounded-lg mr-4 w-full"
+                  {...register("visitingPrice", registerOptions.visitingPrice)}
+                />
+                <p className="ml-0 text-red-500 mt-2">
+                  {errors?.visitingPrice && errors.visitingPrice.message}
                 </p>
               </div>
               {/* visiting hour   */}
@@ -360,6 +378,7 @@ const AddDoctor = () => {
                   {errors?.mobileNumber && errors.mobileNumber.message}
                 </p>
               </div>
+              {/* ------------------------------------ chamber infos end ------------------------------------ */}
               {/* file input */}
               <div className="mb-3 flex flex-col items-start">
                 <label htmlFor="photo" className="mb-2 font-medium">
