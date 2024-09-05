@@ -1,6 +1,6 @@
 import Swal from "sweetalert2";
 import Container from "../../../components/shared/Container/Container";
-import { useForm } from "react-hook-form";
+import { useFieldArray, useForm } from "react-hook-form";
 import { useEffect } from "react";
 import axios from "axios";
 import useAxiosPublic from "../../../hooks/useAxiosPublic";
@@ -14,8 +14,27 @@ const AddDoctor = () => {
     formState: { errors },
     watch,
     trigger,
+    control,
     reset,
-  } = useForm();
+  } = useForm({
+    defaultValues: {
+      chamberInfos: [
+        {
+          chamberCount: 1,
+          chamberName: "",
+          location: "",
+          visitingPrice: "",
+          visitingHour: "",
+          mobileNumber: "",
+        },
+      ],
+    },
+  });
+
+  const { fields, append, remove } = useFieldArray({
+    control,
+    name: "chamberInfos",
+  });
 
   const emailValue = watch("doctorsEmail");
   const imageSelected = watch("photo");
@@ -76,10 +95,7 @@ const AddDoctor = () => {
       specialty,
       workplace,
       designationAndDepartment,
-      chamberName,
-      chamberAddress,
-      visitingHour,
-      mobileNumber,
+      chamberInfos,
     } = data;
 
     const doctor = {
@@ -89,10 +105,7 @@ const AddDoctor = () => {
       specialty,
       workplace,
       designationAndDepartment,
-      chamberName,
-      chamberAddress,
-      visitingHour,
-      mobileNumber,
+      chamberInfos,
     };
 
     if (imageSelected) {
@@ -157,7 +170,7 @@ const AddDoctor = () => {
       required: "Please enter chamber name",
     },
     location: {
-      required: "Please enter chamber address",
+      required: "Please enter chamber location",
     },
     visitingPrice: {
       required: "Please enter visiting price",
@@ -293,92 +306,147 @@ const AddDoctor = () => {
                 </p>
               </div>
               {/* ------------------------------------ chamber infos start ------------------------------------ */}
-              {/* chamber name   */}
-              <div className="mb-3 flex flex-col items-start">
-                <label htmlFor="chamberName" className="mb-2 font-medium">
-                  Chamber Name
-                  <span className="text-red-600 font-normal ml-1">*</span>
-                </label>
-                <input
-                  id="chamberName"
-                  type="text"
-                  placeholder="Example: Popular Diagnostic Centre, Dhanmondi"
-                  className="border py-3 px-5 rounded-lg mr-4 w-full"
-                  {...register("chamberName", registerOptions.chamberName)}
-                />
-                <p className="ml-0 text-red-500 mt-2">
-                  {errors?.chamberName && errors.chamberName.message}
-                </p>
-              </div>
-              {/* chamber address   */}
-              <div className="mb-3 flex flex-col items-start">
-                <label htmlFor="location" className="mb-2 font-medium">
-                  Chamber Address
-                  <span className="text-red-600 font-normal ml-1">*</span>
-                </label>
-                <input
-                  id="location"
-                  type="text"
-                  placeholder="House #16 Road No. 2, Dhaka 1205"
-                  className="border py-3 px-5 rounded-lg mr-4 w-full"
-                  {...register("location", registerOptions.location)}
-                />
-                <p className="ml-0 text-red-500 mt-2">
-                  {errors?.location && errors.location.message}
-                </p>
-              </div>
-              {/* visiting price   */}
-              <div className="mb-3 flex flex-col items-start">
-                <label htmlFor="visitingPrice" className="mb-2 font-medium">
-                  Visiting Price
-                  <span className="text-red-600 font-normal ml-1">*</span>
-                </label>
-                <input
-                  id="visitingPrice"
-                  type="number"
-                  placeholder="Enter your visiting price"
-                  className="border py-3 px-5 rounded-lg mr-4 w-full"
-                  {...register("visitingPrice", registerOptions.visitingPrice)}
-                />
-                <p className="ml-0 text-red-500 mt-2">
-                  {errors?.visitingPrice && errors.visitingPrice.message}
-                </p>
-              </div>
-              {/* visiting hour   */}
-              <div className="mb-3 flex flex-col items-start">
-                <label htmlFor="visitingHour" className="mb-2 font-medium">
-                  Visiting Hour
-                  <span className="text-red-600 font-normal ml-1">*</span>
-                </label>
-                <input
-                  id="visitingHour"
-                  type="text"
-                  placeholder="Example: 6pm to 9pm (Closed: Friday)"
-                  className="border py-3 px-5 rounded-lg mr-4 w-full"
-                  {...register("visitingHour", registerOptions.visitingHour)}
-                />
-                <p className="ml-0 text-red-500 mt-2">
-                  {errors?.visitingHour && errors.visitingHour.message}
-                </p>
-              </div>
-              {/* mobile number */}
-              <div className="mb-3 flex flex-col items-start">
-                <label htmlFor="mobileNumber" className="mb-2 font-medium">
-                  Mobile Number (For Appointment)
-                  <span className="text-red-600 font-normal ml-1">*</span>
-                </label>
-                <input
-                  id="mobileNumber"
-                  type="text"
-                  placeholder="017********"
-                  className="border py-3 px-5 rounded-lg mr-4 w-full"
-                  {...register("mobileNumber", registerOptions.mobileNumber)}
-                />
-                <p className="ml-0 text-red-500 mt-2">
-                  {errors?.mobileNumber && errors.mobileNumber.message}
-                </p>
-              </div>
+              {fields.map((chamber, index) => (
+                <div key={chamber.id}>
+                  {/* chamber name   */}
+                  <div className="mb-3 flex flex-col items-start">
+                    <label
+                      htmlFor={`chamberInfos.${index}.chamberName`}
+                      className="mb-2 font-medium"
+                    >
+                      Chamber Name
+                      <span className="text-red-600 font-normal ml-1">*</span>
+                    </label>
+                    <input
+                      id={`chamberInfos.${index}.chamberName`}
+                      type="text"
+                      placeholder="Example: Popular Diagnostic Centre, Dhanmondi"
+                      className="border py-3 px-5 rounded-lg mr-4 w-full"
+                      {...register(
+                        `chamberInfos.${index}.chamberName`,
+                        registerOptions.chamberName
+                      )}
+                    />
+                    <p className="ml-0 text-red-500 mt-2">
+                      {errors?.chamberInfos?.[index]?.chamberName?.message}
+                    </p>
+                  </div>
+                  {/* location   */}
+                  <div className="mb-3 flex flex-col items-start">
+                    <label
+                      htmlFor={`chamberInfos.${index}.location`}
+                      className="mb-2 font-medium"
+                    >
+                      Location
+                      <span className="text-red-600 font-normal ml-1">*</span>
+                    </label>
+                    <input
+                      id={`chamberInfos.${index}.location`}
+                      type="text"
+                      placeholder="House #16 Road No. 2, Dhaka 1205"
+                      className="border py-3 px-5 rounded-lg mr-4 w-full"
+                      {...register(
+                        `chamberInfos.${index}.location`,
+                        registerOptions.location
+                      )}
+                    />
+                    <p className="ml-0 text-red-500 mt-2">
+                      {errors?.chamberInfos?.[index]?.location?.message}
+                    </p>
+                  </div>
+                  {/* visiting price   */}
+                  <div className="mb-3 flex flex-col items-start">
+                    <label
+                      htmlFor={`chamberInfos.${index}.visitingPrice`}
+                      className="mb-2 font-medium"
+                    >
+                      Visiting Price
+                      <span className="text-red-600 font-normal ml-1">*</span>
+                    </label>
+                    <input
+                      id={`chamberInfos.${index}.visitingPrice`}
+                      type="text"
+                      placeholder="Enter your visiting price"
+                      className="border py-3 px-5 rounded-lg mr-4 w-full"
+                      {...register(
+                        `chamberInfos.${index}.visitingPrice`,
+                        registerOptions.visitingPrice
+                      )}
+                    />
+                    <p className="ml-0 text-red-500 mt-2">
+                      {errors?.chamberInfos?.[index]?.visitingPrice?.message}
+                    </p>
+                  </div>
+                  {/* visiting hour   */}
+                  <div className="mb-3 flex flex-col items-start">
+                    <label
+                      htmlFor={`chamberInfos.${index}.visitingHour`}
+                      className="mb-2 font-medium"
+                    >
+                      Visiting Hour
+                      <span className="text-red-600 font-normal ml-1">*</span>
+                    </label>
+                    <input
+                      id={`chamberInfos.${index}.visitingHour`}
+                      type="text"
+                      placeholder="Example: 6pm to 9pm (Closed: Friday)"
+                      className="border py-3 px-5 rounded-lg mr-4 w-full"
+                      {...register(
+                        `chamberInfos.${index}.visitingHour`,
+                        registerOptions.visitingHour
+                      )}
+                    />
+                    <p className="ml-0 text-red-500 mt-2">
+                      {errors?.chamberInfos?.[index]?.visitingHour?.message}
+                    </p>
+                  </div>
+                  {/* mobile number */}
+                  <div className="mb-3 flex flex-col items-start">
+                    <label
+                      htmlFor={`chamberInfos.${index}.mobileNumber`}
+                      className="mb-2 font-medium"
+                    >
+                      Mobile Number (For Appointment)
+                      <span className="text-red-600 font-normal ml-1">*</span>
+                    </label>
+                    <input
+                      id={`chamberInfos.${index}.mobileNumber`}
+                      type="text"
+                      placeholder="017********"
+                      className="border py-3 px-5 rounded-lg mr-4 w-full"
+                      {...register(
+                        `chamberInfos.${index}.mobileNumber`,
+                        registerOptions.mobileNumber
+                      )}
+                    />
+                    <p className="ml-0 text-red-500 mt-2">
+                      {errors?.chamberInfos?.[index]?.mobileNumber?.message}
+                    </p>
+                  </div>
+                  {index > 0 && (
+                    <button type="button" onClick={() => remove(index)}>
+                      Remove
+                    </button>
+                  )}
+                </div>
+              ))}
+              <button
+                type="button"
+                onClick={() =>
+                  append({
+                    chamberCount: fields.length + 1,
+                    chamberName: "",
+                    location: "",
+                    visitingPrice: "",
+                    visitingHour: "",
+                    mobileNumber: "",
+                  })
+                }
+              >
+                Click here to add more chamber
+              </button>
               {/* ------------------------------------ chamber infos end ------------------------------------ */}
+
               {/* file input */}
               <div className="mb-3 flex flex-col items-start">
                 <label htmlFor="photo" className="mb-2 font-medium">
