@@ -228,7 +228,7 @@ const AddDoctor = () => {
                   id="doctorsName"
                   type="text"
                   placeholder="Enter doctor's name"
-                  className="border py-3 px-5 rounded-lg mr-4 w-full"
+                  className="border py-3 px-5 rounded-lg w-full"
                   {...register("doctorsName", registerOptions.doctorsName)}
                 />
                 <p className="ml-0 text-red-500 mt-2">
@@ -245,7 +245,7 @@ const AddDoctor = () => {
                   id="doctorsEmail"
                   type="text"
                   placeholder="Enter doctor's valid email"
-                  className="border py-3 px-5 rounded-lg mr-4 w-full"
+                  className="border py-3 px-5 rounded-lg w-full"
                   {...register("doctorsEmail", registerOptions.doctorsEmail)}
                 />
                 <p className="ml-0 text-red-500 mt-2">
@@ -262,7 +262,7 @@ const AddDoctor = () => {
                   id="qualifications"
                   type="text"
                   placeholder="Enter your degrees and qualifications"
-                  className="border py-3 px-5 rounded-lg mr-4 w-full"
+                  className="border py-3 px-5 rounded-lg w-full"
                   {...register(
                     "qualifications",
                     registerOptions.qualifications
@@ -300,7 +300,7 @@ const AddDoctor = () => {
                   id="yearsOfExperience"
                   type="text"
                   placeholder="Enter your experience"
-                  className="border py-3 px-5 rounded-lg mr-4 w-full"
+                  className="border py-3 px-5 rounded-lg w-full"
                   {...register(
                     "yearsOfExperience",
                     registerOptions.yearsOfExperience
@@ -324,7 +324,7 @@ const AddDoctor = () => {
                   id="designationAndDepartment"
                   type="text"
                   placeholder="Example: Assistant Professor (Medicine)"
-                  className="border py-3 px-5 rounded-lg mr-4 w-full"
+                  className="border py-3 px-5 rounded-lg w-full"
                   {...register(
                     "designationAndDepartment",
                     registerOptions.designationAndDepartment
@@ -351,7 +351,7 @@ const AddDoctor = () => {
                       id={`chamberInfos.${index}.chamberName`}
                       type="text"
                       placeholder="Example: Popular Diagnostic Centre, Dhanmondi"
-                      className="border py-3 px-5 rounded-lg mr-4 w-full"
+                      className="border py-3 px-5 rounded-lg w-full"
                       {...register(
                         `chamberInfos.${index}.chamberName`,
                         registerOptions.chamberName
@@ -374,7 +374,7 @@ const AddDoctor = () => {
                       id={`chamberInfos.${index}.location`}
                       type="text"
                       placeholder="House #16 Road No. 2, Dhaka 1205"
-                      className="border py-3 px-5 rounded-lg mr-4 w-full"
+                      className="border py-3 px-5 rounded-lg w-full"
                       {...register(
                         `chamberInfos.${index}.location`,
                         registerOptions.location
@@ -397,7 +397,7 @@ const AddDoctor = () => {
                       id={`chamberInfos.${index}.visitingPrice`}
                       type="number"
                       placeholder="Enter your visiting price"
-                      className="border py-3 px-5 rounded-lg mr-4 w-full"
+                      className="border py-3 px-5 rounded-lg w-full"
                       {...register(
                         `chamberInfos.${index}.visitingPrice`,
                         registerOptions.visitingPrice
@@ -420,7 +420,7 @@ const AddDoctor = () => {
                       id={`chamberInfos.${index}.visitingHour`}
                       type="text"
                       placeholder="Example: 6pm to 9pm (Closed: Friday)"
-                      className="border py-3 px-5 rounded-lg mr-4 w-full"
+                      className="border py-3 px-5 rounded-lg w-full"
                       {...register(
                         `chamberInfos.${index}.visitingHour`,
                         registerOptions.visitingHour
@@ -443,7 +443,7 @@ const AddDoctor = () => {
                       id={`chamberInfos.${index}.mobileNumber`}
                       type="text"
                       placeholder="017********"
-                      className="border py-3 px-5 rounded-lg mr-4 w-full"
+                      className="border py-3 px-5 rounded-lg w-full"
                       {...register(
                         `chamberInfos.${index}.mobileNumber`,
                         registerOptions.mobileNumber

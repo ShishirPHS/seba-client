@@ -1,4 +1,4 @@
-/* #add-doctor .css-1u9des2-indicatorSeparator {
+#add-doctor .css-1u9des2-indicatorSeparator {
   width: 0;
 }
 
@@ -7,7 +7,8 @@
 }
 
 #add-doctor .css-hlgwow {
-  padding: 12px 20 12px 20px;
+  padding: 12px 20px;
+  border-radius: 12px;
 }
 
 #add-doctor .css-1jqq78o-placeholder {
@@ -17,4 +18,12 @@
 #add-doctor .css-19bb58m {
   margin: 0;
   padding: 0;
-} */
+}
+
+#add-doctor .css-1xc3v61-indicatorContainer {
+  padding-right: 20px;
+}
+
+#add-doctor .css-15lsz6c-indicatorContainer {
+  padding-right: 20px;
+}
