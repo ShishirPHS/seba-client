@@ -1,0 +1,238 @@
+[
+  { "id": 1, "name": "Acupuncture", "value": "acupuncture" },
+  { "id": 2, "name": "Aesthetic Physician", "value": "aesthetic_physician" },
+  { "id": 3, "name": "Allergy Specialist", "value": "allergy_specialist" },
+  { "id": 4, "name": "Andrologist", "value": "andrologist" },
+  { "id": 5, "name": "Anesthetist", "value": "anesthetist" },
+  { "id": 6, "name": "Audiologist", "value": "audiologist" },
+  {
+    "id": 7,
+    "name": "Bariatric / Weight Loss Surgeon",
+    "value": "bariatric_weight_loss_surgeon"
+  },
+  { "id": 8, "name": "Breast Surgeon", "value": "breast_surgeon" },
+  {
+    "id": 9,
+    "name": "Cancer Specialist / Oncologist",
+    "value": "cancer_specialist_oncologist"
+  },
+  { "id": 10, "name": "Cancer Surgeon", "value": "cancer_surgeon" },
+  { "id": 11, "name": "Cardiac Surgeon", "value": "cardiac_surgeon" },
+  { "id": 12, "name": "Cardiologist", "value": "cardiologist" },
+  {
+    "id": 13,
+    "name": "Cardiothoracic Anesthetist",
+    "value": "cardiothoracic_anesthetist"
+  },
+  {
+    "id": 14,
+    "name": "Chest Respiratory Specialist",
+    "value": "chest_respiratory_specialist"
+  },
+  { "id": 15, "name": "Chest Surgeon", "value": "chest_surgeon" },
+  { "id": 16, "name": "Child Psychologist", "value": "child_psychologist" },
+  { "id": 17, "name": "Chiropractor", "value": "chiropractor" },
+  { "id": 18, "name": "Clinical Dietician", "value": "clinical_dietician" },
+  {
+    "id": 19,
+    "name": "Clinical Nutritionist",
+    "value": "clinical_nutritionist"
+  },
+  {
+    "id": 20,
+    "name": "Clinical Psychologist",
+    "value": "clinical_psychologist"
+  },
+  { "id": 21, "name": "Cosmetic Dentist", "value": "cosmetic_dentist" },
+  { "id": 22, "name": "Cosmetic Surgeon", "value": "cosmetic_surgeon" },
+  { "id": 23, "name": "Cosmetologist", "value": "cosmetologist" },
+  { "id": 24, "name": "Counselor", "value": "counselor" },
+  { "id": 25, "name": "Dentist", "value": "dentist" },
+  { "id": 26, "name": "Dermatologist", "value": "dermatologist" },
+  { "id": 27, "name": "Diabetologist", "value": "diabetologist" },
+  { "id": 28, "name": "Endocrinologist", "value": "endocrinologist" },
+  { "id": 29, "name": "Endourologist", "value": "endourologist" },
+  { "id": 30, "name": "Ent Specialist", "value": "ent_specialist" },
+  { "id": 31, "name": "Ent Surgeon", "value": "ent_surgeon" },
+  { "id": 32, "name": "Eye Specialist", "value": "eye_specialist" },
+  { "id": 33, "name": "Eye Surgeon", "value": "eye_surgeon" },
+  { "id": 34, "name": "Family Medicine", "value": "family_medicine" },
+  { "id": 35, "name": "Fitness Trainer", "value": "fitness_trainer" },
+  { "id": 36, "name": "Gastroenterologist", "value": "gastroenterologist" },
+  { "id": 37, "name": "General Physician", "value": "general_physician" },
+  {
+    "id": 38,
+    "name": "General Practitioner",
+    "value": "general_practitioner"
+  },
+  { "id": 39, "name": "General Surgeon", "value": "general_surgeon" },
+  { "id": 40, "name": "Geneticist", "value": "geneticist" },
+  {
+    "id": 41,
+    "name": "Gynecologic Oncologist",
+    "value": "gynecologic_oncologist"
+  },
+  { "id": 42, "name": "Gynecologist", "value": "gynecologist" },
+  { "id": 43, "name": "Haemoncologist", "value": "haemoncologist" },
+  { "id": 44, "name": "Hematologist", "value": "hematologist" },
+  { "id": 45, "name": "Hepatologist", "value": "hepatologist" },
+  { "id": 46, "name": "Hijama Specialist", "value": "hijama_specialist" },
+  { "id": 47, "name": "Homeopath", "value": "homeopath" },
+  { "id": 48, "name": "Immunologist", "value": "immunologist" },
+  { "id": 49, "name": "Implantologist", "value": "implantologist" },
+  { "id": 50, "name": "Infectious Diseases", "value": "infectious_diseases" },
+  {
+    "id": 51,
+    "name": "Internal Medicine Specialist",
+    "value": "internal_medicine_specialist"
+  },
+  {
+    "id": 52,
+    "name": "Interventional Cardiologist",
+    "value": "interventional_cardiologist"
+  },
+  {
+    "id": 53,
+    "name": "Interventional Radiologist",
+    "value": "interventional_radiologist"
+  },
+  {
+    "id": 54,
+    "name": "Kidney Transplant Specialist",
+    "value": "kidney_transplant_specialist"
+  },
+  {
+    "id": 55,
+    "name": "Laparoscopic Surgeon",
+    "value": "laparoscopic_surgeon"
+  },
+  { "id": 56, "name": "Liver Specialist", "value": "liver_specialist" },
+  {
+    "id": 57,
+    "name": "Liver Transplant Surgeon",
+    "value": "liver_transplant_surgeon"
+  },
+  { "id": 58, "name": "Lung Surgeon", "value": "lung_surgeon" },
+  {
+    "id": 59,
+    "name": "Maternal Fetal Medicine Specialist",
+    "value": "maternal_fetal_medicine_specialist"
+  },
+  { "id": 60, "name": "Medical Specialist", "value": "medical_specialist" },
+  { "id": 61, "name": "Neonatologist", "value": "neonatologist" },
+  { "id": 62, "name": "Nephrologist", "value": "nephrologist" },
+  { "id": 63, "name": "Neuro Psychiatrist", "value": "neuro_psychiatrist" },
+  { "id": 64, "name": "Neuro Surgeon", "value": "neuro_surgeon" },
+  { "id": 65, "name": "Neurologist", "value": "neurologist" },
+  { "id": 66, "name": "Nutritionist", "value": "nutritionist" },
+  {
+    "id": 67,
+    "name": "Occupational Therapist",
+    "value": "occupational_therapist"
+  },
+  { "id": 68, "name": "Optometrist", "value": "optometrist" },
+  {
+    "id": 69,
+    "name": "Oral And Maxillofacial Surgeon",
+    "value": "oral_maxillofacial_surgeon"
+  },
+  { "id": 70, "name": "Orthodontist", "value": "orthodontist" },
+  { "id": 71, "name": "Orthopedic Surgeon", "value": "orthopedic_surgeon" },
+  {
+    "id": 72,
+    "name": "Orthotist And Prosthetist",
+    "value": "orthotist_prosthetist"
+  },
+  {
+    "id": 73,
+    "name": "Paediatric Radiologist",
+    "value": "paediatric_radiologist"
+  },
+  { "id": 74, "name": "Pain Specialist", "value": "pain_specialist" },
+  { "id": 75, "name": "Pathologist", "value": "pathologist" },
+  {
+    "id": 76,
+    "name": "Pediatric Cardiac Surgeon",
+    "value": "pediatric_cardiac_surgeon"
+  },
+  {
+    "id": 77,
+    "name": "Pediatric Cardiologist",
+    "value": "pediatric_cardiologist"
+  },
+  {
+    "id": 78,
+    "name": "Pediatric Endocrinologist",
+    "value": "pediatric_endocrinologist"
+  },
+  {
+    "id": 79,
+    "name": "Pediatric Gastroenterologist",
+    "value": "pediatric_gastroenterologist"
+  },
+  {
+    "id": 80,
+    "name": "Pediatric Nephrologist",
+    "value": "pediatric_nephrologist"
+  },
+  {
+    "id": 81,
+    "name": "Pediatric Neuro Physician",
+    "value": "pediatric_neuro_physician"
+  },
+  {
+    "id": 82,
+    "name": "Pediatric Oncologist And Hematologist",
+    "value": "pediatric_oncologist_hematologist"
+  },
+  {
+    "id": 83,
+    "name": "Pediatric Orthopedic Surgeon",
+    "value": "pediatric_orthopedic_surgeon"
+  },
+  { "id": 84, "name": "Pediatric Surgeon", "value": "pediatric_surgeon" },
+  { "id": 85, "name": "Pediatric Urologist", "value": "pediatric_urologist" },
+  { "id": 86, "name": "Pediatrician", "value": "pediatrician" },
+  { "id": 87, "name": "Pharmacist", "value": "pharmacist" },
+  { "id": 88, "name": "Physiotherapist", "value": "physiotherapist" },
+  { "id": 89, "name": "Plastic Surgeon", "value": "plastic_surgeon" },
+  { "id": 90, "name": "Psychiatrist", "value": "psychiatrist" },
+  { "id": 91, "name": "Psychologist", "value": "psychologist" },
+  {
+    "id": 92,
+    "name": "Pulmonologist / Lung Specialist",
+    "value": "pulmonologist_lung_specialist"
+  },
+  {
+    "id": 93,
+    "name": "Radiation Oncologist",
+    "value": "radiation_oncologist"
+  },
+  { "id": 94, "name": "Radiologist", "value": "radiologist" },
+  {
+    "id": 95,
+    "name": "Regenerative Medicine Specialist",
+    "value": "regenerative_medicine_specialist"
+  },
+  {
+    "id": 96,
+    "name": "Rehabilitation Medicine",
+    "value": "rehabilitation_medicine"
+  },
+  { "id": 97, "name": "Restorative Dentist", "value": "restorative_dentist" },
+  { "id": 98, "name": "Rheumatologist", "value": "rheumatologist" },
+  { "id": 99, "name": "Sexologist", "value": "sexologist" },
+  { "id": 100, "name": "Sonologist", "value": "sonologist" },
+  { "id": 101, "name": "Speech Therapist", "value": "speech_therapist" },
+  { "id": 102, "name": "Spinal Surgeon", "value": "spinal_surgeon" },
+  { "id": 103, "name": "Spine Specialist", "value": "spine_specialist" },
+  { "id": 104, "name": "Thoracic Surgeon", "value": "thoracic_surgeon" },
+  {
+    "id": 105,
+    "name": "Urological Oncologist",
+    "value": "urological_oncologist"
+  },
+  { "id": 106, "name": "Urologist", "value": "urologist" },
+  { "id": 107, "name": "Vaccine Specialist", "value": "vaccine_specialist" },
+  { "id": 108, "name": "Vascular Surgeon", "value": "vascular_surgeon" }
+]

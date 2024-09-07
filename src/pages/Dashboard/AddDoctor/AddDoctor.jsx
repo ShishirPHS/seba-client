@@ -4,9 +4,13 @@ import { useFieldArray, useForm } from "react-hook-form";
 import { useEffect } from "react";
 import axios from "axios";
 import useAxiosPublic from "../../../hooks/useAxiosPublic";
+import useAllSpecialties from "../../../hooks/useAllSpecialties";
+import Select from "react-select";
+import "./AddDoctor.css";
 
 const AddDoctor = () => {
   const axiosPublic = useAxiosPublic();
+  const [allSpecialties] = useAllSpecialties();
 
   const {
     register,
@@ -186,8 +190,29 @@ const AddDoctor = () => {
     },
   };
 
+  // style for react-select
+  const style = {
+    control: (base) => ({
+      ...base,
+      border: 0,
+      boxShadow: "none",
+    }),
+    menu: (base) => ({
+      ...base,
+      backgroundColor: "#fff",
+    }),
+    option: (base, state) => ({
+      ...base,
+      backgroundColor: state.isSelected ? "#007bff" : "#fff",
+      color: state.isSelected ? "#fff" : "#000",
+      "&:hover": {
+        backgroundColor: "#0056b3",
+      },
+    }),
+  };
+
   return (
-    <div className="my-[100px]">
+    <div id="add-doctor" className="my-[100px]">
       <Container>
         <div className="mx-5 3xl:mx-[140px]">
           <div className="border p-7 rounded-3xl max-w-[1000px] mx-auto font-poppins">
@@ -253,11 +278,12 @@ const AddDoctor = () => {
                   Specialty
                   <span className="text-red-600 font-normal ml-1">*</span>
                 </label>
-                <input
-                  id="specialty"
-                  type="text"
+                <Select
+                  className="w-full border rounded-lg"
+                  options={allSpecialties}
                   placeholder="Example: Medicine Specialist"
-                  className="border py-3 px-5 rounded-lg mr-4 w-full"
+                  noOptionsMessage={() => "No specialty found"}
+                  styles={style}
                   {...register("specialty", registerOptions.specialty)}
                 />
                 <p className="ml-0 text-red-500 mt-2">
