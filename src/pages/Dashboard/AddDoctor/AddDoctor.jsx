@@ -153,6 +153,7 @@ const AddDoctor = () => {
       });
     }
   };
+
   const registerOptions = {
     doctorsName: { required: "Please enter doctor's name" },
     doctorsEmail: {
@@ -165,7 +166,7 @@ const AddDoctor = () => {
     qualifications: {
       required: "Please enter your degrees and qualifications",
     },
-    specialty: { required: "Please enter specialty" },
+    specialty: { required: "Please select specialty" },
     yearsOfExperience: { required: "Please enter years of experience" },
     designationAndDepartment: {
       required: "Please enter designation & department",
@@ -200,14 +201,6 @@ const AddDoctor = () => {
     menu: (base) => ({
       ...base,
       backgroundColor: "#fff",
-    }),
-    option: (base, state) => ({
-      ...base,
-      backgroundColor: state.isSelected ? "#007bff" : "#fff",
-      color: state.isSelected ? "#fff" : "#000",
-      "&:hover": {
-        backgroundColor: "#0056b3",
-      },
     }),
   };
 
@@ -280,8 +273,12 @@ const AddDoctor = () => {
                 </label>
                 <Select
                   className="w-full border rounded-lg"
-                  options={allSpecialties}
-                  placeholder="Example: Medicine Specialist"
+                  options={allSpecialties.length > 0 ? allSpecialties : []}
+                  placeholder={
+                    allSpecialties.length > 0
+                      ? "Select specialty"
+                      : "Loading specialties..."
+                  }
                   noOptionsMessage={() => "No specialty found"}
                   styles={style}
                   {...register("specialty", registerOptions.specialty)}
