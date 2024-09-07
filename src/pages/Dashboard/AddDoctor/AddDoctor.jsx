@@ -1,6 +1,6 @@
 import Swal from "sweetalert2";
 import Container from "../../../components/shared/Container/Container";
-import { useFieldArray, useForm } from "react-hook-form";
+import { Controller, useFieldArray, useForm } from "react-hook-form";
 import { useEffect } from "react";
 import axios from "axios";
 import useAxiosPublic from "../../../hooks/useAxiosPublic";
@@ -106,7 +106,7 @@ const AddDoctor = () => {
       doctorsName,
       doctorsEmail,
       qualifications,
-      specialty,
+      specialty: specialty.value,
       yearsOfExperience,
       designationAndDepartment,
       chamberInfos,
@@ -271,17 +271,25 @@ const AddDoctor = () => {
                   Specialty
                   <span className="text-red-600 font-normal ml-1">*</span>
                 </label>
-                <Select
-                  className="w-full border rounded-lg"
-                  options={allSpecialties.length > 0 ? allSpecialties : []}
-                  placeholder={
-                    allSpecialties.length > 0
-                      ? "Select specialty"
-                      : "Loading specialties..."
-                  }
-                  noOptionsMessage={() => "No specialty found"}
-                  styles={style}
-                  {...register("specialty", registerOptions.specialty)}
+                <Controller
+                  name="specialty"
+                  id="specialty"
+                  control={control}
+                  rules={registerOptions.specialty}
+                  render={({ field }) => (
+                    <Select
+                      {...field}
+                      className="w-full border rounded-lg"
+                      options={allSpecialties.length > 0 ? allSpecialties : []}
+                      placeholder={
+                        allSpecialties.length > 0
+                          ? "Select specialty"
+                          : "Loading specialties..."
+                      }
+                      noOptionsMessage={() => "No specialty found"}
+                      styles={style}
+                    />
+                  )}
                 />
                 <p className="ml-0 text-red-500 mt-2">
                   {errors?.specialty && errors.specialty.message}
