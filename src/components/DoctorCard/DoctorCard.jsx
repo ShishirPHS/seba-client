@@ -1,29 +1,49 @@
 import PropTypes from "prop-types";
-import { MdOutlinePhoneAndroid } from "react-icons/md";
+import useAllSpecialties from "../../hooks/useAllSpecialties";
 
 const DoctorCard = ({ doctor }) => {
   const { doctorsName, yearsOfExperience, specialty, photo } = doctor;
+  const [allSpecialties] = useAllSpecialties();
+
+  const specialtyValue = allSpecialties.find(
+    (singleSpecialty) => singleSpecialty.value === specialty
+  );
 
   return (
     <div
-      style={{ boxShadow: "1px 4px 12px rgba(0,0,0,0.25)" }}
-      className="rounded-xl overflow-hidden p-4 border"
+      style={{
+        boxShadow:
+          "0px 1px 30px rgba(0, 0, 0, .03), 0 .275rem .75rem -.0625rem rgba(0, 0, 0, .06)",
+      }}
+      className="rounded-lg overflow-hidden p-4 mb-[10px] font-poppins"
     >
       {/* card top */}
-      <div className="flex relative">
-        {/* top left */}
-        <img
-          className="h-[80px] w-[80px] rounded-full object-cover"
-          src={photo}
-          alt={`Image of ${doctorsName}`}
-        />
-        {/* top right */}
-        <div className="ml-4">
-          <p>{doctorsName}</p>
-          <p>{specialty}</p>
-          <p>{yearsOfExperience}</p>
-          <MdOutlinePhoneAndroid className="absolute right-0 top-0"></MdOutlinePhoneAndroid>
+      <div>
+        {/* top */}
+        <div className="flex">
+          {/* top left */}
+          <img
+            className="h-[150px] w-[150px] rounded-full object-cover"
+            src={photo}
+            alt={`Image of ${doctorsName}`}
+          />
+          {/* top right */}
+          <div className="ml-4">
+            <p className="underline font-medium leading-[20px]">
+              {doctorsName}
+            </p>
+            <p className="mt-[10px]">
+              {specialtyValue && specialtyValue?.label}
+            </p>
+            <p>{yearsOfExperience}</p>
+          </div>
         </div>
+        {/* middle */}
+        <div></div>
+        {/* bottom div to show chamber infos */}
+        {/* <div>
+          {chamberInfos?.map(chamberInfos)}
+        </div> */}
       </div>
       {/* card bottom */}
     </div>

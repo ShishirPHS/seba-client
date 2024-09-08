@@ -48,22 +48,34 @@ const Doctors = () => {
                 {/* button to download pdf */}
                 <button
                   onClick={downloadPdf}
-                  className="bg-primary text-white hover:bg-secondary py-3 px-8 rounded-2xl mt-[10px] transition-all block mx-auto mb-8"
+                  className="bg-primary text-white hover:bg-secondary py-3 px-8 rounded-2xl mt-[10px] transition-all block mx-auto mb-8 disabled-btn"
+                  disabled
                 >
                   Download Doctors PDF
                 </button>
 
-                <Link to="/add-doctor">
-                  <button className="bg-primary text-white hover:bg-secondary py-3 px-8 rounded-2xl mt-[10px] transition-all block mx-auto">
+                <button className="mt-[10px] block mx-auto">
+                  <Link
+                    to="/add-doctor"
+                    className="bg-primary text-white hover:bg-secondary py-3 px-8 rounded-2xl transition-all"
+                  >
                     Add Doctor
-                  </button>
-                </Link>
+                  </Link>
+                </button>
               </div>
               <div>
-                <div className="grid grid-cols-3 gap-6">
-                  {allDoctors?.map((doctor) => (
-                    <DoctorCard key={doctor._id} doctor={doctor}></DoctorCard>
-                  ))}
+                <div>
+                  {allDoctors.length > 0 ? (
+                    allDoctors?.map((doctor) => (
+                      <DoctorCard key={doctor._id} doctor={doctor}></DoctorCard>
+                    ))
+                  ) : (
+                    <>
+                      <div className="text-center text-red-600">
+                        No doctors found
+                      </div>
+                    </>
+                  )}
                 </div>
               </div>
             </>

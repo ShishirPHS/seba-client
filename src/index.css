@@ -26,3 +26,15 @@
   --color-secondary: #3ba4a7;
   --color-primary-bg: #013131;
 }
+
+.disabled-btn {
+  cursor: not-allowed;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.disabled-btn:hover {
+  cursor: not-allowed;
+  background-color: #cccccc !important;
+  color: #666666;
+}
