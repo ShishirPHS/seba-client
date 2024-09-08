@@ -1,8 +1,16 @@
 import PropTypes from "prop-types";
 import useAllSpecialties from "../../hooks/useAllSpecialties";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/autoplay";
+
+import { Autoplay } from "swiper/modules";
 
 const DoctorCard = ({ doctor }) => {
-  const { doctorsName, yearsOfExperience, specialty, photo } = doctor;
+  const { doctorsName, yearsOfExperience, specialty, chamberInfos, photo } =
+    doctor;
   const [allSpecialties] = useAllSpecialties();
 
   const specialtyValue = allSpecialties.find(
@@ -41,9 +49,54 @@ const DoctorCard = ({ doctor }) => {
         {/* middle */}
         <div></div>
         {/* bottom div to show chamber infos */}
-        {/* <div>
-          {chamberInfos?.map(chamberInfos)}
-        </div> */}
+        <div>
+          <Swiper
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+              },
+              768: {
+                slidesPerView: 2,
+              },
+              1024: {
+                slidesPerView: 2,
+              },
+              1280: {
+                slidesPerView: 3,
+              },
+              1589: {
+                slidesPerView: 3,
+              },
+              1920: {
+                slidesPerView: 3,
+              },
+            }}
+            slidesPerView={1}
+            spaceBetween={22}
+            loop={true}
+            autoplay={{
+              delay: 2000,
+              disableOnInteraction: false,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Autoplay]}
+            className="mySwiper skinDoctorSlider"
+          >
+            {chamberInfos?.map((chamber) => (
+              <SwiperSlide key={chamber.chamberCount}>
+                <div className="border-[#02c782] border-[1px]">
+                  <p>{chamber?.chamberName}</p>
+                  <p>{chamber?.location}</p>
+                  <p>{chamber?.visitingPrice}</p>
+                  <p>{chamber?.visitingHour}</p>
+                  <p>{chamber?.mobileNumber}</p>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </div>
       {/* card bottom */}
     </div>
