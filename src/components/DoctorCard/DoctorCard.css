@@ -1,0 +1,14 @@
+#doctor-card .scrollable-div {
+  cursor: grab;
+  user-select: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+#doctor-card .scrollable-div::-webkit-scrollbar {
+  display: none;
+}
+
+#doctor-card .scrollable-div.active {
+  cursor: grabbing;
+}

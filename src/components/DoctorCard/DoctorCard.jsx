@@ -1,13 +1,42 @@
 import PropTypes from "prop-types";
 import useAllSpecialties from "../../hooks/useAllSpecialties";
+import { useRef, useState } from "react";
+import "./DoctorCard.css";
 
 const DoctorCard = ({ doctor }) => {
+  const [isDragging, setIsDragging] = useState(false);
+  const scrollRef = useRef(null);
+  const startX = useRef(0);
+  const scrollLeft = useRef(0);
+
   const { doctorsName, specialty, mobileNumber, chamberInfos, photo } = doctor;
   const [allSpecialties] = useAllSpecialties();
 
   const specialtyValue = allSpecialties.find(
     (singleSpecialty) => singleSpecialty.value === specialty
   );
+
+  const handleMouseDown = (e) => {
+    setIsDragging(true);
+    startX.current = e.pageX - scrollRef.current.offsetLeft;
+    scrollLeft.current = scrollRef.current.scrollLeft;
+  };
+
+  const handleMouseLeave = () => {
+    setIsDragging(false);
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
+
+  const handleMouseMove = (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - scrollRef.current.offsetLeft;
+    const walk = (x - startX.current) * 1;
+    scrollRef.current.scrollLeft = scrollLeft.current - walk;
+  };
 
   return (
     <div
@@ -16,6 +45,7 @@ const DoctorCard = ({ doctor }) => {
           "0px 1px 30px rgba(0, 0, 0, .03), 0 .275rem .75rem -.0625rem rgba(0, 0, 0, .06)",
       }}
       className="rounded-lg overflow-hidden p-4 mb-[10px] font-poppins"
+      id="doctor-card"
     >
       {/* card top */}
       <div>
@@ -41,7 +71,16 @@ const DoctorCard = ({ doctor }) => {
         {/* middle */}
         <div></div>
         {/* bottom div to show chamber infos */}
-        <div className="mt-5 flex gap-6 overflow-x-auto">
+        <div
+          className={`mt-5 flex gap-6 overflow-x-auto scrollable-div ${
+            isDragging ? "active" : ""
+          }`}
+          ref={scrollRef}
+          onMouseDown={handleMouseDown}
+          onMouseLeave={handleMouseLeave}
+          onMouseUp={handleMouseUp}
+          onMouseMove={handleMouseMove}
+        >
           {chamberInfos?.map((chamber) => (
             <div
               key={chamber.chamberCount}
