@@ -1,16 +1,8 @@
 import PropTypes from "prop-types";
 import useAllSpecialties from "../../hooks/useAllSpecialties";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/autoplay";
-
-import { Autoplay } from "swiper/modules";
 
 const DoctorCard = ({ doctor }) => {
-  const { doctorsName, yearsOfExperience, specialty, chamberInfos, photo } =
-    doctor;
+  const { doctorsName, specialty, mobileNumber, chamberInfos, photo } = doctor;
   const [allSpecialties] = useAllSpecialties();
 
   const specialtyValue = allSpecialties.find(
@@ -43,59 +35,24 @@ const DoctorCard = ({ doctor }) => {
             <p className="mt-[10px]">
               {specialtyValue && specialtyValue?.label}
             </p>
-            <p>{yearsOfExperience}</p>
+            <p>{mobileNumber}</p>
           </div>
         </div>
         {/* middle */}
         <div></div>
         {/* bottom div to show chamber infos */}
-        <div>
-          <Swiper
-            breakpoints={{
-              640: {
-                slidesPerView: 2,
-              },
-              768: {
-                slidesPerView: 2,
-              },
-              1024: {
-                slidesPerView: 2,
-              },
-              1280: {
-                slidesPerView: 3,
-              },
-              1589: {
-                slidesPerView: 3,
-              },
-              1920: {
-                slidesPerView: 3,
-              },
-            }}
-            slidesPerView={1}
-            spaceBetween={22}
-            loop={true}
-            autoplay={{
-              delay: 2000,
-              disableOnInteraction: false,
-            }}
-            pagination={{
-              clickable: true,
-            }}
-            modules={[Autoplay]}
-            className="mySwiper skinDoctorSlider"
-          >
-            {chamberInfos?.map((chamber) => (
-              <SwiperSlide key={chamber.chamberCount}>
-                <div className="border-[#02c782] border-[1px]">
-                  <p>{chamber?.chamberName}</p>
-                  <p>{chamber?.location}</p>
-                  <p>{chamber?.visitingPrice}</p>
-                  <p>{chamber?.visitingHour}</p>
-                  <p>{chamber?.mobileNumber}</p>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+        <div className="mt-5">
+          {chamberInfos?.map((chamber) => (
+            <div
+              key={chamber.chamberCount}
+              className="border-[#02c782] border-[1px] px-[15px] py-[10px] rounded-lg"
+            >
+              <p>{chamber?.chamberName}</p>
+              <p>{chamber?.location}</p>
+              <p>{chamber?.visitingPrice}</p>
+              <p>{chamber?.visitingHour}</p>
+            </div>
+          ))}
         </div>
       </div>
       {/* card bottom */}
