@@ -41,11 +41,11 @@ const DoctorCard = ({ doctor }) => {
         {/* middle */}
         <div></div>
         {/* bottom div to show chamber infos */}
-        <div className="mt-5">
+        <div className="mt-5 flex gap-6 overflow-x-auto">
           {chamberInfos?.map((chamber) => (
             <div
               key={chamber.chamberCount}
-              className="border-[#02c782] border-[1px] px-[15px] py-[10px] rounded-lg"
+              className="border-[#02c782] border-[1px] px-[15px] py-[10px] rounded-lg flex-shrink-0"
             >
               <p>{chamber?.chamberName}</p>
               <p>{chamber?.location}</p>

@@ -29,7 +29,6 @@ const AddDoctor = () => {
           location: "",
           visitingPrice: "",
           visitingHour: "",
-          mobileNumber: "",
         },
       ],
     },
@@ -340,6 +339,23 @@ const AddDoctor = () => {
                     errors.designationAndDepartment.message}
                 </p>
               </div>
+              {/* mobile number */}
+              <div className="mb-3 flex flex-col items-start">
+                <label htmlFor="mobileNumber" className="mb-2 font-medium">
+                  Mobile Number (For Appointment)
+                  <span className="text-red-600 font-normal ml-1">*</span>
+                </label>
+                <input
+                  id="mobileNumber"
+                  type="text"
+                  placeholder="017********"
+                  className="border py-3 px-5 rounded-lg w-full"
+                  {...register("mobileNumber", registerOptions.mobileNumber)}
+                />
+                <p className="ml-0 text-red-500 mt-2">
+                  {errors?.mobileNumber && errors.mobileNumber.message}
+                </p>
+              </div>
               {/* ------------------------------------ chamber infos start ------------------------------------ */}
               {fields.map((chamber, index) => (
                 <div key={chamber.id}>
@@ -433,29 +449,6 @@ const AddDoctor = () => {
                     />
                     <p className="ml-0 text-red-500 mt-2">
                       {errors?.chamberInfos?.[index]?.visitingHour?.message}
-                    </p>
-                  </div>
-                  {/* mobile number */}
-                  <div className="mb-3 flex flex-col items-start">
-                    <label
-                      htmlFor={`chamberInfos.${index}.mobileNumber`}
-                      className="mb-2 font-medium"
-                    >
-                      Mobile Number (For Appointment)
-                      <span className="text-red-600 font-normal ml-1">*</span>
-                    </label>
-                    <input
-                      id={`chamberInfos.${index}.mobileNumber`}
-                      type="text"
-                      placeholder="017********"
-                      className="border py-3 px-5 rounded-lg w-full"
-                      {...register(
-                        `chamberInfos.${index}.mobileNumber`,
-                        registerOptions.mobileNumber
-                      )}
-                    />
-                    <p className="ml-0 text-red-500 mt-2">
-                      {errors?.chamberInfos?.[index]?.mobileNumber?.message}
                     </p>
                   </div>
                   <div>
