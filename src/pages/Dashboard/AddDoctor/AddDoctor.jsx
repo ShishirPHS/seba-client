@@ -98,6 +98,7 @@ const AddDoctor = () => {
       specialty,
       yearsOfExperience,
       designationAndDepartment,
+      mobileNumber,
       chamberInfos,
     } = data;
 
@@ -108,6 +109,7 @@ const AddDoctor = () => {
       specialty,
       yearsOfExperience,
       designationAndDepartment,
+      mobileNumber,
       chamberInfos,
     };
 
