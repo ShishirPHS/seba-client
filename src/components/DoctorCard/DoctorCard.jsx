@@ -1,5 +1,4 @@
 import PropTypes from "prop-types";
-import useAllSpecialties from "../../hooks/useAllSpecialties";
 import { useRef, useState } from "react";
 import "./DoctorCard.css";
 
@@ -10,11 +9,10 @@ const DoctorCard = ({ doctor }) => {
   const scrollLeft = useRef(0);
 
   const { doctorsName, specialty, mobileNumber, chamberInfos, photo } = doctor;
-  const [allSpecialties] = useAllSpecialties();
 
-  const specialtyValue = allSpecialties.find(
-    (singleSpecialty) => singleSpecialty.value === specialty
-  );
+  const specialties = specialty
+    .map((singleSpecialty) => singleSpecialty.label)
+    .join(", ");
 
   const handleMouseDown = (e) => {
     setIsDragging(true);
@@ -62,9 +60,7 @@ const DoctorCard = ({ doctor }) => {
             <p className="underline font-medium leading-[20px]">
               {doctorsName}
             </p>
-            <p className="mt-[10px]">
-              {specialtyValue && specialtyValue?.label}
-            </p>
+            <p className="mt-[10px]">{specialties}</p>
             <p>{mobileNumber}</p>
           </div>
         </div>

@@ -105,7 +105,7 @@ const AddDoctor = () => {
       doctorsName,
       doctorsEmail,
       qualifications,
-      specialty: specialty.value,
+      specialty,
       yearsOfExperience,
       designationAndDepartment,
       chamberInfos,
@@ -286,6 +286,7 @@ const AddDoctor = () => {
                           : "Loading specialties..."
                       }
                       noOptionsMessage={() => "No specialty found"}
+                      isMulti
                       styles={style}
                     />
                   )}
