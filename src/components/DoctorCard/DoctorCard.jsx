@@ -1,9 +1,11 @@
 import PropTypes from "prop-types";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./DoctorCard.css";
+import BookAppointmentModal from "../BookAppointmentModal/BookAppointmentModal";
 
 const DoctorCard = ({ doctor }) => {
   const [isDragging, setIsDragging] = useState(false);
+
   const scrollRef = useRef(null);
   const startX = useRef(0);
   const scrollLeft = useRef(0);
@@ -35,6 +37,10 @@ const DoctorCard = ({ doctor }) => {
     const walk = (x - startX.current) * 1;
     scrollRef.current.scrollLeft = scrollLeft.current - walk;
   };
+
+  useEffect(() => {
+    window.HSStaticMethods.autoInit();
+  }, []);
 
   return (
     <div
@@ -80,12 +86,13 @@ const DoctorCard = ({ doctor }) => {
           {chamberInfos?.map((chamber) => (
             <div
               key={chamber.chamberCount}
-              className="border-[#02c782] border-[1px] px-[15px] py-[10px] rounded-lg flex-shrink-0"
+              className="chamberCard border-[#02c782] border-[1px] px-[15px] py-[10px] rounded-lg flex-shrink-0"
             >
               <p>{chamber?.chamberName}</p>
               <p>{chamber?.location}</p>
               <p>{chamber?.visitingPrice}</p>
               <p>{chamber?.visitingHour}</p>
+              <BookAppointmentModal></BookAppointmentModal>
             </div>
           ))}
         </div>

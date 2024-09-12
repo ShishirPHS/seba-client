@@ -12,3 +12,7 @@
 #doctor-card .scrollable-div.active {
   cursor: grabbing;
 }
+
+#doctor-card .chamberCard:hover {
+  cursor: pointer;
+}
