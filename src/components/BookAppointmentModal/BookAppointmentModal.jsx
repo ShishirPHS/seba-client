@@ -1,4 +1,13 @@
-const BookAppointmentModal = () => {
+import PropTypes from "prop-types";
+import { useEffect } from "react";
+
+const BookAppointmentModal = ({ chamber, closeModal }) => {
+  console.log(chamber, closeModal);
+
+  useEffect(() => {
+    window.HSStaticMethods.autoInit();
+  }, []);
+
   return (
     <>
       <button
@@ -78,6 +87,11 @@ const BookAppointmentModal = () => {
       </div>
     </>
   );
+};
+
+BookAppointmentModal.propTypes = {
+  chamber: PropTypes.object,
+  closeModal: PropTypes.func,
 };
 
 export default BookAppointmentModal;
