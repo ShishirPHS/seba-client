@@ -92,17 +92,12 @@ const DoctorCard = ({ doctor }) => {
             <div
               key={chamber.chamberCount}
               className="chamberCard border-[#02c782] border-[1px] px-[15px] py-[10px] rounded-lg flex-shrink-0"
+              onClick={() => openModal(chamber.chamberCount)}
             >
               <p>{chamber?.chamberName}</p>
               <p>{chamber?.location}</p>
               <p>{chamber?.visitingPrice}</p>
               <p>{chamber?.visitingHour}</p>
-              <button
-                className="btn"
-                onClick={() => openModal(chamber.chamberCount)}
-              >
-                Booking Button
-              </button>
               {openChamberId === chamber.chamberCount && (
                 <BookAppointmentModal
                   chamber={chamber}

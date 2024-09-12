@@ -1,18 +1,39 @@
 import PropTypes from "prop-types";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 const BookAppointmentModal = ({ chamber, closeModal }) => {
-  console.log(chamber, closeModal);
+  const modalBtnRef = useRef(null);
 
   useEffect(() => {
     window.HSStaticMethods.autoInit();
   }, []);
 
+  useEffect(() => {
+    if (modalBtnRef.current) {
+      modalBtnRef.current.click();
+    }
+  }, [modalBtnRef]);
+
+  useEffect(() => {
+    const handleEsc = (event) => {
+      if (event.key === "Escape") {
+        closeModal();
+      }
+    };
+
+    document.addEventListener("keydown", handleEsc);
+
+    return () => {
+      document.removeEventListener("keydown", handleEsc);
+    };
+  }, [closeModal]);
+
   return (
     <>
       <button
         type="button"
-        className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
+        ref={modalBtnRef}
+        className="py-3 px-4 hidden items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
         aria-haspopup="dialog"
         aria-expanded="false"
         aria-controls="hs-vertically-centered-modal"
@@ -63,8 +84,7 @@ const BookAppointmentModal = ({ chamber, closeModal }) => {
             </div>
             <div className="p-4 overflow-y-auto">
               <p className="text-gray-800 dark:text-neutral-400">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content.
+                {chamber.chamberName}
               </p>
             </div>
             <div className="flex justify-end items-center gap-x-2 py-3 px-4 border-t dark:border-neutral-700">
@@ -72,6 +92,7 @@ const BookAppointmentModal = ({ chamber, closeModal }) => {
                 type="button"
                 className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
                 data-hs-overlay="#hs-vertically-centered-modal"
+                onClick={closeModal}
               >
                 Close
               </button>
