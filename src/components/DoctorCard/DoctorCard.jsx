@@ -1,43 +1,16 @@
 import PropTypes from "prop-types";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import "./DoctorCard.css";
 import BookAppointmentModal from "../BookAppointmentModal/BookAppointmentModal";
 
 const DoctorCard = ({ doctor }) => {
-  const [isDragging, setIsDragging] = useState(false);
   const [openChamberId, setOpenChamberId] = useState(null);
-
-  const scrollRef = useRef(null);
-  const startX = useRef(0);
-  const scrollLeft = useRef(0);
 
   const { doctorsName, specialty, mobileNumber, chamberInfos, photo } = doctor;
 
   const specialties = specialty
     .map((singleSpecialty) => singleSpecialty.label)
     .join(", ");
-
-  const handleMouseDown = (e) => {
-    setIsDragging(true);
-    startX.current = e.pageX - scrollRef.current.offsetLeft;
-    scrollLeft.current = scrollRef.current.scrollLeft;
-  };
-
-  const handleMouseLeave = () => {
-    setIsDragging(false);
-  };
-
-  const handleMouseUp = () => {
-    setIsDragging(false);
-  };
-
-  const handleMouseMove = (e) => {
-    if (!isDragging) return;
-    e.preventDefault();
-    const x = e.pageX - scrollRef.current.offsetLeft;
-    const walk = (x - startX.current) * 1;
-    scrollRef.current.scrollLeft = scrollLeft.current - walk;
-  };
 
   const openModal = (chamberId) => {
     setOpenChamberId(chamberId);
@@ -78,16 +51,7 @@ const DoctorCard = ({ doctor }) => {
         {/* middle */}
         <div></div>
         {/* bottom div to show chamber infos */}
-        <div
-          className={`mt-5 flex gap-6 overflow-x-auto scrollable-div ${
-            isDragging ? "active" : ""
-          }`}
-          ref={scrollRef}
-          onMouseDown={handleMouseDown}
-          onMouseLeave={handleMouseLeave}
-          onMouseUp={handleMouseUp}
-          onMouseMove={handleMouseMove}
-        >
+        <div className={`mt-5 flex gap-6`}>
           {chamberInfos?.map((chamber) => (
             <div
               key={chamber.chamberCount}
