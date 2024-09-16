@@ -1,39 +1,11 @@
 import PropTypes from "prop-types";
-import { useEffect, useRef } from "react";
 
-const BookAppointmentModal = ({ chamber, closeModal }) => {
-  const modalBtnRef = useRef(null);
-
-  useEffect(() => {
-    window.HSStaticMethods.autoInit();
-  }, []);
-
-  useEffect(() => {
-    if (modalBtnRef.current) {
-      modalBtnRef.current.click();
-    }
-  }, [modalBtnRef]);
-
-  useEffect(() => {
-    const handleEsc = (event) => {
-      if (event.key === "Escape") {
-        closeModal();
-      }
-    };
-
-    document.addEventListener("keydown", handleEsc);
-
-    return () => {
-      document.removeEventListener("keydown", handleEsc);
-    };
-  }, [closeModal]);
-
+const BookAppointmentModal = ({ chamber }) => {
   return (
     <>
       <button
         type="button"
-        ref={modalBtnRef}
-        className="py-3 px-4 hidden items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
+        className="py-3 px-4 items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
         aria-haspopup="dialog"
         aria-expanded="false"
         aria-controls="hs-vertically-centered-modal"
@@ -44,7 +16,7 @@ const BookAppointmentModal = ({ chamber, closeModal }) => {
 
       <div
         id="hs-vertically-centered-modal"
-        className="hs-overlay hidden size-full fixed top-0 start-0 z-[80] overflow-x-hidden overflow-y-auto pointer-events-none"
+        className="hs-overlay [--overlay-backdrop:static] hidden size-full fixed top-0 start-0 z-[80] overflow-x-hidden overflow-y-auto pointer-events-none"
         role="dialog"
         tabIndex="-1"
         aria-labelledby="hs-vertically-centered-modal-label"
@@ -92,7 +64,6 @@ const BookAppointmentModal = ({ chamber, closeModal }) => {
                 type="button"
                 className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
                 data-hs-overlay="#hs-vertically-centered-modal"
-                onClick={closeModal}
               >
                 Close
               </button>

@@ -1,24 +1,18 @@
 import PropTypes from "prop-types";
-import { useState } from "react";
-import "./DoctorCard.css";
-import BookAppointmentModal from "../BookAppointmentModal/BookAppointmentModal";
+import { useEffect } from "react";
+import "./DoctorCard.css"; 
+import ChamberCard from "./ChamberCard/ChamberCard";
 
 const DoctorCard = ({ doctor }) => {
-  const [openChamberId, setOpenChamberId] = useState(null);
-
   const { doctorsName, specialty, mobileNumber, chamberInfos, photo } = doctor;
 
   const specialties = specialty
     .map((singleSpecialty) => singleSpecialty.label)
     .join(", ");
 
-  const openModal = (chamberId) => {
-    setOpenChamberId(chamberId);
-  };
-
-  const closeModal = () => {
-    setOpenChamberId(null);
-  };
+  useEffect(() => {
+    window.HSStaticMethods.autoInit();
+  }, []);
 
   return (
     <div
@@ -53,22 +47,7 @@ const DoctorCard = ({ doctor }) => {
         {/* bottom div to show chamber infos */}
         <div className={`mt-5 flex gap-6`}>
           {chamberInfos?.map((chamber) => (
-            <div
-              key={chamber.chamberCount}
-              className="chamberCard border-[#02c782] border-[1px] px-[15px] py-[10px] rounded-lg flex-shrink-0"
-              onClick={() => openModal(chamber.chamberCount)}
-            >
-              <p>{chamber?.chamberName}</p>
-              <p>{chamber?.location}</p>
-              <p>{chamber?.visitingPrice}</p>
-              <p>{chamber?.visitingHour}</p>
-              {openChamberId === chamber.chamberCount && (
-                <BookAppointmentModal
-                  chamber={chamber}
-                  closeModal={closeModal}
-                ></BookAppointmentModal>
-              )}
-            </div>
+            <ChamberCard key={chamber.chamberCount} chamber={chamber}></ChamberCard>
           ))}
         </div>
       </div>
