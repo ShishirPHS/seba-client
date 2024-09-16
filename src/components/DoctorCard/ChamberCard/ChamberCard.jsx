@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import BookAppointmentModal from "../../BookAppointmentModal/BookAppointmentModal";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const ChamberCard = ({ chamber }) => {
   const { chamberName, location, visitingPrice, visitingHour } = chamber;
@@ -10,6 +10,16 @@ const ChamberCard = ({ chamber }) => {
   const openModal = () => {
     setIsModalOpen(true);
   };
+
+  useEffect(() => {
+    if (isModalOpen) {
+      const openBtn = document.querySelector("#modal-open-btn");
+
+      if (openBtn) {
+        openBtn.click();
+      }
+    }
+  }, [isModalOpen]);
 
   const closeModal = () => {
     setTimeout(() => {
