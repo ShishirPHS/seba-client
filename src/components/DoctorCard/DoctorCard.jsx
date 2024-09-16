@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
-import { useEffect } from "react";
-import "./DoctorCard.css"; 
+import "./DoctorCard.css";
 import ChamberCard from "./ChamberCard/ChamberCard";
 
 const DoctorCard = ({ doctor }) => {
@@ -9,10 +8,6 @@ const DoctorCard = ({ doctor }) => {
   const specialties = specialty
     .map((singleSpecialty) => singleSpecialty.label)
     .join(", ");
-
-  useEffect(() => {
-    window.HSStaticMethods.autoInit();
-  }, []);
 
   return (
     <div
@@ -47,7 +42,10 @@ const DoctorCard = ({ doctor }) => {
         {/* bottom div to show chamber infos */}
         <div className={`mt-5 flex gap-6`}>
           {chamberInfos?.map((chamber) => (
-            <ChamberCard key={chamber.chamberCount} chamber={chamber}></ChamberCard>
+            <ChamberCard
+              key={chamber.chamberCount}
+              chamber={chamber}
+            ></ChamberCard>
           ))}
         </div>
       </div>

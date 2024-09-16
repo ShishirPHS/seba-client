@@ -1,6 +1,27 @@
 import PropTypes from "prop-types";
+import { useEffect } from "react";
 
-const BookAppointmentModal = ({ chamber }) => {
+const BookAppointmentModal = ({ chamber, closeModal }) => {
+  useEffect(() => {
+    window.HSStaticMethods.autoInit();
+  }, []);
+
+  useEffect(() => {
+    const handleEsc = (event) => {
+      if (event.key === "Escape") {
+        closeModal();
+      }
+    };
+
+    document.addEventListener("keydown", handleEsc);
+
+    return () => {
+      document.removeEventListener("keydown", handleEsc);
+    };
+  }, [closeModal]);
+
+  console.log("modal rendered");
+
   return (
     <>
       <button
@@ -35,6 +56,7 @@ const BookAppointmentModal = ({ chamber }) => {
                 className="size-8 inline-flex justify-center items-center gap-x-2 rounded-full border border-transparent bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-700 dark:hover:bg-neutral-600 dark:text-neutral-400 dark:focus:bg-neutral-600"
                 aria-label="Close"
                 data-hs-overlay="#hs-vertically-centered-modal"
+                onClick={closeModal}
               >
                 <span className="sr-only">Close</span>
                 <svg
@@ -64,6 +86,7 @@ const BookAppointmentModal = ({ chamber }) => {
                 type="button"
                 className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
                 data-hs-overlay="#hs-vertically-centered-modal"
+                onClick={closeModal}
               >
                 Close
               </button>
