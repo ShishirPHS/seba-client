@@ -10,7 +10,7 @@ const Doctors = () => {
   const downloadPdf = async () => {
     try {
       const response = await axios({
-        url: "http://localhost:3000/downloadDoctorPdf", // Replace with your actual endpoint
+        url: "https://seba-server-tau.vercel.app/downloadDoctorPdf", // Replace with your actual endpoint
         method: "GET",
         responseType: "blob", // Important to handle binary data
       });
@@ -46,10 +46,11 @@ const Doctors = () => {
             <>
               <div className="mb-[80px]">
                 {/* button to download pdf */}
+                {/* Add 'disabled-btn' class to style the button as disabled */}
+                {/* To disable the button functionality, add the 'disabled' attribute to the button element */}
                 <button
                   onClick={downloadPdf}
-                  className="bg-primary text-white hover:bg-secondary py-3 px-8 rounded-2xl mt-[10px] transition-all block mx-auto mb-8 disabled-btn"
-                  disabled
+                  className="bg-primary text-white hover:bg-secondary py-3 px-8 rounded-2xl mt-[10px] transition-all block mx-auto mb-8 cursor-pointer"
                 >
                   Download Doctors PDF
                 </button>
