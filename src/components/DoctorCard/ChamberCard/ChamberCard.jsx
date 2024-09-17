@@ -29,7 +29,7 @@ const ChamberCard = ({ chamber }) => {
 
   return (
     <div
-      className="chamberCard border-[#02c782] border-[1px] px-[15px] py-[10px] rounded-lg flex-shrink-0"
+      className="chamberCard border-[#02c782] border-[1px] px-[15px] py-[10px] rounded-lg flex-shrink-0 hover:cursor-pointer"
       onClick={openModal}
     >
       <p>{chamberName}</p>

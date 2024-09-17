@@ -39,7 +39,11 @@ export default {
       },
     },
   },
-  plugins: [require("preline/plugin"), require("daisyui")],
+  plugins: [
+    require("preline/plugin"),
+    require("daisyui"),
+    require("tailwind-scrollbar-hide"),
+  ],
   daisyui: {
     themes: ["emerald"],
   },

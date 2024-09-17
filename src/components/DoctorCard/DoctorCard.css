@@ -1,12 +1,12 @@
-#doctor-card .scrollable-div {
+/* #doctor-card .scrollable-div {
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
 
 #doctor-card .scrollable-div::-webkit-scrollbar {
   display: none;
-}
+} */
 
-#doctor-card .chamberCard:hover {
+/* #doctor-card .chamberCard:hover {
   cursor: pointer;
-}
+} */
