@@ -18,29 +18,26 @@ const DoctorCard = ({ doctor }) => {
       className="rounded-lg overflow-hidden p-4 mb-[10px] font-poppins"
       id="doctor-card"
     >
-      {/* card top */}
-      <div>
-        {/* top */}
-        <div className="flex">
-          {/* top left */}
-          <img
-            className="h-[150px] w-[150px] rounded-full object-cover"
-            src={photo}
-            alt={`Image of ${doctorsName}`}
-          />
-          {/* top right */}
-          <div className="ml-4">
-            <p className="underline font-medium leading-[20px]">
-              {doctorsName}
-            </p>
-            <p className="mt-[10px]">{specialties}</p>
-            <p>{mobileNumber}</p>
-          </div>
+      {/* top */}
+      <div className="flex">
+        {/* top left */}
+        <img
+          className="h-[150px] w-[150px] rounded-full object-cover"
+          src={photo}
+          alt={`Image of ${doctorsName}`}
+        />
+        {/* top right */}
+        <div className="ml-4">
+          <p className="underline font-medium leading-[20px]">{doctorsName}</p>
+          <p className="mt-[10px]">{specialties}</p>
+          <p>{mobileNumber}</p>
         </div>
-        {/* middle */}
-        <div></div>
-        {/* bottom div to show chamber infos */}
-        <div className={`mt-5 flex gap-6`}>
+      </div>
+      {/* middle */}
+      <div></div>
+      {/* bottom div to show chamber infos */}
+      <div className="relative">
+        <div className={`mt-5 flex overflow-x-auto gap-6 scrollable-div`}>
           {chamberInfos?.map((chamber) => (
             <ChamberCard
               key={chamber.chamberCount}
@@ -49,7 +46,6 @@ const DoctorCard = ({ doctor }) => {
           ))}
         </div>
       </div>
-      {/* card bottom */}
     </div>
   );
 };

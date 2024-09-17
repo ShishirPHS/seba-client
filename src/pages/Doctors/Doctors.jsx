@@ -64,19 +64,17 @@ const Doctors = () => {
                 </button>
               </div>
               <div>
-                <div>
-                  {allDoctors.length > 0 ? (
-                    allDoctors?.map((doctor) => (
-                      <DoctorCard key={doctor._id} doctor={doctor}></DoctorCard>
-                    ))
-                  ) : (
-                    <>
-                      <div className="text-center text-red-600">
-                        No doctors found
-                      </div>
-                    </>
-                  )}
-                </div>
+                {allDoctors.length > 0 ? (
+                  allDoctors?.map((doctor) => (
+                    <DoctorCard key={doctor._id} doctor={doctor}></DoctorCard>
+                  ))
+                ) : (
+                  <>
+                    <div className="text-center text-red-600">
+                      No doctors found
+                    </div>
+                  </>
+                )}
               </div>
             </>
           )}
