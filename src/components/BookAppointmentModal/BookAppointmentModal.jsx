@@ -38,7 +38,7 @@ const BookAppointmentModal = ({ chamber, closeModal }) => {
 
       <div
         id="hs-vertically-centered-modal"
-        className="hs-overlay [--overlay-backdrop:static] hidden size-full fixed top-0 start-0 z-[80] overflow-x-hidden overflow-y-auto pointer-events-none"
+        className="hs-overlay [--overlay-backdrop:static] hs-overlay-backdrop-open:bg-[rgba(0,0,0,0.4)] hidden size-full fixed top-0 start-0 z-[80] overflow-x-hidden overflow-y-auto pointer-events-none"
         role="dialog"
         tabIndex="-1"
         aria-labelledby="hs-vertically-centered-modal-label"
