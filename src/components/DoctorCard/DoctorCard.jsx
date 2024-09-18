@@ -5,7 +5,14 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { useEffect, useRef, useState } from "react";
 
 const DoctorCard = ({ doctor }) => {
-  const { doctorsName, specialty, mobileNumber, chamberInfos, photo } = doctor;
+  const {
+    doctorsName,
+    specialty,
+    mobileNumber,
+    yearsOfExperience,
+    chamberInfos,
+    photo,
+  } = doctor;
 
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(false);
@@ -76,10 +83,23 @@ const DoctorCard = ({ doctor }) => {
           alt={`Image of ${doctorsName}`}
         />
         {/* top right */}
-        <div className="ml-4">
-          <p className="underline font-medium leading-[20px]">{doctorsName}</p>
-          <p className="mt-[10px]">{specialties}</p>
-          <p>{mobileNumber}</p>
+        <div className="ml-4 flex flex-col justify-between">
+          {/* right top */}
+          <div>
+            <p className="underline font-medium leading-[20px]">
+              {doctorsName}
+            </p>
+            <p>{mobileNumber}</p>
+          </div>
+          {/* right middle */}
+          <div>
+            <p>{specialties}</p>
+          </div>
+          {/* right bottom */}
+          <div>
+            <h5>Experience</h5>
+            <p className="font-medium">{yearsOfExperience} Years</p>
+          </div>
         </div>
       </div>
       {/* middle */}

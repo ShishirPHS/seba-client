@@ -305,8 +305,8 @@ const AddDoctor = () => {
                 </label>
                 <input
                   id="yearsOfExperience"
-                  type="text"
-                  placeholder="Enter your experience"
+                  type="number"
+                  placeholder="Enter your experience (in year)"
                   className="border py-3 px-5 rounded-lg w-full"
                   {...register(
                     "yearsOfExperience",
