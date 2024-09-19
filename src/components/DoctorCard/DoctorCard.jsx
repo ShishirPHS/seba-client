@@ -74,7 +74,7 @@ const DoctorCard = ({ doctor }) => {
         boxShadow:
           "0px 1px 30px rgba(0, 0, 0, .03), 0 .275rem .75rem -.0625rem rgba(0, 0, 0, .06)",
       }}
-      className="rounded-lg overflow-hidden p-4 mb-[10px] font-poppins"
+      className="rounded-lg overflow-hidden py-4 px-10 mb-[10px] font-poppins"
       id="doctor-card"
     >
       {/* top */}
@@ -113,15 +113,15 @@ const DoctorCard = ({ doctor }) => {
           <FaChevronLeft
             style={{
               boxSizing: "content-box",
-              boxShadow: "0px 4px 2px rgba(0, 0, 0, 0.25)",
+              boxShadow: "0px 0px 24px rgba(0, 0, 0, 0.25)",
             }}
-            className="hidden lg:block absolute top-[50%] translate-y-[-50%] left-[-10px] p-[5px] rounded-full bg-white cursor-pointer"
+            className="hidden lg:block absolute top-[50%] translate-y-[-50%] left-[-18px] p-[10px] rounded-full bg-white cursor-pointer"
             onClick={scrollLeft}
           />
         )}
 
         <div
-          className={`mt-5 flex overflow-x-auto gap-6 scrollbar-hide scroll-smooth mx-0 lg:mx-3`}
+          className={`mt-5 flex overflow-x-auto gap-6 scrollbar-hide scroll-smooth`}
           ref={containerRef}
         >
           {chamberInfos?.map((chamber) => (
@@ -135,9 +135,9 @@ const DoctorCard = ({ doctor }) => {
           <FaChevronRight
             style={{
               boxSizing: "content-box",
-              boxShadow: "0px 4px 2px rgba(0, 0, 0, 0.25)",
+              boxShadow: "0px 0px 24px rgba(0, 0, 0, 0.25)",
             }}
-            className="hidden lg:block absolute top-[50%] translate-y-[-50%] right-[-10px] p-[5px] rounded-full bg-white cursor-pointer"
+            className="hidden lg:block absolute top-[50%] translate-y-[-50%] right-[-18px] p-[10px] rounded-full bg-white cursor-pointer"
             onClick={scrollRight}
           />
         )}
