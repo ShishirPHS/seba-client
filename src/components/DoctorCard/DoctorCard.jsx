@@ -23,16 +23,19 @@ const DoctorCard = ({ doctor }) => {
 
   const containerRef = useRef(null);
 
-  // Check if content overflows and enable/disable arrows accordingly
   const checkScrollAbility = () => {
     const container = containerRef.current;
-    if (container) {
-      setCanScrollLeft(container.scrollLeft > 0);
-      setCanScrollRight(
-        container.scrollWidth > container.clientWidth &&
-          container.scrollLeft < container.scrollWidth - container.clientWidth
-      );
-    }
+
+    if (!container) return;
+
+    // Check if the container is scrolled from the left
+    const hasScrolledLeft = container.scrollLeft > 0;
+    setCanScrollLeft(hasScrolledLeft);
+
+    // Check if there's more content to scroll on the right
+    const hasMoreContentToScroll =
+      container.scrollWidth > container.clientWidth + container.scrollLeft;
+    setCanScrollRight(hasMoreContentToScroll);
   };
 
   useEffect(() => {
