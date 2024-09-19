@@ -27,10 +27,6 @@
   --color-primary-bg: #013131;
 }
 
-body {
-  overflow: auto !important;
-}
-
 .disabled-btn {
   cursor: not-allowed;
   background-color: #cccccc;

@@ -21,10 +21,21 @@ const ChamberCard = ({ chamber }) => {
     }
   }, [isModalOpen]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (isModalOpen) {
+        document.body.style.overflow = "auto";
+      }
+    };
+
+    handleScroll();
+    return () => (document.body.style.overflow = "");
+  }, [isModalOpen]);
+
   const closeModal = () => {
     setTimeout(() => {
       setIsModalOpen(false);
-    }, 100);
+    }, 1);
   };
 
   return (
