@@ -1,7 +1,27 @@
 import PropTypes from "prop-types";
 import { useEffect } from "react";
+import { useForm } from "react-hook-form";
 
 const BookAppointmentModal = ({ chamber, closeModal }) => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const onFormSubmit = async (data) => {
+    console.log(data);
+  };
+
+  const handleSubmitBtn = () => {
+    document.getElementById("submit")?.click();
+  };
+
+  const registerOptions = {
+    phoneNumber: { required: "Please enter your phone number" },
+    patientName: { required: "Please enter patient name" },
+  };
+
   useEffect(() => {
     window.HSStaticMethods.autoInit();
   }, []);
@@ -19,8 +39,6 @@ const BookAppointmentModal = ({ chamber, closeModal }) => {
       document.removeEventListener("keydown", handleEsc);
     };
   }, [closeModal]);
-
-  console.log("modal rendered");
 
   return (
     <>
@@ -78,9 +96,42 @@ const BookAppointmentModal = ({ chamber, closeModal }) => {
               </button>
             </div>
             <div className="p-4 overflow-y-auto">
-              <p className="text-gray-800 dark:text-neutral-400">
+              <p className="text-gray-800 dark:text-neutral-400 underline font-medium">
                 {chamber.chamberName}
               </p>
+              <div className="mt-6">
+                <form onSubmit={handleSubmit(onFormSubmit)}>
+                  {/* phone number of patient */}
+                  <div className="mb-3 flex flex-col items-start">
+                    <input
+                      id="phoneNumber"
+                      type="number"
+                      placeholder="Enter Phone Number (018********)"
+                      className="border py-3 px-5 rounded-lg w-full"
+                      {...register("phoneNumber", registerOptions.phoneNumber)}
+                    />
+                    <p className="ml-0 text-red-500 mt-2">
+                      {errors?.phoneNumber && errors.phoneNumber.message}
+                    </p>
+                  </div>
+                  {/* patient name */}
+                  <div className="mb-3 flex flex-col items-start">
+                    <input
+                      id="patientName"
+                      type="text"
+                      placeholder="Enter Patient Name"
+                      className="border py-3 px-5 rounded-lg w-full"
+                      {...register("patientName", registerOptions.patientName)}
+                    />
+                    <p className="ml-0 text-red-500 mt-2">
+                      {errors?.patientName && errors.patientName.message}
+                    </p>
+                  </div>
+                  <button id="submit" type="submit" className="hidden">
+                    Submit
+                  </button>
+                </form>
+              </div>
             </div>
             <div className="flex justify-end items-center gap-x-2 py-3 px-4 border-t dark:border-neutral-700">
               <button
@@ -94,8 +145,9 @@ const BookAppointmentModal = ({ chamber, closeModal }) => {
               <button
                 type="button"
                 className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
+                onClick={handleSubmitBtn}
               >
-                Save changes
+                Book Appointment
               </button>
             </div>
           </div>
