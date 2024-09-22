@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import { useEffect } from "react";
 import { useForm } from "react-hook-form";
+import Swal from "sweetalert2";
 
 const BookAppointmentModal = ({ chamber, closeModal }) => {
   const {
@@ -11,6 +12,16 @@ const BookAppointmentModal = ({ chamber, closeModal }) => {
 
   const onFormSubmit = async (data) => {
     console.log(data);
+
+    Swal.fire({
+      icon: "success",
+      title: "Your Appointment Booked Successfully!",
+      showConfirmButton: false,
+      timer: 2000,
+    });
+
+    // close modal after successfully booked appointment 
+    document.getElementById("modal-close-btn")?.click();
   };
 
   const handleSubmitBtn = () => {
@@ -127,6 +138,10 @@ const BookAppointmentModal = ({ chamber, closeModal }) => {
                       {errors?.patientName && errors.patientName.message}
                     </p>
                   </div>
+                  <p className="text-red-500">
+                    Book now and get contact details, address and appointment
+                    time in SMS.
+                  </p>
                   <button id="submit" type="submit" className="hidden">
                     Submit
                   </button>
@@ -136,6 +151,7 @@ const BookAppointmentModal = ({ chamber, closeModal }) => {
             <div className="flex justify-end items-center gap-x-2 py-3 px-4 border-t dark:border-neutral-700">
               <button
                 type="button"
+                id="modal-close-btn"
                 className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
                 data-hs-overlay="#hs-vertically-centered-modal"
                 onClick={closeModal}
