@@ -43,9 +43,9 @@ const ChamberCard = ({ chamber }) => {
       className="chamberCard border-[#02c782] border-[1px] px-[15px] py-[10px] rounded-lg flex-shrink-0 hover:cursor-pointer"
       onClick={openModal}
     >
-      <p>{chamberName}</p>
+      <p className="text-lg font-medium mb-2">{chamberName}</p>
       <p>{location}</p>
-      <p>{visitingPrice}</p>
+      <p>{visitingPrice} Taka</p>
       <p>{visitingHour}</p>
       {isModalOpen && (
         <BookAppointmentModal
