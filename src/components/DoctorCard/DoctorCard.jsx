@@ -74,14 +74,14 @@ const DoctorCard = ({ doctor }) => {
         boxShadow:
           "0px 1px 30px rgba(0, 0, 0, .03), 0 .275rem .75rem -.0625rem rgba(0, 0, 0, .06)",
       }}
-      className="rounded-lg overflow-hidden py-4 px-10 mb-[10px] font-poppins"
+      className="rounded-lg overflow-hidden py-[10px] px-[10px] lg:px-10 mb-[10px] font-poppins"
       id="doctor-card"
     >
       {/* top */}
       <div className="flex">
         {/* top left */}
         <img
-          className="h-[150px] w-[150px] flex-shrink-0 rounded-full object-cover"
+          className="h-[80px] lg:h-[150px] w-[80px] lg:w-[150px] flex-shrink-0 rounded-full object-cover"
           src={photo}
           alt={`Image of ${doctorsName}`}
         />
