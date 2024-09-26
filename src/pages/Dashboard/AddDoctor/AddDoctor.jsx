@@ -208,9 +208,11 @@ const AddDoctor = () => {
   return (
     <div id="add-doctor" className="my-[100px]">
       <Container>
-        <div className="mx-5 3xl:mx-[140px]">
-          <div className="border p-7 rounded-3xl max-w-[1000px] mx-auto font-poppins">
-            <h4 className="text-center text-3xl font-bold mb-10">Add Doctor</h4>
+        <div className="mx-5">
+          <div className="border p-7 rounded-[24px] max-w-[1000px] mx-auto font-poppins">
+            <h4 className="text-center text-[30px] font-bold mb-10">
+              Add Doctor
+            </h4>
             <form onSubmit={handleSubmit(onFormSubmit)} className="">
               {/* doctor's name */}
               <div className="mb-3 flex flex-col items-start">

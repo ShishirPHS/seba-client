@@ -5,7 +5,7 @@ const WhyChoose = () => {
   return (
     <>
       <Container>
-        <div className="mb-[46px] lg:mb-[90px] xl:mb-[115px] 2xl:mb-[142px] mt-[56px] lg:mt-[90px] xl:mt-[100px] 2xl:mt-[114px] px-5 3xl:px-[140px]">
+        <div className="mb-[46px] lg:mb-[90px] xl:mb-[115px] 2xl:mb-[142px] mt-[56px] lg:mt-[90px] xl:mt-[100px] 2xl:mt-[114px] px-5">
           {/* title */}
           <h3 className="text-[#232222] text-[16px] sm:text-xl md:text-2xl lg:text-[34px] xl:text-[44px] 2xl:text-5xl font-semibold font-poppins leading-[123%] mx-auto text-center">
             Why Choose Seba?
@@ -53,19 +53,19 @@ const WhyChoose = () => {
           {/* bottom div */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-3 xl:gap-6">
             {/* bottom left */}
-            <div className="col-span-1 rounded-[17px] px-[10px] lg:px-5 xl:px-[30px] 3xl:pl-[66px] py-[20px] lg:py-4 xl:py-[18px] bg-primary w-full md:w-auto">
+            <div className="col-span-1 rounded-[17px] px-[10px] lg:px-5 xl:px-[30px] py-[20px] lg:py-4 xl:py-[18px] bg-primary w-full md:w-auto">
               <p className="font-poppins text-[13px] md:text-[11px] lg:text-[13px] xl:text-lg 2xl:text-2xl font-medium leading-[123%] text-white text-center md:text-left max-w-[300px] md:max-w-none mx-auto">
                 Country First Doctor Patients Relation Management System
               </p>
             </div>
             {/* bottom middle */}
-            <div className="col-span-1 rounded-[17px] pl-[10px] lg:pl-5 xl:pl-[62px] 2xl:pl-[72px] 3xl:pl-[102px] pr-[10px] lg:pr-[20px] xl:pr-[52px] 2xl:pr-[64px] 3xl:pr-[110px] py-[20px] lg:py-4 xl:py-[18px] bg-[#F4F4F4] w-full md:w-auto">
+            <div className="col-span-1 rounded-[17px] pl-[10px] lg:pl-5 xl:pl-[62px] 2xl:pl-[72px] pr-[10px] lg:pr-[20px] xl:pr-[52px] 2xl:pr-[64px] py-[20px] lg:py-4 xl:py-[18px] bg-[#F4F4F4] w-full md:w-auto">
               <p className="font-poppins text-[13px] md:text-[11px] lg:text-[13px] xl:text-lg 2xl:text-2xl font-medium leading-[123%] text-black text-center md:text-left max-w-[212px] md:max-w-[175px] lg:max-w-[208px] xl:max-w-none mx-auto">
                 Online booking facility to save time during physical visit
               </p>
             </div>
             {/* bottom right */}
-            <div className="col-span-1 rounded-[17px] px-[10px] lg:px-[20px] xl:px-[60px] 3xl:pl-[100px] 3xl:pr-[140px] py-[18px] lg:py-4 xl:py-[18px] bg-[#FF0068] w-full md:w-auto">
+            <div className="col-span-1 rounded-[17px] px-[10px] lg:px-[20px] xl:px-[60px] py-[18px] lg:py-4 xl:py-[18px] bg-[#FF0068] w-full md:w-auto">
               <p className="font-poppins text-[13px] md:text-[11px] lg:text-[13px] xl:text-lg 2xl:text-2xl font-medium leading-[123%] text-white text-center md:text-left max-w-[195px] md:max-w-[160px] lg:max-w-[190px] xl:max-w-none mx-auto">
                 Timely medicine taking reminder using mobile app
               </p>

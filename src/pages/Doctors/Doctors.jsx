@@ -33,7 +33,7 @@ const Doctors = () => {
   return (
     <>
       <Container>
-        <div className="px-5 3xl:px-[140px] py-[100px]">
+        <div className="px-5 py-[100px]">
           {isLoading ? (
             <div
               className="animate-spin block mx-auto size-10 border-[4px] border-current border-t-transparent text-primary rounded-full"

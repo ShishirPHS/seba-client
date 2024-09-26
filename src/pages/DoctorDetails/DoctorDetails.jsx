@@ -23,7 +23,7 @@ const DoctorDetails = () => {
   return (
     <div>
       <Container>
-        <div className="px-5 3xl:px-[140px]">
+        <div className="px-5">
           <img src={photo} alt={`Photo of ${doctorsName}`} />
           <p>{doctorsName}</p>
           <p>{doctorsEmail}</p>

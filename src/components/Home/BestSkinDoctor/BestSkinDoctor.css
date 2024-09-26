@@ -5,5 +5,5 @@
 }
 
 #bestSkinDoctor .skinDoctorSlider {
-  @apply mr-5 3xl:mr-[140px] ml-[10px] 3xl:ml-[140px];
+  @apply mr-5 ml-[10px];
 }

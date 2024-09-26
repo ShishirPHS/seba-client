@@ -16,7 +16,7 @@ const Blogs = () => {
     <>
       <div className="bg-primaryBg">
         <Container>
-          <div className="pt-[105px] pb-[62px] px-5 3xl:px-[140px]" id="blogsWrapper">
+          <div className="pt-[105px] pb-[62px] px-5" id="blogsWrapper">
             <SectionHeader
               sectionName={"Blogs"}
               sectionHeader={"Health Blogs"}

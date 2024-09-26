@@ -23,7 +23,7 @@ const Hospital = () => {
     <>
       <Container>
         <div
-          className="mt-[58px] lg:mt-[90px] xl:mt-[140px] 2xl:mt-[205px] md:mb-[60px] lg:mb-[90px] xl:mb-[104px] 2xl:mb-[146px] px-5 3xl:px-[140px] overflow-hidden"
+          className="mt-[58px] lg:mt-[90px] xl:mt-[140px] 2xl:mt-[205px] md:mb-[60px] lg:mb-[90px] xl:mb-[104px] 2xl:mb-[146px] px-5 overflow-hidden"
           id="hospital"
         >
           <div className="mb-[16px] lg:mb-[55px] xl:mb-[75px] 2xl:mb-[107px]">
@@ -39,7 +39,7 @@ const Hospital = () => {
           {/* slider */}
           {hospitalInfo.length && (
             <>
-              <div className="mb-[47px] lg:mb-[45px] xl:mb-[60px] lg:mx-[15px] 3xl:mx-[40px] sliderDiv relative">
+              <div className="mb-[47px] lg:mb-[45px] xl:mb-[60px] lg:mx-[15px] sliderDiv relative">
                 <Swiper
                   breakpoints={{
                     640: {
@@ -82,16 +82,16 @@ const Hospital = () => {
                   ))}
                 </Swiper>
                 {/* Custom Navigation buttons start */}
-                <div className="custom-swiper-button-prev flex justify-center items-center w-9 lg:w-[50px] 3xl:w-[72px] h-9 lg:h-[50px] 3xl:h-[72px] shadow-slider-navigation-btn-shadow-normal 3xl:shadow-slider-navigation-btn-shadow-for-3xl">
+                <div className="custom-swiper-button-prev flex justify-center items-center w-9 lg:w-[50px] h-9 lg:h-[50px] shadow-slider-navigation-btn-shadow-normal">
                   <img
-                    className="w-6 lg:w-[30px] 3xl:w-auto h-6 md:h-auto"
+                    className="w-6 lg:w-[30px] h-6 md:h-auto"
                     src={prevIcon}
                     alt=""
                   />
                 </div>
-                <div className="custom-swiper-button-next flex justify-center items-center w-9 lg:w-[50px] 3xl:w-[72px] h-9 lg:h-[50px] 3xl:h-[72px] shadow-slider-navigation-btn-shadow-normal 3xl:shadow-slider-navigation-btn-shadow-for-3xl">
+                <div className="custom-swiper-button-next flex justify-center items-center w-9 lg:w-[50px] h-9 lg:h-[50px] shadow-slider-navigation-btn-shadow-normal">
                   <img
-                    className="w-6 lg:w-[30px] 3xl:w-auto h-6 md:h-auto rotate-[180deg]"
+                    className="w-6 lg:w-[30px] h-6 md:h-auto rotate-[180deg]"
                     src={prevIcon}
                     alt=""
                   />

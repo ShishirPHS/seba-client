@@ -7,14 +7,6 @@ export default {
   ],
   theme: {
     extend: {
-      screens: {
-        sm: "640px",
-        md: "768px",
-        lg: "1024px",
-        xl: "1280px",
-        "2xl": "1589px",
-        "3xl": "1920px",
-      },
       boxShadow: {
         "videoConsultation-normal": "0px 4px 27px 1px rgba(0, 0, 0, 0.20)",
         "videoConsultation-large": "0px 4px 146.2px 1px rgba(0, 0, 0, 0.20)",
@@ -22,8 +14,6 @@ export default {
         "custom-white-for-small": "0px 4px 50px 0px rgba(255, 255, 255, 0.21)",
         "slider-navigation-btn-shadow-normal":
           "0px 4px 8px rgba(0, 0, 0, 0.25)",
-        "slider-navigation-btn-shadow-for-3xl":
-          "0px 4px 24px rgba(0, 0, 0, 0.25)",
       },
       fontFamily: {
         nunito: ["Nunito", "sans-serif"],

@@ -11,7 +11,7 @@ const Footer = () => {
     <>
       <div className="bg-primaryBg">
         <Container>
-          <div className="pt-[33px] lg:pt-[90px] xl:pt-[120px] pb-[10px] sm:pb-[30px] lg:pb-[50px] xl:pb-[60px] 2xl:pb-[90px] px-5 3xl:mx-[140px]">
+          <div className="pt-[33px] lg:pt-[90px] xl:pt-[120px] pb-[10px] sm:pb-[30px] lg:pb-[50px] xl:pb-[60px] 2xl:pb-[90px] px-5">
             {/* footer top */}
             <div className="mb-[50px] lg:mb-[100px] xl:mb-[117px]">
               <p className="text-white font-poppins text-sm sm:text-base md:text-2xl lg:text-[34px] xl:text-4xl font-bold leading-[142%] max-w-[150px] sm:max-w-[170px] md:max-w-[270px] lg:max-w-[400px] text-center mx-auto">

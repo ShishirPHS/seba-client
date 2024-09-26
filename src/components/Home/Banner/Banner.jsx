@@ -117,8 +117,7 @@ const Banner = () => {
   ];
 
   const getHeightByScreenSize = (width) => {
-    if (width >= 1920) return "300px"; // 3xl
-    if (width >= 1589) return "280px"; // 2xl
+    if (width >= 1536) return "280px"; // 2xl
     if (width >= 1280) return "240px"; // xl
     if (width >= 1024) return "140px"; // lg
     if (width >= 768) return "120px"; // md
@@ -178,7 +177,7 @@ const Banner = () => {
     <div className="bg-primary banner px-[24px] sm:px-0">
       <Container>
         <div className="relative overflow-hidden">
-          <div className="sm:mx-5 3xl:px-[140px]">
+          <div className="sm:mx-5">
             {/* banner left */}
             <div className="mb-[70px] lg:mb-[70px] xl:mb-[130px] 2xl:mb-[156px] bg-white rounded-[40px] lg:rounded-[30px] xl:rounded-[40px] pt-[23px] lg:pt-[30px] xl:pt-[39px] 2xl:pt-[49px] pb-[23px] lg:pb-[25px] xl:pb-[40px] px-6 sm:px-7 lg:px-[25px] xl:px-[44px] 2xl:px-16 mt-[64px] lg:mt-[80px] xl:mt-[150px] 2xl:mt-[177px] w-full md:w-[50%] relative z-20">
               <h3 className="mb-[25px] lg:mb-[30px] xl:mb-[50px] 2xl:mb-[62px] font-poppins text-[20px] sm:text-[24px] lg:text-[30px] xl:text-[38px] 2xl:text-[48px] text-center md:text-left font-bold max-w-[226px] sm:max-w-[270px] lg:max-w-[320px] xl:max-w-[412px] 2xl:max-w-[490px] leading-[123%] block md:inline-block mx-auto">
@@ -230,7 +229,7 @@ const Banner = () => {
             {/* banner right */}
             <div>
               <img
-                className="hidden md:block absolute bottom-0 right-0 3xl:right-[110px] w-[456px] lg:w-[510px] xl:w-[780px] 2xl:w-auto"
+                className="hidden md:block absolute bottom-0 right-0 w-[456px] lg:w-[510px] xl:w-[780px] 2xl:w-auto"
                 src={bannerImg}
                 alt="banner image"
               />

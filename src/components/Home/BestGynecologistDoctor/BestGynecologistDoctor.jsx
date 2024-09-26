@@ -20,8 +20,8 @@ const BestGynecologistDoctor = () => {
           className="mt-0 lg:mt-[30px] xl:mt-[68px] mb-[40px] lg:mb-[60px] xl:mb-[80px] 2xl:mb-[136px]"
           id="bestGynecologistDoctor"
         >
-          <div className="">
-            <h3 className="text-black font-poppins text-[18px] sm:text-xl lg:text-2xl xl:text-[34px] 2xl:text-4xl font-medium leading-[123%] capitalize mb-0 lg:mb-[16px] xl:mb-[26px] max-w-[275px] sm:max-w-[305px] md:max-w-none text-center md:text-left mx-auto px-5 3xl:px-[140px]">
+          <div>
+            <h3 className="text-black font-poppins text-[18px] sm:text-xl lg:text-2xl xl:text-[34px] 2xl:text-4xl font-medium leading-[123%] capitalize mb-0 lg:mb-[16px] xl:mb-[26px] max-w-[275px] sm:max-w-[305px] md:max-w-none text-center md:text-left mx-auto px-5">
               best gynecologist doctor{" "}
               <span className="text-[14px] sm:text-base md:text-xl lg:text-2xl xl:text-[34px] 2xl:text-4xl">
                 of the month
@@ -54,8 +54,9 @@ const BestGynecologistDoctor = () => {
                   spaceBetween={22}
                   loop={true}
                   autoplay={{
-                    delay: 1500,
+                    delay: 2000,
                     disableOnInteraction: false,
+                    reverseDirection: true,
                   }}
                   pagination={{
                     clickable: true,
