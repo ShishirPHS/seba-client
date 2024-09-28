@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import AreYourADoctor from "../../components/Home/AreYourADoctor/AreYourADoctor";
 import Banner from "../../components/Home/Banner/Banner";
 import BestGynecologistDoctor from "../../components/Home/BestGynecologistDoctor/BestGynecologistDoctor";
@@ -16,6 +17,11 @@ import WhyChoose from "../../components/Home/WhyChoose/WhyChoose";
 const Home = () => {
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Seba - Find the Best Doctor Near You</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet>
       <Banner></Banner>
       <VideoConsultation></VideoConsultation>
       <FreeMedicalAdvice></FreeMedicalAdvice>

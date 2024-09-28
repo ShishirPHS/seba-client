@@ -3,6 +3,7 @@ import DoctorCard from "../../components/DoctorCard/DoctorCard";
 import Container from "../../components/shared/Container/Container";
 import useAllDoctors from "../../hooks/useAllDoctors";
 import axios from "axios";
+import { Helmet } from "react-helmet";
 
 const Doctors = () => {
   const [allDoctors, isLoading] = useAllDoctors();
@@ -33,6 +34,11 @@ const Doctors = () => {
   return (
     <>
       <Container>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Doctors - Seba</title>
+          <link rel="canonical" href="http://mysite.com/example" />
+        </Helmet>
         <div className="px-5 py-[100px]">
           {isLoading ? (
             <div
