@@ -79,12 +79,9 @@ const VideoConsultation = () => {
               src={videoConsultation}
               alt="icon for test-tube"
             />
-            <p className="text-black text-center font-poppins text-[7px] sm:text-sm lg:text-lg xl:text-xl 2xl:text-2xl font-bold leading-[123%] mt-[2px] sm:mt-[5px] lg:mt-0 xl:mt-[2px] 2xl:mt-[12px]">
-              Video
-            </p>
-            <p className="text-black text-center font-poppins text-[7px] sm:text-sm lg:text-lg xl:text-xl 2xl:text-2xl font-medium leading-[123%]">
-              Consultation
-            </p>
+            <h2 className="text-black text-center font-poppins text-[7px] sm:text-sm lg:text-lg xl:text-xl 2xl:text-2xl leading-[123%] font-medium mt-[2px] sm:mt-[5px] lg:mt-0 xl:mt-[2px] 2xl:mt-[12px] max-w-[46px] sm:max-w-[90px] lg:max-w-[116px] 2xl:max-w-[155px]">
+              <span className="font-bold">Video</span> Consultation
+            </h2>
           </div>
         </div>
       </Container>

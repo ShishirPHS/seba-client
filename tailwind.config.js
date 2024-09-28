@@ -7,6 +7,9 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        // sm: "576px",
+      },
       boxShadow: {
         "videoConsultation-normal": "0px 4px 27px 1px rgba(0, 0, 0, 0.20)",
         "videoConsultation-large": "0px 4px 146.2px 1px rgba(0, 0, 0, 0.20)",
