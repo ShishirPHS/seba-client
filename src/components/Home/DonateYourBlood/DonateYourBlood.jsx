@@ -12,14 +12,15 @@ const DonateYourBlood = () => {
             <h2 className="text-[#303030] font-poppins text-[27px] md:text-[24px] lg:text-[36px] xl:text-[48px] 2xl:text-[64px] text-center md:text-left font-semibold max-w-[298px] md:max-w-[240px] lg:max-w-[350px] xl:max-w-[490px] 2xl:max-w-[600px] mb-[15px] lg:mb-[20px] xl:mb-[24px] 2xl:mb-[30px] mx-auto md:mx-0">
               Donate your Blood and Earn Stars
             </h2>
-            <button
+            <Link
+              to="/"
               style={{
                 boxShadow: "0px 4px 50px 0px rgba(255, 255, 255, 0.21)",
               }}
-              className="font-poppins text-[32px] md:text-xs lg:text-sm xl:text-[24px] 2xl:text-[32px] font-medium leading-[123%] text-white bg-[#CA0000] rounded-[22px] md:rounded-[12px] xl:rounded-[22px] py-[30px] md:py-[10px] lg:py-[14px] xl:py-[30px] px-[51px] md:px-[30px] lg:px-[35px] xl:px-[51px] mb-[52px] md:mb-[30px] lg:mb-[22px] xl:mb-[40px] 2xl:mb-[52px] mx-auto md:mx-0 hidden md:block"
+              className="font-poppins text-[32px] md:text-xs lg:text-sm xl:text-[24px] 2xl:text-[32px] font-medium leading-[123%] text-white bg-[#CA0000] rounded-[22px] md:rounded-[12px] xl:rounded-[22px] py-[30px] md:py-[10px] lg:py-[14px] xl:py-[30px] px-[51px] md:px-[30px] lg:px-[35px] xl:px-[51px] mb-[52px] md:mb-[30px] lg:mb-[22px] xl:mb-[40px] 2xl:mb-[52px] mx-auto md:mx-0 hidden md:inline-block"
             >
               Donate Now
-            </button>
+            </Link>
             <p className="text-[#7C7373] font-poppins text-center text-[15px] md:text-xs lg:text-sm xl:text-2xl leading-[123%] mt-[15px] md:mt-0 mb-[36px] md:mb-0">
               <Link to="/login">
                 <span className="underline">Login</span>

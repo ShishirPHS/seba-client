@@ -123,18 +123,20 @@ const Navbar = () => {
 
               {/* Button Group for small screens (login and signUp button)*/}
               <div className="flex items-center gap-x-6 ms-auto lg:hidden mt-[20px]">
-                <button
+                <Link
+                  to="/login"
                   type="button"
                   className="inline-flex items-center gap-x-2 border border-gray-200 disabled:opacity-50 disabled:pointer-events-none text-white font-nunito text-base font-bold bg-primary rounded-[14px] py-[8px] px-[35px]"
                 >
                   Login
-                </button>
-                <button
+                </Link>
+                <Link
+                  to="/signUp"
                   type="button"
                   className="inline-flex items-center gap-x-2 border border-transparent transition disabled:opacity-50 disabled:pointer-events-none focus:outline-none text-white font-nunito text-base font-bold px-[35px] py-[8px] bg-secondary rounded-[14px]"
                 >
                   SignUp
-                </button>
+                </Link>
               </div>
               {/* End Button Group */}
             </div>
@@ -142,18 +144,20 @@ const Navbar = () => {
 
             {/* Button Group for large screens (login and signUp button) */}
             <div className="hidden lg:flex items-center gap-x-[17px] lg:gap-x-[8px] xl:gap-x-[10px] 2xl:gap-x-[17px] ms-auto py-1 md:order-3">
-              <button
+              <Link
+                to="/login"
                 type="button"
                 className="inline-flex items-center border border-gray-200 disabled:opacity-50 disabled:pointer-events-none text-white font-nunito text-xl lg:text-sm xl:text-xl font-bold bg-primary rounded-[21px] lg:rounded-[12px] xl:rounded-[18px] 2xl:rounded-[21px] py-[18px] lg:py-[10px] xl:py-[15px] 2xl:py-[18px] px-[40px] lg:px-[28px] xl:px-[40px]"
               >
                 Login
-              </button>
-              <button
+              </Link>
+              <Link
+                to="/signUp"
                 type="button"
                 className="inline-flex items-center border border-transparent transition disabled:opacity-50 disabled:pointer-events-none focus:outline-none text-white font-nunito text-xl lg:text-sm xl:text-xl font-bold px-[40px] lg:px-[28px] xl:px-[40px] py-[18px] lg:py-[10px] xl:py-[15px] 2xl:py-[18px] bg-secondary rounded-[21px] lg:rounded-[12px] xl:rounded-[18px] 2xl:rounded-[21px]"
               >
                 SignUp
-              </button>
+              </Link>
             </div>
           </nav>
         </header>

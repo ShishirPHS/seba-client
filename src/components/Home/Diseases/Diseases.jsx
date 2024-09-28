@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import useDiseases from "../../../hooks/useDiseases";
 import Container from "../../shared/Container/Container";
 import SingleSymptomsCard from "../Symptoms/SingleSymptomsCard/SingleSymptomsCard";
@@ -16,12 +17,15 @@ const Diseases = () => {
         <div className="mb-[80px] lg:mb-[100px] xl:mb-[120px] 2xl:mb-[140px] px-5">
           {/* top */}
           <div className="flex justify-between mb-[35px] lg:mb-10 xl:mb-[49px]">
-            <p className="text-black font-poppins text-lg sm:text-[22px] md:text-2xl xl:text-[34px] 2xl:text-4xl font-medium leading-[123%]">
+            <h2 className="text-black font-poppins text-lg sm:text-[22px] md:text-2xl xl:text-[34px] 2xl:text-4xl font-medium leading-[123%]">
               Diseases
-            </p>
-            <p className="text-black font-poppins text-lg sm:text-[22px] md:text-2xl xl:text-[34px] 2xl:text-4xl font-medium leading-[123%] cursor-pointer">
+            </h2>
+            <Link
+              to="/"
+              className="text-black font-poppins text-lg sm:text-[22px] md:text-2xl xl:text-[34px] 2xl:text-4xl font-medium leading-[123%] cursor-pointer"
+            >
               View All
-            </p>
+            </Link>
           </div>
           {/* bottom */}
           <div>

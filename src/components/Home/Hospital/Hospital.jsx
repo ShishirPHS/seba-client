@@ -15,6 +15,7 @@ import prevIcon from "../../../assets/icons/hospital/prevArrow.svg";
 import SingleSlide from "./SingleSlide/SingleSlide";
 import useHospitalInfo from "../../../hooks/useHospitalInfo";
 import Container from "../../shared/Container/Container";
+import { Link } from "react-router-dom";
 
 const Hospital = () => {
   const [hospitalInfo] = useHospitalInfo();
@@ -102,9 +103,11 @@ const Hospital = () => {
           )}
 
           {/* view all btn */}
-          <button className="text-white font-poppins text-2xl md:text-lg lg:text-xl xl:text-[22px] 2xl:text-2xl leading-[123%] px-[69px] lg:px-[58px] xl:px-[62px] 2xl:px-[69px] py-[22px] lg:py-[18px] xl:py-[24px] 2xl:py-[27px] bg-primary rounded-[23px] hidden md:block mx-auto">
-            View All
-          </button>
+          <div className="flex justify-center items-center">
+            <Link className="text-white font-poppins text-2xl md:text-lg lg:text-xl xl:text-[22px] 2xl:text-2xl leading-[123%] px-[69px] lg:px-[58px] xl:px-[62px] 2xl:px-[69px] py-[22px] lg:py-[18px] xl:py-[24px] 2xl:py-[27px] bg-primary rounded-[23px] hidden md:inline-block mx-auto">
+              View All
+            </Link>
+          </div>
         </div>
       </Container>
     </>

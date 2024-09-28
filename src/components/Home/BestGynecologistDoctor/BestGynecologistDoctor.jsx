@@ -21,12 +21,12 @@ const BestGynecologistDoctor = () => {
           id="bestGynecologistDoctor"
         >
           <div>
-            <h3 className="text-black font-poppins text-[18px] sm:text-xl lg:text-2xl xl:text-[34px] 2xl:text-4xl font-medium leading-[123%] capitalize mb-0 lg:mb-[16px] xl:mb-[26px] max-w-[275px] sm:max-w-[305px] md:max-w-none text-center md:text-left mx-auto px-5">
+            <h2 className="text-black font-poppins text-[18px] sm:text-xl lg:text-2xl xl:text-[34px] 2xl:text-4xl font-medium leading-[123%] capitalize mb-0 lg:mb-[16px] xl:mb-[26px] max-w-[275px] sm:max-w-[305px] md:max-w-none text-center md:text-left mx-auto px-5">
               best gynecologist doctor{" "}
               <span className="text-[14px] sm:text-base md:text-xl lg:text-2xl xl:text-[34px] 2xl:text-4xl">
                 of the month
               </span>
-            </h3>
+            </h2>
             {bestGynecologistDoctors.length && (
               <div>
                 <Swiper
