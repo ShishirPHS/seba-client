@@ -8,7 +8,7 @@ const AreYourADoctor = () => {
       <div className="px-5">
         <Container>
           <div className="bg-[#E3FFE5] rounded-[40px] md:rounded-[30px] lg:rounded-[24px] xl:rounded-[40px] pt-[21px] md:mt-[30px] lg:pt-10 xl:pt-[70px] pb-0 md:pb-10 xl:pb-[80px] pr-0 md:pr-[50px] lg:pr-[60px] xl:pr-[90px] flex flex-col md:flex-row items-center md:justify-end relative mb-[66px] lg:mb-[110px] xl:mb-[135px]">
-            <div>
+            <div className="flex flex-col items-center justify-center md:items-start">
               <h2 className="font-poppins text-[20px] lg:text-[28px] xl:text-[30px] text-center md:text-left font-bold text-primary mb-0 xl:mb-[8px]">
                 Are You A Doctor?
               </h2>
