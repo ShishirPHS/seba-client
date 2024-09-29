@@ -17,13 +17,13 @@ const BestGynecologistDoctor = () => {
     <>
       <Container>
         <div
-          className="mt-0 lg:mt-[30px] xl:mt-[68px] mb-[40px] lg:mb-[60px] xl:mb-[80px] 2xl:mb-[136px]"
+          className="mt-0 lg:mt-[30px] xl:mt-[68px] mb-[40px] lg:mb-[60px] xl:mb-[80px]"
           id="bestGynecologistDoctor"
         >
           <div>
-            <h2 className="text-black font-poppins text-[18px] sm:text-xl lg:text-2xl xl:text-[34px] 2xl:text-4xl font-medium leading-[123%] capitalize mb-0 lg:mb-[16px] xl:mb-[26px] max-w-[275px] sm:max-w-[305px] md:max-w-none text-center md:text-left mx-auto px-5">
+            <h2 className="text-black font-poppins text-[18px] sm:text-xl lg:text-2xl xl:text-[34px] font-medium leading-[123%] capitalize mb-0 lg:mb-[16px] xl:mb-[26px] max-w-[275px] sm:max-w-[305px] md:max-w-none text-center md:text-left mx-auto px-5">
               best gynecologist doctor{" "}
-              <span className="text-[14px] sm:text-base md:text-xl lg:text-2xl xl:text-[34px] 2xl:text-4xl">
+              <span className="text-[14px] sm:text-base md:text-xl lg:text-2xl xl:text-[34px]">
                 of the month
               </span>
             </h2>
@@ -42,7 +42,7 @@ const BestGynecologistDoctor = () => {
                     },
                     1280: {
                       slidesPerView: 3,
-                    }, 
+                    },
                   }}
                   slidesPerView={1}
                   spaceBetween={22}

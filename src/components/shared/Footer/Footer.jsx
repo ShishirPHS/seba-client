@@ -12,7 +12,7 @@ const Footer = () => {
     <>
       <div className="bg-primaryBg">
         <Container>
-          <div className="pt-[33px] lg:pt-[90px] xl:pt-[120px] pb-[10px] sm:pb-[30px] lg:pb-[50px] xl:pb-[60px] 2xl:pb-[90px] px-5">
+          <div className="pt-[33px] lg:pt-[90px] xl:pt-[120px] pb-[10px] sm:pb-[30px] lg:pb-[50px] xl:pb-[60px] px-5">
             {/* footer top */}
             <div className="mb-[50px] lg:mb-[100px] xl:mb-[117px]">
               <h2 className="text-white font-poppins text-sm sm:text-base md:text-2xl lg:text-[34px] xl:text-4xl font-bold leading-[142%] max-w-[150px] sm:max-w-[170px] md:max-w-[270px] lg:max-w-[400px] text-center mx-auto">
@@ -30,7 +30,7 @@ const Footer = () => {
             </div>
             {/* footer middle */}
             <div
-              className="grid grid-cols-2 sm:flex sm:items-start sm:justify-between gap-x-[24px] gap-y-[30px] mb-[10px] md:mb-[60px] 2xl:mb-[113px]"
+              className="grid grid-cols-2 sm:flex sm:items-start sm:justify-between gap-x-[24px] gap-y-[30px] mb-[10px] md:mb-[60px]"
               id="footerMiddle"
             >
               <div>
@@ -131,7 +131,7 @@ const Footer = () => {
               <div className="flex items-center justify-between">
                 <Link to="/">
                   <img
-                    className="w-[61px] lg:w-[147px] xl:w-[175px] 2xl:w-auto"
+                    className="w-[61px] lg:w-[147px] xl:w-[175px]"
                     src={footerLogo}
                     alt=""
                   />

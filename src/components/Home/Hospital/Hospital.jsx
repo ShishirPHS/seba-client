@@ -24,10 +24,10 @@ const Hospital = () => {
     <>
       <Container>
         <div
-          className="mt-[58px] lg:mt-[90px] xl:mt-[140px] 2xl:mt-[205px] md:mb-[60px] lg:mb-[90px] xl:mb-[104px] 2xl:mb-[146px] px-5 overflow-hidden"
+          className="mt-[58px] lg:mt-[90px] xl:mt-[140px] md:mb-[60px] lg:mb-[90px] xl:mb-[104px] px-5 overflow-hidden"
           id="hospital"
         >
-          <div className="mb-[16px] lg:mb-[55px] xl:mb-[75px] 2xl:mb-[107px]">
+          <div className="mb-[16px] lg:mb-[55px] xl:mb-[75px]">
             <SectionHeader
               sectionName={"Hospital"}
               sectionHeader={"Hospitals near you"}
@@ -104,7 +104,7 @@ const Hospital = () => {
 
           {/* view all btn */}
           <div className="flex justify-center items-center">
-            <Link className="text-white font-poppins text-2xl md:text-lg lg:text-xl xl:text-[22px] 2xl:text-2xl leading-[123%] px-[69px] lg:px-[58px] xl:px-[62px] 2xl:px-[69px] py-[22px] lg:py-[18px] xl:py-[24px] 2xl:py-[27px] bg-primary rounded-[23px] hidden md:inline-block mx-auto">
+            <Link className="text-white font-poppins text-2xl md:text-lg lg:text-xl xl:text-[22px] leading-[123%] px-[69px] lg:px-[58px] xl:px-[62px] py-[22px] lg:py-[18px] xl:py-[24px] bg-primary rounded-[23px] hidden md:inline-block mx-auto">
               View All
             </Link>
           </div>

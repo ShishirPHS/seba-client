@@ -7,7 +7,7 @@ const SingleReviewCard = ({ review, index }) => {
     <div
       id={index + 1}
       style={{ backgroundColor: `${bgColor}` }}
-      className="bg-[#E3FFE5] pt-[12px] sm:pt-[10px] md:pt-[12px] lg:pt-[20px] xl:pt-[26px] 2xl:pt-[31px] pb-[28px] sm:pb-[40px] lg:pb-[24px] xl:pb-[30px] 2xl:pb-[35px] pl-[10px] sm:pl-[12px] lg:pl-[20px] xl:pl-[24px] 2xl:pl-[27px] pr-[10px] sm:pr-[16px] xl:pr-[28px] 2xl:pr-[34px] rounded-[16px] lg:rounded-[25px] xl:rounded-[36px] 2xl:rounded-[40px] relative mb-[10px] sm:mb-4 xl:mb-5 2xl:mb-[51px] blogItem"
+      className="bg-[#E3FFE5] pt-[12px] sm:pt-[10px] md:pt-[12px] lg:pt-[20px] xl:pt-[26px] pb-[28px] sm:pb-[40px] lg:pb-[24px] xl:pb-[30px] pl-[10px] sm:pl-[12px] lg:pl-[20px] xl:pl-[24px] pr-[10px] sm:pr-[16px] xl:pr-[28px] rounded-[16px] lg:rounded-[25px] xl:rounded-[36px] relative mb-[10px] sm:mb-4 xl:mb-5 blogItem"
     >
       {/* profile */}
       <div className="flex items-center gap-[6px] sm:gap-3 md:gap-[12px]">
@@ -28,7 +28,7 @@ const SingleReviewCard = ({ review, index }) => {
       {/* comment */}
       <div className="mt-[8px] lg:mt-3 xl:mt-[18px]">
         {/* comment (greater than sm devices) */}
-        <p className="block text-[#514F6E] text-[8px] sm:text-sm lg:text-[15px] xl:text-base 2xl:text-lg font-dmSans leading-[166%] max-w-[158px] sm:max-w-[260px] md:max-w-[432px]">
+        <p className="block text-[#514F6E] text-[8px] sm:text-sm lg:text-[15px] xl:text-base font-dmSans leading-[166%] max-w-[158px] sm:max-w-[260px] md:max-w-[432px]">
           {comment}
         </p>
       </div>

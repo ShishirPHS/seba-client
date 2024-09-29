@@ -25,7 +25,7 @@ const Blogs = () => {
                 "Find out how our users are spreading the world"
               }
             ></SectionHeader>
-            <div className="mt-[64px] lg:mt-20 2xl:mt-[120px]">
+            <div className="mt-[64px] lg:mt-20">
               {/* for small devices */}
               <div className="grid grid-cols-2 md:hidden gap-[25px] sm:gap-[30px]">
                 {isSeeMore
@@ -59,7 +59,7 @@ const Blogs = () => {
                     ))}
               </div>
 
-              {/* for 2xl devices */}
+              {/* for xl devices */}
               <div className="hidden xl:grid xl:grid-cols-3 gap-[25px]">
                 {isSeeMore
                   ? blogsInfo.map((blog) => (
@@ -86,7 +86,7 @@ const Blogs = () => {
               ></div>
               <Link
                 onClick={() => setIsSeeMore(!isSeeMore)}
-                className="text-white font-poppins text-[10px] sm:text-xs lg:text-xl xl:text-[28px] 2xl:text-[32px] font-semibold leading-[123%] bg-[#d9d9d900] rounded-[12px] lg:rounded-[20px] xl:rounded-[36px] 2xl:rounded-[40px] px-[25px] sm:px-[28px] lg:px-[50px] xl:px-[60px] 2xl:px-[69px] py-[12px] sm:py-[14px] lg:py-5 xl:py-[28px] 2xl:py-[36px] border-white border-[2px] absolute bottom-0 left-[50%] transform -translate-x-[50%] z-30"
+                className="text-white font-poppins text-[10px] sm:text-xs lg:text-xl xl:text-[28px] font-semibold leading-[123%] bg-[#d9d9d900] rounded-[12px] lg:rounded-[20px] xl:rounded-[36px] px-[25px] sm:px-[28px] lg:px-[50px] xl:px-[60px] py-[12px] sm:py-[14px] lg:py-5 xl:py-[28px] border-white border-[2px] absolute bottom-0 left-[50%] transform -translate-x-[50%] z-30"
               >
                 {isSeeMore ? "See Less" : "See more"}
               </Link>
