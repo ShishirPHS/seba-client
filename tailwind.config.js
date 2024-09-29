@@ -1,4 +1,10 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
+let containerScreens = Object.assign({}, defaultTheme.screens);
+
+// remove specific breakpoint
+delete containerScreens["2xl"];
+
 export default {
   content: [
     "./index.html",
@@ -6,10 +12,14 @@ export default {
     "node_modules/preline/dist/*.js",
   ],
   theme: {
+    container: {
+      screens: containerScreens,
+    },
     extend: {
-      screens: {
-        // sm: "576px",
-      },
+      // default breakpoint updating technique
+      // screens: {
+      //   // sm: "500px",
+      // },
       boxShadow: {
         "videoConsultation-normal": "0px 4px 27px 1px rgba(0, 0, 0, 0.20)",
         "videoConsultation-large": "0px 4px 146.2px 1px rgba(0, 0, 0, 0.20)",

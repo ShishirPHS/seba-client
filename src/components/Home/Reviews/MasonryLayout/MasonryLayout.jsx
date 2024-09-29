@@ -5,7 +5,6 @@ import imagesLoaded from "imagesloaded";
 import "./MasonryLayout.css";
 
 const screenSizes = [
-  { breakpoint: 1536, gutter: 31, fitWidth: true }, // 2xl
   { breakpoint: 1280, gutter: 20, fitWidth: true }, // xl
   { breakpoint: 1024, gutter: 16, fitWidth: true }, // lg
   { breakpoint: 768, gutter: 16, fitWidth: true }, // md

@@ -25,20 +25,8 @@
   }
 }
 
-@media (min-width: 1280px) and (max-width: 1588.98px) {
+@media (min-width: 1280px) {
   .blogItem {
     width: 392px;
-  }
-}
-
-@media (min-width: 1589px) and (max-width: 1919.98px) {
-  .blogItem {
-    width: 490px;
-  }
-}
-
-@media (min-width: 1920px) {
-  .blogItem {
-    width: 510px;
   }
 }

@@ -44,12 +44,6 @@ const BestSkinDoctor = () => {
                     1280: {
                       slidesPerView: 3,
                     },
-                    1589: {
-                      slidesPerView: 3,
-                    },
-                    1920: {
-                      slidesPerView: 3,
-                    },
                   }}
                   slidesPerView={1}
                   spaceBetween={22}

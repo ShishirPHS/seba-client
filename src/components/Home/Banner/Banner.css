@@ -28,7 +28,7 @@
 }
 
 .banner .dropdown-icon {
-  @apply w-[20px] md:w-[22px] lg:w-[30px] 2xl:w-[30px];
+  @apply w-[20px] md:w-[22px] lg:w-[30px];
 }
 
 /* .banner .css-1xc3v61-indicatorContainer {
