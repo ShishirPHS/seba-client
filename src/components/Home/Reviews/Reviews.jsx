@@ -32,7 +32,7 @@ const Reviews = () => {
 
           <div>
             {/* for small devices */}
-            <div className="grid md:hidden sm:justify-center">
+            <div className="block md:hidden">
               <MasonryLayout>
                 {isSeeMore
                   ? userReview.map((review, index) => (
@@ -52,7 +52,7 @@ const Reviews = () => {
               </MasonryLayout>
             </div>
             {/* for medium and large devices */}
-            <div className="hidden md:grid justify-center">
+            <div className="hidden md:block">
               <MasonryLayout>
                 {isSeeMore
                   ? userReview.map((review, index) => (
