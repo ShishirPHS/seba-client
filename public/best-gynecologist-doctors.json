@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Dr. Rifat Ara Nova",
-    "image": "https://i.ibb.co/ZcBvhSt/Rectangle-4329.png",
+    "image": "https://res.cloudinary.com/do6s4cirt/image/upload/v1727702904/doctor-img_ekopcy.png",
     "degree": "MBBS",
     "yearsOfExperience": 3,
     "averageRating": 5,
@@ -11,7 +11,7 @@
   {
     "id": 2,
     "name": "Dr. Muhaimen Salit",
-    "image": "https://i.ibb.co/ZcBvhSt/Rectangle-4329.png",
+    "image": "https://res.cloudinary.com/do6s4cirt/image/upload/v1727702904/doctor-img_ekopcy.png",
     "degree": "MBBS",
     "yearsOfExperience": 4,
     "averageRating": 4,
@@ -20,7 +20,7 @@
   {
     "id": 3,
     "name": "Dr. Mahnaz Sultana",
-    "image": "https://i.ibb.co/ZcBvhSt/Rectangle-4329.png",
+    "image": "https://res.cloudinary.com/do6s4cirt/image/upload/v1727702904/doctor-img_ekopcy.png",
     "degree": "MBBS",
     "yearsOfExperience": 5,
     "averageRating": 5,
@@ -29,7 +29,7 @@
   {
     "id": 4,
     "name": "Dr. Rifat Ara Nova",
-    "image": "https://i.ibb.co/ZcBvhSt/Rectangle-4329.png",
+    "image": "https://res.cloudinary.com/do6s4cirt/image/upload/v1727702904/doctor-img_ekopcy.png",
     "degree": "MBBS",
     "yearsOfExperience": 3,
     "averageRating": 5,
@@ -38,7 +38,7 @@
   {
     "id": 5,
     "name": "Dr. Muhaimen Salit",
-    "image": "https://i.ibb.co/ZcBvhSt/Rectangle-4329.png",
+    "image": "https://res.cloudinary.com/do6s4cirt/image/upload/v1727702904/doctor-img_ekopcy.png",
     "degree": "MBBS",
     "yearsOfExperience": 4,
     "averageRating": 4,
@@ -47,7 +47,7 @@
   {
     "id": 6,
     "name": "Dr. Mahnaz Sultana",
-    "image": "https://i.ibb.co/ZcBvhSt/Rectangle-4329.png",
+    "image": "https://res.cloudinary.com/do6s4cirt/image/upload/v1727702904/doctor-img_ekopcy.png",
     "degree": "MBBS",
     "yearsOfExperience": 5,
     "averageRating": 5,
