@@ -10,9 +10,9 @@ const SingleBlogCard = ({ blog }) => {
         src={image}
         alt=""
       />
-      <p className="font-poppins text-white text-[12px] sm:text-[15px] md:text-[18px] lg:text-[22px] xl:text-[30px] font-semibold leading-[123%] max-w-[50px] lg:max-w-[100px] xl:max-w-[140px]">
+      <h5 className="font-poppins text-white text-[12px] sm:text-[15px] md:text-[18px] lg:text-[22px] xl:text-[30px] font-semibold leading-[123%] max-w-[50px] lg:max-w-[100px] xl:max-w-[140px]">
         {blogName}
-      </p>
+      </h5>
     </div>
   );
 };

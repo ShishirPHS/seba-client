@@ -17,12 +17,12 @@ const SingleReviewCard = ({ review, index }) => {
           alt=""
         />
         <div className="space-y-[3px] md:space-y-0">
-          <h6 className="text-black font-poppins text-[8px] sm:text-sm lg:text-[15px] xl:text-xl font-semibold leading-[123%]">
+          <h5 className="text-black font-poppins text-[8px] sm:text-sm lg:text-[15px] xl:text-xl font-semibold leading-[123%]">
             {name}
-          </h6>
-          <p className="text-black font-poppins text-[5px] sm:text-[9px] lg:text-xs xl:text-sm font-light leading-[123%]">
+          </h5>
+          <h6 className="text-black font-poppins text-[5px] sm:text-[9px] lg:text-xs xl:text-sm font-light leading-[123%]">
             {userName}
-          </p>
+          </h6>
         </div>
       </div>
       {/* comment */}

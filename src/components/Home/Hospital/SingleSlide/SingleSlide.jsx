@@ -3,9 +3,10 @@ import icon2 from "../../../../assets/icons/hospital/location.svg";
 import icon3 from "../../../../assets/icons/hospital/gps-navigation.svg";
 
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const SingleSlide = ({ hospital }) => {
-  const { image, hospitalName, specialities, area, address } = hospital;
+  const { image, hospitalName, specialties, area, address } = hospital;
 
   return (
     <div
@@ -31,9 +32,9 @@ const SingleSlide = ({ hospital }) => {
             {/* text */}
             <p className="text-[#121212] text-[11px] sm:text-[13px] lg:text-sm xl:text-[15px] font-inter">
               <span className="text-[#121212] font-medium font-inter">
-                Specialities:{" "}
+                Specialties:{" "}
               </span>
-              {specialities}
+              {specialties}
             </p>
           </div>
           {/* area */}
@@ -64,9 +65,9 @@ const SingleSlide = ({ hospital }) => {
       </div>
       {/* button div */}
       <div className="mt-[28px] md:mt-[14px] pr-[22px] sm:pr-[36px] md:pr-[22px]">
-        <button className="text-white font-poppins text-[13px] font-semibold py-[15px] bg-primary rounded-[22px] w-full">
+        <Link className="block text-center text-white font-poppins text-[13px] font-semibold py-[15px] bg-primary rounded-[22px] w-full">
           View Clinic
-        </button>
+        </Link>
       </div>
     </div>
   );

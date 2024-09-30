@@ -52,7 +52,7 @@ const Reviews = () => {
               </MasonryLayout>
             </div>
             {/* for medium and large devices */}
-            <div className="hidden md:block">
+            <div className="hidden md:flex justify-center">
               <MasonryLayout>
                 {isSeeMore
                   ? userReview.map((review, index) => (

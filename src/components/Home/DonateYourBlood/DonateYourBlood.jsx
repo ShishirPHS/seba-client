@@ -35,9 +35,9 @@ const DonateYourBlood = () => {
               src={img1}
               alt=""
             />
-            <p className="hidden md:block text-white font-poppins text-center text-2xl md:text-[10px] lg:text-[12px] xl:text-xl leading-[123%] py-[25px] md:py-[12px] lg:py-[12px] xl:py-[20px] px-[92px] md:px-[35px] lg:px-[35px] xl:px-[66px] bg-[#808080] rounded-[40px] md:rounded-[18px] lg:rounded-[14px] xl:rounded-[30px] max-w-[427px] md:max-w-[187px] lg:max-w-[226px] xl:max-w-[354px] absolute top-[289px] md:top-[124px] lg:top-[188px] xl:top-[222px] -left-[168px] md:-left-[75px] lg:-left-[80px] xl:-left-[144px]">
+            <Link className="hidden md:block text-white font-poppins text-center text-2xl md:text-[10px] lg:text-[12px] xl:text-xl leading-[123%] py-[25px] md:py-[12px] lg:py-[12px] xl:py-[20px] px-[92px] md:px-[35px] lg:px-[35px] xl:px-[66px] bg-[#808080] rounded-[40px] md:rounded-[18px] lg:rounded-[14px] xl:rounded-[30px] max-w-[427px] md:max-w-[187px] lg:max-w-[226px] xl:max-w-[354px] absolute top-[289px] md:top-[124px] lg:top-[188px] xl:top-[222px] -left-[168px] md:-left-[75px] lg:-left-[80px] xl:-left-[144px]">
               See who is available for Donate Blood
-            </p>
+            </Link>
             {/* button div for small devices */}
             <div className="flex justify-center md:hidden gap-[6px] sm:gap-[20px] absolute bottom-5 left-[50%] transform -translate-x-[50%]">
               <button
